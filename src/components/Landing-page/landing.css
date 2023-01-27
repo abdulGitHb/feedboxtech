@@ -61,6 +61,7 @@
   }
 
   .hero_home_content{
+    position: relative;
     margin-top: -140px;
     max-width: 80vw;
     display: flex;
@@ -198,13 +199,12 @@
 
 
   .bubble{
-    position: relative;
+    position: absolute;
     display: flex;
-    z-index: -2;
-  }
-
+  } 
+  
   .bubble span{
-    z-index: -2;
+    z-index: -1;
     position: relative;
     width: 30px;
     height: 30px;
@@ -214,4 +214,21 @@
     box-shadow: 0 0 0 10px #4fc3dc44,
     0 0 50px #4fc3dc,
     0 0 100px #4fc3dc;
+    animation: animate 8s linear infinite;
+  }
+
+  .bubble span:nth-child(even){
+    background-color: #4fc3dc;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+  }
+
+  @keyframes animate {
+    0%{
+      transform: translateY(40vh) scale(0);
+    }
+    100%{
+      transform: translateY(-25vh) scale(1);
+    }
   }
