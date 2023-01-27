@@ -16,6 +16,11 @@ export default function Landing() {
 
     return (
         <section className='hero_container' id="hero-home">
+            <div className='bubble'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div className="hero_home_video_hld">
                 <div className="hero_home_contact_btn">Contact Us</div>
                 <video src="https://gravityteam.co/wp-content/uploads/2022/07/hero-animation.mp4" className='hero_home_video' muted={true} loop={true} autoPlay={true}></video>
