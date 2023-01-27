@@ -1,0 +1,462 @@
+/* body {
+    font-family: "Helvetica";
+    padding: 0;
+    margin: 0;
+    height: 200vh;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      radial-gradient(ellipse at 80% 5%, #4c00ff 0%, rgb(255 40 184 / 0%) 30%),
+      radial-gradient(
+        ellipse at bottom left,
+        #ff006a 0%,
+        rgb(98 190 255 / 31%) 60%
+      ),
+      linear-gradient(
+        135deg,
+        rgba(18, 46, 119, 0) 0%,
+        rgba(18, 46, 119, 0) 75%,
+        #395eff 100%
+      ),
+      linear-gradient(82deg, #dff7ff 0%, #74b5ff 27%, #88b8ff 74%, #82b3ff 100%);
+    background-blend-mode: screen, hue, color, overlay;
+    overflow-x: hidden;
+  } */
+  
+
+  body{
+    padding: 0;
+    margin: 0;
+    height: 200vh;
+    /* background-color: black; */
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    z-index: 1000;
+    margin: 0;
+   padding: 0 80px;
+    color: white;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    overflow: hidden !important;
+    -o-overflow: hidden !important;
+    -moz-overflow: hidden !important;
+    -webkit-overflow: hidden !important;
+    
+  }
+  
+  nav label,
+  nav input {
+    display: none;
+  }
+  
+  #nav-container {
+    width: 90%;
+     display: flex;
+     justify-content: space-between;
+    /* width: fit-content;
+    margin: 15px auto;
+    align-self: flex-start; */
+  }
+  
+  /* .d-flex-icon {
+    display: flex;
+    align-items: center;
+  }
+   */
+  .glass {
+    background: rgba(48, 48, 48, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(50px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  #logo {
+    margin-right: 40px;
+    width: 220px;
+  }
+  
+  #logo-holder {
+    align-self: center;
+  }
+  #nav-items-holder {
+    display: flex;
+    align-content: center;
+    /* justify-content: space-between; */
+    align-self: center;
+  }
+  
+  #conocenos,
+  #areas,
+  #proyectos,
+  #publicaciones,
+  #indicadores,
+  #actividades,
+  #nuvi{
+    align-self: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  #contacto{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight:bolder;
+    cursor: pointer;
+    color: #0090ee;
+  }
+  /* #nav-items-holder > div > div > img {
+    height: 14px;
+    width: auto;
+    margin-left: 10px;
+  }
+   */
+  #dd-conocenos {
+    display: none;
+    position: fixed;
+    padding-top: 40px;
+    top: 80px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    z-index: 1001;
+  }
+  
+  #dd-areas {
+    display: none;
+    position: fixed;
+    padding-top: 40px;
+    top: 80px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    z-index: 1001;
+  }
+  
+  #dd-proyectos {
+    display: none;
+    position: fixed;
+    padding-top: 40px;
+    top: 80px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    z-index: 1001;
+  }
+  
+  #dd-publicaciones {
+    display: none;
+    position: fixed;
+    padding-top: 40px;
+    top: 80px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    z-index: 1001;
+  }
+  
+  #dd-indicadores {
+    display: none;
+    position: fixed;
+    padding-top: 40px;
+    top: 80px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    z-index: 1001;
+  }
+  
+  /* .dd-col-container {
+    display: flex;
+  }
+  
+  .dd-col-align-conocenos {
+    justify-content: center;
+    padding-right: 524px;
+  }
+  
+  .dd-col-align-areas {
+    justify-content: center;
+  }
+  
+  .dd-col-align-proyectos {
+    justify-content: center;
+    padding-left: 102px;
+  }
+  
+  .dd-col-align-publicaciones {
+    justify-content: center;
+    padding-left: 327px;
+  }
+  
+  .dd-col-align-indicadores {
+    justify-content: center;
+    padding-left: 285px;
+  }
+  .d-flex-icon a { text-decoration: none; color: #2e2e2e}
+  .col1 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+  }
+  
+  .col1 > a {
+    text-decoration: none;
+    color: #2e2e2e;
+    padding: 10px 0;
+  }
+  
+  .col2 > a {
+    text-decoration: none;
+    color: #2e2e2e;
+    padding: 10px 0;
+  } */
+  
+  @media only screen and (min-width: 1201px) {
+    .header-open {
+      height: 420px !important;
+    }
+    .header-close {
+      height: 120px !important;
+    }
+    /* #conocenos:hover #dd-conocenos {
+      display: block !important;
+    } */
+    /* #areas:hover #dd-areas {
+      display: block !important;
+    }
+    #proyectos:hover #dd-proyectos {
+      display: block !important;
+    }
+    #publicaciones:hover #dd-publicaciones {
+      display: block !important;
+    }
+    #indicadores:hover #dd-indicadores {
+      display: block !important;
+    } */
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    nav {
+      overflow: hidden;
+    }
+    #logo {
+      margin-top: -15px;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      width: 180px;
+    }
+    .d-flex-icon {
+      padding-left: 30px;
+      width: 100%;
+    }
+  
+    #nav-items-holder,
+    #nav-container {
+      flex-direction: column;
+      height: fit-content;
+      display: none;
+    }
+  
+    #logo-holder {
+      align-self: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 0;
+    }
+    #conocenos,
+    #areas,
+    #proyectos,
+    #publicaciones,
+    #indicadores,
+    #actividades,
+    #nuvi{
+      align-self: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 0px 0px 50px 0px;
+    }
+  
+    #conocenos,
+    #areas,
+    #proyectos,
+    #publicaciones,
+    #indicadores,
+    #actividades,
+    #nuvi,
+    #contacto {
+      cursor: pointer;
+    }
+  
+    #dd-indicadores,
+    #dd-conocenos,
+    #dd-proyectos,
+    #dd-publicaciones {
+      position: relative;
+      padding-top: 0px;
+      top: 0px;
+      height: fit-content;
+    }
+  
+    #dd-areas {
+      position: relative;
+      padding-top: 0px;
+      top: 0px;
+      height: 300px;
+      overflow: auto;
+    }
+  
+    /* .dd-col-align-indicadores,
+    .dd-col-align-conocenos,
+    .dd-col-align-proyectos,
+    .dd-col-align-publicaciones {
+      flex-direction: column;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 0;
+    } */
+  
+    /* .dd-col-align-areas {
+      flex-direction: column;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      padding-right: 0;
+    } */
+  
+    /* .col2,
+    .col1 {
+      margin-left: 20px;
+      text-align: left;
+    } */
+  
+    .glass {
+      height: 85px;
+    }
+  
+    /* .dd-col-container {
+      background: rgba(230, 230, 230, 0.2);
+    } */
+  
+    #nav-container {
+      display: flex;
+      width: 100%;
+      margin: 15px 0px;
+      align-self: flex-start;
+    }
+  
+    .mobile-open {
+      height: 100vh;
+    }
+  
+    .mobile-closed {
+      height: inherit;
+    }
+  
+    .nav-options-active {
+      display: block !important;
+    }
+    .nav-options-inactive {
+      display: none !important;
+    }
+  
+    /* .mobile-display-dd {
+      display: block !important;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    } */
+
+    /* .mobile-areas-display-dd {
+      display: block !important;
+      direction: rtl !important;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+   */
+    #dd-areas::-webkit-scrollbar {
+      width: 8px;
+      background: rgba(230, 230, 230, 0.5);
+      backdrop-filter: blur(50px);
+      -webkit-backdrop-filter: blur(50px);
+    }
+    #dd-areas::-webkit-scrollbar-thumb {
+      background: #2e2e2e99;
+      border-radius: 50px;
+    }
+  
+    /**
+    Hamburger
+  **/
+    nav label {
+      display: block;
+    }
+    nav-container{
+      width: 100%;
+    }
+    nav{
+      padding: 0;
+    }
+    .hamburger {
+      position: absolute;
+      top: 3.9rem;
+      right: 40px;
+      margin-top: -45px;
+      width: 1em;
+      height: 25px;
+      z-index: 9000;
+      cursor: pointer;
+    }
+  
+    .hamburger div {
+      position: relative;
+      width: 2em;
+      height: 4px;
+      border-radius: 3px;
+      background-color:white;
+      margin-top: 8px;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    /**
+  Animations
+  **/
+    #toggle:checked + .hamburger .top-bun {
+      transform: rotate(-45deg);
+      margin-top: 21px;
+    }
+    #toggle:checked + .hamburger .bottom-bun {
+      transform: rotate(45deg);
+      margin-top: -3px;
+    }
+    #toggle:checked + .hamburger .meat {
+      opacity: 0;
+     margin-top: -5px;
+      transform: translateX(50px);
+    }
+  }

@@ -1,0 +1,171 @@
+.Footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    /* height: 400px; */
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 50px; */
+    text-align: center;
+    overflow: hidden;
+    /* margin-bottom: -500px; */
+    /* padding-bottom: -10000px; */
+    /* transform: translateY(-2000px); */
+
+    /* width: 98.7vw; */
+    height: 50vh;
+    overflow: hidden;
+    /* background-color: white; */
+    /* transform: rotate(180deg); */
+    position: absolute;
+    z-index: -1;
+    visibility: inherit;
+}
+/* .footer::before{
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    position: relative;
+    z-index: 1;
+    transform: translateY(1000px);
+
+} */
+
+/* .triangle{
+    margin-bottom: -770px;
+    width: 130vw;
+    height: 450px;
+    background-color: red;
+    position: relative;
+    z-index: 1000;
+    transform: rotate(14.5deg);
+    margin-left: -320px;
+    opacity: 0.2;
+
+} */
+
+.Footer::after{
+    content: "";
+    width: 0;
+    border-top: 0 solid red;
+    border-right: 100vw solid transparent;
+    position: absolute;
+    /* z-index: 1; */
+    transform: rotate(180deg);
+    opacity: 0.5;
+    /* visibility: hidden; */
+   
+}
+.Footer::before{
+
+    content: "";
+    width: 0;
+    border-top: 50vh solid white;
+    border-left: 100vw solid transparent;
+    transform: rotate(180deg);
+    position: absolute;
+    opacity: 0.5;
+    
+}
+.Footer:hover::before{
+   /* visibility: hidden; */
+   border-top: 0vh solid whitesmoke;
+   /* transition: transform .5s; */
+   
+}
+.Footer:hover::after{
+    /* visibility: visible; */
+    right: 0px;
+    border-top: 50vh solid whitesmoke;
+   
+}
+.footerUp{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: start;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    gap: 30rem;
+}
+.f_left{
+    width: 350px;
+}
+.feedbox_logo{
+    display: block;
+    margin-left: -18px;
+}
+.feedbox_logo img{
+    width: 200px;
+}
+.social_accounts{
+    margin-top: 50px;
+    display: flex;
+    gap: 2rem;
+}
+.social_accounts a{
+    color: white;
+}
+.f_right{
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 10;
+
+}
+.f_links{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    line-height: 1.5rem;
+    position: relative;
+    z-index: 100;
+}
+.f_links:hover{
+    cursor: pointer;
+}
+.Footer p{
+    margin-top: 10px;
+    /* transform: translateY(150px); */
+}
+
+/* .icon{
+    width: 100px;
+} */
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    .footerUp{
+        gap: 1rem;
+        /* margin-top: -20px; */
+        
+    }
+  }
+  /* @media screen and (min-width: 1000px){
+    .footerUp{
+        gap: 30rem;
+    }
+  } */
+  @media screen and (max-width:480px) {
+     
+    .Footer{
+        height: 460px;
+    }
+    .footerUp{
+        margin-top: -20px;
+    }
+    .social_accounts{
+        margin-top: 30px;
+    }
+    .f_right{
+        margin-top: -20px;
+    }
+    .footerDown{
+        margin-top: -40px;
+    }
+  }

@@ -1,0 +1,115 @@
+.serviceCard{
+   /* width: 30vw; */
+   width: 500px;
+   height: 500px;
+   /* background-color: white; */
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   transition: all 1s ease-out;
+   padding: 30px;
+}
+.v-content{
+    color:white;
+    font-size: 15px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1.5rem;
+}
+.vector{
+    padding: 20px;
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 10;
+    border-radius: 1.5rem;
+}
+.shadow{
+    background-color: #fff;
+    width: 220px;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+    margin-top: -100px;
+    opacity: 0.2;
+    border-radius: 2rem;
+    overflow: hidden;
+    filter: blur(8px);
+    /* visibility: hidden; */
+    opacity: 0;
+}
+.sc-btn{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 94, 0);
+    border-radius: 50%;
+    margin-top: -25px;
+    visibility: hidden;
+    /* transition: visibility 1s; */
+    padding: 15px;
+}
+.serviceCard:hover .sc-btn{
+    visibility: visible;
+    transition: visibility 1s;
+    opacity: 1;
+    transition: opacity 1s;
+}
+.shadow img{
+    width: 100%;
+}
+.vector img{
+    width: 150px;
+}
+.v-content h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.v-content{
+    padding: 120px 40px 40px 40px;
+  
+    /* opacity: 1; */
+}
+.v-content h1,p{
+    opacity: 1;
+}
+.serviceCard:hover{
+    cursor: pointer;
+}
+.serviceCard:hover .vector{
+    background-color: white;
+    transition: all 1s;
+    
+}
+.serviceCard:hover .v-content{
+    background-color: #6929c7;
+    /* background:linear-gradient(to right,#6929c7,#277df9); */
+   opacity: 1;
+   
+    transition: all 1s;
+}
+.serviceCard:hover .v-content h1{
+    color:white;
+}
+.serviceCard:hover .v-content p{
+    color:white;
+}
+.serviceCard:hover .shadow{
+    visibility: visible;
+    transition: all 1s;
+}
+@media screen and (max-width:480px){
+    .serviceCard{
+        width: 350px;
+    }
+    .v-content{
+        width: 350px;
+    }
+}
+
+/* 
+#6929c7
+#277df9 */
