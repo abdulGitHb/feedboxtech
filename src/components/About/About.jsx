@@ -38,9 +38,9 @@ export default function About() {
                         team can develop apps and websites with wordpress,
                         react and other trending technologies.</p>
                     <Link to='/aboutUsFull'>
-                        <div className="about_content_desc_btn">
-                            <h4>know more</h4>
-                        </div>
+                        <button className="know-more-btn">
+                            know more
+                        </button>
                     </Link>
                 </div>
             </div>
