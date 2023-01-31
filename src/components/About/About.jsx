@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import './About.css'
 import AboutImg from '../../image/about-animation.gif'
+import aboutPage from '../AboutUsFullPage/AboutUs';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from "react-router-dom";
 
 export default function About() {
 
@@ -35,9 +37,11 @@ export default function About() {
                         to give our clients a long jump in their business. Our tech
                         team can develop apps and websites with wordpress,
                         react and other trending technologies.</p>
-                    <div class="about_content_desc_btn">
-                        <a href="#" className="">know more</a>
-                    </div>
+                    <Link to='/aboutUsFull'>
+                        <div class="about_content_desc_btn">
+                            <h4>know more</h4>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

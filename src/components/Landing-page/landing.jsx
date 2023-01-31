@@ -14,6 +14,29 @@ import 'aos/dist/aos.css';
 export default function Landing() {
 
 
+    // const createBubbles=()=>{
+    //     const bubbleDiv = document.querySelector('.bubble');
+    //     const createEle = document.createElement('span');
+    //     let size = Math.random()*60;
+
+    //     console.log(`bubble: ${bubbleDiv}-----Span: ${createEle}-----size: ${size}`)
+
+    //     createEle.style.width = 20+size +'px';
+    //     createEle.style.height = 20+size +'px';
+    //     createEle.style.left = Math.random() * createEle.innerWidth +'px';
+    //     bubbleDiv.appendChild(createEle);
+
+    //     setTimeout(() => {
+    //         createEle.remove();
+    //     }, 3000);
+
+    // }
+
+    // setInterval(createBubbles, 50);
+
+    let iii;
+
+
     return (
         <>
 
@@ -24,19 +47,12 @@ export default function Landing() {
                 <video src="https://gravityteam.co/wp-content/uploads/2022/07/hero-animation.mp4" className='hero_home_video' muted={true} loop={true} autoPlay={true}></video>
             </div>
             <div className="hero_home_content">
-                <div className='bubble'>
-                        <span className='inbubble'></span>
-                        <span className='inbubble'></span>
-                        <span className='inbubble'></span>
-                        <span className='inbubble'></span>
-                        <span className='inbubble'></span>
-                        <span className='inbubble'></span>
-                        <span className='inbubble'></span>
-                        <span className='inbubble'></span>
-                        <span className='inbubble'></span>
-                        <span className='inbubble'></span>
-                        <span className='inbubble'></span>
-                </div>
+               
+                    <div className='inBubble'>
+                        <span ></span>
+                        <span ></span>
+                        <span ></span>
+                    </div>
                     <span className='typewriter' style={{ color: '#fff' }}>Handling</span>
                     <span className='typewriter' style={{ color: '#0090ee', fontWeight: 'bold' }}>
                         <Typewriter
@@ -47,7 +63,7 @@ export default function Landing() {
                             typeSpeed={70}
                             deleteSpeed={50}
                             delaySpeed={1000}
-                        />
+                            />
                     </span>
                     <div className="hero_home_content_desc">
                         <span>We help you turn ideas into reality. Let’s build

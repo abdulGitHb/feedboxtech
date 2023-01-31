@@ -1,27 +1,24 @@
 import './App.css';
 import { useState } from 'react';
 import Navbar from './components/Navbar2/Navbar';
-import Landing from './components/Landing-page/landing';
-import ClientShowCase from './components/ClientShowCase/ClientShowCase';
-import About from './components/About/About'
-import Services from './components/Services/Services'
-import Portfolio from './components/Portfolio/Portfolio'
-import Contact from './components/Contact/Contact'
+import AboutUs from './components/AboutUsFullPage/AboutUs';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import HomeComp from './components/HomeComp';
 
 
 function App() {
 
 
   return (
-    <div>
-     <Navbar/>
-     <Landing/>
-     <ClientShowCase/>
-     <About/>
-     <Services/>
-     <Portfolio/>
-     <Contact />
-    </div>
+    <Router>
+      <div>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<HomeComp/>}/>
+          <Route path='/aboutUsFull' element={<AboutUs/>}/>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
