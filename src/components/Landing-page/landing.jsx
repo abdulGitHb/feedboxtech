@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './landing.css'
 import { Typewriter } from 'react-simple-typewriter'
-import { Link } from 'react-scroll'
 import { ImFacebook } from "react-icons/im";
 import { ImLinkedin2 } from "react-icons/im"
 import { FaInstagramSquare } from "react-icons/fa"
@@ -45,8 +44,7 @@ export default function Landing() {
                             />
                     </span>
                     <div className="hero_home_content_desc">
-                        <span>We help you turn ideas into reality. Let’s build
-                            something amazing together</span >
+                        <span>Get ahead in this transformative world of online marketing with our full bodied strategies, well defined processes, and deep knowledge of tech!</span >
                     </div>
                 </div>
  
