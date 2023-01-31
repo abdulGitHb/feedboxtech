@@ -10,8 +10,8 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import PortfolioAll from '../src/components/Portfolio/PortfolioAll'
-// import Cursor from './components/Cursor/cursor2';
-import Cursor from './Cursor';
+
+// import Cursor from './Cursor';
 import { motion, useMotionValue } from "framer-motion"
 import Rocket from '../src/image/rocket1.png'
 
@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className='App'>
-     {/* <Cursor/>  */}
+ 
      {/* <motion.div className="cursor" 
      style={{
       transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)`,

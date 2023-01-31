@@ -86,7 +86,10 @@
     align-items: center;
     text-align: center;
 }
-
+.index:hover{
+    cursor: pointer;
+    color: #0090ee;
+}
 
 @media screen and (max-width: 1300px){
     .footerUp{

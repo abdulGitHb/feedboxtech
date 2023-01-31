@@ -40,7 +40,7 @@ export default function Navbar() {
           {/* <!-- about --> */}
           <div id="n-home">
 
-            <Link to="active" spy={true} smooth={true} className="link">
+            <Link to="hero-home" spy={true} smooth={true} className="link">
               Home
             </Link>
 
@@ -73,7 +73,9 @@ export default function Navbar() {
         </div>
         <div id="contacto">
 
-          <Link to="contact" spy={true} smooth={true} className="link link-contact">
+          <Link to="contact" spy={true} smooth={true} 
+          duration={500}
+          className="link link-contact">
             <p style={{ width: "160px" }}>Contact &nbsp;Us</p>
           </Link>
 

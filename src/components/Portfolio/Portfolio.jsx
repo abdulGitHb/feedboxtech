@@ -92,9 +92,9 @@ export default function services() {
                     title="FuteServices"
                 />
 
-            </div>
-            <Link to="/PortfolioAll"><button className='portfolio_btn'>View More</button></Link>
-            <Outlet />
+            </div><button className='portfolio_btn'>View More</button>
+            {/* <Link to=""><button className='portfolio_btn'>View More</button></Link> */}
+            {/* <Outlet /> */}
         </div>
 
     )

@@ -36,24 +36,26 @@ export default function Footer() {
                     <div className="footer_indexes">
                         <div className="index_col">
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={45} /><Link>Home</Link>
+                                <RxTriangleRight className="mobile_view" size={45} /><Link to="hero-home" spy={true} smooth={true}>Home</Link>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={45} /><Link>About Us</Link>
+                                <RxTriangleRight className="mobile_view" size={45} /><Link to="about" spy={true} smooth={true}
+                                duration={500}
+                                >About Us</Link>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={45} /><Link>Services</Link>
+                                <RxTriangleRight className="mobile_view" size={45} /><Link to="services" spy={true} smooth={true}>Services</Link>
                             </div>
                         </div>
                         <div className="index_col">
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={45} /><Link>Portfolio</Link>
+                                <RxTriangleRight className="mobile_view" size={45} /><Link to="portfolio" spy={true} smooth={true}>Portfolio</Link>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={45} /><Link>Contact Us</Link>
+                                <RxTriangleRight className="mobile_view" size={45} /><Link to="contact" spy={true} smooth={true}>Contact Us</Link>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={45} /><Link>Career</Link>
+                                <RxTriangleRight className="mobile_view" size={45} />Career
                             </div>
                         </div>
                     </div>
