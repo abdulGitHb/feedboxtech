@@ -6,11 +6,13 @@ import Services from './Services/Services';
 import ClientShowCase from '../components/ClientShowCase/ClientShowCase';
 import Portfolio from './Portfolio/Portfolio'
 import Footer from './Footer/Footer'
+import Navbar from './Navbar2/Navbar';
 
 
 function HomeComp() {
   return (
     <>
+        <Navbar/>
         <Landing/>
         <ClientShowCase/>
         <About/>

@@ -1,36 +1,35 @@
-.heading-container{
-    height: 100%;
-    background: rgb(255, 191, 191);
-}
-.heading-about{
-    background-color: antiquewhite;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 200px;
-}
-
-
-.below-heading-line{
-    height: 5px;
-    width: 120px;
-    border-radius: 5px;
-    background: #000;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.about-us-container{
+.about-banner{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-image: url("https://www.way2webworld.com/images/aboutbanner.jpg");
+    background-size: cover;
     display: flex;
-    justify-content: space-around;
-    overflow-x: scroll;
+    align-items: center;
+    justify-content: center;
 }
 
-.title-heading{
-    cursor: pointer;
-    background: rgb(255, 21, 21);
+.about-us-heading{
+    color: #ffffff;
+    text-shadow: 2px 2px #fdc8c8;
 }
 
-.about-detail{
-    width: 300px;
+.content-container{
+    display: flex;
+    height: 40%;
+    width: 100%;
+}
+.text-div{
+    margin: 10px;
+    padding: 10px;
+}
+
+.text-para{
+    text-justify: inter-word;
+}
+.img-div img{
+    padding: 10px;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
 }
