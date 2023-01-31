@@ -1,0 +1,36 @@
+.heading-container{
+    height: 100%;
+    background: rgb(255, 191, 191);
+}
+.heading-about{
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 200px;
+}
+
+
+.below-heading-line{
+    height: 5px;
+    width: 120px;
+    border-radius: 5px;
+    background: #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-us-container{
+    display: flex;
+    justify-content: space-around;
+    overflow-x: scroll;
+}
+
+.title-heading{
+    cursor: pointer;
+    background: rgb(255, 21, 21);
+}
+
+.about-detail{
+    width: 300px;
+}

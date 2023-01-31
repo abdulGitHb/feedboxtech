@@ -15,7 +15,11 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
     "react-onclickoutside": "^6.12.2",
+<<<<<<< HEAD
+    "react-router-dom": "^6.8.0",
+=======
     "react-script-tag": "^1.1.2",
+>>>>>>> origin
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
     "react-simple-typewriter": "^5.0.1",

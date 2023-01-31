@@ -1,6 +1,11 @@
 import './App.css';
 import { useEffect, useRef, useState } from 'react';
 import Navbar from './components/Navbar2/Navbar';
+<<<<<<< HEAD
+import AboutUs from './components/AboutUsFullPage/AboutUs';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import HomeComp from './components/HomeComp';
+=======
 import Landing from './components/Landing-page/landing';
 import ClientShowCase from './components/ClientShowCase/ClientShowCase';
 import About from './components/About/About'
@@ -10,6 +15,7 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import PortfolioAll from '../src/components/Portfolio/PortfolioAll'
+>>>>>>> origin
 
 // import Cursor from './Cursor';
 import { motion, useMotionValue } from "framer-motion"
@@ -32,6 +38,17 @@ function App() {
 
 
   return (
+<<<<<<< HEAD
+    <Router>
+      <div>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<HomeComp/>}/>
+          <Route path='/aboutUsFull' element={<AboutUs/>}/>
+        </Routes>
+      </div>
+    </Router>
+=======
     <div className='App'>
  
      {/* <motion.div className="cursor" 
@@ -51,6 +68,7 @@ function App() {
      <Footer/>
   
     </div>
+>>>>>>> origin
   );
 }
 
