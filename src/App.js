@@ -28,7 +28,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Navbar/>
+        
         <Routes>
           <Route path='/' element={<HomeComp/>}/>
           <Route path='/aboutUsFull' element={<AboutUs/>}/>
