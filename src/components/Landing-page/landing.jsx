@@ -21,7 +21,7 @@ export default function Landing() {
                 <video src="https://gravityteam.co/wp-content/uploads/2022/07/hero-animation.mp4" className='hero_home_video' muted={true} loop={true} autoPlay={true}></video>
             </div>
             <div className="hero_home_content">
-                <span className='typewriter' style={{ color: '#fff' }}>Handling</span>
+                <span className='typewriter' style={{ color: '#fff',fontWeight:'700' }}>Handling</span>
                 <span className='typewriter' style={{ color: '#0090ee', fontWeight: 'bold' }}>
                     <Typewriter
                         words={['Web Development', 'App Development']}
@@ -34,11 +34,10 @@ export default function Landing() {
                     />
                 </span>
                 <div className="hero_home_content_desc">
-                    <span>We help you turn ideas into reality. Let’s build
-                        something amazing together</span >
+                    <span>We combine strategy and process with our deep knowledge of tech to lay the foundations of your brand’s success in the cut throat world of digital communication!</span >
                 </div>
             </div>
-            <div className="hero_home_social">
+            <div className="hero_home_social mobile_view">
                 <span className='hero_home_social_icon'><ImFacebook size={30} /></span>
                 <span className='hero_home_social_icon'><ImLinkedin2 size={30} /></span>
                 <span className='hero_home_social_icon'><FaInstagramSquare size={30} /></span>

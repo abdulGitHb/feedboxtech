@@ -37,10 +37,20 @@ useEffect(()=>{
        <div  className="s-cards">
 
             <ServiceCard 
-             aos="fade-up"
+            aos="fade-up"
+            title="APP DEVELOPMENT"
+            desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
+            />
+            <ServiceCard
+              aos="fade-up"
+              title="WEB DEVELOPMENT"
+              desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
              />
-            <ServiceCard aos="fade-up"/>
-            <ServiceCard aos="fade-up"/>
+            <ServiceCard
+              aos="fade-up"
+              title="WORDPRESS DEVELOPMENT"
+              desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
+             />
        </div>
         </div>
     )

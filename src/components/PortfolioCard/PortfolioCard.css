@@ -15,9 +15,9 @@
     text-decoration: none;
 }
 .img-desc{
-    background-color: white;
+    background-color: rgb(255,255,255,0.4);
     padding: 10px;
-    height: 120px;
+    height: 70px;
     position: relative;
     font-size: 35px;
     font-weight: bold;
@@ -78,9 +78,22 @@
     transition: transform .5s;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:850px) {
+    .boxes{
+        width: 300px;
+        height: 220px;
+    }    
+}
+
+@media screen and (max-width:660px){
+    .boxes{
+        width: 200px;
+        height: 150px;
+    }
+}
+@media screen and (max-width:460px){
     .boxes{
         width: 150px;
-        height: 150px;
+        height: 120px;
     }
 }

@@ -28,7 +28,7 @@ export default function Navbar() {
 
           <input id="toggle" type="checkbox"></input>
 
-          <label for="toggle" className="hamburger">
+          <label htmlFor="toggle" className="hamburger">
             <div className="top-bun"></div>
             <div className="meat"></div>
             <div className="bottom-bun"></div>
@@ -37,16 +37,16 @@ export default function Navbar() {
         </div>
 
         <div id="nav-items-holder" className="">
-          {/* <!-- Conocenos --> */}
-          <div id="conocenos">
+          {/* <!-- about --> */}
+          <div id="n-home">
 
             <Link to="active" spy={true} smooth={true} className="link">
               Home
             </Link>
 
           </div>
-          {/* <!-- Areas --> */}
-          <div id="areas">
+          {/* <!-- about --> */}
+          <div id="n-about">
 
             <Link to="about" spy={true} smooth={true} className="link">
               About
@@ -54,9 +54,7 @@ export default function Navbar() {
 
           </div>
 
-
-          <div id="proyectos">
-
+          <div id="n-services">
 
             <Link to="services" spy={true} smooth={true} className="link">
               Services
@@ -64,8 +62,7 @@ export default function Navbar() {
 
           </div>
 
-
-          <div id="publicaciones">
+          <div id="n-portfolio">
 
             <Link to="portfolio" spy={true} smooth={true} className="link">
               Portfolio
@@ -73,18 +70,15 @@ export default function Navbar() {
 
           </div>
 
+        </div>
+        <div id="contacto">
+
+          <Link to="contact" spy={true} smooth={true} className="link link-contact">
+            <p style={{ width: "160px" }}>Contact &nbsp;Us</p>
+          </Link>
 
         </div>
-          <div id="contacto">
-
-            <Link to="contact" spy={true} smooth={true} className="link link-contact">
-              <p style={{ width: "160px" }}>Contact &nbsp;Us</p>
-            </Link>
-
-          </div>
-
       </div>
-
     </nav>
   )
 }
