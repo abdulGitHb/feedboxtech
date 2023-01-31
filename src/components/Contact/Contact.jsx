@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import './Contact.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { IoCallOutline } from "react-icons/io5"
+import { HiOutlineLocationMarker } from "react-icons/hi"
+import { MdOutlineMail } from "react-icons/md"
 
 
 export default function Contact() {
@@ -19,10 +22,37 @@ export default function Contact() {
 
         <div className="co-container" id="contact">
 
-            <h1 className="contact_heading"
+            <h1 data-aos="fade-out" className="contact_heading"
             >Contact Us</h1>
             <div className="contact_data">
-                <div className="co-form">
+                
+                <div data-aos="fade-up" className="contact_details">
+                    <div className="contact_details_row">
+                        <IoCallOutline size={45} style={{opacity:'0.5'}} />
+                        <div className="data_row" >
+                            <h3 style={{ fontWeight: '600' }}> Contact Number </h3>
+                            <p>+91-1234567890</p>
+                        </div>
+
+                    </div>
+                    <div className="contact_details_row">
+                        <HiOutlineLocationMarker size={45} style={{opacity:'0.5'}}  />
+                        <div className="data_row" >
+                            <h3 style={{ fontWeight: '600' }}> Address </h3>
+                            <p> Feedbox <br />Ground Floor, Saakaar Villa, 204, Shri nagar Main Rd, Near Anand bazaar, Old Palasia, Indore, madhya Pradesh 452001</p>
+                        </div>
+                    </div>
+                    <div className="contact_details_row">
+                        <MdOutlineMail size={45}  style={{opacity:'0.5'}} />
+                        <div className="data_row">
+                            <h3 style={{ fontWeight: '600' }}> Email </h3>
+                            <p>Feedbox@xyz.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" className="co-form">
+                    <h2 className="title_in_form">Got Ideas? We Got The Skills. Let's team up</h2>
                     <form>
                         <label>
                             Name
@@ -36,17 +66,14 @@ export default function Contact() {
                             Contact No
                         </label>
                         <input type="number" name="contact_no" required={true} />
-                        <label className="message_label">
+                        <label id="message_label">
                             Message
                         </label>
-                        <textarea name="message" id="message" cols="75" rows="4"></textarea>
+                        <textarea name="message" id="message" rows="3"></textarea>
                         <button className="submit_btn">Submit</button>
                     </form>
                 </div>
-            
-            <div className="vertical_line"></div>
 
-        
             </div>
         </div>
     )

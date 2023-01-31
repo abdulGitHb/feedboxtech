@@ -14,8 +14,6 @@ import Nh7 from '../../image/nh7.png'
 import MakeBelieve from '../../image/makeBelieve.png'
 import Aryan from '../../image/aryan.png'
 import Card from '../PortfolioCard/PortfolioCard'
-import { Outlet, Link } from "react-router-dom";
-import PortfolioAll from './PortfolioAll'
 // import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -92,9 +90,9 @@ export default function services() {
                     title="FuteServices"
                 />
 
-            </div><button className='portfolio_btn'>View More</button>
-            {/* <Link to=""><button className='portfolio_btn'>View More</button></Link> */}
-            {/* <Outlet /> */}
+            </div>
+            <button className='portfolio_btn'>View More</button>
+
         </div>
 
     )

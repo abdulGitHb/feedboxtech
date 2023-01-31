@@ -4,24 +4,28 @@ import Vector from '../../image/s-vector.png'
 import g_shadow from '../../image/g-shadow.jpg'
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-export default function({aos}){
+export default function({aos, desc,title}){
     return (
         <div data-aos={aos} className="serviceCard">
-            <div className="vector">
+            <div className="card_vector">
                 <img src={Vector} alt="" />
             </div>
-            <div className="shadow"><img src={g_shadow} alt="" /></div>
-            <div className="v-content">
+            {/* <div className="shadow"><img src={g_shadow} alt="" /></div> */}
+    
+            <div className="card_content">
+           
                 <h1>
-                    App Development
+                    {title}
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur elit. Magnam itaque cumque aliquid nisi, tempora commodi expedita doloribus quaerat alias accusantium.
+                    {desc}
                 </p>
+                <button className="sc_btn">View More</button>
             </div>
-                <div className="sc-btn">
+                {/* <div className="sc-btn">
                 <a href="#"><AiOutlineArrowRight color={"white"} size={20}/></a>
-                </div>
+                </div> */}
+            
         </div>
     )
 }

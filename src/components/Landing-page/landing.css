@@ -22,6 +22,7 @@
    z-index: 1;
    min-height: 668px;
    background-color: #141619;
+   padding: 0;
   }
 
 .hero_home_video_hld{
@@ -76,8 +77,8 @@
 
   .hero_home_content_desc{
     display: flex;
-    font-size: 25px;
-    max-width: 35vw;
+    font-size: 22px;
+    max-width: 38vw;
     justify-content: center;
     align-content: flex-center;
     text-align: center;
@@ -125,6 +126,7 @@
 .typewriter{
   font-size: 90px;
   color: #fff;
+  /* width: 100%; */
 }
 
 /* social accounts */
@@ -164,10 +166,18 @@
       
     }
     .hero_home_content{
-      margin-top: -200px;
+      /* margin-top: -200px; */
     }
     .hero_container{
       height: 90vh;
+     }
+     .hero_home_social{
+      right: 20px;
+      bottom: 150px;
+     }
+     .hero_home_social_icon{
+      width: 40px;
+      height: 40px;
      }
   }
 
@@ -176,7 +186,7 @@
       font-size: 45px;
    }
    .hero_home_content_desc{
-     font-size: 16px;
+     font-size: 15px;
    }
    .hero_home_content{
      margin-top: -180px;
@@ -188,14 +198,22 @@
   
   @media screen and (max-width:560px){
     .typewriter{
-      font-size: 30px;
+      font-size: 29px;
+      /* margin-bottom: 30px; */
    }
    .hero_home_content_desc{
-     font-size: 10px;
+     font-size: 12px;
+     width: 250px;
+     /* margin-top: 60px 0 60px 0; */
+     margin-top: 40px;
    }
-   .hero_home_content{
-     margin-top: -180px;
+   .hero_home_contact_btn{
+    margin-top: 45px;
+    padding: 2px 20px;
+    border-radius: 1.5rem;
+    font-size: 25px;
    }
+<<<<<<< HEAD
   }
 
 
@@ -261,3 +279,9 @@
       transform: translateX(-25vh) scale(1);
     }
   } */
+=======
+   .hero_home_content{
+    margin-top: -100px;
+  }
+  }
+>>>>>>> origin
