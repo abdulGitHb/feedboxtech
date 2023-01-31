@@ -14,26 +14,6 @@ import 'aos/dist/aos.css';
 export default function Landing() {
 
 
-    // const createBubbles=()=>{
-    //     const bubbleDiv = document.querySelector('.bubble');
-    //     const createEle = document.createElement('span');
-    //     let size = Math.random()*60;
-
-    //     console.log(`bubble: ${bubbleDiv}-----Span: ${createEle}-----size: ${size}`)
-
-    //     createEle.style.width = 20+size +'px';
-    //     createEle.style.height = 20+size +'px';
-    //     createEle.style.left = Math.random() * createEle.innerWidth +'px';
-    //     bubbleDiv.appendChild(createEle);
-
-    //     setTimeout(() => {
-    //         createEle.remove();
-    //     }, 3000);
-
-    // }
-
-    // setInterval(createBubbles, 50);
-
     let iii;
 
 
