@@ -8,6 +8,7 @@ import { FaPinterestP } from "react-icons/fa";
 
 // import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Bubbles from '../Bubbles';
 
 
 export default function Landing() {
@@ -26,11 +27,7 @@ export default function Landing() {
             </div>
             <div className="hero_home_content">
                
-                    <div className='inBubble'>
-                        <span ></span>
-                        <span ></span>
-                        <span ></span>
-                    </div>
+                    <Bubbles/>
                     <span className='typewriter' style={{ color: '#fff' }}>Handling</span>
                     <span className='typewriter' style={{ color: '#0090ee', fontWeight: 'bold' }}>
                         <Typewriter
