@@ -13,6 +13,7 @@
   .hero_container {
    display: flex;
    position: absolute;
+   width: 100%;
    align-items: center;
    justify-content: center;
    height: 105vh;
@@ -23,6 +24,7 @@
    min-height: 668px;
    background-color: #141619;
    padding: 0;
+   overflow: hidden;
   }
 
 .hero_home_video_hld{
@@ -64,8 +66,8 @@
 
   .hero_home_content{
     position: relative;
-    margin-top: -140px;
-    max-width: 80vw;
+    margin-top: -60px;
+    /* max-width: 80vw; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,7 +79,7 @@
 
   .hero_home_content_desc{
     display: flex;
-    font-size: 22px;
+    font-size: 18px;
     max-width: 38vw;
     justify-content: center;
     align-content: flex-center;
@@ -86,15 +88,15 @@
   }
 
   .hero_home_contact_btn{
-    margin-top: 30px;
+    margin-top: 50px;
     /* width: 10vw; */
     max-width: 200px;
     display: flex;
     justify-content: center;
     height: 40px;
     color: #fff;
-    font-size: 2rem;
-    padding:  2.5vh 4vw;
+    font-size: 1.5rem;
+    padding: 10px 50px;
     position: relative;
     z-index: 1000;
     background-color: #141619;
@@ -135,16 +137,16 @@
   gap: 1rem;
   flex-direction: column;
   position: absolute;
-  right: 60px;
- bottom: 250px;
+  right: 30px;
+ bottom: 160px;
   /* color: #fff; */
   justify-content: center;
   align-items: center;
 }
 .hero_home_social_icon{
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: #fff;
   display: flex;
@@ -152,21 +154,22 @@
   align-items: center;
 }
 
-@media screen and (max-width:1200px){
-    .typewriter{
+@media screen and (max-width:1150px){
+     .typewriter{
        font-size: 70px;
     }
     .hero_home_content_desc{
-      font-size: 18px;
+      font-size: 15px;
+      max-width: 50vw;
     }
     .hero_home_contact_btn{
-      margin-top: 0px;
+      margin-top: 10px;
       font-size: 1.2rem;
-      padding: 10px 30px;
+      padding: 5px 30px;
       
     }
     .hero_home_content{
-      /* margin-top: -200px; */
+      margin-top: -100px;
     }
     .hero_container{
       height: 90vh;
@@ -178,43 +181,71 @@
      .hero_home_social_icon{
       width: 40px;
       height: 40px;
-     }
+     } 
   }
 
-  @media screen and (max-width:870px){
-    .typewriter{
-      font-size: 45px;
-   }
-   .hero_home_content_desc{
+  @media screen and (max-width:920px){
+    /* .typewriter{
+      font-size: 50px;
+   } */
+   /* .hero_home_content_desc{
      font-size: 15px;
-   }
-   .hero_home_content{
+   } */
+   /* .hero_home_content{
      margin-top: -180px;
+   } */
+   .hero_home_social{
+    right: 20px;
+    bottom: 220px;
    }
    .hero_container{
-    height: 80vh;
+    height: 70vh;
    }
+   .hero_home_contact_btn{
+    margin-top: 150px;
+   }
+
   }
   
   @media screen and (max-width:560px){
     .typewriter{
-      font-size: 29px;
+      font-size: 45px;
       /* margin-bottom: 30px; */
    }
    .hero_home_content_desc{
      font-size: 12px;
-     width: 250px;
+     /* width: 250px; */
      /* margin-top: 60px 0 60px 0; */
-     margin-top: 40px;
+     /* margin-top: 40px; */
    }
    .hero_home_contact_btn{
-    margin-top: 45px;
+    margin-top: 30px;
     padding: 2px 20px;
     border-radius: 1.5rem;
     font-size: 25px;
    }
+   .mobile_view_hero{
+    visibility: hidden;
+   }
   }
-
+  @media screen and (max-width:480px) {
+    .typewriter{
+     font-size: 30px;
+    }
+    .hero_home_content_desc{
+      max-width:265px;
+      /* font-size: 11px; */
+    }
+    .hero_home_contact_btn{
+      margin-top: 10px;
+      padding: 2px 20px;
+      border-radius: 1.5rem;
+      font-size: 18px;
+     }
+     .hero_container{
+      height: 600px;
+     }
+  }
 
   .inBubble{
     position: absolute;

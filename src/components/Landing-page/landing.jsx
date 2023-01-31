@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './landing.css'
 import { Typewriter } from 'react-simple-typewriter'
 import { ImFacebook } from "react-icons/im";
 import { ImLinkedin2 } from "react-icons/im"
 import { FaInstagramSquare } from "react-icons/fa"
 import { FaPinterestP } from "react-icons/fa";
-
+import { Link } from 'react-scroll'
 // import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Bubbles from '../Bubbles';
@@ -22,7 +22,8 @@ export default function Landing() {
         <section className='hero_container' id="hero-home">
             
             <div className="hero_home_video_hld">
-                <div className="hero_home_contact_btn">Contact Us</div>
+                <Link to="contact" spy={true} smooth={true}>
+                <div className="hero_home_contact_btn">Contact Us</div></Link>
                 <video src="https://gravityteam.co/wp-content/uploads/2022/07/hero-animation.mp4" className='hero_home_video' muted={true} loop={true} autoPlay={true}></video>
             </div>
             <div className="hero_home_content">
@@ -37,7 +38,7 @@ export default function Landing() {
                             cursorStyle='|'
                             typeSpeed={70}
                             deleteSpeed={50}
-                            delaySpeed={1000}
+                            delaySpeed={500}
                             />
                     </span>
                     <div className="hero_home_content_desc">
@@ -45,11 +46,11 @@ export default function Landing() {
                     </div>
                 </div>
  
-            <div className="hero_home_social">
-                <span className='hero_home_social_icon'><ImFacebook size={30} /></span>
-                <span className='hero_home_social_icon'><ImLinkedin2 size={30} /></span>
-                <span className='hero_home_social_icon'><FaInstagramSquare size={30} /></span>
-                <span className='hero_home_social_icon'><FaPinterestP size={30} /></span>
+            <div className="hero_home_social mobile_view_hero">
+                <span className='hero_home_social_icon'><ImFacebook size={25} /></span>
+                <span className='hero_home_social_icon'><ImLinkedin2 size={25} /></span>
+                <span className='hero_home_social_icon'><FaInstagramSquare size={25} /></span>
+                <span className='hero_home_social_icon'><FaPinterestP size={25} /></span>
             </div>
         </section>
 

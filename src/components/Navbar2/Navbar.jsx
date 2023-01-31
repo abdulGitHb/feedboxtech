@@ -13,8 +13,11 @@ export default function Navbar() {
     $(".hamburger").click(function () {
       // console.log("hamburger clcked")
       // $("#header").addClass("mobile-open");
+      $("#contacto").toggleClass("link-contact", navToggle);
       $("#header").toggleClass("mobile-open", navToggle);
-      $("#nav-items-holder").toggleClass("nav-options-active", navToggle);
+      $("#nav-items-holder").toggleClass("nav-options-active");
+     
+     
       setnavToggle(!navToggle);
     });
 
