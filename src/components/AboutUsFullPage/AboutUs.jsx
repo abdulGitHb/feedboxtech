@@ -24,8 +24,8 @@ function AboutUs() {
       <div className='about-us-container'>
         {
           sectArr.map(details=>{
-            return <div>
-              <h4 className='title-heading'>{details.title}</h4>
+            return <div key={details.title}>
+              <h4 key={details.title} className='title-heading'>{details.title}</h4>
               <AboutUsCompo detail={details}/>
             </div>
 

@@ -1,7 +1,7 @@
 body {
-  padding: 0;
+  /* padding: 0;
   margin: 0;
-  height: 200vh;
+  height: 200vh; */
   /* background-color: black; */
 }
 
@@ -100,13 +100,13 @@ nav input {
  cursor: pointer;
 }
 
-/* #nav-items-holder > div > div > img {
+#nav-items-holder > div > div > img {
     height: 14px;
     width: auto;
     margin-left: 10px;
   }
-   */
-/* #dd-n-home {
+  
+#dd-n-home {
   display: none;
   position: fixed;
   padding-top: 40px;
@@ -159,7 +159,7 @@ nav input {
   height: 300px;
   width: 100%;
   z-index: 1001;
-} */
+}
 
 @media only screen and (min-width: 1201px) {
   .header-open {
@@ -223,7 +223,7 @@ nav input {
     cursor: pointer;
   }
 
-  /* #dd-n-home,
+  #dd-n-home,
   #dd-n-services,
   #dd-n-portfolio {
     position: relative;
@@ -238,9 +238,9 @@ nav input {
     top: 0px;
     height: 300px;
     overflow: auto;
-  } */
+  }
 
-  /* .dd-col-align-indicadores,
+  .dd-col-align-indicadores,
     .dd-col-align-n-home,
     .dd-col-align-n-services,
     .dd-col-align-n-portfolio {
@@ -249,21 +249,21 @@ nav input {
       padding-bottom: 10px;
       padding-left: 30px;
       padding-right: 0;
-    } */
+    }
 
-  /* .dd-col-align-n-about {
+  .dd-col-align-n-about {
       flex-direction: column;
       padding-top: 10px;
       padding-bottom: 10px;
       padding-left: 15px;
       padding-right: 0;
-    } */
+    }
 
-  /* .col2,
+  .col2,
     .col1 {
       margin-left: 20px;
       text-align: left;
-    } */
+    }
 
   .glass {
     height: 85px;
@@ -296,15 +296,15 @@ nav input {
     display: none !important;
   }
 
-  /* .mobile-display-dd {
+  .mobile-display-dd {
       display: block !important;
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       -o-transition: all 0.2s ease;
       transition: all 0.2s ease;
-    } */
+    }
 
-  /* .mobile-n-about-display-dd {
+  .mobile-n-about-display-dd {
       display: block !important;
       direction: rtl !important;
       -webkit-transition: all 0.2s ease;
@@ -312,8 +312,8 @@ nav input {
       -o-transition: all 0.2s ease;
       transition: all 0.2s ease;
     }
-   */
-  /* #dd-n-about::-webkit-scrollbar {
+  
+  #dd-n-about::-webkit-scrollbar {
     width: 8px;
     background: rgba(230, 230, 230, 0.5);
     backdrop-filter: blur(50px);
@@ -323,7 +323,7 @@ nav input {
   #dd-n-about::-webkit-scrollbar-thumb {
     background: #2e2e2e99;
     border-radius: 50px;
-  } */
+  }
 
   /**
     Hamburger

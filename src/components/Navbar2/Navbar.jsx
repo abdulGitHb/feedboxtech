@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import f_logo from '../../image/f_logo.png'
 import './Navbar.css'
 import $ from 'jquery';
 import { Link } from 'react-scroll'
 
 export default function Navbar() {
+  const [navToggle, setnavToggle] = useState(true)
 
   $(document).ready(function () {
 
     //Mobile hamburger open and close
     $(".hamburger").click(function () {
-      $("#nav-items-holder").toggleClass("nav-options-active");
-      $("#header").toggleClass("mobile-open");
+      // console.log("hamburger clcked")
+      // $("#header").addClass("mobile-open");
+      $("#header").toggleClass("mobile-open", navToggle);
+      $("#nav-items-holder").toggleClass("nav-options-active", navToggle);
+      setnavToggle(!navToggle);
     });
 
 
@@ -21,7 +25,7 @@ export default function Navbar() {
 
   return (
 
-    <nav id="header" className="glass header-close">
+    <nav id="header" className="glass header-close ">
       <div id="nav-container">
         <div id="logo-holder">
           <img id="logo" src={f_logo} alt="" />
@@ -36,7 +40,7 @@ export default function Navbar() {
 
         </div>
 
-        <div id="nav-items-holder" className="">
+        <div id="nav-items-holder" className="nav-options-active">
           {/* <!-- about --> */}
           <div id="n-home">
 
