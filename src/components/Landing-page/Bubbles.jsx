@@ -24,6 +24,28 @@ function Bubbles() {
             <span ></span>
             <span ></span>
         </div>
+
+        <div className='inBubble2'>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+        </div>
+        <div className='inBubble2'>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+        </div>
+        <div className='inBubble2'>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+        </div>
+        <div className='inBubble2'>
+            <span ></span>
+            <span ></span>
+            <span ></span>
+        </div>
+
     </div>
   )
 }

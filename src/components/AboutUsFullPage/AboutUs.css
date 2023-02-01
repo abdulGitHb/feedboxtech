@@ -14,22 +14,41 @@
     text-shadow: 2px 2px #fdc8c8;
 }
 
+.heading-container{
+    background-color: black;
+}
+
 .content-container{
+    margin-top: 10px;
     display: flex;
     height: 40%;
     width: 100%;
 }
+.content-container-main{
+    background-color: black;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-div{
+    width: 50%;
+}
 .text-div{
+    width: 50%;
     margin: 10px;
-    padding: 10px;
 }
 
 .text-para{
+    padding: 15px;
     text-align: justify;
+    color: #ffffff;
+
 }
-.img-div img{
+
+.detail-img{
     padding: 10px;
     width: 90%;
-    height: 100%;
+    max-width: 500px;
+    height: 95%;
     object-fit: cover;
 }
