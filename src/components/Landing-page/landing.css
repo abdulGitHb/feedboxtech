@@ -247,6 +247,8 @@
      }
   }
 
+  /* ----------in bubble 1st -------------------------------------------- */
+  
   .inBubble{
     position: absolute;
     width: 200px;
@@ -272,7 +274,7 @@
     position: absolute;
     border-radius: 50%;
   }
-
+  
   .inBubble span:nth-child(1){
     inset: 10px;
     border-left: 15px solid #0fb4ff;
@@ -285,6 +287,52 @@
     filter: blur(8px);
     transform: rotate(330deg);
   }
+  
+  /* ----------In bubble 2nd -------------------------------------------- */
+  .inBubble2{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+    animation: animate2 15s ease-in-out infinite;
+    /* zoom: 0.8; */
+  }
+
+  .inBubble2 span{
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .inBubble2 span:nth-child(1){
+    inset: 15px;
+    border-left: 5px solid #d5d1d1;
+    filter: blur(8px);
+  }
+
+  .inBubble2 span:nth-child(2){
+    inset: 10px;
+    border-right: 5px solid #2693c6;
+    filter: blur(8px);
+    transform: rotate(350deg);
+  }
+
+
+  .inBubble2:nth-child(5){
+    zoom: 0.35;
+    animation-delay: -5s;
+  }
+  .inBubble2:nth-child(6){
+    zoom: 0.45;
+    animation-delay: -10s;
+  }
+  .inBubble2:nth-child(7){
+    zoom: 0.80;
+    animation-delay: -5s;
+  }
+
+  
+  /* ----------In bubble 1st animation -------------------------------------------- */
 
   @keyframes animate {
     0%{
@@ -309,7 +357,30 @@
     }
    
   }
+  
+  @keyframes animate2 {
+    100%{
+      transform: translate(30px, -180px);
+      
+    }
+    75%{
+      transform: translate(-500px, 10px);
+      
+    }
+    50%{
+      
+      transform: translate(10px, 350px);
+    }
+    25%{
+      transform: translate(500px, 10px);
+      
+    }
+    0%{
+      transform: translate(30px, -180px);
 
+    }
+   
+  }
 
   /* @keyframes animate {
     0%{
