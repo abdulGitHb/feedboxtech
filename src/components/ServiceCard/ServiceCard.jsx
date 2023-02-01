@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 // import service from '../ServiceFullPage/ServicesFullPage'
 import { Link } from "react-router-dom";
 
-export default function ({ aos, desc, title }) {
+export default function ({ aos,icon, desc, title }) {
     // useEffect(() => {
     //     AOS.init({
     //         duration: 100,
@@ -18,7 +18,7 @@ export default function ({ aos, desc, title }) {
     return (
         <div data-aos={aos} className="serviceCard">
             <div className="card_vector">
-                <img src={Vector} alt="" />
+                <img src={icon} alt="" />
             </div>
             {/* <div className="shadow"><img src={g_shadow} alt="" /></div> */}
 

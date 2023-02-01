@@ -32,7 +32,7 @@ export default function services() {
     return (
         <div className='p-container' id='portfolio'>
 
-            <h1 className="portfolio_heading" data-aos="fade-up"
+            <h1 className="section_heading" data-aos="fade-up"
             >Portfolio</h1>
 
             <div className="portfolio_cards">
@@ -92,7 +92,7 @@ export default function services() {
                     title="FuteServices"
                 />
             </div>
-                     <Link to='/Portfolio' className='portfolio_btn'>
+                     <Link to='/Portfolio' className='portfolio_btn' data-aos="fade-up">
                      View More
                     </Link>
             

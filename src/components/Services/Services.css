@@ -11,6 +11,8 @@
     /* gap: 5rem; */
     flex-wrap: wrap;
     overflow: hidden;
+    position: relative;
+    z-index: 100;
 }
 .services_heading{
     font-size: 60px;

@@ -4,6 +4,9 @@ import './Services.css'
 import ServiceCard from "../ServiceCard/ServiceCard";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import app_dev from '../../image/app_dev.gif'
+import web_dev from '../../image/web_dev.gif'
+import wordpress_dev from '../../image/wordpress_dev.gif'
 
 
 export default function Services(){
@@ -19,7 +22,7 @@ export default function Services(){
 
     return (
         <div className="services-container" id="services">
-           <h1 className="services_heading"
+           <h1 className="section_heading"
            data-aos="fade-up" 
             >Services</h1>
 
@@ -39,17 +42,20 @@ export default function Services(){
        <div  className="s-cards">
 
             <ServiceCard 
-            aos="fade-up"
+            aos="fade-right"
+            icon={app_dev}
             title="APP DEVELOPMENT"
             desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
             />
             <ServiceCard
               aos="fade-up"
+              icon={web_dev}
               title="WEB DEVELOPMENT"
               desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
              />
             <ServiceCard
-              aos="fade-up"
+              aos="fade-left"
+              icon={wordpress_dev}
               title="WORDPRESS DEVELOPMENT"
               desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
              />

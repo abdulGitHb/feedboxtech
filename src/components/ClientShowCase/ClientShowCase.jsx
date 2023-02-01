@@ -27,7 +27,7 @@ export default function Slider() {
 
 
     return (
-
+      <div style={{paddingTop:'800px'}}>
         <div className="slider-container">
 
             <span data-aos="fade-up">Trusted By 500+ Customers And Still Counting...</span>
@@ -66,6 +66,7 @@ export default function Slider() {
                     <img src={Spotify} alt="" />
                 </SwiperSlide>
             </Swiper>
+        </div>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Philosopher&family=Rubik+Storm&family=Special+Elite&display=swap');
 
 .slider-container {
+  /* margin-top: 500px; */
   padding-top: 40px;
   width: 100%;
   height: 220px;
@@ -9,14 +10,17 @@
   flex-wrap: wrap;
   /* flex-direction: column; */
   justify-content: center;
+  border-bottom: 1px solid rgba(254,255,254,0.2) ;
   text-align: center;
   gap: 0.5rem;
+  position: relative;
+  z-index: 100;
 }
 
 .slider-container span {
   font-weight: normal;
   /* font-family: 'Special Elite', cursive; */
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   margin-bottom: 30px;
 }
@@ -39,24 +43,23 @@
 }
 
 .slider-container img {
-  width: 14vw;
+  width: 10vw;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
   margin-left: 20px;
   margin-right: 20px;
 }
 
-
-
 @media screen and (max-width:480px) {
   .slider-container span {
-    font-size: 25px;
-    margin-bottom: -20px;
+    font-size: 20px;
+    /* margin-bottom: -20px; */
     margin-top: -30px;
   }
 
   .slider-container {
    /* margin-top: -20px; */
-    padding-top: -150px;
+    /* padding-top: -150px; */
+    height: 180px;
     gap: 0;
   }
 
