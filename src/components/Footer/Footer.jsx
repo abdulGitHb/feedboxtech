@@ -14,12 +14,10 @@ export default function Footer() {
 
     useEffect(() => {
         AOS.init({
-            duration: 850,
-            offset: 0,
-            easing: 'ease-in-sine',
-            delay: 100
+            // duration: 100,
+            offset: 0
         })
-    })
+    },[])
 
     return (
         <div className="Footer">

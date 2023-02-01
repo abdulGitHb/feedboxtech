@@ -7,18 +7,19 @@ import 'aos/dist/aos.css';
 
 export default function Services(){
 
-useEffect(()=>{
-    AOS.init(
-      {
-        duration:850,
-        // offset:250
-      }
-    );
-},[])
+// useEffect(()=>{
+//     AOS.init(
+//       {
+//         duration:800,
+//         // offset:250
+//       }
+//     );
+// },[])
 
     return (
         <div className="services-container" id="services">
-           <h1 className="services_heading" 
+           <h1 className="services_heading"
+           data-aos="fade-up" 
             >Services</h1>
 
             {/* <div className="technologies">

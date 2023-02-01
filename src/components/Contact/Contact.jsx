@@ -9,20 +9,18 @@ import { MdOutlineMail } from "react-icons/md"
 
 export default function Contact() {
 
-    useEffect(() => {
-        AOS.init(
-            {
-                duration: 850,
-                offset: 250
-            }
-        )
-    }, [])
+    // useEffect(() => {
+    //     AOS.init({
+    //         duration: 100,
+    //         // offset: -250
+    //     })
+    // },[])
 
     return (
 
         <div className="co-container" id="contact">
 
-            <h1 data-aos="fade-out" className="contact_heading"
+            <h1 data-aos="fade-up" className="contact_heading"
             >Contact Us</h1>
             <div className="contact_data">
                 

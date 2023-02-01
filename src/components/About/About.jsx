@@ -12,9 +12,12 @@ export default function About() {
     useEffect(() => {
         AOS.init({
             duration: 1000,
-            offset: 250
+            offset: 0,
+            easing: 'ease-in-out-back',
+            delay:100,
+            anchorPlacement: 'top-top'
         })
-    })
+    },[])
 
     return (
         <div className="a-container" id="about"

@@ -5,12 +5,12 @@ import 'aos/dist/aos.css';
 
 export default function Card({ image, url, title, aos }) {
 
-    useEffect(() => {
-        AOS.init({
-            duration: 850,
-            offset: 250
-        })
-    })
+    // useEffect(() => {
+    //     AOS.init({
+    //         duration: 100,
+    //         // offset: -250
+    //     })
+    // },[])
 
     return (
         <div data-aos={aos} className="boxes">

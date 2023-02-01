@@ -4,6 +4,7 @@ import Navbar from './components/Navbar2/Navbar';
 import AboutUs from './components/AboutUsFullPage/AboutUs';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import HomeComp from './components/HomeComp';
+import PortfolioAll from './components/Portfolio/PortfolioAll'
 
 // import Cursor from './Cursor';
 import { motion, useMotionValue } from "framer-motion"
@@ -32,6 +33,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomeComp/>}/>
           <Route path='/aboutUsFull' element={<AboutUs/>}/>
+          <Route path='/PortfolioAll' element={<PortfolioAll/>}/>
         </Routes>
       </div>
     </Router>

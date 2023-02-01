@@ -42,7 +42,7 @@
 .co-form {
     padding: 40px 50px;
     line-height: 1rem;
-    width: 25vw;
+    width: 30vw;
     /* max-width: 500px; */
     min-width: 150px;
     /* height: 400px; */
@@ -162,13 +162,7 @@ textarea {
 
 @media screen and (max-width:1600px) {
     .contact_data{
-        gap: 2rem;
-    }
-    .contact_mobile_view{
-        visibility: hidden;
-    }
-    .co-form{
-        width: 40vw;
+        gap: 10rem;
     }
 }
 
