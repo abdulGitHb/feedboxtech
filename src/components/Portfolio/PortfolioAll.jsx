@@ -14,18 +14,19 @@ import Nh7 from '../../image/nh7.png'
 import MakeBelieve from '../../image/makeBelieve.png'
 import Aryan from '../../image/aryan.png'
 import Card from '../PortfolioCard/PortfolioCard'
-// import AOS from 'aos';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-export default function services() {
+export default function PortfolioAll() {
 
-    // useEffect(()=>{
-    //     AOS.init({
-    //         duration:2000,
-    //         offset:350
-    //     })
-    // },[])
+    useEffect(()=>{
+        AOS.init({
+            duration:1000,
+            offset:10,
+            delay:0
+        })
+    },[])
 
     return (
         <div className='p-container' id='portfolio'>
@@ -89,9 +90,25 @@ export default function services() {
                     url="https://www.futeservices.com/"
                     title="FuteServices"
                 />
-
+                 <Card
+                    aos="fade-up-right"
+                    image={Aryan}
+                    url="https://www.aryantiles.com/"
+                    title="Aryan"
+                />
+                <Card
+                    aos="fade-up"
+                    image={Qodeleaf}
+                    url="https://qodeleaf.com/"
+                    title="Qodeleaf"
+                />
+                <Card
+                    aos="fade-up-left"
+                    image={FuteServices}
+                    url="https://www.futeservices.com/"
+                    title="FuteServices"
+                />
             </div>
-            <button className='portfolio_btn'>View More</button>
 
         </div>
 

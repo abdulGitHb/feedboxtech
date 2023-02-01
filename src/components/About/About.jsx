@@ -12,9 +12,12 @@ export default function About() {
     useEffect(() => {
         AOS.init({
             duration: 1000,
-            offset: 250
+            offset: 0,
+            easing: 'ease-in-out-back',
+            delay:100,
+            anchorPlacement: 'top-top'
         })
-    })
+    },[])
 
     return (
         <div className="a-container" id="about"
@@ -37,9 +40,9 @@ export default function About() {
                         to give our clients a long jump in their business. Our tech
                         team can develop apps and websites with wordpress,
                         react and other trending technologies.</p>
-                    <Link to='/aboutUsFull'>
-                        <div className="about_content_desc_btn">
-                            <h4>know more</h4>
+                       <Link to='/aboutUsFull' className="about_content_desc_btn">
+                        <div >
+                            Know More
                         </div>
                     </Link>
                 </div>

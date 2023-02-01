@@ -15,12 +15,15 @@ import 'aos/dist/aos.css';
 
 export default function Slider() {
 
-  useEffect(()=>{
-    AOS.init({
-        duration:850,
-        // offset:250
-    })
-  },[]);
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            offset: 0,
+            easing: 'ease-in-out-back',
+            delay:100,
+            anchorPlacement: 'top-top'
+        })
+    },[])
 
 
     return (

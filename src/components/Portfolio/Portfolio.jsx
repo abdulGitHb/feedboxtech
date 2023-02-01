@@ -17,7 +17,7 @@ import Card from '../PortfolioCard/PortfolioCard'
 import { Outlet, Link } from "react-router-dom";
 import PortfolioAll from './PortfolioAll'
 // import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import 'aos/dist/aos.css';
 
 
 export default function services() {
@@ -32,7 +32,7 @@ export default function services() {
     return (
         <div className='p-container' id='portfolio'>
 
-            <h1 className="portfolio_heading" data-aos="fade-out"
+            <h1 className="portfolio_heading" data-aos="fade-up"
             >Portfolio</h1>
 
             <div className="portfolio_cards">
@@ -91,10 +91,11 @@ export default function services() {
                     url="https://www.futeservices.com/"
                     title="FuteServices"
                 />
-
-            </div><button className='portfolio_btn'>View More</button>
-            {/* <Link to=""><button className='portfolio_btn'>View More</button></Link> */}
-            {/* <Outlet /> */}
+                     <Link to='/PortfolioAll' className='portfolio_btn'>
+                     View More
+                    </Link>
+            </div>
+            
         </div>
 
     )
