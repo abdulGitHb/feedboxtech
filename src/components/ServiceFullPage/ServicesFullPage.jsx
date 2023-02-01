@@ -6,7 +6,7 @@ const ServicesFullPage = () => {
   return (
     <>
     <NavBarResp/>
-    <div>
+    <div className=''>
       service full page
     </div>
     <Footer/>
