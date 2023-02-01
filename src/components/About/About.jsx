@@ -40,10 +40,10 @@ export default function About() {
                         to give our clients a long jump in their business. Our tech
                         team can develop apps and websites with wordpress,
                         react and other trending technologies.</p>
-                       <Link to='/aboutUsFull' className="about_content_desc_btn">
-                        <div >
-                            Know More
-                        </div>
+                    <Link to='/aboutUsFull'>
+                        <button className="know-more-btn">
+                            know more
+                        </button>
                     </Link>
                 </div>
             </div>
