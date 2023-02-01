@@ -20,7 +20,7 @@ function AboutUs() {
 
   return (
     <>
-    {/* <NavBarResp/> */}
+    <NavBarResp/>
     <div className='heading-container'>
       <div className='about-banner'>
         {/* <img className='banner-img' src={img} alt=""/> */}
