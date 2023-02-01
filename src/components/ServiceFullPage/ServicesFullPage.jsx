@@ -6,9 +6,9 @@ const ServicesFullPage = () => {
   return (
     <>
     <NavBarResp/>
-    <div className=''>
-      service full page
-    </div>
+      <div className='service-container-main'>
+        <h1>service full page</h1> 
+      </div>
     <Footer/>
     </>
   )
