@@ -154,6 +154,12 @@ nav input {
   z-index: 1001;
 } */
 
+.link-contact{
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 10px;
+}
+
 @media only screen and (min-width: 1201px) {
   .header-open {
     height: 420px !important;
@@ -168,6 +174,13 @@ nav input {
 @media only screen and (max-width: 1200px) {
   nav {
     overflow: hidden;
+  }
+  .link-contact{
+    visibility: visible;
+    opacity: 1;
+    /* margin-top: 0; */
+    display: flex;
+    text-align: center;
   }
 
   #logo {
@@ -372,11 +385,7 @@ nav input {
     margin-top: -5px;
     transform: translateX(50px);
   }
-  .link-contact{
-    visibility: hidden;
-    opacity: 0;
-    margin-top: 10px;
-  }
+
 }
 
 @media screen and (max-width:480px) {
@@ -384,9 +393,5 @@ nav input {
     width: 150px;
     margin-left: 5px;
   }
-  .link-contact{
-    visibility: visible;
-    opacity: 1;
-    /* margin-top: 0; */
-  }
+  
 }
