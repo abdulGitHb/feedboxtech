@@ -5,6 +5,8 @@ import 'aos/dist/aos.css';
 import { IoCallOutline } from "react-icons/io5"
 import { HiOutlineLocationMarker } from "react-icons/hi"
 import { MdOutlineMail } from "react-icons/md"
+import NavBarResp from "../Navbar2/NavBarResp";
+import Footer from "../Footer/Footer";
 
 
 export default function Contact() {
@@ -17,8 +19,9 @@ export default function Contact() {
     // },[])
 
     return (
-
-        <div className="co-container" id="contact">
+       <>
+       <NavBarResp/>
+        <div className="co-container" id="contact" style={{paddingTop:'150px'}}>
 
             <h1 data-aos="fade-up" className="contact_heading"
             >Contact Us</h1>
@@ -74,5 +77,7 @@ export default function Contact() {
 
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }

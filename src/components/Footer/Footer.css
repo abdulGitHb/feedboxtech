@@ -22,7 +22,7 @@
 }
 .footer_logo_hld{
     width: 200px;
-    font-size: 25px;
+    font-size: 22px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -30,7 +30,7 @@
 }
 .feedbox_logo{
     /* display: block; */
-    width: 300px;
+    width: 280px;
     margin-left: -30px;
 }
 .feedbox_logo img{
@@ -44,7 +44,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    font-size: 25px;
+    font-size: 22px;
 }
 .footer_indexes{
     display: flex;
@@ -77,7 +77,7 @@
     text-align: center;
     align-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     padding: 10px;
 }

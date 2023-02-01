@@ -91,10 +91,10 @@ export default function services() {
                     url="https://www.futeservices.com/"
                     title="FuteServices"
                 />
-                     <Link to='/PortfolioAll' className='portfolio_btn'>
+            </div>
+                     <Link to='/Portfolio' className='portfolio_btn'>
                      View More
                     </Link>
-            </div>
             
         </div>
 

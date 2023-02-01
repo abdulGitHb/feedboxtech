@@ -69,22 +69,17 @@
 
 }
 
-.know-more-btn{
-    margin-top: 20px;
-    width: 200px;
-    padding: 16px 30px;
-    border-radius: 40px;
-    font-size: 20px;
-
-}
-
 .about_content_desc_btn {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #fff;
     color: #ffffff;
-    text-decoration-style: none;
+    text-decoration: none;
+    border-radius: 15px;
+    max-width: 200px;
+    padding: 10px 20px;
 }
 
 

@@ -1,12 +1,14 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import './ServiceCard.css'
 import Vector from '../../image/s-vector.png'
 import g_shadow from '../../image/g-shadow.jpg'
 import { AiOutlineArrowRight } from "react-icons/ai";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+// import service from '../ServiceFullPage/ServicesFullPage'
+import { Link } from "react-router-dom";
 
-export default function({aos, desc,title}){
+export default function ({ aos, desc, title }) {
     // useEffect(() => {
     //     AOS.init({
     //         duration: 100,
@@ -19,21 +21,26 @@ export default function({aos, desc,title}){
                 <img src={Vector} alt="" />
             </div>
             {/* <div className="shadow"><img src={g_shadow} alt="" /></div> */}
-    
+
             <div className="card_content">
-           
+
                 <h1>
                     {title}
                 </h1>
                 <p>
                     {desc}
                 </p>
-                <button className="sc_btn">View More</button>
+
+
+                <Link to='/services' className="sc_btn">
+                        View More
+                
+                </Link>
             </div>
-                {/* <div className="sc-btn">
+            {/* <div className="sc-btn">
                 <a href="#"><AiOutlineArrowRight color={"white"} size={20}/></a>
                 </div> */}
-            
+
         </div>
     )
 }

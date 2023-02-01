@@ -5,6 +5,7 @@ import ServiceCard from "../ServiceCard/ServiceCard";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 export default function Services(){
 
 // useEffect(()=>{

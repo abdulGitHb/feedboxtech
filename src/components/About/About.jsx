@@ -14,7 +14,7 @@ export default function About() {
             duration: 1000,
             offset: 0,
             easing: 'ease-in-out-back',
-            delay:100,
+            delay:10,
             anchorPlacement: 'top-top'
         })
     },[])
@@ -40,10 +40,10 @@ export default function About() {
                         to give our clients a long jump in their business. Our tech
                         team can develop apps and websites with wordpress,
                         react and other trending technologies.</p>
-                    <Link to='/aboutUsFull'>
-                        <button className="know-more-btn">
-                            know more
-                        </button>
+                    <Link to='/about' className="about_content_desc_btn">
+                        <div>
+                            Know More
+                        </div>
                     </Link>
                 </div>
             </div>

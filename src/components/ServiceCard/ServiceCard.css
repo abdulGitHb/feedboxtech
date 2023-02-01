@@ -70,12 +70,11 @@
 } */
 .card_content {
     color: white;
-    font-size: 20px;
     max-width: 400px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: justify;
+    text-align: center;
     border-radius: 1.5rem;
     align-items: center;
     padding: 120px 40px 40px 40px;
@@ -99,16 +98,10 @@
 }
 .card_content p{
     max-width: 350px;
+    font-size: 16px;
 }
 .serviceCard:hover {
     cursor: pointer;
-}
-
-.serviceCard:hover .card_vector {
-    /* background-color: white; */
-    /* transform: rotate(45deg); */
-    /* transition: all 3s; */
-
 }
 .serviceCard:hover .card_vector::before{
     -webkit-transform: rotate(45deg);
@@ -173,9 +166,10 @@
     padding: 2px;
     border: none;
     transition: all .1s;
+    text-decoration: none;
 }
 
-sc_btn::after {
+/* sc_btn::after {
     content: "";
     top: 10px;
     margin-top: 20px;
@@ -184,7 +178,7 @@ sc_btn::after {
     width: 120px;
     height: 100px;
     background-color: black;
-}
+} */
 
 .serviceCard:hover .sc_btn {
     visibility: visible;

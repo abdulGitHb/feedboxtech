@@ -42,12 +42,13 @@
 .co-form {
     padding: 40px 50px;
     line-height: 1rem;
-    width: 30vw;
+    width: 28vw;
     /* max-width: 500px; */
     min-width: 150px;
     /* height: 400px; */
     /* background: linear-gradient(175deg, rgba(11, 11, 56, 1) 4%, rgba(20, 4, 246, 0.9921218487394958) 100%); */
-    background-image: url("../../image/Rectangle\ 4392.svg");
+    /* background-image: url("../../image/Rectangle\ 4392.svg"); */
+    background-color: #011842;
     border-radius: 1.5rem;
     border:none;
     /* display: flex; */
@@ -57,8 +58,8 @@
     /* left: 20px; */
 }
 .title_in_form{
-    font-size:35px;
-    line-height:3rem; 
+    font-size:28px;
+    line-height:2.5rem; 
     font-weight:600;
     padding-bottom: 30px;
 }
@@ -68,18 +69,18 @@ input {
     border: 1.5px solid rgba(255,255,255,0.6);
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding: 10px;
     color: #fff;
     font-size: 15px;
 }
 input[type=text]:focus {
     /* background: none; */
-    background-color: #010146;
+    background-color: #011842;
     border: 1px solid #0090ee;
   }
 .co-form label{
-    background-color: #010146;
+    background-color: #011842;
     width: fit-content;
     padding: 0px 10px;
     height: 10px;
@@ -90,7 +91,7 @@ input[type=text]:focus {
     left: 20px;
 }
 #message_label{
-    background: #000146;
+    background: #011842;
     width: fit-content;
     padding: 0px 10px;
     height: 20px;
@@ -118,18 +119,18 @@ textarea {
     border: none;
     font-size: 25px;
     color: white;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 5px 50px;
 }
 .submit_btn:hover {
     cursor: pointer;
 }
 
-.vertical_line{
+/* .vertical_line{
   width: 1px;
   height: 500px;
   background-color: #0090ee;
-}
+} */
 
 .contact_details{
     display: flex;
@@ -203,6 +204,9 @@ font-size: 20px;
     .contact_details_row{
         gap: 0.5rem;
     }
+    .co-form{
+        width: 40vw;
+    }
 
 }
 
@@ -226,6 +230,10 @@ font-size: 20px;
     width: 100%;
     /* transform: translateY(-1000px); */
     margin-top: -1620px;
+}
+.submit_btn{
+    padding: 6px 40px;
+    font-size: 20px;
 }
 }
 

@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import data from '../../JsonData/aboutUsData';
-import AboutUsCompo from '../AboutUsCompo';
+
 import './AboutUs.css';
 import img from '../../image/aboutbanner.jpg'
-import NavBarResp from '../NewNavResp/NavBarResp';
+import NavBarResp from '../Navbar2/NavBarResp';
+import Footer from '../Footer/Footer';
 
 function AboutUs() {
 
@@ -50,6 +51,7 @@ function AboutUs() {
 {/* --------------------------------------------------------------- */}
 
     </div>
+    <Footer/>
     </>
   )
 }

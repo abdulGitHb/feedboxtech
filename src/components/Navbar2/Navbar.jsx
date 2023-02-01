@@ -13,7 +13,7 @@ export default function Navbar() {
     $(".hamburger").click(function () {
       // console.log("hamburger clcked")
       // $("#header").addClass("mobile-open");
-      $("#contacto").toggleClass("link-contact", navToggle);
+      // $("#contacto").toggleClass("link-contact", navToggle);
       $("#header").toggleClass("mobile-open", navToggle);
       $("#nav-items-holder").toggleClass("nav-options-active");
      
@@ -82,7 +82,9 @@ export default function Navbar() {
 
           <Link to="contact" spy={true} smooth={true} 
           duration={500}
-          className="link link-contact">
+          className="link "
+          style={{color:'#0090ee'}}
+          >
             <p style={{ width: "160px" }}>Contact &nbsp;Us</p>
           </Link>
 

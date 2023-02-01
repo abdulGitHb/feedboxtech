@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import f_logo from '../../image/f_logo.png'
-import './NavBarResp.css'
+import './Navbar.css'
 import $ from 'jquery';
 import { Link } from 'react-router-dom'
 
@@ -43,7 +43,9 @@ export default function NavBarResp() {
 
         </div>
 
-        <div id="nav-items-holder" className="nav-options-active">
+        <div id="nav-items-holder" className="nav-options-active" 
+        style={{display:'flex',justifyContent:'center', textAlign:'center', alignContent:'center'}}
+        >
           {/* <!-- about --> */}
           <div id="n-home">
 
@@ -53,25 +55,25 @@ export default function NavBarResp() {
 
           </div>
           {/* <!-- about --> */}
-          <div id="n-about">
+          <div id="n-about" style={{textAlign:'center'}}>
 
-            <Link to="about" spy={true} smooth={true} className="link">
+            <Link to="/about" spy={true} smooth={true} className="link" style={{textAlign:'center'}}>
               About
             </Link>
 
           </div>
 
-          <div id="n-services">
+          <div id="n-services" style={{textAlign:'center'}}>
 
-            <Link to="services" spy={true} smooth={true} className="link">
+            <Link to="/services" spy={true} smooth={true} className="link">
               Services
             </Link>
 
           </div>
 
-          <div id="n-portfolio">
+          <div id="n-portfolio" style={{textAlign:'center'}}>
 
-            <Link to="portfolio" spy={true} smooth={true} className="link">
+            <Link to="/portfolio" spy={true} smooth={true} className="link" style={{textAlign:'center'}}>
               Portfolio
             </Link>
 
@@ -80,10 +82,12 @@ export default function NavBarResp() {
         </div>
         <div id="contacto">
 
-          <Link to="contact" spy={true} smooth={true} 
+          <Link to="/contact" spy={true} smooth={true} 
           duration={500}
-          className="link link-contact">
-            <p style={{ width: "160px" }}>Contact &nbsp;Us</p>
+          className="link link-contact"
+          >
+            
+            <p style={{ width: "160px" ,color:'#0090ee', textAlign:'center'}}>Contact &nbsp;Us</p>
           </Link>
 
         </div>

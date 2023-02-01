@@ -16,6 +16,8 @@ import Aryan from '../../image/aryan.png'
 import Card from '../PortfolioCard/PortfolioCard'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Footer from '../Footer/Footer'
+import NavBarResp from '../Navbar2/NavBarResp'
 
 
 export default function PortfolioAll() {
@@ -29,7 +31,9 @@ export default function PortfolioAll() {
     },[])
 
     return (
-        <div className='p-container' id='portfolio'>
+        <>
+        <NavBarResp/>
+        <div className='p-container' id='portfolio' style={{paddingTop:'150px'}}>
 
             <h1 className="portfolio_heading" data-aos="fade-out"
             >Portfolio</h1>
@@ -111,6 +115,8 @@ export default function PortfolioAll() {
             </div>
 
         </div>
+        <Footer/>
+        </>
 
     )
 }

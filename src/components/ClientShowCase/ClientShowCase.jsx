@@ -20,7 +20,7 @@ export default function Slider() {
             duration: 1000,
             offset: 0,
             easing: 'ease-in-out-back',
-            delay:100,
+            delay:10,
             anchorPlacement: 'top-top'
         })
     },[])

@@ -1,14 +1,16 @@
 import './App.css';
 import { useEffect, useRef, useState } from 'react';
-import Navbar from './components/Navbar2/Navbar';
-import AboutUs from './components/AboutUsFullPage/AboutUs';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import HomeComp from './components/HomeComp';
+import HomeComp from './HomeComp';
 import PortfolioAll from './components/Portfolio/PortfolioAll'
 
 // import Cursor from './Cursor';
 import { motion, useMotionValue } from "framer-motion"
 import Rocket from '../src/image/rocket1.png'
+import NavBarResp from './components/Navbar2/NavBarResp';
+import AboutUs from './components/AboutUsFullPage/AboutUs';
+import ServicesFullPage from '../src/components/ServiceFullPage/ServicesFullPage';
+import Contact from './components/Contact/ContactFullPage';
 
 function App() {
   const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 })
@@ -27,16 +29,18 @@ function App() {
 
 
   return (
+    <>
+    {/* <NavBarResp/> */}
     <Router>
-      <div>
-        
         <Routes>
           <Route path='/' element={<HomeComp/>}/>
-          <Route path='/aboutUsFull' element={<AboutUs/>}/>
-          <Route path='/PortfolioAll' element={<PortfolioAll/>}/>
+          <Route path='/about' element={<AboutUs/>}/>
+          <Route path='/services' element={<ServicesFullPage/>}/>
+          <Route path='/Portfolio' element={<PortfolioAll/>}/>
+          <Route path='/contact' element={<Contact/>}/>
         </Routes>
-      </div>
     </Router>
+    </>
   );
 }
 

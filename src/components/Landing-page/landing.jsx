@@ -8,7 +8,7 @@ import { FaPinterestP } from "react-icons/fa";
 import { Link } from 'react-scroll'
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
-import Bubbles from '../Bubbles';
+import Bubbles from '../Landing-page/Bubbles'
 
 
 export default function Landing() {

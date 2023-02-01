@@ -73,6 +73,8 @@ nav input {
   display: flex;
   align-items: center;
   font-size: 20px;
+  text-decoration: none;
+  color: #fff;
 }
 
 #contacto {
@@ -83,12 +85,21 @@ nav input {
   font-weight: bolder;
   color: #0090ee;
 }
+.link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+text-decoration: none;
+color: #fff;
+}
 
 #n-home:hover,
 #n-about:hover,
 #n-services:hover,
 #n-portfolio:hover,
-#contacto:hover{
+#contacto:hover,
+.link:hover{
  color: #3ea7ed;
  cursor: pointer;
 }
@@ -154,11 +165,7 @@ nav input {
   z-index: 1001;
 } */
 
-.link-contact{
-  visibility: hidden;
-  opacity: 0;
-  margin-top: 10px;
-}
+
 
 @media only screen and (min-width: 1201px) {
   .header-open {
@@ -175,13 +182,18 @@ nav input {
   nav {
     overflow: hidden;
   }
-  .link-contact{
+  /* .link-contact{
     visibility: visible;
     opacity: 1;
-    /* margin-top: 0; */
+    margin-top: 0;
     display: flex;
     text-align: center;
-  }
+  } */
+  /* .link-contact{
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 10px;
+  } */
 
   #logo {
     margin-top: -15px;
@@ -355,6 +367,7 @@ nav input {
     width: 1em;
     height: 25px;
     z-index: 9000;
+    cursor: pointer;
   }
 
   .hamburger div {
