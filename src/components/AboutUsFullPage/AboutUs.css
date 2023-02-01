@@ -25,7 +25,7 @@
 }
 
 .text-para{
-    text-justify: inter-word;
+    text-align: justify;
 }
 .img-div img{
     padding: 10px;

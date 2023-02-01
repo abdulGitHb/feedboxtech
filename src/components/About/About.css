@@ -69,18 +69,22 @@
 
 }
 
-.about_content_desc_btn {
+.know-more-btn{
     margin-top: 20px;
+    width: 200px;
+    padding: 16px 30px;
+    border-radius: 40px;
+    font-size: 20px;
+
+}
+
+.about_content_desc_btn {
     display: flex;
-    width: 250px;
     justify-content: center;
     align-items: center;
-    padding: 18px 30px;
     border: 1px solid #fff;
-    border-radius: 35px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 35px;
+    color: #ffffff;
+    text-decoration-style: none;
 }
 
 
@@ -150,11 +154,9 @@
         padding: 50px 15px
     }
 
-    .about_content_desc_btn {
-       padding: 10px 20px;
-       font-size: 22px;
-    }
-    .a_content_img_hld{
-        width: 100%;
+    .know-more-btn{
+        padding: 5px 1px;
+        width: 150px;
+        font-size: 20px;
     }
 }
