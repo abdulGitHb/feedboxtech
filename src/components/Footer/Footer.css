@@ -104,7 +104,9 @@
     }
   }
   @media screen and (max-width:600px) {
-   
+   .Footer{
+    padding-top: 40px;
+   }
     .feedbox_logo_hld{
         justify-content: center;
         align-items: center;

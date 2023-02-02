@@ -1,26 +1,26 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import './ClientShowCase.css'
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
 
-import Octus from '../../image/octus_logo.png'
+import Octus from '../../image/octus_logo2.png'
 import Mobigood from '../../image/mobigood_logo.png'
-import Phoenix from '../../image/phoenix_logo.png'
+import Phoenix from '../../image/phoenix_logo2.png'
 import FuteServices from '../../image/futeServices_logo.png'
-import MasterBrains from '../../image/masterbrain_logo.png'
+import MasterBrains from '../../image/masterbrain_logo2.png'
 import Jmax from '../../image/jmax_logo.png'
 import Growing_roots from '../../image/growing_roots_logo.png'
 import Qodeleaf from '../../image/qodeleaf_logo.png'
 
-import fabstieve from '../../image/fabstieve.png'
-import devfest from '../../image/devfest.png'
-import dot from '../../image/dot.png'
-import fourseven from '../../image/fourseven.png'
-import halp from '../../image/halp.png'
-import IIM_SIM from '../../image/IIM_SIM-01.png'
-import tech from '../../image/tech.png'
-import prepleafLogo from '../../image/prepleafLogoMobile.svg'
-import tedx from '../../image/tedx.png'
+// import fabstieve from '../../image/fabstieve.png'
+// import devfest from '../../image/devfest.png'
+// import dot from '../../image/dot.png'
+// import fourseven from '../../image/fourseven.png'
+// import halp from '../../image/halp.png'
+// import IIM_SIM from '../../image/IIM_SIM-01.png'
+// import tech from '../../image/tech.png'
+// import prepleafLogo from '../../image/prepleafLogoMobile.svg'
+// import tedx from '../../image/tedx.png'
 import { Autoplay } from "swiper";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -33,88 +33,92 @@ export default function Slider() {
             duration: 1000,
             offset: 0,
             easing: 'ease-in-out-back',
-            delay:50,
+            delay: 50,
             anchorPlacement: 'top-top'
         })
-    },[])
+    }, [])
 
 
     return (
-      <div className="slider-container-hld" style={{paddingTop:'800px'}}>
-     <div className="client_back">
-        
-    
-     
-        <div className="slider-container">
+        <div className="slider-container-hld" style={{ paddingTop: '800px' }}>
+            <div className="client_back">
 
-            <span data-aos="fade-up">Trusted By 500+ Customers And Still Counting...</span>
 
-            <Swiper
 
-            data-aos="fade-up"
-            data-aos-duration="100s"
-                spaceBetween={0}
-                slidesPerView={5}
-                grabCursor={true}
-                centeredSlides={true}
-                loop={true}
-                autoplay={{
-                    delay: 2000,
-                    disableOnInteraction: false,
-                }}
-                modules={[Autoplay]}
-                className="logo_contain_hld"
-            >
+                <div className="slider-container">
 
-                <SwiperSlide >
-                    <div  className="logo_contain">
-                    <img src={Octus} width={140} alt="" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide >
-                    <div className="logo_contain">
+                    <span data-aos="fade-up">Trusted By 500+ Customers And Still Counting...</span>
 
-                    <img src={Mobigood} alt="" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide >
-                    <div className="logo_contain">
+                    <Swiper
 
-                    <img src={Phoenix} width={250} alt="" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide >
-                    <div className="logo_contain">
+                        data-aos="fade-up"
+                        data-aos-duration="100s"
+                        spaceBetween={0}
+                        slidesPerView={5}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        loop={true}
+                        autoplay={{
+                            delay: 2000,
+                            disableOnInteraction: false,
+                        }}
+                        modules={[Autoplay]}
+                        className="logo_contain_hld"
+                    >
 
-                    <img src={FuteServices} alt="" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide >
-                    <div className="logo_contain">
+                        <SwiperSlide >
+                            <div className="logo_contain">
 
-                    <img src={MasterBrains} width={250} alt="" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide >
-                    <div className="logo_contain">
+                                <img src={Growing_roots} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="logo_contain">
 
-                    <img src={Growing_roots } alt="" />
-                    </div>
-                </SwiperSlide>
+                                <img src={Qodeleaf} alt="" />
+                            </div>
 
-                <SwiperSlide>
-                    <div className="logo_contain">
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="logo_contain">
 
-                    <img src={Jmax} alt="" />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide >
-                    <div className="logo_contain">
+                                <img src={Mobigood} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="logo_contain">
 
-                    <img src={Qodeleaf} alt=""/>
-                    </div>
-                </SwiperSlide>
-                {/* <SwiperSlide >
+                                <img src={Phoenix} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="logo_contain">
+
+                                <img src={FuteServices} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="logo_contain">
+
+                                <img src={Jmax} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="logo_contain">
+                                <img src={Octus} alt="" />
+                            </div>
+
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="logo_contain">
+
+                                <img src={MasterBrains} alt="" />
+                            </div>
+
+                        </SwiperSlide>
+
+                        {/* <SwiperSlide >
                     <div className="logo_contain">
 
                     <img src={tedx} width={200} alt="" />
@@ -126,10 +130,10 @@ export default function Slider() {
                     <img src={prepleafLogo} alt="" />
                     </div>
                 </SwiperSlide> */}
-            </Swiper>
-        </div>
-       
-        </div>  
+                    </Swiper>
+                </div>
+
+            </div>
         </div>
     )
 }
