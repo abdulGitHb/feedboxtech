@@ -408,3 +408,9 @@ color: #fff;
   }
   
 }
+
+.sub-menu-headings{
+  opacity: 1;
+  display:none;
+  flex-direction:column;
+}

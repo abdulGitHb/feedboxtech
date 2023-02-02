@@ -3,9 +3,12 @@ import f_logo from '../../image/f_logo.png'
 import './Navbar.css'
 import $ from 'jquery';
 import { Link } from 'react-router-dom'
+import {AiOutlineDown, AiOutlineUp} from 'react-icons/ai';
 
 export default function NavBarResp() {
   const [navToggle, setnavToggle] = useState(true)
+  const [toggleUpDown, settoggleUpDown] = useState(true)
+  const [subNavDisplay, setSubNavDisplay] = useState('none');
 
   $(document).ready(function () {
 
@@ -23,6 +26,15 @@ export default function NavBarResp() {
 
 
   });
+
+  const toggleUp=()=>{
+    settoggleUpDown(false);
+    setSubNavDisplay('flex');
+  }
+  const toggleDown=()=>{
+    settoggleUpDown(true);
+    setSubNavDisplay('none');
+  }
 
 
 
@@ -48,28 +60,45 @@ export default function NavBarResp() {
         >
           {/* <!-- about --> */}
           <div id="n-home">
-
             <Link to="/" spy={true} smooth={true} className="link">
               Home
             </Link>
-
           </div>
-          {/* <!-- about --> */}
-          <div id="n-about" style={{textAlign:'center'}}>
 
+          {/* <!-- about --> */}
+          <div id="n-about" 
+          // style={{textAlign:'center'}}
+          >
             <Link to="/about" spy={true} smooth={true} className="link" style={{textAlign:'center'}}>
               About
             </Link>
 
           </div>
 
-          <div id="n-services" style={{textAlign:'center'}}>
+          <div id="n-services"
+          style={{'display':'flex',
+          'flexDirection':'column'}}>
+            <div onMouseEnter={toggleUp}
+                onMouseLeave={toggleDown}
+                style={{textAlign:'center',
+              position:'relative'}}
+                >
+              Services 
+              {toggleUpDown?<AiOutlineDown/>:<AiOutlineUp/>}
+            </div>
+              <div className="sub-menu-headings" 
+              style={{'display':`${subNavDisplay}`,
+              position:'relative'}}>
+                <h5>App Development</h5>
+                <h5>Web Development</h5>
+                <h5>WordPress Development</h5>
+              </div>
 
-            <Link to="/services" spy={true} smooth={true} className="link">
+            {/* <Link to="/services" spy={true} smooth={true} className="link">
               Services
-            </Link>
-
+            </Link> */}
           </div>
+
 
           <div id="n-portfolio" style={{textAlign:'center'}}>
 
@@ -78,19 +107,17 @@ export default function NavBarResp() {
             </Link>
 
           </div>
-
         </div>
+
+
         <div id="contacto">
-
           <Link to="/contact" spy={true} smooth={true} 
-          duration={500}
-          className="link link-contact"
-          >
-            
-            <p style={{ width: "160px" ,color:'#0090ee', textAlign:'center'}}>Contact &nbsp;Us</p>
+            duration={500}
+            className="link link-contact">
+              <p style={{ width: "160px" ,color:'#0090ee', textAlign:'center'}}>Contact &nbsp;Us</p>
           </Link>
-
         </div>
+
       </div>
     </nav>
   )

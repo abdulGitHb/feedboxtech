@@ -9,7 +9,6 @@
 }
 .contact-img-container{
     width: 150px;
-    background-color: rgb(0, 255, 170);
 }
 
 .talk-us-img1{
@@ -17,9 +16,14 @@
     object-fit: cover;
     margin-top: 10%;
     margin-bottom: 10%;
+    margin-left: 5px;
 }
 .text-container{
     width: 60vw;
+}
+.text-container h2{
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
 .content-container{
@@ -36,7 +40,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
     margin-right: auto;
-    border-radius: 2px;
+    border-radius: 4px;
     border: 1px solid rgb(0, 174, 255);
     background-color: rgb(0, 174, 225);
     color: white;
