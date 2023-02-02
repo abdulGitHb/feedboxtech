@@ -54,7 +54,11 @@
     cursor: pointer;
     background-color: #0070bd;
 }
-
+.portfolio_subHeading{
+    margin-top: 30px;
+    font-size: 25px;
+    color: rgb(255,255,255, 0.7);
+}
 @media screen and (max-width:1200px) {
     .portfolio_cards{
         padding: 50px 20px;

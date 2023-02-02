@@ -11,7 +11,7 @@ import Navbar from './components/Navbar2/Navbar';
 
 function HomeComp() {
   return (
-    <>
+    <div className='App'>
         <Navbar/>
         <Landing/>
         <ClientShowCase/>
@@ -20,7 +20,7 @@ function HomeComp() {
         <Portfolio/>
         <Contact />
         <Footer/>
-    </>
+    </div>
   )
 }
 

@@ -2,12 +2,16 @@ import React,{useEffect} from "react";
 import './ClientShowCase.css'
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
-import Airbrb from '../../image/airbrb.png'
-import Drible from '../../image/dribble.png'
-import Gougle from '../../image/gougle.png'
-import Kohels from '../../image/kohels.png'
-import Skype from '../../image/skype.png'
-import Spotify from '../../image/spotify.png'
+import fabstieve from '../../image/fabstieve.png'
+import devfest from '../../image/devfest.png'
+import dot from '../../image/dot.png'
+import fourseven from '../../image/fourseven.png'
+import halp from '../../image/halp.png'
+import IIM_SIM from '../../image/IIM_SIM-01.png'
+import Jmax from '../../image/jmax.png'
+import tech from '../../image/tech.png'
+import prepleafLogo from '../../image/prepleafLogoMobile.svg'
+import tedx from '../../image/tedx.png'
 import { Autoplay } from "swiper";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,7 +24,7 @@ export default function Slider() {
             duration: 1000,
             offset: 0,
             easing: 'ease-in-out-back',
-            delay:10,
+            delay:50,
             anchorPlacement: 'top-top'
         })
     },[])
@@ -45,25 +49,66 @@ export default function Slider() {
                     disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}
-                className="brand-slider"
+                className="logo_contain_hld"
             >
-                <SwiperSlide>
-                    <img src={Airbrb} alt="" />
+                <SwiperSlide >
+                    <div  className="logo_contain">
+                    <img src={fabstieve} alt="" />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide >
+                    <div className="logo_contain">
+
+                    <img src={devfest} alt="" />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide >
+                    <div className="logo_contain">
+
+                    <img src={dot} alt="" />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide >
+                    <div className="logo_contain">
+
+                    <img src={fourseven} alt="" />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide >
+                    <div className="logo_contain">
+
+                    <img src={halp} alt="" />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide >
+                    <div className="logo_contain">
+
+                    <img src={IIM_SIM} alt="" />
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src={Drible} alt="" />
+                    <div className="logo_contain">
+
+                    <img src={Jmax} alt="" />
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <img src={Gougle} alt="" />
+                <SwiperSlide >
+                    <div className="logo_contain">
+
+                    <img src={tech} alt="" />
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <img src={Kohels} alt="" />
+                <SwiperSlide >
+                    <div className="logo_contain">
+
+                    <img src={tedx} alt="" />
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <img src={Skype} alt="" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src={Spotify} alt="" />
+                <SwiperSlide >
+                    <div className="logo_contain">
+
+                    <img src={prepleafLogo} alt="" />
+                    </div>
                 </SwiperSlide>
             </Swiper>
         </div>

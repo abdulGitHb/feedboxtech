@@ -8,6 +8,14 @@
   /* cursor: none; */
 }
 
+/* for chrome, webkit browser */
+::-webkit-scrollbar {
+  display: none;
+}
+/* for firefox */
+html {
+  scrollbar-width: none;
+}
 
 .cursor-dot{
   position: absolute;

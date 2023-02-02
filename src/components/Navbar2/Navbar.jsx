@@ -31,7 +31,10 @@ export default function Navbar() {
     <nav id="header" className="glass header-close ">
       <div id="nav-container">
         <div id="logo-holder">
-          <img id="logo" src={f_logo} alt="" />
+        <Link to="hero-home" spy={true} smooth={true} className="link">
+        <img id="logo" src={f_logo} alt="" />
+            </Link>
+          
 
           <input id="toggle" type="checkbox"></input>
 

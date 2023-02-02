@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .boxes{
     position: relative;
     /* width: 350px;
@@ -15,25 +17,26 @@
     text-decoration: none;
 }
 .img-desc{
-    background-color: rgb(255,255,255,0.4);
+    background-color: rgb(255,255,255);
     padding: 10px;
     height: 70px;
     position: relative;
     font-size: 35px;
-    font-weight: bold;
+    font-weight:600;
     left: 0;
     right: 0;
     bottom: -380px;
     color: black;
     visibility: hidden;
     transition: bottom .5s , visibility .5s;
-    opacity: 0.7;
+    opacity: 1;
     text-align: center;
     text-decoration: none;
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 

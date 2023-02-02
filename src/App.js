@@ -29,8 +29,7 @@ function App() {
 
 
   return (
-    <>
-    {/* <NavBarResp/> */}
+    <div className='App'>
     <Router>
         <Routes>
           <Route path='/' element={<HomeComp/>}/>
@@ -40,7 +39,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
     </Router>
-    </>
+    </div>
   );
 }
 

@@ -35,25 +35,46 @@ export default function services() {
             <h1 className="section_heading" data-aos="fade-up"
             >Portfolio</h1>
 
+            <span data-aos="fade-up"
+                className='portfolio_subHeading'>Projects that speak of our success ...</span>
+
             <div className="portfolio_cards">
                 <Card
                     aos="fade-up-right"
-                    image={SketchMyPlot}
-                    url="https://sketchmyplot.com/"
-                    title="Sketch MY Plot"
+                    image={Centaurus}
+                    url="https://webcode.codezesk.com/centaurus/"
+                    title="Centaurus"
                 />
-    
+
                 <Card
                     aos="fade-up"
-                    image={TintedTales}
-                    url="https://tintedtales.in/"
-                    title="Tintes Tales"
+                    image={Nh7}
+                    url="https://nh7.in/"
+                    title="Bacardi"
                 />
-                     <Card
+                <Card
                     aos="fade-up-left"
                     image={IndependenceRock}
                     url="https://independencerock.in/"
                     title="Independence Rock"
+                />
+                <Card
+                    aos="fade-up-right"
+                    image={TintedTales}
+                    url="https://tintedtales.in/"
+                    title="Tintes Tales"
+                />
+                <Card
+                    aos="fade-up"
+                    image={FuteServices}
+                    url="https://www.futeservices.com/"
+                    title="FuteServices"
+                />
+                <Card
+                    aos="fade-up-left"
+                    image={SketchMyPlot}
+                    url="https://sketchmyplot.com/"
+                    title="Sketch MY Plot"
                 />
                 <Card
                     aos="fade-up-right"
@@ -67,35 +88,27 @@ export default function services() {
                     url="https://runo.in/"
                     title="Runo"
                 />
+
+
                 <Card
                     aos="fade-up-left"
-                    image={Nh7}
-                    url="https://nh7.in/"
-                    title="Bacardi"
-                />
-                <Card
-                    aos="fade-up-right"
                     image={Aryan}
                     url="https://www.aryantiles.com/"
                     title="Aryan"
                 />
-                <Card
+                {/* <Card
                     aos="fade-up"
                     image={Qodeleaf}
                     url="https://qodeleaf.com/"
                     title="Qodeleaf"
-                />
-                <Card
-                    aos="fade-up-left"
-                    image={FuteServices}
-                    url="https://www.futeservices.com/"
-                    title="FuteServices"
-                />
+                /> */}
+
+
             </div>
-                     <Link to='/Portfolio' className='portfolio_btn' data-aos="fade-up">
-                     View More
-                    </Link>
-            
+            <Link to='/Portfolio' className='portfolio_btn' data-aos="fade-up">
+                View More
+            </Link>
+
         </div>
 
     )
