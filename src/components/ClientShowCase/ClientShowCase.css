@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Philosopher&family=Rubik+Storm&family=Special+Elite&display=swap');
 
+.slider-container-hld{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 .slider-container {
-  /* margin-top: 500px; */
+  /* margin-top: 150px; */
   padding-top: 20px;
-  width: 100%;
-  height: 220px;
-  background-color: black;
+  width: 80%;
+  height: 180px;
+  background-color: rgba(254,255,254,0.8);
   display: flex;
   flex-wrap: wrap;
   /* flex-direction: column; */
@@ -15,6 +20,9 @@
   gap: 0.5rem;
   position: relative;
   z-index: 100;
+  border-radius: 60px;
+  bottom: -100px;
+  z-index: 1000;
 }
 
 .slider-container span {

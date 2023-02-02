@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* <!-- about --> */}
           <div id="n-home">
 
-            <Link to="hero-home" spy={true} smooth={true} className="link">
+            <Link to="dummy" spy={true} smooth={true} className="link">
               Home
             </Link>
 

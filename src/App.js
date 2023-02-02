@@ -11,10 +11,14 @@ import NavBarResp from './components/Navbar2/NavBarResp';
 import AboutUs from './components/AboutUsFullPage/AboutUs';
 import ServicesFullPage from '../src/components/ServiceFullPage/ServicesFullPage';
 import Contact from './components/Contact/ContactFullPage';
+import { IoIosArrowUp } from 'react-icons/io'
+import $ from 'jquery';
+import { Link } from 'react-scroll'
 
 function App() {
   const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 })
-
+  const [showDesc, setshowDesc] = useState(true)
+  const [offset, setOffset] = useState(0);
   useEffect(() => {
     const moveCursor = (e) => {
       const x = e.clientX - 16
@@ -27,9 +31,55 @@ function App() {
     }
   }, [])
 
+//  when hover on scroll button
+$(document).ready(function () {
+  $(".scrollBottomToTop").hover(function () {
+   if(showDesc){
+     $("#desc").addClass("showScrolldesc");
+   }
+   else{
+     $("#desc").removeClass("showScrolldesc");
+   }
+    setshowDesc(!showDesc);
+  })
+  });
+
+  useEffect(() => {
+      const onScroll = () => setOffset(window.pageYOffset);
+      // clean up code
+      window.removeEventListener('scroll', onScroll);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  useEffect(()=>{
+    if(offset>800){
+      console.log(offset)
+      $(document).ready(function () {
+        // console.log('hello')
+      $(".scrollBottomToTop").addClass("showButton")
+      })
+    }
+    else{
+      $(".scrollBottomToTop").removeClass("showButton")
+    }
+  },[offset]);
 
   return (
     <div className='App'>
+      {/* for scrolling top */}
+      <div id="dummy"></div>
+
+      {/* scroll top button */}
+      <div className="scrollBottomToTop">
+           <Link to="dummy" spy={true} smooth={true}>
+                <IoIosArrowUp size={25}/>
+            </Link>
+      
+            </div>
+            <div id='desc' className="scrollToTopHover">
+              Scroll to Top
+            </div>
     <Router>
         <Routes>
           <Route path='/' element={<HomeComp/>}/>

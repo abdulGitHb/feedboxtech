@@ -119,6 +119,7 @@ textarea {
 }
 .submit_btn:hover {
     cursor: pointer;
+    background-color: #0070bd;;
 }
 
 /* .vertical_line{
