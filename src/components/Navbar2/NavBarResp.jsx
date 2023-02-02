@@ -77,24 +77,20 @@ export default function NavBarResp() {
 
           </div>
 
-          <div id="n-services"
-          style={{'display':'flex',
-          'flexDirection':'column'}}>
-            <div onMouseEnter={toggleUp}
-                onMouseLeave={toggleDown}
-                style={{textAlign:'center',
-              position:'relative'}}
-                >
+          <div className="dropdown" id="n-services">
+            <button className="drop-btn"
+            //  onMouseEnter={toggleUp}
+            //     onMouseLeave={toggleDown}               
+             >
               Services 
               {toggleUpDown?<AiOutlineDown/>:<AiOutlineUp/>}
+            </button>
+
+            <div className="dropdown-content" >
+                <a href="/asd">App Development</a>
+                <a href="/asd">Web Development</a>
+                <a href="/asd">WordPress Development</a>
             </div>
-              <div className="sub-menu-headings" 
-              style={{'display':`${subNavDisplay}`,
-              position:'relative'}}>
-                <h5>App Development</h5>
-                <h5>Web Development</h5>
-                <h5>WordPress Development</h5>
-              </div>
 
             {/* <Link to="/services" spy={true} smooth={true} className="link">
               Services
