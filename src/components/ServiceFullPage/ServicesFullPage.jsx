@@ -6,11 +6,13 @@ import ServiceAppDev from './ServiceAppDev'
 const ServicesFullPage = () => {
   return (
     <>
-    {/* <NavBarResp/> */}
+    <div style={{"backgroundColor":'black'}}>
+      <NavBarResp/>
       <div className='service-container-main'>
         <ServiceAppDev/>
       </div>
-    {/* <Footer/> */}
+      <Footer/>
+    </div>
     </>
   )
 }
