@@ -155,8 +155,7 @@
   flex-direction: column;
   position: absolute;
   right: 30px;
- bottom: 160px;
-  /* color: #fff; */
+  bottom: 160px;
   justify-content: center;
   align-items: center;
 }
@@ -171,7 +170,22 @@
   align-items: center;
 }
 
-
+.instagram:hover{
+  background: linear-gradient(#4f5bd5,#962fbf,#d62976,#fa7e1e,#feda75);
+  color: #fff;
+}
+.facebook:hover{
+  background-color: #3b5998;
+  color: #fff;
+}
+.linkedin:hover{
+  background-color: #0A66C2;
+  color: #fff;
+}
+.twitter:hover{
+  background-color: #1DA1F2;
+  color: #fff;
+}
 @media screen and (max-width:1150px){
      .typewriter{
        font-size: 70px;

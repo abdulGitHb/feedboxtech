@@ -7,7 +7,7 @@ import ClientShowCase from './components/ClientShowCase/ClientShowCase';
 import Portfolio from './components/Portfolio/Portfolio'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar2/Navbar';
-
+// import Navbar from './components/Navbar/Navbar';
 
 function HomeComp() {
   return (

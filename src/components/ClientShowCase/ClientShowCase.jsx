@@ -2,13 +2,22 @@ import React,{useEffect} from "react";
 import './ClientShowCase.css'
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
+
+import Octus from '../../image/octus_logo.png'
+import Mobigood from '../../image/mobigood_logo.png'
+import Phoenix from '../../image/phoenix_logo.png'
+import FuteServices from '../../image/futeServices_logo.png'
+import MasterBrains from '../../image/masterbrain_logo.png'
+import Jmax from '../../image/jmax_logo.png'
+import Growing_roots from '../../image/growing_roots_logo.png'
+import Qodeleaf from '../../image/qodeleaf_logo.png'
+
 import fabstieve from '../../image/fabstieve.png'
 import devfest from '../../image/devfest.png'
 import dot from '../../image/dot.png'
 import fourseven from '../../image/fourseven.png'
 import halp from '../../image/halp.png'
 import IIM_SIM from '../../image/IIM_SIM-01.png'
-import Jmax from '../../image/jmax.png'
 import tech from '../../image/tech.png'
 import prepleafLogo from '../../image/prepleafLogoMobile.svg'
 import tedx from '../../image/tedx.png'
@@ -32,6 +41,10 @@ export default function Slider() {
 
     return (
       <div className="slider-container-hld" style={{paddingTop:'800px'}}>
+     <div className="client_back">
+        
+    
+     
         <div className="slider-container">
 
             <span data-aos="fade-up">Trusted By 500+ Customers And Still Counting...</span>
@@ -39,53 +52,56 @@ export default function Slider() {
             <Swiper
 
             data-aos="fade-up"
-                spaceBetween={60}
-                slidesPerView={4}
+            data-aos-duration="100s"
+                spaceBetween={0}
+                slidesPerView={5}
                 grabCursor={true}
                 centeredSlides={true}
                 loop={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 2000,
                     disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}
                 className="logo_contain_hld"
             >
+
                 <SwiperSlide >
                     <div  className="logo_contain">
-                    <img src={fabstieve} alt="" />
+                    <img src={Octus} width={140} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide >
                     <div className="logo_contain">
 
-                    <img src={devfest} alt="" />
+                    <img src={Mobigood} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide >
                     <div className="logo_contain">
 
-                    <img src={dot} alt="" />
+                    <img src={Phoenix} width={250} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide >
                     <div className="logo_contain">
 
-                    <img src={fourseven} alt="" />
+                    <img src={FuteServices} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide >
                     <div className="logo_contain">
 
-                    <img src={halp} alt="" />
+                    <img src={MasterBrains} width={250} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide >
                     <div className="logo_contain">
 
-                    <img src={IIM_SIM} alt="" />
+                    <img src={Growing_roots } alt="" />
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <div className="logo_contain">
 
@@ -95,13 +111,13 @@ export default function Slider() {
                 <SwiperSlide >
                     <div className="logo_contain">
 
-                    <img src={tech} alt="" />
+                    <img src={Qodeleaf} alt=""/>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide >
+                {/* <SwiperSlide >
                     <div className="logo_contain">
 
-                    <img src={tedx} alt="" />
+                    <img src={tedx} width={200} alt="" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide >
@@ -109,9 +125,11 @@ export default function Slider() {
 
                     <img src={prepleafLogo} alt="" />
                     </div>
-                </SwiperSlide>
+                </SwiperSlide> */}
             </Swiper>
         </div>
+       
+        </div>  
         </div>
     )
 }

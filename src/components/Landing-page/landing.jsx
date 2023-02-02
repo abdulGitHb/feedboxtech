@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter'
 import { ImFacebook } from "react-icons/im";
 import { ImLinkedin2 } from "react-icons/im"
 import { FaInstagramSquare } from "react-icons/fa"
-import { FaPinterestP } from "react-icons/fa";
+import { IoLogoTwitter } from "react-icons/io";
 import { Link } from 'react-scroll'
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
@@ -47,10 +47,10 @@ export default function Landing() {
                 </div>
  
             <div className="hero_home_social mobile_view_hero">
-                <span className='hero_home_social_icon'><ImFacebook size={25} /></span>
-                <span className='hero_home_social_icon'><ImLinkedin2 size={25} /></span>
-                <span className='hero_home_social_icon'><FaInstagramSquare size={25} /></span>
-                <span className='hero_home_social_icon'><FaPinterestP size={25} /></span>
+                <span className='linkedin hero_home_social_icon'><ImLinkedin2 size={25} /></span>
+                <span className='twitter hero_home_social_icon'><IoLogoTwitter size={25} /></span>
+                <span className='instagram hero_home_social_icon'><FaInstagramSquare  size={25} /></span>
+                <span className='facebook hero_home_social_icon'><ImFacebook size={25} /></span>
             </div>
         </section>
 
