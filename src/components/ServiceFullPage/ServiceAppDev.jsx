@@ -2,7 +2,6 @@ import React from 'react'
 import './ServiceAppDev.css'
 import ServicesContactComp from './ServicesContactComp';
 
-
 function ServiceAppDev() {
   return (
     <div className='main-container'>
@@ -16,7 +15,7 @@ function ServiceAppDev() {
             </div>
             <div className="text-div">
                 <p className="app-dev-text">
-                    App development is the process of designing, building, and maintaining software applications for mobile devices and other platforms. The rise of mobile technology has led to an increase in demand for app development, as businesses and individuals seek to take advantage of the opportunities presented by smartphones and tablets.
+                   <span>A</span>pp development is the process of designing, building, and maintaining software applications for mobile devices and other platforms. The rise of mobile technology has led to an increase in demand for app development, as businesses and individuals seek to take advantage of the opportunities presented by smartphones and tablets.
                     <br /><br />
                     The app development process typically begins with the identification of a problem or need that can be addressed by a software application by our team. From there, the app developer works with stakeholders to define the features and functionalities of the app, and creates a design that addresses the user's needs and goals.
                     <br /><br />
@@ -33,7 +32,11 @@ function ServiceAppDev() {
                 </p>
             </div>
         </div>
-        <ServicesContactComp/>
+        <div 
+        style={{"marginTop":'20px',
+        "marginBottom":'20px'}}>
+            <ServicesContactComp/>
+        </div>
     </div>
   )
 }
