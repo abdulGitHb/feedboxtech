@@ -1,0 +1,40 @@
+.main-container{
+    background-color: black;
+    color: white;
+}
+.page-title{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.title-line{
+    width: 25%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+}
+
+.page-content{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-div{
+    /* width: 90%; */
+
+}
+.app-dev-img{
+    width: 100%;
+    height: 25%;
+    object-fit: cover;
+}
+
+.text-div{
+    width: 100%;
+    margin-left: auto;
+}
+.app-dev-text{
+    padding: auto;
+    text-align: justify;
+}
