@@ -32,11 +32,13 @@ function ServiceAppDev() {
                 </p>
             </div>
         </div>
+
         <div 
         style={{"marginTop":'20px',
         "marginBottom":'20px'}}>
             <ServicesContactComp/>
         </div>
+        
     </div>
   )
 }

@@ -62,10 +62,10 @@ export default function Footer() {
                 <div className="footer_social_media" data-aos="fade-left">
                     <h3>Social Media</h3>
                     <div className="social_icons">
-                        <FiLinkedin size={25}/>
-                        <FiFacebook size={25}/>
-                        <IoLogoInstagram size={25}/>
-                        <ImPinterest2 size={25}/>
+                        <FiLinkedin size={25} style={{cursor:"pointer"}}/>
+                        <FiFacebook size={25} style={{cursor:"pointer"}}/>
+                        <IoLogoInstagram size={25} style={{cursor:"pointer"}}/>
+                        <ImPinterest2 size={25} style={{cursor:"pointer"}}/>
                     </div>
                 </div>
             </div>
