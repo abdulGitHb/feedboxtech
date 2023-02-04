@@ -8,11 +8,13 @@ import PortfolioAll from './components/Portfolio/PortfolioAll'
 import { motion, useMotionValue } from "framer-motion"
 import Rocket from '../src/image/rocket1.png'
 import AboutUs from './components/AboutUsFullPage/AboutUs';
-import ServicesFullPage from '../src/components/ServiceFullPage/ServicesFullPage';
 import Contact from './components/Contact/ContactFullPage';
 import { IoIosArrowUp } from 'react-icons/io'
 import $ from 'jquery';
 import { Link } from 'react-scroll'
+import ServiceAppDev from './components/ServiceFullPage/ServiceAppDev';
+import ServicesWebDev from './components/ServiceFullPage/ServicesWebDev';
+import ServicesWordpressDev from './components/ServiceFullPage/ServicesWordpressDev';
 
 function App() {
   const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 })
@@ -81,7 +83,9 @@ function App() {
         <Routes>
           <Route path='/' element={<HomeComp />} />
           <Route path='/about' element={<AboutUs />} />
-          <Route path='/services' element={<ServicesFullPage />} />
+          <Route path='/services/appdev' element={<ServiceAppDev />} />
+          <Route path='/services/webdev' element={<ServicesWebDev />} />
+          <Route path='/services/wordpressdev' element={<ServicesWordpressDev />} />
           <Route path='/Portfolio' element={<PortfolioAll />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>

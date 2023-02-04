@@ -78,23 +78,11 @@ export default function NavBarResp() {
           </div>
 
           <div className="dropdown" id="n-services">
-            <button className="drop-btn"
-            //  onMouseEnter={toggleUp}
-            //     onMouseLeave={toggleDown}               
-             >
-              Services 
-              {toggleUpDown?<AiOutlineDown/>:<AiOutlineUp/>}
-            </button>
+              {/* Services  */}
 
-            <div className="dropdown-content" >
-                <a href="/asd">App Development</a>
-                <a href="/asd">Web Development</a>
-                <a href="/asd">WordPress Development</a>
-            </div>
-
-            {/* <Link to="/services" spy={true} smooth={true} className="link">
+            <Link to="/services/appdev" spy={true} smooth={true} className="link">
               Services
-            </Link> */}
+            </Link>
           </div>
 
 
