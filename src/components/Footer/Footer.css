@@ -72,6 +72,10 @@
 .social_icons{
     display: flex;
     gap: 2rem;
+    /* color: #fff; */
+}
+.social_icons a{
+    color: #fff;
 }
 .footerDown{
     display: flex;

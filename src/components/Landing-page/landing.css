@@ -25,6 +25,7 @@
    background-color: #141619;
    padding: 0;
    overflow: hidden;
+
   }
 
 .hero_home_video_hld{
@@ -85,6 +86,7 @@
     align-content: flex-center;
     text-align: center;
     transition: all .2s;
+    opacity: 0.7;
   }
 
   .hero_home_contact_btn{
@@ -168,8 +170,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #141619;
 }
-
 .instagram:hover{
   background: linear-gradient(#4f5bd5,#962fbf,#d62976,#fa7e1e,#feda75);
   color: #fff;

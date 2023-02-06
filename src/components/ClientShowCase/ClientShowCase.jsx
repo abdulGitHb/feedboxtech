@@ -30,7 +30,7 @@ export default function Slider() {
 
     useEffect(() => {
         AOS.init({
-            duration: 1000,
+            duration: 800,
             offset: 0,
             easing: 'ease-in-out-back',
             delay: 50,

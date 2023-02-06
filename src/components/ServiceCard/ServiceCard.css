@@ -101,6 +101,7 @@
 .card_content p{
     max-width: 350px;
     font-size: 16px;
+    opacity: 0.6;
 }
 .serviceCard:hover {
     cursor: pointer;
