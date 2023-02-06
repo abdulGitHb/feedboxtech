@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 // import service from '../ServiceFullPage/ServicesFullPage'
 import { Link } from "react-router-dom";
 
-export default function ({ aos,icon, desc, title }) {
+export default function ({ aos,icon, desc, title, linkTo }) {
     // useEffect(() => {
     //     AOS.init({
     //         duration: 100,
@@ -32,7 +32,7 @@ export default function ({ aos,icon, desc, title }) {
                 </p>
 
 
-                <Link to='/services' className="sc_btn">
+                <Link to={linkTo} className="sc_btn">
                         View More
                 
                 </Link>

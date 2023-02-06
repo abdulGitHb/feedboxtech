@@ -45,18 +45,21 @@ export default function Services(){
             aos="fade-right"
             icon={app_dev}
             title="APP DEVELOPMENT"
+            linkTo='/services/appdev'
             desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
             />
             <ServiceCard
               aos="fade-up"
               icon={web_dev}
               title="WEB DEVELOPMENT"
+              linkTo='/services/webdev'
               desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
              />
             <ServiceCard
               aos="fade-left"
               icon={wordpress_dev}
               title="WORDPRESS DEVELOPMENT"
+              linkTo='/services/wordpressdev'
               desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
              />
        </div>

@@ -1,3 +1,82 @@
-.services-container-main{
+.about-top-main{
+    padding-top: 80px;
+    background-image: url('../../image/service3.png');
+}
+
+.img-div{
+    height: 30vh;
+    width: 100vw;
+    margin-bottom: 8px;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-top-main{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
+}
+.heading-about-us{
+    margin-top: 20px;
+}
+
+/* .img-div img{
+    width: 25%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: auto;
+} */
+
+.img-non-selected{
+    width: 25%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: auto;
+}
+.img-selected{
+    width: 30%;
+    height: 90%;
+    border-radius: 5px;
+    margin-top: auto;
+}
+
+
+.lower-nav{
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.sub-service{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link-select{
+    text-decoration: none;
+    color: white;
+}
+.div-selected{
+    /* text-decoration: none; */
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    width: 35%;
+}
+
+
+
+.sub-service:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
 }
