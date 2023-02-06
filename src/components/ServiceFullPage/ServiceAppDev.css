@@ -4,12 +4,13 @@
 }
 
 .img-div{
-    height: 30vh;
+    height: 40vh;
     width: 100vw;
     margin-bottom: 8px;
     object-fit: cover;
     display: flex;
     justify-content: space-around;
+    /* background-color: aqua; */
 }
 
 .about-top-main{
@@ -22,6 +23,7 @@
 }
 .heading-about-us{
     margin-top: 20px;
+    margin-bottom: 5vh;
 }
 
 /* .img-div img{
@@ -33,13 +35,13 @@
 
 .img-non-selected{
     width: 25%;
-    height: 80%;
+    height: 90%;
     border-radius: 5px;
     margin-top: auto;
 }
 .img-selected{
     width: 30%;
-    height: 90%;
+    height: 100%;
     border-radius: 5px;
     margin-top: auto;
 }
@@ -60,10 +62,15 @@
 .link{
     text-decoration: none;
     color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.link:hover{
+    color: white;
 }
 .link-select{
     text-decoration: none;
     color: white;
+    font-size: 1.5rem;
 }
 .div-selected{
     /* text-decoration: none; */

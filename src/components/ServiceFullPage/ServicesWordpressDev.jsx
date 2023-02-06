@@ -21,15 +21,15 @@ function ServicesWordpressDev() {
 
           <div className="img-div">
             <img src={img1} alt="" className="img-non-selected" />
-            <img src={img2} alt="" className="img-non-selected" />
             <img src={img1} alt="" className="img-selected" />
+            <img src={img2} alt="" className="img-non-selected" />
           </div>
       </div>
       <div className="lower-nav">
       
-        <div className='sub-service '><Link className='link' to='/services/appdev' ><h4>App Development</h4></Link></div>
         <div className='sub-service'><Link className='link' to='/services/webdev' ><h4>Web Development</h4></Link></div>
         <div className='sub-service div-selected'><Link className='link-select' to='/services/wordpressdev' ><h4>Wordpress Development</h4></Link></div> 
+        <div className='sub-service '><Link className='link' to='/services/appdev' ><h4>App Development</h4></Link></div>
       </div>
 
       {/* <div className='service-container-main'>
