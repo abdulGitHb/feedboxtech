@@ -4,7 +4,7 @@ import f_logo from '../../image/f_logo.png'
 import { FiFacebook } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi"
 import { IoLogoInstagram } from "react-icons/io"
-import { ImPinterest2 } from "react-icons/im"
+import { RxTwitterLogo } from "react-icons/rx"
 import { RxTriangleRight } from "react-icons/rx"
 import { Link } from 'react-scroll';
 import AOS from 'aos';
@@ -62,10 +62,10 @@ export default function Footer() {
                 <div className="footer_social_media" data-aos="fade-left">
                     <h3>Social Media</h3>
                     <div className="social_icons">
-                        <FiLinkedin size={25} style={{cursor:"pointer"}}/>
-                        <FiFacebook size={25} style={{cursor:"pointer"}}/>
-                        <IoLogoInstagram size={25} style={{cursor:"pointer"}}/>
-                        <ImPinterest2 size={25} style={{cursor:"pointer"}}/>
+                        <FiLinkedin size={25}/>
+                        <RxTwitterLogo size={25}/>
+                        <IoLogoInstagram size={25}/>
+                        <FiFacebook size={25}/>
                     </div>
                 </div>
             </div>

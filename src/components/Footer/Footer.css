@@ -72,6 +72,10 @@
 .social_icons{
     display: flex;
     gap: 2rem;
+    /* color: #fff; */
+}
+.social_icons a{
+    color: #fff;
 }
 .footerDown{
     display: flex;
@@ -104,7 +108,9 @@
     }
   }
   @media screen and (max-width:600px) {
-   
+   .Footer{
+    padding-top: 40px;
+   }
     .feedbox_logo_hld{
         justify-content: center;
         align-items: center;
