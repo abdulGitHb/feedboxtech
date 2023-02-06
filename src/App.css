@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Philosopher&family=Poppins:wght@300;400;600;800&family=Rubik+Storm&family=Special+Elite&display=swap');
-
 * {
   /* background-color: black; */
   margin: 0;
@@ -7,6 +6,7 @@
   font-family: 'Poppins', sans-serif;
   /* cursor: none; */
 }
+
 
 /* for chrome, webkit browser */
 ::-webkit-scrollbar {
@@ -163,3 +163,12 @@ html {
     transition: all .1s;
     background: none;
   }
+
+  @media screen and (max-width:480px) {
+    .scrollBottomToTop {
+     bottom: 30px;
+     right: 20px;
+    }
+  }
+
+ 

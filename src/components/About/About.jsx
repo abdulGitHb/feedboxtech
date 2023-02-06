@@ -11,7 +11,7 @@ export default function About() {
 
     useEffect(() => {
         AOS.init({
-            duration: 800,
+            duration: 600,
             offset: 0,
             easing: 'ease-in-out-back',
             delay: 50,
