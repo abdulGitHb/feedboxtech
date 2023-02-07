@@ -1,20 +1,32 @@
 import React from 'react'
 import './ServiceAppDev.css'
 import ServicesContactComp from './ServicesContactComp';
-import img1 from '../../image/service1.jpg';
-import img2 from '../../image/service2.jpg';
-import img3 from '../../image/service3.png';
+import img1 from '../../image/mobileImg1.svg';
+import img2 from '../../image/webImg1.svg';
+import img3 from '../../image/service2.jpg';
+import wpDev1 from '../../image/wordPressDev1.png';
+import wpDev2 from '../../image/wordPressDev2.png';
 
 // import './ServicesFullPage.css'
 import { Link } from 'react-router-dom';
 import NavBarResp from '../Navbar2/NavBarResp';
 import Footer from '../Footer/Footer';
+import {motion} from 'framer-motion';
 
-function ServicesWordpressDev() {
+function ServicesWordpressDev(props) {
+
+  const leftSwipe = {swipe:"Swipeleft"};
+  const rightSwipe = {swipe:"SwipeRight"};
+
   return (
     <>
     <NavBarResp/>
-    <div style={{"backgroundColor":'black'}}>
+    <motion.div style={{"backgroundColor":'black'}}
+    initial={{width:0}}
+    animate={{width:"100%"}}
+    exit={props.swipe==="Swipeleft"?{x:window.innerWidth}:
+          {y:window.innerWidth}}
+    >
      
       <div className="about-top-main">
           <div className="heading-about-us">
@@ -23,15 +35,15 @@ function ServicesWordpressDev() {
 
           <div className="img-div">
             <img src={img2} alt="" className="img-non-selected" />
-            <img src={img3} alt="" className="img-selected" />
+            <img src={wpDev2} alt="" className="img-selected" />
             <img src={img1} alt="" className="img-non-selected" />
           </div>
       </div>
       <div className="lower-nav">
       
-        <div className='sub-service'><Link className='link' to='/services/webdev' ><h4>Web Development</h4></Link></div>
-        <div className='sub-service div-selected'><Link className='link-select' to='/services/wordpressdev' ><h4>Wordpress Development</h4></Link></div> 
-        <div className='sub-service '><Link className='link' to='/services/appdev' ><h4>App Development</h4></Link></div>
+        <div className='sub-service'><Link className='link' to='/services/webdev' state={leftSwipe}><h4>Web</h4><h4> Development</h4></Link></div>
+        <div className='sub-service div-selected'><Link className='link-select' to='/services/wordpressdev' ><h4>Wordpress</h4><h4> Development</h4></Link></div> 
+        <div className='sub-service '><Link className='link' to='/services/appdev' state={rightSwipe}><h4>App</h4><h4> Development</h4></Link></div>
       </div>
 
       {/* <div className='service-container-main'>
@@ -42,7 +54,7 @@ function ServicesWordpressDev() {
 {/* --------------1st--------------------------------------------------------------------------------- */}
         <div className="page-content">
             <div className="image-div">
-                <img src="https://www.claritusconsulting.com/wp-content/uploads/2022/04/mobile-app-development.png" alt="" className="app-dev-img" />
+                <img src={wpDev2} alt="" className="app-dev-img" />
             </div>
             <div className="text-div">
                 <p className="app-dev-text">
@@ -53,7 +65,7 @@ function ServicesWordpressDev() {
 {/*--- ------------2nd---------------------------------------------------------------- */}
         <div className="page-content">
             <div className="image-div-mobile">
-                <img src={img2} alt="" className="app-dev-img" />
+                <img src={wpDev1} alt="" className="app-dev-img" />
             </div>
             <div className="text-div">
                 <p className="app-dev-text">
@@ -61,13 +73,13 @@ function ServicesWordpressDev() {
                 </p>
             </div>
             <div className="image-div-web">
-                <img src="https://www.claritusconsulting.com/wp-content/uploads/2022/04/mobile-app-development.png" alt="" className="app-dev-img" />
+                <img src={wpDev1} alt="" className="app-dev-img" />
             </div>
         </div>
 {/* ----------------3rd--------------------------------------------------------------- */}
         <div className="page-content">
             <div className="image-div-mobile">
-                  <img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2019/12/23174648/B-Tech-Degree.jpg" alt="" className="app-dev-img" />
+                  <img src={wpDev2} alt="" className="app-dev-img" />
             </div>
             <div className="text-div-full">
                 <p className="app-dev-text">
@@ -78,15 +90,15 @@ function ServicesWordpressDev() {
             </div>
         </div>
 
-        <div 
-        style={{"marginTop":'20px',
+        <div className='cardComp'
+        style={{"marginTop":'80px',
         "marginBottom":'20px'}}>
             <ServicesContactComp/>
         </div>
         
     </div>
     <Footer/>
-    </div>
+    </motion.div>
     </>
   )
 }
