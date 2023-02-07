@@ -6,6 +6,8 @@
 .img-div{
     height: 40vh;
     width: 100vw;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 8px;
     object-fit: cover;
     display: flex;
@@ -34,8 +36,8 @@
 } */
 
 .img-non-selected{
-    width: 25%;
-    height: 90%;
+    width: 20%;
+    height: 80%;
     border-radius: 5px;
     margin-top: auto;
 }
@@ -74,7 +76,7 @@
 }
 .div-selected{
     /* text-decoration: none; */
-    background-color: blue;
+    background-color: #0090ee;
     color: white;
     border-radius: 5px;
     width: 35%;
@@ -83,7 +85,7 @@
 
 
 .sub-service:hover{
-    background-color: blue;
+    background-color: rgb(157, 175, 229);
     color: white;
     border-radius: 5px;
 }
@@ -95,7 +97,7 @@
 }
 
 .main-container{
-    max-width: 80%;
+    width: 80%;
     background-color: black;
     color: white;
     margin-left: auto;
@@ -119,7 +121,7 @@
 
 .page-content{
     width: 90%;
-    margin-top: 20px;;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     /* background-color: bisque; */
@@ -132,12 +134,24 @@
 
 .image-div{
     width: 50%;
+    /* background-color: aquamarine; */
     /* margin-left: auto;
     margin-right: auto; */
 }
+.image-div-mobile{
+    display: none;
+}
+.image-div-web{
+    width: 50%;
+    /* background-color:aqua; */
+}
+.image-div-web img{
+    float: right;
+}
+
 
 .app-dev-img{
-    width: 100%;
+    width: 90%;
     /* height: 25%; */
     object-fit: cover;
     border-radius: 5px;
@@ -145,13 +159,83 @@
 
 .text-div{
     width: 45%;
+    margin-top:0px;
     /* margin: auto; */
+    /* background-color: aqua; */
 }
 
 .text-div p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .app-dev-text{
-    padding: auto;
+    /* padding: auto; */
     text-align: justify;
+}
+.text-div-full p{
+    font-size: 1.3rem;
+}
+
+/* ----------------------------------------------------- */
+/* --------------Media Query------------------- */
+/* ----------------------------------------------------- */
+@media (max-width: 480px){
+    .main-container{
+        width: 90%;
+    }
+    .lower-nav{
+        width: 100%;
+        border-radius: 5px;
+    }
+    .lower-nav div{
+        width: 30%;
+        padding: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .sub-service h4{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .div-selected h4{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .img-div{
+        display: none;
+    }
+
+    .page-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-div{
+        width: 100%;
+        /* background-color: aquamarine; */
+        height: auto;
+    }
+    .image-div img{
+        width: 100%;
+    }
+    .text-div{
+        width: 100%;
+    }
+    .image-div-web{
+        display: none;
+    }
+    .image-div-mobile{
+        /* background-color: aqua; */
+        display: block;
+    }
+    .image-div-mobile img{
+        width: 100%;
+    }
+    .text-div p{
+        font-size: 0.9rem;
+    }
+    .text-div-full p{
+        font-size: 1rem;
+    }
 }

@@ -3,6 +3,8 @@ import './ServiceAppDev.css'
 import ServicesContactComp from './ServicesContactComp';
 import img1 from '../../image/service1.jpg';
 import img2 from '../../image/service2.jpg';
+import img3 from '../../image/service3.png';
+
 // import './ServicesFullPage.css'
 import { Link } from 'react-router-dom';
 import NavBarResp from '../Navbar2/NavBarResp';
@@ -20,9 +22,9 @@ function ServicesWordpressDev() {
           </div>
 
           <div className="img-div">
-            <img src={img1} alt="" className="img-non-selected" />
-            <img src={img1} alt="" className="img-selected" />
             <img src={img2} alt="" className="img-non-selected" />
+            <img src={img3} alt="" className="img-selected" />
+            <img src={img1} alt="" className="img-non-selected" />
           </div>
       </div>
       <div className="lower-nav">
@@ -37,7 +39,7 @@ function ServicesWordpressDev() {
       </div> */}
       
     <div className='main-container'>
-{/* ----------------------------------------------------------------------------------------------- */}
+{/* --------------1st--------------------------------------------------------------------------------- */}
         <div className="page-content">
             <div className="image-div">
                 <img src="https://www.claritusconsulting.com/wp-content/uploads/2022/04/mobile-app-development.png" alt="" className="app-dev-img" />
@@ -48,24 +50,32 @@ function ServicesWordpressDev() {
                 </p>
             </div>
         </div>
-{/*--- ---------------------------------------------------------------------------- */}
+{/*--- ------------2nd---------------------------------------------------------------- */}
         <div className="page-content">
+            <div className="image-div-mobile">
+                <img src={img2} alt="" className="app-dev-img" />
+            </div>
             <div className="text-div">
                 <p className="app-dev-text">
                 The WordPress development process typically begins with the selection of a theme, which serves as the foundation for the design and layout of the website. From there, our WordPress developer customizes the theme to meet the specific needs of the client, including adding custom functionality and integrating third-party plugins and services.
                 </p>
             </div>
-            <div className="image-div">
+            <div className="image-div-web">
                 <img src="https://www.claritusconsulting.com/wp-content/uploads/2022/04/mobile-app-development.png" alt="" className="app-dev-img" />
             </div>
         </div>
-{/* ------------------------------------------------------------------------------- */}
+{/* ----------------3rd--------------------------------------------------------------- */}
         <div className="page-content">
+            <div className="image-div-mobile">
+                  <img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2019/12/23174648/B-Tech-Degree.jpg" alt="" className="app-dev-img" />
+            </div>
+            <div className="text-div-full">
                 <p className="app-dev-text">
                 In addition to customizing and maintaining existing WordPress websites, our team of WordPress developers also build custom plugins and themes to extend the functionality of the platform. This can involve writing code using PHP, HTML, CSS, and JavaScript, as well as integrating APIs and third-party services to provide additional functionality.
                 <br />
                 Our team of developers have a solid foundation in web development and a deep understanding of the WordPress platform. 
                 </p>
+            </div>
         </div>
 
         <div 
