@@ -3,6 +3,8 @@ import './ServiceAppDev.css'
 import ServicesContactComp from './ServicesContactComp';
 import img1 from '../../image/service1.jpg';
 import img2 from '../../image/service2.jpg';
+import img3 from '../../image/service3.png';
+
 // import './ServicesFullPage.css'
 import { Link } from 'react-router-dom';
 import NavBarResp from '../Navbar2/NavBarResp';
@@ -21,7 +23,7 @@ function ServiceAppDev() {
           </div>
 
           <div className="img-div">
-            <img src={img1} alt="" className="img-non-selected" />
+            <img src={img3} alt="" className="img-non-selected" />
             <img src={img1} alt="" className="img-selected" />
             <img src={img2} alt="" className="img-non-selected" />
           </div>
@@ -38,7 +40,7 @@ function ServiceAppDev() {
       </div> */}
       
     <div className='main-container'>
-{/* ----------------------------------------------------------------------------------------------- */}
+{/* -----------------------------1st---------------------------------------------------------------- */}
         <div className="page-content">
             <div className="image-div">
                 <img src="https://www.claritusconsulting.com/wp-content/uploads/2022/04/mobile-app-development.png" alt="" className="app-dev-img" />
@@ -50,24 +52,32 @@ function ServiceAppDev() {
                 </p>
             </div>
         </div>
-{/*--- ---------------------------------------------------------------------------- */}
+{/*--- -------------------2nd--------------------------------------------------------- */}
         <div className="page-content">
+            <div className="image-div-mobile">
+                <img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2019/12/23174648/B-Tech-Degree.jpg" alt="" className="app-dev-img" />
+            </div>
             <div className="text-div">
                 <p className="app-dev-text">
                 The app development process typically begins with the identification of a problem or need that can be addressed by a software application by our team. From there, the app developer works with stakeholders to define the features and functionalities of the app, and creates a design that addresses the user's needs and goals.
                     <br />
                 </p>
             </div>
-            <div className="image-div">
+            <div className="image-div-web">
                 <img src="https://www.claritusconsulting.com/wp-content/uploads/2022/04/mobile-app-development.png" alt="" className="app-dev-img" />
             </div>
         </div>
-{/* ------------------------------------------------------------------------------- */}
+{/* -------------------3rd------------------------------------------------------------ */}
         <div className="page-content">
+        <div className="image-div-mobile">
+                <img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2019/12/23174648/B-Tech-Degree.jpg" alt="" className="app-dev-img" />
+          </div>
+          <div className="text-div-full">
                 <p className="app-dev-text">
                 Our team possesses technical skills and creativity required to meet the needs of this ever evolving domain as well as a strong focus on quality and attention to detail necessary in delivering high-quality apps that meet the needs of users.
                     <br />
                 </p>
+          </div>
         </div>
 
         <div 
