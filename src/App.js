@@ -14,7 +14,7 @@ import $ from 'jquery';
 import { Link } from 'react-scroll'
 import ServiceAppDev from './components/ServiceFullPage/ServiceAppDev';
 import ServicesWebDev from './components/ServiceFullPage/ServicesWebDev';
-import ServicesWordpressDev from './components/ServiceFullPage/ServicesWordpressDev';
+import ServicesWordpressDev from './components/ServiceFullPage/ServicesWordpressDev'
 
 function App() {
   // const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 })

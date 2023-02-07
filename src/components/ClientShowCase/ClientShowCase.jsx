@@ -30,7 +30,7 @@ export default function Slider() {
 
     useEffect(() => {
         AOS.init({
-            duration: 800,
+            duration: 600,
             offset: 0,
             easing: 'ease-in-out-back',
             delay: 50,
@@ -42,10 +42,8 @@ export default function Slider() {
     return (
         <div className="slider-container-hld" style={{ paddingTop: '800px' }}>
             <div className="client_back">
-
-
-
-                <div className="slider-container">
+                {/* for web view */}
+                <div className="slider-container client_web_view">
 
                     <span data-aos="fade-up">Trusted By 500+ Customers And Still Counting...</span>
 
@@ -133,6 +131,82 @@ export default function Slider() {
                     </Swiper>
                 </div>
 
+
+                {/* for mobile view */}
+                <div className="slider-container client_mobile_view">
+
+                    <span data-aos="fade-up">Trusted By 500+ Customers And Still Counting...</span>
+
+                    <Swiper
+
+                        data-aos="fade-up"
+                        data-aos-duration="100s"
+                        spaceBetween={30}
+                        slidesPerView={3}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        loop={true}
+                        autoplay={{
+                            delay: 2000,
+                            disableOnInteraction: false,
+                        }}
+                        modules={[Autoplay]}
+                        className="logo_contain_hld"
+                    >
+
+                        <SwiperSlide >
+                            <div className="logo_contain">
+
+                                <img src={Growing_roots} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="logo_contain">
+
+                                <img src={Qodeleaf} alt="" />
+                            </div>
+
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="logo_contain">
+
+                                <img src={Mobigood} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="logo_contain">
+
+                                <img src={Phoenix} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="logo_contain">
+
+                                <img src={FuteServices} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="logo_contain">
+
+                                <img src={Jmax} alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide >
+                            <div className="logo_contain">
+                                <img src={Octus} alt="" />
+                            </div>
+
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="logo_contain">
+
+                                <img src={MasterBrains} alt="" />
+                            </div>
+
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
             </div>
         </div>
     )

@@ -75,6 +75,7 @@ nav input {
   font-size: 20px;
   text-decoration: none;
   color: #ffffff;
+  /* background-color: #fff; */
 }
 
 #contacto {
@@ -85,7 +86,7 @@ nav input {
   font-weight: bolder;
   color: #0090ee;
 }
-.link{
+.n_link{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +100,7 @@ color: #fff;
 #n-services:hover,
 #n-portfolio:hover,
 #contacto:hover,
-.link:hover{
+.n_link:hover{
  color: #3ea7ed;
  cursor: pointer;
 }
@@ -110,62 +111,6 @@ color: #fff;
     margin-left: 10px;
   }
   
-/* #dd-n-home {
-  display: none;
-  position: fixed;
-  padding-top: 40px;
-  top: 80px;
-  left: 0;
-  height: 300px;
-  width: 100%;
-  z-index: 1001;
-}
-
-#dd-n-about {
-  display: none;
-  position: fixed;
-  padding-top: 40px;
-  top: 80px;
-  left: 0;
-  height: 300px;
-  width: 100%;
-  z-index: 1001;
-}
-
-#dd-n-services {
-  display: none;
-  position: fixed;
-  padding-top: 40px;
-  top: 80px;
-  left: 0;
-  height: 300px;
-  width: 100%;
-  z-index: 1001;
-}
-
-#dd-n-portfolio {
-  display: none;
-  position: fixed;
-  padding-top: 40px;
-  top: 80px;
-  left: 0;
-  height: 300px;
-  width: 100%;
-  z-index: 1001;
-}
-
-#dd-indicadores {
-  display: none;
-  position: fixed;
-  padding-top: 40px;
-  top: 80px;
-  left: 0;
-  height: 300px;
-  width: 100%;
-  z-index: 1001;
-} */
-
-
 
 @media only screen and (min-width: 1201px) {
   .header-open {

@@ -62,10 +62,10 @@ export default function Footer() {
                 <div className="footer_social_media" data-aos="fade-left">
                     <h3>Social Media</h3>
                     <div className="social_icons">
-                        <FiLinkedin size={25}/>
-                        <RxTwitterLogo size={25}/>
-                        <IoLogoInstagram size={25}/>
-                        <FiFacebook size={25}/>
+                    <a href="https://www.linkedin.com/company/feedbox-smm/mycompany/" target="_blank"><FiLinkedin size={25}/></a>
+                    <a href="https://twitter.com/teamfeedBox" target="_blank"> <RxTwitterLogo size={25}/></a>
+                    <a href="https://www.instagram.com/teamfeedbox/" target="_blank">   <IoLogoInstagram size={25}/></a>
+                    <a href="https://www.facebook.com/feedbox.online" target="_blank"><FiFacebook size={25}/></a>
                     </div>
                 </div>
             </div>
@@ -76,4 +76,5 @@ export default function Footer() {
         </div>
      
     )
+
 }

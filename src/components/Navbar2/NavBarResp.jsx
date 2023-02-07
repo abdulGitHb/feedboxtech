@@ -62,7 +62,7 @@ export default function NavBarResp() {
         >
           {/* <!-- about --> */}
           <div id="n-home">
-            <Link to="/" spy={true} smooth={true} className="link">
+            <Link to="/" spy={true} smooth={true} className="n_link">
               Home
             </Link>
           </div>
@@ -71,7 +71,7 @@ export default function NavBarResp() {
           <div id="n-about" 
           // style={{textAlign:'center'}}
           >
-            <Link to="/about" spy={true} smooth={true} className="link" style={{textAlign:'center'}}>
+            <Link to="/about" spy={true} smooth={true} className="n_link" style={{textAlign:'center'}}>
               About
             </Link>
 
@@ -80,7 +80,7 @@ export default function NavBarResp() {
           <div className="dropdown" id="n-services">
               {/* Services  */}
 
-            <Link to="/services/appdev" spy={true} smooth={true} className="link">
+            <Link to="/services/appdev" spy={true} smooth={true} className="n_link">
               Services
             </Link>
           </div>
@@ -88,7 +88,7 @@ export default function NavBarResp() {
 
           <div id="n-portfolio" style={{textAlign:'center'}}>
 
-            <Link to="/portfolio" spy={true} smooth={true} className="link" style={{textAlign:'center'}}>
+            <Link to="/portfolio" spy={true} smooth={true} className="n_link" style={{textAlign:'center'}}>
               Portfolio
             </Link>
 
