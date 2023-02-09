@@ -9,25 +9,22 @@ import wpDev2 from '../../image/wordPressDev2.png';
 
 
 // import './ServicesFullPage.css'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import NavBarResp from '../Navbar2/NavBarResp';
 import Footer from '../Footer/Footer';
 import {motion} from 'framer-motion';
 
 
-function ServiceAppDev(props) {
-
-  const leftSwipe = {swipe:"Swipeleft"};
-  const rightSwipe = {swipe:"SwipeRight"};
+function ServiceAppDev() {
+  const location = useLocation();
+  const lrSwipe=location.state.swipe;
+  console.log(lrSwipe);
 
   return (
     <>
     <NavBarResp/>
-    <motion.div className='main-container-outer' style={{"backgroundColor":'black'}}
-    initial={{width:0}}
-    animate={{width:"100%"}}
-    exit={props.swipe==="Swipeleft"?{x:window.innerWidth}:
-          {y:window.innerWidth}}
+    <div className='main-container-outer' style={{"backgroundColor":'black'}}
+    
     >
      
       <div className="about-top-main">
@@ -35,22 +32,34 @@ function ServiceAppDev(props) {
             <h1>Services</h1>
           </div>
 
-          <div className="img-div">
-            <img src={wpDev2} alt="" className="img-non-selected" />
-            <img src={img1} alt="" className="img-selected" />
-            <img src={img2} alt="" className="img-non-selected" />
-          </div>
+          <motion.div className="img-div"
+          initial={{x:lrSwipe=='Swipeleft'?-300:300}}
+          animate={{ x: 0 }}
+          exit={{
+          delay: 0.5,
+          x: { duration: 1 },
+          default: { ease: "linear" }
+          }}
+          >
+          
+            <img src={wpDev2} alt="" className="img-top-1" />
+            <img src={img1} alt="" className="img-app-selected" />
+            <img src={img2} alt="" className="img-top-3" />
+          </motion.div>
       </div>
 
       <div className="lower-nav">
-        <div className='sub-service'><Link className='link' to='/services/wordpressdev' state={leftSwipe}><h4>Wordpress</h4><h4> Development</h4></Link></div> 
+        <div className='sub-service'><Link className='link' to='/services/wordpressdev' state={{swipe:"Swipeleft"}}><h4>Wordpress</h4><h4> Development</h4></Link></div> 
         <div className='sub-service div-selected'><Link className='link-select' to='/services/appdev' ><h4>App</h4><h4> Development</h4></Link></div>
-        <div className='sub-service'><Link className='link' to='/services/webdev' state={rightSwipe}><h4>Web</h4><h4> Development</h4></Link></div>
+        <div className='sub-service'><Link className='link' to='/services/webdev' state={{swipe:"Swiperight"}}><h4>Web</h4><h4> Development</h4></Link></div>
       </div>
 
       {/* <div className='service-container-main'>
         <ServiceAppDev/>
       </div> */}
+      <div className='horizontalLine'>
+        <hr />
+      </div>
       
     <div className='main-container'>
 {/* -----------------------------1st---------------------------------------------------------------- */}
@@ -72,7 +81,7 @@ function ServiceAppDev(props) {
             </div>
             <div className="text-div">
                 <p className="app-dev-text">
-                The app development process typically begins with the identification of a problem or need that can be addressed by a software application by our team. From there, the app developer works with stakeholders to define the features and functionalities of the app, and creates a design that addresses the user's needs and goals.
+                Our team possesses technical skills and creativity required to meet the needs of this ever evolving domain as well as a strong focus on quality and attention to detail necessary in delivering high-quality apps that meet the needs of users.
                     <br />
                 </p>
             </div>
@@ -81,17 +90,16 @@ function ServiceAppDev(props) {
             </div>
         </div>
 {/* -------------------3rd------------------------------------------------------------ */}
-        <div className="page-content">
+        {/* <div className="page-content">
         <div className="image-div-mobile">
                 <img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2019/12/23174648/B-Tech-Degree.jpg" alt="" className="app-dev-img" />
           </div>
           <div className="text-div-full">
                 <p className="app-dev-text">
-                Our team possesses technical skills and creativity required to meet the needs of this ever evolving domain as well as a strong focus on quality and attention to detail necessary in delivering high-quality apps that meet the needs of users.
                     <br />
                 </p>
           </div>
-        </div>
+        </div> */}
 
         <div className='cardComp'
         style={{"marginTop":'80px',
@@ -101,7 +109,7 @@ function ServiceAppDev(props) {
         
     </div>
       <Footer/>
-    </motion.div>
+    </div>
     </>
   )
 }

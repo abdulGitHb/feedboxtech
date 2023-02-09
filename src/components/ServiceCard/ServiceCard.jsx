@@ -32,7 +32,7 @@ export default function ({ aos,icon, desc, title, linkTo }) {
                 </p>
 
 
-                <Link to={linkTo} className="sc_btn">
+                <Link to={linkTo} state={{swipe:"Swipeleft"}} className="sc_btn">
                         View More
                 
                 </Link>

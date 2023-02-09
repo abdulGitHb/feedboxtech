@@ -5,15 +5,20 @@
 }
 
 .img-div{
-    height: 40vh;
+    height: 35vh;
     width: 60%;
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 8px;
     object-fit: cover;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     /* background-color: aqua; */
+}
+.horizontalLine{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .about-top-main{
@@ -43,8 +48,43 @@
     border-radius: 5px;
     margin-top: auto;
 }
+.img-top-1{
+    width: 20%;
+    height: 65%;
+    opacity: 0.4;
+    border-radius: 5px;
+    margin-top: auto;
+}
+.img-top-2{
+    width: 20%;
+    height: 60%;
+    opacity: 0.4;
+    border-radius: 5px;
+    margin-top: auto;
+}
+.img-top-3{
+    width: 20%;
+    height: 40%;
+    opacity: 0.4;
+    border-radius: 5px;
+    margin-top: auto;
+}
 .img-selected{
     width: 40%;
+    height: 90%;
+    border-radius: 5px;
+    margin-top: auto;
+}
+.img-app-selected{
+    width: 25%;
+    height: 90%;
+    margin-left: 20px;
+    
+    border-radius: 5px;
+    margin-top: auto;
+}
+.img-wp-selected{
+    width: 30%;
     height: 90%;
     border-radius: 5px;
     margin-top: auto;
@@ -59,7 +99,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
-    background-color: white;
+    /* background-color: white; */
     display: flex;
     justify-content: space-around;
 }
@@ -71,7 +111,8 @@
 }
 .link{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -88,7 +129,7 @@
 .div-selected{
     /* text-decoration: none; */
     text-align: center;
-    background-color: #0090ee;
+    /* background-color: #0090ee; */
     color: white;
     border-radius: 30px;
     width: 35%;
@@ -105,7 +146,7 @@
 /* ^^^^^ Above is From Services Full Page ^^^^^^ */
 /* -------------------------------------------------------------------- */
 .top-main-container{
-    background-color: black;
+    background-color: rgb(255, 0, 0);
 }
 
 .main-container{
@@ -142,7 +183,7 @@
     justify-content: center;
 }
 .page-content p{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin-top: 10px;
 }
 
@@ -165,11 +206,14 @@
     width: 25%;
     /* height: 400px; */
     object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* background-color:aqua; */
 }
 .image-div-web img{
     width: 100%;
-    float: right;
 }
 
 
@@ -193,7 +237,7 @@
 }
 
 .text-div p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     /* margin-top: auto; */
 }
 .app-dev-text{
@@ -207,7 +251,7 @@
     /* background-color: blanchedalmond; */
 }
 .text-div-full p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .cardComp{
     width: 75%;
@@ -280,7 +324,9 @@
     }
     .text-div-full{
         width: 100%;
-
+    }
+    .cardComp{
+        width: 100%;
     }
     
 
