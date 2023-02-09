@@ -3,12 +3,12 @@ import f_logo from '../../image/f_logo.png'
 import './Navbar.css'
 import $ from 'jquery';
 import { Link } from 'react-router-dom'
-import {AiOutlineDown, AiOutlineUp} from 'react-icons/ai';
+// import {AiOutlineDown, AiOutlineUp} from 'react-icons/ai';
 
 export default function NavBarResp() {
   const [navToggle, setnavToggle] = useState(true)
-  const [toggleUpDown, settoggleUpDown] = useState(true)
-  const [subNavDisplay, setSubNavDisplay] = useState('none');
+  // const [toggleUpDown, settoggleUpDown] = useState(true)
+  // const [subNavDisplay, setSubNavDisplay] = useState('none');
 
   $(document).ready(function () {
 
@@ -27,14 +27,14 @@ export default function NavBarResp() {
 
   });
 
-  const toggleUp=()=>{
-    settoggleUpDown(false);
-    setSubNavDisplay('flex');
-  }
-  const toggleDown=()=>{
-    settoggleUpDown(true);
-    setSubNavDisplay('none');
-  }
+  // const toggleUp=()=>{
+  //   settoggleUpDown(false);
+  //   setSubNavDisplay('flex');
+  // }
+  // const toggleDown=()=>{
+  //   settoggleUpDown(true);
+  //   setSubNavDisplay('none');
+  // }
 
 
 
@@ -62,7 +62,7 @@ export default function NavBarResp() {
         >
           {/* <!-- about --> */}
           <div id="n-home">
-            <Link to="/" spy={true} smooth={true} className="n_link">
+            <Link to="/"  className="n_link">
               Home
             </Link>
           </div>
@@ -71,8 +71,11 @@ export default function NavBarResp() {
           <div id="n-about" 
           // style={{textAlign:'center'}}
           >
-            <Link to="/about" spy={true} smooth={true} className="n_link" style={{textAlign:'center'}}>
+            <Link to="/about"  className="n_link" style={{textAlign:'center'}}>
               About
+              <div className="about_dropsown">
+                
+              </div>
             </Link>
 
           </div>
@@ -80,24 +83,29 @@ export default function NavBarResp() {
           <div className="dropdown" id="n-services">
               {/* Services  */}
 
-            <Link to="/services/appdev" spy={true} smooth={true} className="n_link">
+            <Link to="/services/appdev"  className="n_link">
               Services
             </Link>
           </div>
 
-
           <div id="n-portfolio" style={{textAlign:'center'}}>
 
-            <Link to="/portfolio" spy={true} smooth={true} className="n_link" style={{textAlign:'center'}}>
+            <Link to="/portfolio"  className="n_link" style={{textAlign:'center'}}>
               Portfolio
+            </Link>
+
+          </div>
+          <div id="n-ourstory" style={{textAlign:'center'}}>
+
+            <Link to="/ourstory"  className="n_link" style={{textAlign:'center'}}>
+              Our Story
             </Link>
 
           </div>
         </div>
 
-
         <div id="contacto">
-          <Link to="/contact" spy={true} smooth={true} 
+          <Link to="/contact" 
             duration={500}
             className="link link-contact">
               <p style={{ width: "160px" ,color:'#0090ee', textAlign:'center'}}>Contact &nbsp;Us</p>

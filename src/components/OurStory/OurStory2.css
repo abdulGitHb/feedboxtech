@@ -1,0 +1,306 @@
+#main{
+    padding-top: 100px;
+    background-color:black;
+    color: #fff;
+    height: 3200px;
+    overflow-x: hidden;
+}
+#main-content{
+    display: flex;
+    vertical-align: baseline;
+}
+
+/* card container css */
+
+.story-container-hld{
+    display: inline-block;
+    align-items: center;
+    transition: all 2s;
+    height: 900px;
+    background-color: black;
+    /* transition: 10s all ease; */
+    position:fixed;
+    overflow-x: hidden;
+    width: 100%;
+}
+.storyCard-container{
+    background-color: black;
+    padding: 0px 10px;
+    margin-top: -40px;
+    display: flex;
+    gap: 13vw;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    transition: transform 5000s;
+    transition-delay: 5000s;
+    flex-wrap: wrap;
+}
+.title_and_content_hld{
+    width: 700px;
+    display: block;
+    overflow: hidden;
+}
+.title_and_content_hld h1{
+    font-size: 40px;
+}
+.title_and_content_hld p{
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 2rem;
+    opacity: 0.7;
+    display: inline-block;
+}
+.story_image_hld{
+    width: 500px;
+    object-fit: cover;
+    position: relative;
+    z-index: 11111;
+}
+.story_image_hld img{
+    width: 100%;
+    position: relative;
+    z-index: 111111;
+}
+.white_layer{
+    width: 25%;
+    height: 900px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.odd_layer{
+    left: 0;
+    right: auto;
+}
+
+
+/* cards animation classes */
+.story_pandemic_phase{
+  right: -1600px;
+  opacity: 1;
+}
+.story_first_client{
+    opacity: 1;
+    bottom: -1000px;
+}
+.story_newOffice{
+    right: -1800px;
+    opacity: 1;
+    top: 80px;
+}
+.story_award{
+    opacity: 1;
+    bottom: -1000px;
+}
+.showPandemic{
+    opacity: 1;
+    right: 0;
+}
+.showClient{
+    opacity: 1;
+    bottom: -135px;
+}
+.showOffices{
+    opacity: 1;
+    right: 0;
+    
+}
+.showAwards{
+    opacity: 1;
+    bottom: -135px;
+}
+
+
+@media screen and (max-width:1400px) {
+    .storyCard-container{
+        gap: 2vw;
+    }
+   
+}
+
+@media screen and (max-width:1200px) {
+    .white_layer{
+        opacity: 0;
+    }
+}
+@media screen and (max-width:700px) {
+    .story-container-hld{
+        display: block;
+        padding-bottom: 100px;
+        justify-content: center;
+    }
+    .story_begining{
+        padding-top: 50px;
+        /* height: 1500px; */
+    }
+    .storyCard-container{
+        padding: 0;
+        width: 100%;
+        display: block;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title_and_content_hld{
+        display: block;
+        width: 90%;
+        padding: 0;
+    }
+    .story_begining .storyCard-container{
+        height: 1650px;
+    }
+    .story_begining .title_and_content_hld{
+        transform: translateY(230px);
+        display: block;
+        width: 90%;
+        padding: 0;
+    }
+    .story_image_hld{
+        padding-top: 50px;
+        width: 90%;
+        transform: translateY(-1100px);
+    }
+    .title_and_content_hld h1{
+        font-size: 30px;
+    }
+    .story_begining .story_image_hld{
+        padding-top: 50px;
+        width: 90%;
+        transform: translateY(-1100px);
+    }
+    .story_pandemic_phase{
+        margin-top: -20px;
+    }
+    .story_pandemic_phase .storyCard-container{
+        height: 1500px;
+    }
+    .story_pandemic_phase .title_and_content_hld{
+        transform: translateY(0);
+    }
+    .story_pandemic_phase  .story_image_hld{
+        transform: translateY(0);
+    }
+    .story_first_client .storyCard-container{
+        height: 1150px;
+        /* bottom: 0; */
+    }
+    .story_first_client .title_and_content_hld{
+        transform: translateY(580px);
+    }
+    .story_first_client .story_image_hld{
+        transform: translateY(-220px);
+    }
+    #newOffice{
+        margin-top: -100px;
+    }
+    .story_newOffice .storyCard-container{
+        top:0;
+        margin-top: -200px;
+        height: 1400px;
+        z-index: 1111111;
+    }
+    .story_newOffice .title_and_content_hld{
+        transform: translateY(270px);
+    }
+    .story_newOffice  .story_image_hld{
+        transform: translateY(250px);
+    }
+    .story_award .storyCard-container{
+         height: 800px;
+         padding-top: 600px;
+    }
+    .story_award .title_and_content_hld{
+        transform: translateY(0px);
+    }
+    .story_award .story_image_hld{
+        transform: translateY(-1050px);
+    }
+}
+
+
+
+/* .story_mobile_view{
+    display: none;
+} */
+
+/* mobile layout */
+
+
+/* .story_mobile_view{
+    height: 1500px;
+    vertical-align: baseline;
+    position:fixed;
+    flex-direction: column;
+    background-color: black;
+}
+.storyCard-container_mobile{
+    background-color: black;
+    padding: 100px 20px;
+    overflow-y: scroll;
+    height: 15000px;
+
+}
+.title_and_content_hld_mobile h1{
+    color: #fff;
+    font-size: 35px;
+    padding-top: 20px;
+}
+.title_and_content_hld_mobile p{
+    color: rgba(255,255,255,0.6);
+    font-size: 18px;
+    text-align: justify;
+    padding-top: 10px;
+}
+.story_image_hld_mobile{
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+.story_image_hld_mobile img{
+    width: 100%;
+} */
+
+
+/* parallax animation */
+/* .story_pandemic_phase_mobile{
+    position: relative;
+    opacity: 1;
+    top: 200px;
+    z-index: 2;
+    background-color: black;
+    transition: all 2s;
+  }
+  .story_first_client_mobile{
+      opacity: 1;
+      bottom: -1000px;
+  }
+  .story_newOffice_mobile{
+      right: -1800px;
+      opacity: 1;
+      top: 80px;
+  }
+  .story_award_mobile{
+      opacity: 1;
+      bottom: -1000px;
+  }
+  .showPandemic_mobile{
+    top: -1300px;
+  }
+  .showClient_mobile{
+      opacity: 1;
+      bottom: -135px;
+  }
+  .showOffices_mobile{
+      opacity: 1;
+      right: 0;
+      
+  }
+  .showAwards_mobile{
+      opacity: 1;
+      bottom: -135px;
+  } */
