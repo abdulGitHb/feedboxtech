@@ -45,7 +45,7 @@ export default function Slider() {
                 {/* for web view */}
                 <div className="slider-container client_web_view">
 
-                    <span data-aos="fade-up">Trusted By 500+ Customers And Still Counting...</span>
+                    <span data-aos="fade-up">Our Trusted Clients</span>
 
                     <Swiper
 

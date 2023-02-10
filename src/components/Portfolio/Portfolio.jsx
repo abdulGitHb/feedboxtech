@@ -7,8 +7,9 @@ import TintedTales from '../../image/tintedTales.png'
 import IndependenceRock from '../../image/independenceRock.png'
 import Gallant_jwellery from '../../image/gallent_jwellery.png'
 import Tenet from '../../image/tenet.png'
+import Aryan from '../../image/aryan.png'
+
 import Runo from '../../image/runo.png'
-import Nh7 from '../../image/nh7.png'
 import Card from '../PortfolioCard/PortfolioCard'
 import { Outlet, Link } from "react-router-dom";
 // import AOS from 'aos';
@@ -34,7 +35,7 @@ export default function services() {
                 className='portfolio_subHeading'>Projects that speak of our success ...</span>
 
             <div className="portfolio_cards">
-            <Card
+                    <Card
                         aos="fade-up-right"
                         image={Centaurus}
                         url="https://webcode.codezesk.com/centaurus/"
@@ -42,10 +43,10 @@ export default function services() {
                     />
 
                     <Card
-                        aos="fade-up"
-                        image={Nh7}
-                        url="https://nh7.in/"
-                        title="Bacardi"
+                        aos="fade-up-right"
+                        image={Aryan}
+                        url="https://www.aryantiles.com/"
+                        title="Aryan"
                     />
                     <Card
                         aos="fade-up-left"

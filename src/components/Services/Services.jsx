@@ -46,14 +46,14 @@ export default function Services(){
             icon={app_dev}
             title="APP DEVELOPMENT"
             linkTo='/services/appdev'
-            desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
+            desc="Our team of developers, designers, and project managers develop software applications for mobile devices, such as smartphones and tablets."
             />
             <ServiceCard
               aos="fade-up"
               icon={web_dev}
               title="WEB DEVELOPMENT"
               linkTo='/services/webdev'
-              desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
+              desc="Our team of tech geeks create and maintain both front-end development and back-end development."
              />
             <ServiceCard
               aos="fade-left"

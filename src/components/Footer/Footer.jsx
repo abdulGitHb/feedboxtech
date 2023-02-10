@@ -69,7 +69,7 @@ export default function Footer() {
             </div>
                 <hr />
             <div className='footerDown'>
-            <p data-aos="fade-up">Copyright &copy; 2022 Feedbox. All Rights Reserved</p>
+            <p data-aos="fade-up">Copyright &copy; 2023 Feedbox. All Rights Reserved</p>
             </div>
         </div>
      
