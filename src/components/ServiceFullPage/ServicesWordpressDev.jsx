@@ -6,6 +6,7 @@ import img2 from '../../image/webImg1.svg';
 import img3 from '../../image/service2.jpg';
 import wpDev1 from '../../image/wordPressDev1.png';
 import wpDev2 from '../../image/wordPressDev2.png';
+import {BsArrowLeft, BsArrowRight} from 'react-icons/bs'
 
 // import './ServicesFullPage.css'
 import { Link, useLocation } from 'react-router-dom';
@@ -16,7 +17,9 @@ import {motion} from 'framer-motion';
 function ServicesWordpressDev() {
 
   const location = useLocation();
-  const lrSwipe=location.state.swipe;
+  // let lrSwipe="Swipeleft";
+  const lrSwipe= location.state==null?"Swipeleft":location.state.swipe;
+  
   console.log(lrSwipe);
 
   return (
@@ -53,7 +56,7 @@ function ServicesWordpressDev() {
       <div className="lower-nav">
       
         <div className='sub-service'><Link className='link' to='/services/webdev' state={{swipe:"Swipeleft"}}><h4>Web</h4><h4> Development</h4></Link></div>
-        <div className='sub-service div-selected'><Link className='link-select' to='/services/wordpressdev' ><h4>Wordpress</h4><h4> Development</h4></Link></div> 
+        <div className='sub-service div-selected'><Link className='link-select' to='/services/wordpressdev' state={{swipe:"Swipeleft"}}><h4>Wordpress</h4><h4> Development</h4></Link></div> 
         <div className='sub-service '><Link className='link' to='/services/appdev' state={{swipe:"Swiperight"}}><h4>App</h4><h4> Development</h4></Link></div>
       </div>
 
@@ -61,7 +64,19 @@ function ServicesWordpressDev() {
         <ServiceAppDev/>
       </div> */}
       <div className='horizontalLine'>
-        <hr />
+        <Link className='link' to='/services/webdev' state={{swipe:"Swipeleft"}}>
+          <div className="arrow-btn">
+            <BsArrowLeft size={28}/>
+          </div>
+        </Link>
+        <div className="line-inner">
+          <hr />
+        </div>
+        <Link className='link' to='/services/appdev' state={{swipe:"Swiperight"}}>
+          <div className="arrow-btn">
+            <BsArrowRight size={28}/>
+          </div>
+        </Link>
       </div>
       
     <div className='main-container'>

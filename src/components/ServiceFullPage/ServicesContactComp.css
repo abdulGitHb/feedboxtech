@@ -98,7 +98,8 @@
         width: 60%;
         /* background-color: aquamarine; */
     }
-    .content-container{
+    .content-container h2{
+        font-size: 1.7rem;
         /* background-color: aqua; */
     }
 }
