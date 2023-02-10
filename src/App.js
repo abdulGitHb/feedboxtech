@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect, useRef, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import HomeComp from './HomeComp';
 import PortfolioAll from './components/Portfolio/PortfolioAll'
 import loader from '../src/image/loader.mp4'
@@ -15,7 +15,11 @@ import { Link } from 'react-scroll'
 import ServiceAppDev from './components/ServiceFullPage/ServiceAppDev';
 import ServicesWebDev from './components/ServiceFullPage/ServicesWebDev';
 import ServicesWordpressDev from './components/ServiceFullPage/ServicesWordpressDev'
+
+import AnimatedRoutes from './components/AnimatedRoutes';
+
 import OurStory from './components/OurStory/OurStory2';
+
 
 function App() {
   // const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 })
@@ -191,16 +195,13 @@ function App() {
       </div> */}
 
       <Router>
+        <AnimatedRoutes/>
+
         <Routes>
-          <Route path='/' element={<HomeComp />} />
-          <Route path='/about' element={<AboutUs />} />
-          <Route path='/services/appdev' element={<ServiceAppDev />} />
-          <Route path='/services/webdev' element={<ServicesWebDev />} />
-          <Route path='/services/wordpressdev' element={<ServicesWordpressDev />} />
-          <Route path='/Portfolio' element={<PortfolioAll />} />
-          <Route path='/contact' element={<Contact />} />
+         
           <Route path='/ourstory' element={<OurStory />} />
         </Routes>
+
       </Router>
     </div>
 

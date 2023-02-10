@@ -5,21 +5,22 @@
     border-radius: 5px;
     background-color: rgb(6, 6, 146);
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .contact-img-container{
+    /* margin-top: 50px; */
     width: 150px;
 }
 
 .talk-us-img1{
     width: 20vw;
     object-fit: cover;
-    margin-top: 10%;
+    margin-top: 15%;
     margin-bottom: 10%;
     margin-left: 5px;
 }
 .text-container{
-    width: 60vw;
+    width: 60%;
     /* background-color: aqua; */
 }
 .text-container h2{
@@ -33,7 +34,7 @@
     margin-left: 20px;
     margin-right: 10px;
     flex-direction: column;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     /* background-color: aquamarine; */
 }
 
@@ -51,7 +52,7 @@
     
 }
 
-@media (max-width: 480px){
+@media (max-width: 590px){
     .contact-img-container{
         display: none;
     }
@@ -79,5 +80,27 @@
         color: white;  
     }
      
+}
+
+@media (min-width: 768px) and (max-width: 920px){
+    .main-container-talk-us{
+        width: 100%;
+    }
+    .contact-img-container{
+        width: 40%;
+        /* background-color: aqua; */
+    }
+    .talk-us-img1{
+        width: 250px;
+        /* background-color: aquamarine; */
+    }
+    .text-container{
+        width: 60%;
+        /* background-color: aquamarine; */
+    }
+    .content-container h2{
+        font-size: 1.7rem;
+        /* background-color: aqua; */
+    }
 }
 
