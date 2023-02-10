@@ -16,8 +16,8 @@ export default function Navbar() {
       // $("#contacto").toggleClass("link-contact", navToggle);
       $("#header").toggleClass("mobile-open", navToggle);
       $("#nav-items-holder").toggleClass("nav-options-active");
-     
-     
+
+
       setnavToggle(!navToggle);
     });
 
@@ -31,10 +31,10 @@ export default function Navbar() {
     <nav id="header" className="glass header-close ">
       <div id="nav-container">
         <div id="logo-holder">
-        <Link to="hero-home" spy={true} smooth={true} className="link">
-        <img id="logo" src={f_logo} alt="" />
-            </Link>
-          
+          <Link to="hero-home" spy={true} smooth={true} className="link">
+            <img id="logo" src={f_logo} alt="" />
+          </Link>
+
 
           <input id="toggle" type="checkbox"></input>
 
@@ -79,14 +79,21 @@ export default function Navbar() {
             </Link>
 
           </div>
+          <div id="n-ourstory" style={{ textAlign: 'center' }}>
+
+            <a href="/ourstory" className="n_link" style={{ textAlign: 'center' }}>
+              Our Story
+            </a>
+
+          </div>
 
         </div>
         <div id="contacto">
 
-          <Link to="contact" spy={true} smooth={true} 
-          duration={500}
-          className="link "
-          style={{color:'#0090ee'}}
+          <Link to="contact" spy={true} smooth={true}
+            duration={500}
+            className="link "
+            style={{ color: '#0090ee' }}
           >
             <p style={{ width: "160px" }}>Contact &nbsp;Us</p>
           </Link>

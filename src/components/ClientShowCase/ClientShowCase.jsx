@@ -40,7 +40,7 @@ export default function Slider() {
 
 
     return (
-        <div className="slider-container-hld" style={{ paddingTop: '800px' }}>
+        <div className="slider-container-hld" style={{ paddingTop: '850px' }}>
             <div className="client_back">
                 {/* for web view */}
                 <div className="slider-container client_web_view">
@@ -141,7 +141,7 @@ export default function Slider() {
 
                         data-aos="fade-up"
                         data-aos-duration="100s"
-                        spaceBetween={30}
+                        spaceBetween={40}
                         slidesPerView={3}
                         grabCursor={true}
                         centeredSlides={true}

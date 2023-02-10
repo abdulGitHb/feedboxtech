@@ -66,14 +66,21 @@ input {
     margin-top: 10px;
     margin-bottom: 30px;
     padding: 10px;
-    color: #fff;
+    color: rgba(255,255,255,0.6);
     font-size: 15px;
+   
+    box-shadow: none !important; 
+    outline: none;
 }
+
 input[type=text]:focus {
     /* background: none; */
     background-color: #011842;
     border: 1px solid #0090ee;
   }
+  input:-webkit-autofill {
+    background: black !important;
+}
 .co-form label{
     background-color: #011842;
     width: fit-content;
@@ -104,7 +111,7 @@ textarea {
     border-radius: 0.6rem;
     border: 1.5px solid rgba(255,255,255,0.6);
     width: 105%;
-    color: white;
+    color: rgba(255,255,255,0.6);
     padding: 10px;
     font-size: 15px;
 }
