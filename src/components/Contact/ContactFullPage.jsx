@@ -32,7 +32,7 @@ export default function Contact() {
                         <IoCallOutline size={45} style={{opacity:'0.5'}} />
                         <div className="data_row" >
                             <h3 style={{ fontWeight: '600' }}> Contact Number </h3>
-                            <p>+91-1234567890</p>
+                            <p>+91-7869909760</p>
                         </div>
 
                     </div>
@@ -47,7 +47,7 @@ export default function Contact() {
                         <MdOutlineMail size={45}  style={{opacity:'0.5'}} />
                         <div className="data_row">
                             <h3 style={{ fontWeight: '600' }}> Email </h3>
-                            <p>Feedbox@xyz.com</p>
+                            <p>admin@feedbox.co.in</p>
                         </div>
                     </div>
                 </div>

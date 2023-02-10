@@ -33,21 +33,21 @@ export default function Contact() {
     });
 
     const getFormData= (event)=>{
-        event.preventDefault();
-        // console.log(formData1);
-         fetch("http://localhost:5000/contactdata",{
+        // event.preventDefault();
+        // // console.log(formData1);
+        //  fetch("http://localhost:5000/contactdata",{
           
-            method:'POST',
-            headers:{
-                "content-type":"application/json",
-            },
-            body: JSON.stringify(formData1)
-        })
-        .then((response)=>{response.json()})
-        .catch(error=>{
-            console.log(`error is : ${error}`)
-            // console.log(formData1);
-        })
+        //     method:'POST',
+        //     headers:{
+        //         "content-type":"application/json",
+        //     },
+        //     body: JSON.stringify(formData1)
+        // })
+        // .then((response)=>{response.json()})
+        // .catch(error=>{
+        //     console.log(`error is : ${error}`)
+        //     // console.log(formData1);
+        // })
     }
 
 
@@ -75,15 +75,15 @@ export default function Contact() {
 
 
 const handleSubmit = () =>{
-    const message = {
-        to:'umesh.feedbox@gmail.com',
-        from: email,
-        subject:"for making an awesome appointment",
-        html: `
-        <p><strong>Name:</strong>${name}</p>
-        <p>${contact}</p>
-        <p>${message}</p>`
-    }
+    // const message = {
+    //     to:'umesh.feedbox@gmail.com',
+    //     from: email,
+    //     subject:"for making an awesome appointment",
+    //     html: `
+    //     <p><strong>Name:</strong>${name}</p>
+    //     <p>${contact}</p>
+    //     <p>${message}</p>`
+    // }
     // sgMail.send(message)
 }
 
@@ -101,7 +101,7 @@ const handleSubmit = () =>{
                         <IoCallOutline size={40} style={{opacity:'0.5'}} />
                         <div className="data_row" >
                             <h3 style={{ fontWeight: '600' }}> Contact Number </h3>
-                            <p>+91-1234567890</p>
+                            <p>+91-7869909760</p>
                         </div>
 
                     </div>
@@ -116,7 +116,7 @@ const handleSubmit = () =>{
                         <MdOutlineMail size={40}  style={{opacity:'0.5'}} />
                         <div className="data_row">
                             <h3 style={{ fontWeight: '600' }}> Email </h3>
-                            <p>Feedbox@xyz.com</p>
+                            <p>admin@feedbox.co.in</p>
                         </div>
                     </div>
                 </div>

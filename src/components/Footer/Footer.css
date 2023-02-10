@@ -64,7 +64,7 @@
 .index a{
     text-decoration: none;
     outline: none;
-    color: white;
+    color: rgba(254,255,254,0.7);
 }
 .footer_social_media{
  display: flex;

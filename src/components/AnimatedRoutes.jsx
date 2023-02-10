@@ -1,9 +1,12 @@
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom';
 import HomeComp from '../HomeComp';
-// import AboutUs from './AboutUsFullPage/AboutUs';
+
+
 import NewAbout from './AboutUsFullPage/newAbout';
 import Contact from './Contact/Contact';
+
+
 import PortfolioAll from './Portfolio/PortfolioAll';
 import ServiceAppDev from './ServiceFullPage/ServiceAppDev';
 import ServicesWebDev from './ServiceFullPage/ServicesWebDev';

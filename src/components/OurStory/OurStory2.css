@@ -1,5 +1,5 @@
 #main{
-    padding-top: 100px;
+    padding-top: 85px;
     background-color:black;
     color: #fff;
     height: 3200px;
@@ -25,10 +25,10 @@
 }
 .storyCard-container{
     background-color: black;
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
     margin-top: -40px;
     display: flex;
-    gap: 13vw;
+    gap: 8vw;
     justify-content: center;
     align-items: center;
     height: 800px;
@@ -46,14 +46,14 @@
 }
 .title_and_content_hld p{
     padding-top: 30px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
     line-height: 2rem;
-    opacity: 0.7;
+    color: rgba(255,255,255,0.7);
     display: inline-block;
 }
 .story_image_hld{
-    width: 500px;
+    width: 450px;
     object-fit: cover;
     position: relative;
     z-index: 11111;
@@ -63,6 +63,7 @@
     position: relative;
     z-index: 111111;
 }
+
 .white_layer{
     width: 25%;
     height: 900px;
@@ -77,6 +78,55 @@
     right: auto;
 }
 
+
+/* video play button */
+/* .blurEffect {
+    -webkit-filter: blur(7px);
+    -o-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+} */
+
+.content {
+    position: absolute;
+    display: inline-block;
+    transform: translate(-65%,20%);
+    top: 50%;
+    left: 50%;
+    color: black;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+}
+
+.play {
+    font-size: 50px;
+    cursor: pointer;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 25px;
+}
+
+
+.story_image_hld video{
+    width: 70%;
+    margin-top: 150px;
+}
+
+.play:hover {
+    color: #0090ee;
+}
+
+
+#newOffice .story_image_hld{
+    transform: scale(.8);
+}
+#awards .story_image_hld{
+    /* height: 500px; */
+    transform: scale(.6);
+}
 
 /* cards animation classes */
 .story_pandemic_phase{
@@ -150,11 +200,14 @@
         width: 90%;
         padding: 0;
     }
+    .title_and_content_hld p{
+        font-size: 18px;
+    }
     .story_begining .storyCard-container{
-        height: 1650px;
+        height: 1700px;
     }
     .story_begining .title_and_content_hld{
-        transform: translateY(230px);
+        transform: translateY(320px);
         display: block;
         width: 90%;
         padding: 0;
@@ -168,7 +221,7 @@
         font-size: 30px;
     }
     .story_begining .story_image_hld{
-        padding-top: 50px;
+        padding-top: 60px;
         width: 90%;
         transform: translateY(-1100px);
     }
@@ -185,39 +238,51 @@
         transform: translateY(0);
     }
     .story_first_client .storyCard-container{
-        height: 1150px;
+        height: 1450px;
         /* bottom: 0; */
     }
     .story_first_client .title_and_content_hld{
-        transform: translateY(580px);
+        transform: translateY(880px);
     }
     .story_first_client .story_image_hld{
-        transform: translateY(-220px);
+        transform: translateY(-350px);
+        width: 400px;
+        margin-left: 28px;
     }
     #newOffice{
+        padding-top: 250px;
         margin-top: -100px;
+    }
+    #newOffice .story_image_hld{
+        transform: scale(1);
     }
     .story_newOffice .storyCard-container{
         top:0;
         margin-top: -200px;
-        height: 1400px;
+        height: 1700px;
         z-index: 1111111;
     }
     .story_newOffice .title_and_content_hld{
-        transform: translateY(270px);
+        transform: translateY(20px);
     }
     .story_newOffice  .story_image_hld{
-        transform: translateY(250px);
+        transform: translateY(550px);
     }
     .story_award .storyCard-container{
-         height: 800px;
-         padding-top: 600px;
+         height: 1600px;
+         padding-top: -800px;
     }
     .story_award .title_and_content_hld{
-        transform: translateY(0px);
+        transform: translateY(800px);
     }
     .story_award .story_image_hld{
-        transform: translateY(-1050px);
+        /* transform: translateY(-200px); */
+        transform: scale(1.6);
+        margin-top: -500px;
+    }
+    #awards .story_image_hld{
+        /* height: 500px; */
+        transform: scale(.7);
     }
 }
 
