@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import './About.css'
+
 import AboutImg from '../../image/about2.png'
+
 
 // import aboutPage from '../AboutUsFullPage/AboutUs';
 
