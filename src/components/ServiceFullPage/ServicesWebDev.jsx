@@ -6,6 +6,7 @@ import img2 from '../../image/webImg1.svg';
 import img3 from '../../image/service2.jpg';
 import webDev2 from '../../image/webDev2.png';
 import wpDev2 from '../../image/wordPressDev2.png';
+import {BsArrowLeft, BsArrowRight} from 'react-icons/bs'
 
 import { Link, useLocation } from 'react-router-dom';
 import NavBarResp from '../Navbar2/NavBarResp';
@@ -15,7 +16,7 @@ import {motion} from 'framer-motion';
 function ServicesWebDev() {
   
   const location = useLocation();
-  const lrSwipe=location.state.swipe;
+  const lrSwipe= location.state==null?"Swipeleft":location.state.swipe;
   console.log(lrSwipe);
 
 
@@ -54,7 +55,7 @@ function ServicesWebDev() {
       <div className="lower-nav">
       
         <div className='sub-service '><Link className='link' to='/services/appdev' state={{swipe:"Swipeleft"}}><h4>App</h4><h4> Development</h4></Link></div>
-        <div className='sub-service div-selected'><Link className='link-select' to='/services/webdev' ><h4>Web</h4><h4> Development</h4></Link></div>
+        <div className='sub-service div-selected'><Link className='link-select' to='/services/webdev' state={{swipe:"Swipeleft"}}><h4>Web</h4><h4> Development</h4></Link></div>
         <div className='sub-service'><Link className='link' to='/services/wordpressdev' state={{swipe:"Swiperight"}}><h4>Wordpress</h4><h4> Development</h4></Link></div> 
       </div>
 
@@ -62,7 +63,19 @@ function ServicesWebDev() {
         <ServiceAppDev/>
       </div> */}
       <div className='horizontalLine'>
-        <hr />
+        <Link className='link' to='/services/appdev' state={{swipe:"Swipeleft"}}>
+          <div className="arrow-btn">
+            <BsArrowLeft size={28}/>
+          </div>
+        </Link>
+        <div className="line-inner">
+          <hr />
+        </div>
+        <Link className='link' to='/services/wordpressdev' state={{swipe:"Swiperight"}}>
+          <div className="arrow-btn">
+            <BsArrowRight size={28}/>
+          </div>
+        </Link>
       </div>
       
     <div className='main-container'>
