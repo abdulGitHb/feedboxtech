@@ -15,7 +15,11 @@ import { Link } from 'react-scroll'
 import ServiceAppDev from './components/ServiceFullPage/ServiceAppDev';
 import ServicesWebDev from './components/ServiceFullPage/ServicesWebDev';
 import ServicesWordpressDev from './components/ServiceFullPage/ServicesWordpressDev'
+
 import AnimatedRoutes from './components/AnimatedRoutes';
+
+import OurStory from './components/OurStory/OurStory2';
+
 
 function App() {
   // const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 })
@@ -114,7 +118,7 @@ function App() {
 
   useEffect(() => {
     if (offset > 800) {
-      console.log(offset)
+      // console.log(offset)
       $(document).ready(function () {
         // console.log('hello')
         $(".scrollBottomToTop").addClass("showButton")
@@ -135,7 +139,7 @@ function App() {
   
       },2000)
       setTimeout(()=>{
-        fadeInPage();
+        // fadeInPage();
       },2001)
      
     };
@@ -151,15 +155,15 @@ function App() {
     }
   }, []);
 
-  const fadeInPage = () =>{
-    if(!window.AnimationEvent){return;}
-    $(document).ready(function () {
-      // console.log('hello')
-      $("fader").addClass("fade-out")
-    }).then(()=>{
-      alert("hello")
-    })
-  }
+  // const fadeInPage = () =>{
+  //   if(!window.AnimationEvent){return;}
+  //   $(document).ready(function () {
+  //     // console.log('hello')
+  //     $("fader").addClass("fade-out")
+  //   }).then(()=>{
+  //     // alert("hello")
+  //   })
+  // }
   
 
   return (
@@ -192,6 +196,12 @@ function App() {
 
       <Router>
         <AnimatedRoutes/>
+
+        <Routes>
+         
+          <Route path='/ourstory' element={<OurStory />} />
+        </Routes>
+
       </Router>
     </div>
 

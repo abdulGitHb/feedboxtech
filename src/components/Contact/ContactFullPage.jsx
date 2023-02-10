@@ -58,19 +58,19 @@ export default function Contact() {
                         <label>
                             Name
                         </label>
-                        <input type="text" name="name" required={true} />
+                        <input autoComplete="off" type="text" name="name" required={true} />
                         <label>
                             Email
                         </label>
-                        <input type="email" name="email" required={true} />
+                        <input autoComplete="off" type="email" name="email" required={true} />
                         <label>
                             Contact No
                         </label>
-                        <input type="number" name="contact_no" required={true} />
+                        <input autoComplete="off" type="phone" name="contact_no" required={true} />
                         <label id="message_label">
                             Message
                         </label>
-                        <textarea name="message" id="message" rows="2"></textarea>
+                        <textarea autoComplete="off" name="message" id="message" rows="2"></textarea>
                         <button className="submit_btn">Submit</button>
                     </form>
                 </div>

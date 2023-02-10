@@ -6,7 +6,7 @@ import { FiLinkedin } from "react-icons/fi"
 import { IoLogoInstagram } from "react-icons/io"
 import { RxTwitterLogo } from "react-icons/rx"
 import { RxTriangleRight } from "react-icons/rx"
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -35,26 +35,24 @@ export default function Footer() {
                     <div className="footer_indexes">
                         <div className="index_col">
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={40} /><Link to="hero-home" spy={true} smooth={true}>Home</Link>
+                                <RxTriangleRight className="mobile_view" size={40} /><a href="/">Home</a>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={40} /><Link to="about" spy={true} smooth={true}
-                                duration={500}
-                                >About Us</Link>
+                                <RxTriangleRight className="mobile_view" size={40} /><a href="/about"> About Us</a>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={40} /><Link to="services" spy={true} smooth={true}>Services</Link>
+                                <RxTriangleRight className="mobile_view" size={40} /><a href="/services/appdev" >Services</a>
                             </div>
                         </div>
                         <div className="index_col">
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={40} /><Link to="portfolio" spy={true} smooth={true}>Portfolio</Link>
+                                <RxTriangleRight className="mobile_view" size={40} /><a href="/Portfolio">Portfolio</a>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={40} /><Link to="contact" spy={true} smooth={true}>Contact Us</Link>
+                                <RxTriangleRight className="mobile_view" size={40} /><a href="/contact">Contact Us</a>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={40} />Career
+                                <RxTriangleRight className="mobile_view" size={40} /><a href="/ourstory"> Our Story </a>
                             </div>
                         </div>
                     </div>

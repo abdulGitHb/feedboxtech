@@ -6,8 +6,15 @@ import { IoCallOutline } from "react-icons/io5"
 import { HiOutlineLocationMarker } from "react-icons/hi"
 import { MdOutlineMail } from "react-icons/md"
 
+// const sgMail = require('@sendgrid/mail')
+// sgMail.setSpiKey(process.env.SENDGRID_API_KEY);
+
 
 export default function Contact() {
+    const [name, setname] = useState('')
+    const [email, setemail] = useState('')
+    const [contact, setcontact] = useState('')
+    const [message, setmessage] = useState('')
 
     // useEffect(() => {
     //     AOS.init({
@@ -15,6 +22,7 @@ export default function Contact() {
     //         // offset: -250
     //     })
     // },[])
+
 
 
     const [formData1, setFormData1] = useState({
@@ -49,6 +57,36 @@ export default function Contact() {
         // console.log(e.target.value)
         // console.log(formData1);
     }
+
+
+
+//     // eslint-disable-next-line turbo/no-undeclared-env-vars
+// sendgrid.setApiKey(process.env.SENDGRID_API_KEY || '');
+
+// const emailHtml = render(<Email url="https://example.com" />);
+
+// const options = {
+//   from: 'you@example.com',
+//   to: 'user@gmail.com',
+//   subject: 'hello world',
+//   html: emailHtml,
+// };
+
+
+
+const handleSubmit = () =>{
+    const message = {
+        to:'umesh.feedbox@gmail.com',
+        from: email,
+        subject:"for making an awesome appointment",
+        html: `
+        <p><strong>Name:</strong>${name}</p>
+        <p>${contact}</p>
+        <p>${message}</p>`
+    }
+    // sgMail.send(message)
+}
+
 
     return (
 
@@ -85,6 +123,7 @@ export default function Contact() {
 
                 <div data-aos="fade-up" className="co-form">
                     <h2 className="title_in_form">Got Ideas? We Got The Skills. Let's team up</h2>
+
                     <form onSubmit={getFormData}>
                         <label>Name</label>
                         <input type="text" value={formData1.name} onChange={handleChange} name="name" required={true} />
@@ -97,7 +136,7 @@ export default function Contact() {
                         
                         <label id="message_label">Message</label>
                         <textarea name="message" value={formData1.message}    onChange={handleChange} id="message" rows="2"></textarea>
-                        
+                       
                         <button className="submit_btn">Submit</button>
                     </form>
                 </div>
