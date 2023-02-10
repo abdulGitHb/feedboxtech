@@ -1,24 +1,26 @@
 import './App.css';
 import { useEffect, useRef, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import HomeComp from './HomeComp';
-import PortfolioAll from './components/Portfolio/PortfolioAll'
+// import HomeComp from './HomeComp';
+// import PortfolioAll from './components/Portfolio/PortfolioAll'
 import loader from '../src/image/loader.mp4'
 // import Cursor from './Cursor';
 // import { motion, useMotionValue } from "framer-motion"
 import Rocket from '../src/image/rocket.gif'
 // import AboutUs from './components/AboutUsFullPage/AboutUs';
-import Contact from './components/Contact/ContactFullPage';
+// import Contact from './components/Contact/ContactFullPage';
 import { IoIosArrowUp } from 'react-icons/io'
 import $ from 'jquery';
 import { Link } from 'react-scroll'
-import ServiceAppDev from './components/ServiceFullPage/ServiceAppDev';
-import ServicesWebDev from './components/ServiceFullPage/ServicesWebDev';
-import ServicesWordpressDev from './components/ServiceFullPage/ServicesWordpressDev'
+// import ServiceAppDev from './components/ServiceFullPage/ServiceAppDev';
+// import ServicesWebDev from './components/ServiceFullPage/ServicesWebDev';
+// import ServicesWordpressDev from './components/ServiceFullPage/ServicesWordpressDev'
+
+import ScrollToTop from './ScrollToTop';
 
 import AnimatedRoutes from './components/AnimatedRoutes';
 
-import OurStory from './components/OurStory/OurStory2';
+
 
 
 function App() {
@@ -195,13 +197,8 @@ function App() {
       </div> */}
 
       <Router>
+        <ScrollToTop />
         <AnimatedRoutes/>
-
-        <Routes>
-         
-          <Route path='/ourstory' element={<OurStory />} />
-        </Routes>
-
       </Router>
     </div>
 

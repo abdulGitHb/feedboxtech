@@ -4,14 +4,15 @@ import HomeComp from '../HomeComp';
 
 
 import NewAbout from './AboutUsFullPage/newAbout';
-import Contact from './Contact/Contact';
-
+// import Contact from './Contact/Contact';
+import Contact from './Contact/ContactFullPage';
 
 import PortfolioAll from './Portfolio/PortfolioAll';
 import ServiceAppDev from './ServiceFullPage/ServiceAppDev';
 import ServicesWebDev from './ServiceFullPage/ServicesWebDev';
 import ServicesWordpressDev from './ServiceFullPage/ServicesWordpressDev';
 import {AnimatePresence} from 'framer-motion';
+import OurStory from '../../src/components/OurStory/OurStory2';
 
 function AnimatedRoutes() {
 
@@ -27,6 +28,7 @@ function AnimatedRoutes() {
           <Route path='/services/wordpressdev' element={<ServicesWordpressDev />} />
           <Route path='/Portfolio' element={<PortfolioAll />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/ourstory' element={<OurStory />} />
         </Routes>
     </AnimatePresence>
   )

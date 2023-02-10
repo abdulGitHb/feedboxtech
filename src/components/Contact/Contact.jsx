@@ -126,16 +126,16 @@ const handleSubmit = () =>{
 
                     <form onSubmit={getFormData}>
                         <label>Name</label>
-                        <input type="text" value={formData1.name} onChange={handleChange} name="name" required={true} />
+                        <input autoComplete="off" type="text" value={formData1.name} onChange={handleChange} name="name" required={true} />
 
                         <label>Email</label>
-                        <input type="email" value={formData1.email}   onChange={handleChange} name="email" required={true} />
+                        <input autoComplete="off" type="email" value={formData1.email}   onChange={handleChange} name="email" required={true} />
                         
                         <label>Contact No</label>
-                        <input type="number" value={formData1.contact}    onChange={handleChange} name="contact" required={true} />
+                        <input autoComplete="off" type="number" value={formData1.contact}    onChange={handleChange} name="contact" required={true} />
                         
                         <label id="message_label">Message</label>
-                        <textarea name="message" value={formData1.message}    onChange={handleChange} id="message" rows="2"></textarea>
+                        <textarea autoComplete="off" name="message" value={formData1.message}    onChange={handleChange} id="message" rows="2"></textarea>
                        
                         <button className="submit_btn">Submit</button>
                     </form>
