@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import './About.css'
 import AboutImg from '../../image/about.gif'
-import aboutPage from '../AboutUsFullPage/AboutUs';
+// import aboutPage from '../AboutUsFullPage/AboutUs';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

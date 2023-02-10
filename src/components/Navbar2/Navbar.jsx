@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* <!-- about --> */}
           <div id="n-home">
 
-            <Link to="dummy" spy={true} smooth={true} className="">
+            <Link to="dummy" spy={true} smooth={true} className="n_link">
               Home
             </Link>
 
@@ -58,7 +58,7 @@ export default function Navbar() {
           {/* <!-- about --> */}
           <div id="n-about">
 
-            <Link to="about" spy={true} smooth={true} className="">
+            <Link to="about" spy={true} smooth={true} className="n_link">
               About
             </Link>
 
@@ -66,7 +66,7 @@ export default function Navbar() {
 
           <div id="n-services">
 
-            <Link to="services" spy={true} smooth={true} className="">
+            <Link to="services" spy={true} smooth={true} className="n_link">
               Services
             </Link>
 
@@ -74,7 +74,7 @@ export default function Navbar() {
 
           <div id="n-portfolio">
 
-            <Link to="portfolio" spy={true} smooth={true} className="">
+            <Link to="portfolio" spy={true} smooth={true} className="n_link">
               Portfolio
             </Link>
 
