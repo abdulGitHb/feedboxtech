@@ -7,7 +7,7 @@ import loader from '../src/image/loader.mp4'
 // import Cursor from './Cursor';
 // import { motion, useMotionValue } from "framer-motion"
 import Rocket from '../src/image/rocket.gif'
-import AboutUs from './components/AboutUsFullPage/AboutUs';
+// import AboutUs from './components/AboutUsFullPage/AboutUs';
 import Contact from './components/Contact/ContactFullPage';
 import { IoIosArrowUp } from 'react-icons/io'
 import $ from 'jquery';

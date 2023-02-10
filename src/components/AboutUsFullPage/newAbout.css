@@ -1,0 +1,149 @@
+.aditya-about-container{
+    background-color: #000;
+    width: 100%;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+    color:rgba(255,255, 255, 0.9);
+    font-size: 18px;
+    padding-top: 150px;
+}
+.aditya-achievement{
+    width: 80%;
+    margin-top: 80px;
+}
+
+.aditya-about-head{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+.aditya-about-head::after 
+    {
+    content: "";
+    display: block;
+    width: 3.5em;
+    border-bottom: 2px solid #0090ee;
+    margin-left: 10%;
+    }
+
+.aditya-achiebement-page{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    gap:100px;
+    align-items: center;
+}
+.aditya-achiebement-page1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.aditya-image-div{
+    width: 40%;
+}
+.aditya-text-div{
+    width:50%;
+}
+
+.aditya-about-story{
+    width: 100%;
+    margin-top: 30px;
+    text-align: justify;    
+}
+
+.aditya-story-head{
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.story-btn{
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: #0090ee;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+@media only screen and (max-width:480px)
+{
+    .aditya-about-container{
+        font-size: 16px;
+    }
+    .aditya-about-head{
+        font-size: 40px;
+    }
+    .aditya-achievement{
+        width: 80%;
+        margin-top: 50px;
+    }
+    .aditya-achiebement-page{
+        padding: 20px 0;
+        gap:30px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .aditya-image-div{
+        width: 100%;
+    }
+    .aditya-text-div{
+        width:100%;
+    }
+    .aditya-about-story{
+        width: 100%;
+    }
+    .aditya-story-head{
+        margin-top: 50px;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width:1000px)
+{
+    .aditya-about-head{
+        font-size: 39px;
+    }
+    
+
+}
+
+/* @media only screen and (max-width:270px)
+{
+    
+.aditya-achiebement-page{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    gap:90px;
+    align-items: center;
+}
+.aditya-achiebement-page1{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.aditya-image-div{
+    width: 40%;
+}
+.aditya-text-div{
+    width:50%;
+}
+
+} */
