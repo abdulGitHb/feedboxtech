@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import './About.css'
-import AboutImg from '../../image/aboutUs.png'
+
+import AboutImg from '../../image/about2.png'
+
+
 // import aboutPage from '../AboutUsFullPage/AboutUs';
 
 import AOS from 'aos';
@@ -33,7 +36,7 @@ export default function About() {
 
                 <div className="about_content_desc">
 
-                    <p>Feedbox tech is a team of passionate tech professionals that are dedicated to providing unparalleled services in areas of website creation and optimisation. We help you get the exposure you need through our expertise in SEO, website building, internet marketing, and web design. We aim to make you the front runners in your domain while helping you reap the benefits of the internet to its fullest with our cut throat technological innovations. We leverage our expertise in creating websites using Wordpress, React, and other trending technologies. </p>
+                    <p>Feedbox tech is a team of passionate tech professionals that are dedicated to providing unparalleled services in areas of website creation and optimisation. We help you get the exposure you need through our expertise in SEO, website building, internet marketing, and web design. We aim to make you the front runners in your domain while helping you reap the benefits of the internet to its fullest with our cut throat technological innovations.</p>
                     <Link to='/about' className="about_content_desc_btn">
                         <div>
                             Know More
