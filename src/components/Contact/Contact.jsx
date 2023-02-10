@@ -23,6 +23,43 @@ export default function Contact() {
     //     })
     // },[])
 
+
+
+    const [formData1, setFormData1] = useState({
+        name:"",
+        email:"",
+        contact:"",
+        message:""
+    });
+
+    const getFormData= (event)=>{
+        event.preventDefault();
+        // console.log(formData1);
+         fetch("http://localhost:5000/contactdata",{
+          
+            method:'POST',
+            headers:{
+                "content-type":"application/json",
+            },
+            body: JSON.stringify(formData1)
+        })
+        .then((response)=>{response.json()})
+        .catch(error=>{
+            console.log(`error is : ${error}`)
+            // console.log(formData1);
+        })
+    }
+
+
+    const handleChange=(e)=>{
+        e.preventDefault();
+        setFormData1({...formData1, [e.target.name]:e.target.value});
+        // console.log(e.target.value)
+        // console.log(formData1);
+    }
+
+
+
 //     // eslint-disable-next-line turbo/no-undeclared-env-vars
 // sendgrid.setApiKey(process.env.SENDGRID_API_KEY || '');
 
@@ -34,6 +71,8 @@ export default function Contact() {
 //   subject: 'hello world',
 //   html: emailHtml,
 // };
+
+
 
 const handleSubmit = () =>{
     const message = {
@@ -48,28 +87,6 @@ const handleSubmit = () =>{
     // sgMail.send(message)
 }
 
-const handleChange = (e) =>{
-    if(e.target.name=='name'){
-        e.preventDefault();
-        setname(e.target.value)
-        // console.log(name)
-    }
-    if(e.target.name=='email'){
-        e.preventDefault();
-        setemail(e.target.value)
-        // console.log(email)
-    }
-    if(e.target.name=='contact_no'){
-        e.preventDefault();
-        setcontact(e.target.value)
-        // console.log(contact)
-    }
-    if(e.target.name=='message'){
-        e.preventDefault();
-        setmessage(e.target.value)
-        // console.log(message)
-    }
-}
 
     return (
 
@@ -106,23 +123,20 @@ const handleChange = (e) =>{
 
                 <div data-aos="fade-up" className="co-form">
                     <h2 className="title_in_form">Got Ideas? We Got The Skills. Let's team up</h2>
-                    <form onSubmit={handleSubmit}>
-                        <label>
-                            Name
-                        </label>
-                        <input autoComplete="off" type="text" name="name" required={true} onChange={handleChange}/>
-                        <label>
-                            Email
-                        </label>
-                        <input  autoComplete="off" type="email" name="email" required={true} onChange={handleChange}/>
-                        <label>
-                            Contact No
-                        </label>
-                        <input autoComplete="off" type="text" name="contact_no" required={true} onChange={handleChange} />
-                        <label id="message_label">
-                            Message
-                        </label>
-                        <textarea autoComplete="off" name="message" id="message" rows="2" onChange={handleChange}/>
+
+                    <form onSubmit={getFormData}>
+                        <label>Name</label>
+                        <input type="text" value={formData1.name} onChange={handleChange} name="name" required={true} />
+
+                        <label>Email</label>
+                        <input type="email" value={formData1.email}   onChange={handleChange} name="email" required={true} />
+                        
+                        <label>Contact No</label>
+                        <input type="number" value={formData1.contact}    onChange={handleChange} name="contact" required={true} />
+                        
+                        <label id="message_label">Message</label>
+                        <textarea name="message" value={formData1.message}    onChange={handleChange} id="message" rows="2"></textarea>
+                       
                         <button className="submit_btn">Submit</button>
                     </form>
                 </div>
