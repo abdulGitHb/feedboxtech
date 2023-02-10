@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './ServicesContactComp.css'
 
 function ServicesContactComp() {
@@ -11,7 +12,9 @@ function ServicesContactComp() {
           <div className="content-container">
             <h2>Have Idea in mind? We got the skills!!</h2>
             <h4>Our developers design and create applications that simplify tasks,</h4>
-            <button className='talk-us-btn'>Talk to Us</button>
+            <Link to='/contact'>
+              <button className='talk-us-btn'>Talk to Us</button>
+            </Link> 
           </div>
         </div>
     </div>
