@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom';
 import HomeComp from '../HomeComp';
 import AboutUs from './AboutUsFullPage/AboutUs';
-import Contact from './Contact/Contact';
+import Contact from './Contact/ContactFullPage';
 import PortfolioAll from './Portfolio/PortfolioAll';
 import ServiceAppDev from './ServiceFullPage/ServiceAppDev';
 import ServicesWebDev from './ServiceFullPage/ServicesWebDev';
