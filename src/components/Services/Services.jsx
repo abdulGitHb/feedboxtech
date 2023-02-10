@@ -4,9 +4,9 @@ import './Services.css'
 import ServiceCard from "../ServiceCard/ServiceCard";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import app_dev from '../../image/app_dev.png'
-import web_dev from '../../image/web_dev.png'
-import wordpress_dev from '../../image/wordpress_dev.png'
+import app_dev from '../../image/appdev.png'
+import web_dev from '../../image/webdev.png'
+import wordpress_dev from '../../image/wordpressdev.png'
 
 
 export default function Services(){

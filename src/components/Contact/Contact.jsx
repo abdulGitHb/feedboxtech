@@ -33,21 +33,21 @@ export default function Contact() {
     });
 
     const getFormData= (event)=>{
-        event.preventDefault();
-        // console.log(formData1);
-         fetch("http://localhost:5000/contactdata",{
+        // event.preventDefault();
+        // // console.log(formData1);
+        //  fetch("http://localhost:5000/contactdata",{
           
-            method:'POST',
-            headers:{
-                "content-type":"application/json",
-            },
-            body: JSON.stringify(formData1)
-        })
-        .then((response)=>{response.json()})
-        .catch(error=>{
-            console.log(`error is : ${error}`)
-            // console.log(formData1);
-        })
+        //     method:'POST',
+        //     headers:{
+        //         "content-type":"application/json",
+        //     },
+        //     body: JSON.stringify(formData1)
+        // })
+        // .then((response)=>{response.json()})
+        // .catch(error=>{
+        //     console.log(`error is : ${error}`)
+        //     // console.log(formData1);
+        // })
     }
 
 
@@ -75,15 +75,15 @@ export default function Contact() {
 
 
 const handleSubmit = () =>{
-    const message = {
-        to:'umesh.feedbox@gmail.com',
-        from: email,
-        subject:"for making an awesome appointment",
-        html: `
-        <p><strong>Name:</strong>${name}</p>
-        <p>${contact}</p>
-        <p>${message}</p>`
-    }
+    // const message = {
+    //     to:'umesh.feedbox@gmail.com',
+    //     from: email,
+    //     subject:"for making an awesome appointment",
+    //     html: `
+    //     <p><strong>Name:</strong>${name}</p>
+    //     <p>${contact}</p>
+    //     <p>${message}</p>`
+    // }
     // sgMail.send(message)
 }
 
