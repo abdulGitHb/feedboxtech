@@ -1,20 +1,18 @@
 .aditya-main-conatiner-outer{
     background-color: #000;
-    padding-top: 120px;
-    
+       
 }
 
 .carousel-control-prev{
-    /* left:39px; */
-    display: none;
+    left:-90px;
 }
 
 .carousel-control-next{
-    display: none;
+    right:570px;
 }
 .aditya-about-container{
         background-color: #000;
-        color: aliceblue;
+        color: rgba(255,255,255,.9);
         justify-content: center;
         align-items: center;
         gap: 10rem;
@@ -23,9 +21,13 @@
         padding:0 .4rem;
         font-size: 1.2rem;
         overflow-x: hidden;
+        padding-top: 120px;
+        padding-bottom: 50px;
 }
 .aditya-about-heading{
-        font-size: 4rem;
+        font-size: 50px;
+        font-weight: 600;
+        color: #ffffff;
         font-weight: bolder;
         position: relative;
         justify-content: center;  
@@ -39,7 +41,7 @@
     display: block;
     width: 3.5em;
     border-bottom: 2px solid #0090ee;
-    margin-left: 42%;
+    margin-left: 43%;
     }
     /* achievement */
     .aditya-about-achievement-right{
@@ -66,11 +68,12 @@
     }
     .aditya-about-achievement-title{
         background-color: #0090ee;
-        font-size: 3rem;
+        font-size: 45px;
         font-weight: bold;
         width: fit-content;
         margin-left: 110px; 
-        margin-top: 35px;  
+        margin-top: 75px;  
+        color: #fff;
     }
     .aditya-about-achievement-span{
         display: block;
@@ -85,12 +88,13 @@
      
     .story-btn{
         background-color: #0090ee;
-        padding: .9px 12px;
+        padding: 14px 18px;
         font-size: 18px;
         margin: 30px 0 30px 0;
         border-radius: 10px;
         cursor: pointer;
         color: #ffffff;
+        border: none;
     }
     .aditya-about-p-text1{
         margin-top: 2px;
@@ -99,9 +103,10 @@
         /*  */
     }
     .aditya-about-story-head{
-        font-size: 3rem;
+        font-size: 45px;
         padding: 30px 0 10px 0;
         font-weight: bold;
+        color: #fff;
         /*  */
     }   
 
@@ -116,16 +121,17 @@
         margin-bottom: 10px;
         width: 39vw;
         margin-top: -208px;
+        font-size: 16px;
         position: absolute;
         border-radius: 10px;
         /*  */
     }  
     
     .carousel-item-data-cont-top{
-        width: 70vw;
+        width: 80%;
         display: flex;
         flex-direction: row;
-        margin-left: 72px;
+        margin-left: 78px;
         background-color: transparent;
     }
     .carousel-item-data-container{
@@ -133,7 +139,7 @@
     }
     .carousel-item-data-cont-img{
         height: 60vh;
-        width: 60vw;
+        width: 40vw;
     }
   
 
@@ -144,15 +150,19 @@
     }
     
     .carousel-control-next{
+        
         display: block;
     }
+    .aditya-about-heading{
+        font-size: 30px;
+    }
     .aditya-about-container{
-        padding-top: 100px;
+        padding-top: 150px;
         gap: 10rem;
         width: 89.8vw;
         padding:0 8px 0 0px;
         padding-top: 70px;
-        font-size: 16px;
+        font-size: 14px;
         width: 89.8vw;
         margin: 0 auto;
 }
@@ -373,13 +383,13 @@
 @media only screen and (min-width:311px) and (max-width:382px)
 {
     .carousel-control-prev{
-        display:block;
+        /* display:block; */
         left:-10px;
         top:-120px
     }
     
     .carousel-control-next{
-        display: block;
+        /* display: block; */
         right:-10px;
         top:-120px
     }
@@ -429,7 +439,7 @@
         }
         
         .aditya-about-story-head{
-        font-size: 2.5rem;
+            font-size: 1.9rem;
         padding: 3px 0 5px 0;
         }  
         .carousel-item-data{
@@ -462,9 +472,9 @@
         width: 100wh;
         }
         .carousel-item-data-cont-img{
-        height: 100vh;
-        width: 100wh;
-        margin-left:30px;
+        height: 39%;
+        width: 45%;
+        margin-left:55px;
         }  
 
         .aditya-about-achievement-title{
@@ -505,10 +515,10 @@
         top:-120px
     }
     .aditya-about-container{
-        font-size: 18px;
+        font-size: 19px;
         }
         .aditya-about-heading{
-         font-size: 2.5rem;
+         font-size: 2.4rem;
          margin-bottom: 40px;
         }
         .aditya-about-heading::after 
@@ -559,15 +569,15 @@
         #carouselExampleFade{
             transform: translateY(-75px);
             display: flex;
-            height: 50vh;
-            margin-bottom: -410px;      
+            height: 54vh;
+            margin-bottom: -380px;      
             }
             .carousel-item-data{
-            margin-left: 48%;
+            margin-left: 47%;
             padding: 5px 5px;
             margin-bottom: 5px;
             width: 74vw;
-            font-size: .7rem;
+            font-size: .83rem;
             transform: translateX(-135px);
             margin-top: 2px;
             }   
@@ -580,7 +590,7 @@
         }
        
         .carousel-item-data-cont-top{
-        width: 135vw;
+        width: 146vw;
         margin-left: 0px;
         margin-bottom: 12px;
         background-color: transparent;       
@@ -593,19 +603,17 @@
         .carousel-item-data-cont-img{
         height: 90vh;
         width: 90wh;
-        margin-left: 40.9px;
+        margin-left: 30px;
         } 
         .aditya-about-p-text1{
-            font-size: 18px;
+            font-size: 19px;
         }
         .aditya-about-p-text{
-            font-size: 18px;
+            font-size: 19px;
         }    
 }
-
 @media only screen and (min-width:470px) and (max-width:500px)
 {
-
     .aditya-about-container{
         padding-top: 11rem;
         font-size: 1.2rem;
@@ -618,21 +626,17 @@
     {
     margin-left: 42%;
     }
-
     .aditya-about-container{
         font-size: .55rem;
     }
     .aditya-about-achievement{
         padding-top:40px;
     }
-    
     .aditya-about-achievement-right{
         width: 50vw;
         margin-left: .5rem;
         margin-right: .5rem;
-        
     }
-    
     .aditya-about-achievement-left{
         width: 40vw;
         padding: .5rem 0px 18.5rem 0px;
@@ -646,7 +650,6 @@
     .aditya-about-achievement-span{
         display: block;
     }
-    
     .aditya-about-p-text1{
         margin-top: 1rem;
         transform: translateY(-17rem);
@@ -657,7 +660,6 @@
         padding: 3px 0 5px 0;
         font-weight: bold;
     } 
-
     #carouselExampleFade{
         transform: translateY(-6.5rem);
         margin-bottom: -30px; 
@@ -673,7 +675,6 @@
     .aditya-about-story{
         text-align: justify;
     }
-      
     .story-btn{
         background-color: #0090ee;
         padding: .7rem .8rem;
@@ -684,7 +685,6 @@
         color: #ffffff;
         border: none;
     }
-
     .carousel-item-data-cont-top{
         width: 70vw;
         display: flex;
@@ -707,8 +707,6 @@
     .aditya-about-p-text{
         font-size: 1.2rem;
     }  
-    
-
 }    
  @media only screen and (min-width:501px) and (max-width:1200px)
 {
@@ -721,14 +719,11 @@
     .aditya-about-achievement{
         padding-top:40px;
     }
-    
     .aditya-about-achievement-right{
         width: 50vw;
         margin-left: .5rem;
         margin-right: .5rem;
-        
     }
-    
     .aditya-about-achievement-left{
         width: 40vw;
         padding: .5rem 0px 15rem 0px;
@@ -742,21 +737,18 @@
     .aditya-about-achievement-span{
         display: block;
     }
-   
     .aditya-about-p-text1{
         margin-top: 1rem;
         transform: translateY(-17rem);
         margin-bottom: -18rem;
         padding: 0 .3rem 0 0;
     }
-
     .aditya-about-story-head{
         font-size: 1.5rem;
         padding: 1.7rem 0 .2rem 0;
         font-weight: bold;
     }
     .carousel-item-data{
-        
         padding: .5rem .5rem;
         margin-bottom: 1rem;
         width: 47vw;
@@ -770,7 +762,6 @@
     .aditya-about-story{
         text-align: justify;
     }
-       
     .story-btn{
         padding: .7rem .8rem;
         font-size: 12px;
@@ -779,15 +770,9 @@
         cursor: pointer;
         border: none;
     }
-
     #carouselExampleFade{
         transform: translateY(-6rem);
-        
-
     }
-    
-    
-    
     .carousel-item-data-cont-top{
         width: 70vw;
         display: flex;
@@ -795,7 +780,6 @@
         margin-left: .5rem;
         background-color: transparent;
         margin-bottom: 200px;
-
     }
     .carousel-item-data-container{
         background-color: transparent;
@@ -804,7 +788,6 @@
         height: 60vh;
         width: 60vh;
     }
-           
 } 
 @media only screen and (min-width:732px) and (max-width:1200px)
 {
@@ -813,23 +796,17 @@
     .carousel-item-data{
         margin-top: -48vh;
         width: 47vw;
-
     }
-     
     .carousel-item-data-cont-top{
         margin-left: .8rem;
-
     }
     .aditya-about-container{
         font-size: .7rem;
     }
     #carouselExampleFade{
         transform: translateY(-8rem);
-
     }
-
     .carousel-item-data{
-        
         margin-top: -290px;
     }
     .aditya-about-story-head{
@@ -838,21 +815,16 @@
     .story-btn{
         margin: 15px 0 30px 0;
     }
-    
 }
 @media only screen and (min-width:925px) and (max-width:1200px)
 {
-    .aditya-about-heading{
-    }
+    
     .carousel-item-data{
         
         margin-top: -340px;
     }
-    
-     
     .carousel-item-data-cont-top{
         margin-left: .8rem;
-
     }
     .aditya-about-container{
         font-size: .9rem;
@@ -861,7 +833,6 @@
         transform: translateY(-11rem);
         margin-bottom: -70px;
     }
-    
     .aditya-about-achievement-left{
         padding: .5rem 0px 19rem 0px;
         height: .2vh;
@@ -870,11 +841,6 @@
         margin-left: 2rem;
         font-size: 2rem;
     }
-    /* .aditya-about-achievement-title{
-        margin-left: 6rem;
-        margin-top: 5rem;
-        font-size: 3rem;
-    } */
 }
 
 @media only screen and (min-width:1201px) and (max-width:1480px)
@@ -911,3 +877,4 @@
         font-size: 3rem;
     }
 }
+

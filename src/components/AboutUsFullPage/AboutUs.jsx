@@ -1,26 +1,30 @@
-import React, { useState } from 'react'
-import data from '../../JsonData/aboutUsData';
+import React, { useEffect, useState } from 'react'
+// import data from '../../JsonData/aboutUsData';
 
 import './AboutUs.css';
-import img from '../../image/aboutbanner.jpg'
+// import img from '../../image/aboutbanner.jpg'
 import NavBarResp from '../Navbar2/NavBarResp';
 import Footer from '../Footer/Footer';
 import a1 from  "../../image/achie1.png"
 import a2 from "../../image/achie2.png";
 import a3 from "../../image/achie3.png";
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 
 function AboutUs() {
 
-  const [dataSection, setDataSection] = useState([]);
-  let sectArr = [];
+  // const [dataSection, setDataSection] = useState([]);
+  // let sectArr = [];
 
-  data.sections.map(sect=>{
-    sectArr=[...sectArr, sect];
-   });
+  // data.sections.map(sect=>{
+  //   sectArr=[...sectArr, sect];
+  //  });
 
-   console.log(sectArr)
+  //  console.log(sectArr)
 
-
+  useEffect(()=>{
+    
+  },[])
   return (
     <>
     <NavBarResp/>
@@ -71,7 +75,7 @@ function AboutUs() {
            </div>
 
          
-            {/* Images and data related to it  */}
+              {/* Images and data related to it  */}
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false">
     <div class="carousel-inner">
 
@@ -102,6 +106,9 @@ function AboutUs() {
     <span class="carousel-control-next-icon" aria-hidden="true" ></span>
   </button>
   </div>
+
+
+
 
 
   
@@ -145,7 +152,7 @@ function AboutUs() {
                     </div>
                 </div>
                 {/* about us story button */}
-                <button className='story-btn' type="button">Read Full Story</button>
+                <a href='/ourstory'><button className='story-btn'  type="button">Read Full Story</button></a>
               </div>
 
                  </div>
