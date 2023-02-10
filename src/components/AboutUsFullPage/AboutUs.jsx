@@ -8,8 +8,8 @@ import Footer from '../Footer/Footer';
 import a1 from  "../../image/achie1.png"
 import a2 from "../../image/achie2.png";
 import a3 from "../../image/achie3.png";
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
+// import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/js/bootstrap.js';
 
 function AboutUs() {
 
