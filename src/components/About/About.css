@@ -1,3 +1,18 @@
+.a-layer{
+    content: "";
+    position: relative;
+    z-index: 1000;
+    background-color: #fff;
+    width: 60%;
+    height: 600px;
+    bottom: -750px;
+    left: -999px;
+    transition: all 2s ease-in-out;
+}
+.a-layer_open{
+    left: 0;
+    transition: all 2s ease-in-out;
+}
 .a-container {
     padding-top: 50px;
     /* width: 100%; */
@@ -14,8 +29,130 @@
     overflow: hidden;
     position: relative;
     z-index: 100;
-
 }
+
+
+/* .pause {
+    background:black;
+    height : 500px;
+    border-radius: 0px !important;
+    box-sizing: border-box;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-name: slideout;
+    animation-duration: 0.7s;
+    animation-name: slideout;
+    transition: all 2s;
+    @-webkit-keyframes slideout {
+        from {
+            margin-left:100%;
+            
+        }
+
+        to {
+            margin-right: 0%;
+            
+        }
+    }
+
+      @keyframes slideout {
+        from {
+            margin-left: 100%;
+            
+        }
+
+        to {
+            margin-right: 0%;
+        
+        }
+    }
+} */
+
+
+/* .play {
+    background: beige;
+    height : 500px;
+    width:700px;
+    border:1px solid white;
+    border-radius: 0px !important;
+    animation: 5s slide-left ;
+    box-sizing: border-box;
+    margin-right: auto;
+    transition: all 2s ease-in-out;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-name: slidein;
+
+             
+    animation-duration: 0.7s;
+    animation-name: slidein;
+        } */
+
+        /* @-webkit-keyframes slidein {
+            from {
+                margin-right:100%;
+                
+            }
+
+            to {
+                margin-left: 0%;
+                
+            }
+        }
+
+          @keyframes slidein {
+            from {
+                margin-right: 100%;
+               
+            }
+
+            to {
+                margin-left: 0%;
+               
+            }
+        } */
+
+
+
+/* 
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+} */
+
+
+
+
+
+.aboutplay{
+    width: 40%;
+    position: relative;
+    left:350px;
+    top:-550px;
+    color: rgba(255,255,255,0.7);
+    font-size: 18px;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.img-about{
+    height:500px;
+    width:800px;
+    position: relative;
+    left:-900px;
+    /* margin-top: 30%; */
+}
+
+.img-pause{
+    height:600px;
+    width:1100px;
+    position: relative;
+    top:-40px;
+    left:10px;
+    
+}
+
 
 .section_heading {
     font-size: 50px;
@@ -43,6 +180,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 10000;
 }
 
 .a_content_img_hld {
@@ -54,24 +193,26 @@
     align-content: center;
     /* position:absolute; */
     flex-wrap: wrap;
+    position: relative;
+    z-index: 100000000;
 }
 
 .a_content_img_hld img {
     width: 100%;
     /* height: 500px; */
+    position: relative;
+    z-index: 10000000;
 }
 
 .about_content_desc {
     width: 40%;
     color: rgba(255,255,255,0.7);
     font-size: 18px;
-    /* margin-top: 100px; */
     line-height: 2rem;
-    /* max-width: 750px; */
     text-align: justify;
-    /* min-width: 350px; */
-    
-
+    position: relative;
+    left:-100px;
+    z-index: 10001;
 }
 
 .about_content_desc_btn {
