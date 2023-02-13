@@ -127,6 +127,14 @@
    .Footer{
     padding-top: 40px;
    }
+   .footerUp{
+    /* gap: 19vw; */
+    flex-direction: column;
+}
+   .footer_indexes_hld{
+    font-size: 15px;
+    flex-direction: column;
+}
     .feedbox_logo_hld{
         justify-content: center;
         align-items: center;
@@ -144,41 +152,23 @@
         font-size: 14px;
         margin-left: -25px;
     }
-    .footerUp{
-        gap: 19vw;
-        
-         flex-direction: row;
-    }
     .footer_indexes{
         gap: 14vw;
         font-size: 14px;
-        /* padding-right: 30px; */
         opacity: 0.7;
-        /* margin-left: -100px;  */
-        /* transform: translateY(0px); */
-        /* margin-left: -10px; */
         margin-top: 0px;
     } 
-    .footer_indexes h3{
-        /* margin-top: -200px;
-        transform: translateY(-200px); */
-    }
     .footer_indexes_mobile{
         transform: translateX(-110px);
     }
     .footer_indexes_services_mobile{
         transform: translateX(-60px);
     }
-    .mobile_view{
-        /* visibility: hidden; */
-    }
     .footerDown{
-        font-size: 20px;
+        font-size: 16px;
     }
     .footer_social_media{
         font-size: 20px;
     }
-    .footer_indexes_hld{
-        font-size: 15px;
-    }
+   
   }

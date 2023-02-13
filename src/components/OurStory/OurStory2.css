@@ -19,37 +19,28 @@
     display: inline-block;
     align-items: center;
     transition: all 1s;
-    /* max-height: 1500px; */
     height: 100%;
-    /* background-color: ; */
-    /* transition: 10s all ease; */
     position: fixed;
     overflow-x: hidden;
     width: 100%;
-    /* max-width: 3000px; */
 }
 
 .storyCard-container {
     background-color: rgb(38, 57, 89);
-    /* padding-top: -100px; */
     margin-top: -50px;
     display: flex;
     gap: 8vw;
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* transition: transform 5000s;
-    transition-delay: 5000s; */
     flex-wrap: wrap;
     width: 100%;
 }
 
 .title_and_content_hld {
     width: 40%;
-    /* max-width: 800px; */
     display: block;
     overflow: hidden;
-    /* height: 50px; */
 }
 
 .title_and_content_hld h1 {
@@ -57,7 +48,6 @@
 }
 
 .title_and_content_hld p {
-    /* padding-top: 30px; */
     font-size: 18px;
     text-align: justify;
     line-height: 1.8rem;
@@ -96,29 +86,6 @@
 
 }
 
-/* .white_layer{
-    width: 25%;
-    height: 900px;
-    background-color: #fff;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-}
-.odd_layer{
-    left: 0;
-    right: auto;
-} */
-
-
-/* video play button */
-/* .blurEffect {
-    -webkit-filter: blur(7px);
-    -o-filter: blur(7px);
-    -moz-filter: blur(7px);
-    -ms-filter: blur(7px);
-    filter: blur(7px);
-} */
 
 .content {
     position: absolute;
@@ -144,14 +111,11 @@
 
 .story_image_hld video {
     width: 80%;
-    /* margin-top: 150px; */
 }
 
 .play:hover {
     color: #0090ee;
 }
-
-
 
 /* cards animation classes */
 .story_pandemic_phase {
@@ -199,10 +163,6 @@
     opacity: 1;
     bottom: -80px;
 }
-
-
-
-
 
 /* story_next_pre_buttons */
 
@@ -343,9 +303,9 @@
         height: 1150px;
         /* bottom: 0; */
     }
-   
+
     .story_first_client .title_and_content_hld {
-       margin-top: 150px;
+        margin-top: 150px;
     }
 
     .story_first_client .story_image_hld {
@@ -381,17 +341,17 @@
     }
 
     .story_award .title_and_content_hld {
-      padding-top: 250px;
-}
+        padding-top: 250px;
+    }
 
-    #awards .story_image_hld{
+    #awards .story_image_hld {
         margin-top: -40px;
         transform: scale(.8);
         -webkit-transform: scale(.8);
         -moz-transform: scale(.8);
         -ms-transform: scale(.8);
         -o-transform: scale(.8);
-}
+    }
 
 }
 
