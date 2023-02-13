@@ -25,9 +25,9 @@ export default function Landing() {
             </div>
             <div className="hero_home_content">
                
-                    <Bubbles/>
                     <span className='typewriter' style={{ color: '#fff' }}>Handling</span>
                     <span className='typewriter' style={{ color: '#0090ee', fontWeight: 'bold' }}>
+                    <Bubbles/>
                         <Typewriter
                             words={['Web Development', 'App Development']}
                             loop={Infinity}
