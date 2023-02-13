@@ -3,7 +3,8 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import HomeComp from '../HomeComp';
 
 
-import NewAbout from './AboutUsFullPage/newAbout';
+// import NewAbout from './AboutUsFullPage/newAbout';
+import NewAbout from './AboutUsFullPage/aboutUsPage1';
 import Contact from './Contact/Contact';
 
 
