@@ -1,7 +1,5 @@
-import React from 'react'
-// import Footer from '../Footer/Footer'
+import React, { useState, useEffect } from 'react'
 import NavBarResp from '../Navbar2/NavBarResp'
-import story from '../../image/story.jpg'
 import client_video from '../../image/client_video.mp4'
 import begining_image from '../../image/begining_image.jpeg'
 import new_office from '../../image/new_office.jpeg'
@@ -9,79 +7,64 @@ import pandemic_phase from '../../image/pandemic_phase.jpeg'
 import awards from '../../image/awards.jpeg'
 import './OurStory2.css'
 import $ from 'jquery'
-import { useEffect } from "react";
-// import { Parallax, ParallaxProvider, useParallax } from 'react-scroll-parallax'
-// import HorizontalScroll from 'react-horizontal-scrolling'
-// import { easeInOut } from 'framer-motion'
+import { HiArrowLongLeft } from 'react-icons/hi2'
+import { HiArrowLongRight } from 'react-icons/hi2'
 
 const OurStory = () => {
     // const ref = useRef()
-
+    const [page_no, setpage_no] = useState(1)
+    const [winheight, setwinheight] = useState(0)
+    const lastScroll = 0;
 
     //for parallax effect
     const onScroll = () => {
-        // setOffset(window.pageYOffset)
-        const winheight = window.pageYOffset
 
+            const winheight = window.pageYOffset
+            console.log(winheight)
+    
+            $(document).ready(function () {
+    
+                //web view
+                if (winheight >= 200 && winheight<1000) {
+                    $("#pandemic").addClass("showPandemic")
+                    setpage_no(2)
+                    console.log(page_no)
+                }
+                if (winheight < 200) {
+                    $("#pandemic").removeClass("showPandemic");
+                    setpage_no(1)
+                }
+                if (winheight >= 1000 && winheight<1800) {
+                    $("#first_client").addClass("showClient");
+                    setpage_no(3)
+                }
+                if (winheight < 1000 && winheight>200) {
+                    $("#first_client").removeClass("showClient");
+                    setpage_no(2)
+                }
+                if (winheight >= 1800 && winheight<2400) {
+                    $("#newOffice").addClass("showOffices");
+                    setpage_no(4)
+                }
+                if (winheight < 1800 && winheight>1000) {
+                    $("#newOffice").removeClass("showOffices");
+                    setpage_no(3)
+                }
+                if (winheight >= 2400) {
+                    $("#awards").addClass("showAwards");
+                    setpage_no(5)
+                }
+                if (winheight < 2400) {
+                    $("#awards").removeClass("showAwards");
+                    // setpage_no(4)
+                }
 
-        $(document).ready(function () {
+    })
+}
 
-            //web view
-            if (winheight > 200) {
-                $("#pandemic").addClass("showPandemic");
-            }
-            if (winheight < 200) {
-                $("#pandemic").removeClass("showPandemic");
-            }
-            if (winheight > 800) {
-                $("#first_client").addClass("showClient");
-            }
-            if (winheight < 800) {
-                $("#first_client").removeClass("showClient");
-            }
-            if (winheight > 1400) {
-                $("#newOffice").addClass("showOffices");
-            }
-            if (winheight < 1400) {
-                $("#newOffice").removeClass("showOffices");
-            }
-            if (winheight > 2000) {
-                $("#awards").addClass("showAwards");
-            }
-            if (winheight < 2000) {
-                $("#awards").removeClass("showAwards");
-            }
-
-
-            //mobile view
-            /*  if (winheight > 200) {
-                  $("#pandemic_mobile").addClass("showPandemic_mobile");
-              }
-              if (winheight < 200) {
-                  $("#pandemic_mobile").removeClass("showPandemic_mobile");
-              }
-              if (winheight > 800) {
-                  $("#first_client_mobile").addClass("showClient_mobile");
-              }
-              if (winheight < 800) {
-                  $("#first_client_mobile").removeClass("showClient_mobile");
-              }
-              if (winheight > 1400) {
-                  $("#newOffice_mobile").addClass("showOffices_mobile");
-              }
-              if (winheight < 1400) {
-                  $("#newOffice_mobile").removeClass("showOffices_mobile");
-              }
-              if (winheight > 2000) {
-                  $("#awards_mobile").addClass("showAwards_mobile");
-              }
-              if (winheight < 2000) {
-                  $("#awards_mobile").removeClass("showAwards_mobile");
-              } */
-        })
-    }
     useEffect(() => {
         // clean up code
+
         window.removeEventListener('scroll', onScroll);
         window.addEventListener('scroll', onScroll, { passive: true });
         // window.addEventListener('scroll', CursorChange, { passive: true });
@@ -89,77 +72,86 @@ const OurStory = () => {
     }, []);
 
 
+    //handle page buttons
+    const handlePrevPage = () => {
+        if (page_no > 1) {
+            setpage_no(page_no - 1)
+            // setwinheight(winheight - 601);
+
+            if (page_no === 2) {
+                $("#pandemic").removeClass("showPandemic");
+                // setpage_no(1)
+            }
+            else if (page_no === 3) {
+                $("#first_client").removeClass("showClient");
+                // setpage_no(2)
+            }
+            else if (page_no === 4) {
+                $("#newOffice").removeClass("showOffices");
+                // setpage_no(3)
+            }
+            else if (page_no === 5) {
+                $("#awards").removeClass("showAwards");
+                // setpage_no(4)
+            }
+
+        }
+    }
+    const handleNextpage = () => {
+        if (page_no < 5) {
+            setpage_no(page_no + 1);
+            // setwinheight(winheight + 600);
+
+            console.log(page_no)
+
+            if (page_no === 1) {
+                $("#pandemic").addClass("showPandemic");
+                // setpage_no(2)
+            }
+            if (page_no === 2) {
+                $("#first_client").addClass("showClient");
+                // setpage_no(3)
+            }
+            if (page_no == 3) {
+                $("#newOffice").addClass("showOffices");
+                // setpage_no(4)
+            }
+            if (page_no == 4) {
+                $("#awards").addClass("showAwards");
+                // setpage_no(5)
+            }
+        }
+    }
+    useEffect(() => {
+        // handlepage()
+    }, [page_no,winheight])
+
+
+
     // video play button
     $(document).ready(function () {
         $('.play').click(function () {
             if ($(this).parent().prev().get(0).paused) {
                 $(this).parent().prev().get(0).play();
-                $(this).parent().prev().removeClass('blurEffect');
+                // $(this).parent().prev().removeClass('blurEffect');
                 $('.content').hide();
             }
         });
 
-        $('.video').on('ended', function () {
-            $(this).addClass('blurEffect');
-            $('.content').show();
-        });
+        // $('.video').on('ended', function () {
+        //     $(this).addClass('blurEffect');
+        //     $('.content').show();
+        // });
     })
 
     return (
         <>
             <NavBarResp />
 
-            {/* <OurStoryCard/> */}
-            {/*  <div ref={ref} id="main" className="scroll-wrapper">
-            <div id="main-content" className="main-content" ref={ref} >
-                    <ParallaxProvider scrollAxis="horizontal" scrollContainer={scrollEl}>
-            {/* <div id="main" className="scroll-wrapper"  >
-                <div id="main-content" className="main-content" ref={ref1} > 
-                    <Parallax>
-                    <OurStoryCard
-                           
-                           image={story} title={data[0].title} desc={data[0].desc} />
-                    </Parallax>
-
-                    <Parallax speed={10}>
-                            <OurStoryCard2
-                        
-                                image={data[1].image} title={data[1].title} desc={data[1].desc} />
-                        </Parallax>
-
-
-                        {/* <Parallax speed={-10}>
-                            <OurStoryCard
-                           
-                                image={story} title={data[0].title} desc={data[0].desc} />
-                        </Parallax>
-                        <Parallax speed={10}>
-                            <OurStoryCard2
-                        
-                                image={data[1].image} title={data[1].title} desc={data[1].desc} />
-                        </Parallax>
-                        <Parallax speed={10}>
-                            <OurStoryCard image={data[2].image} title={data[2].title} desc={data[2].desc} />
-                        </Parallax>
-                        <Parallax speed={10}>
-                            <OurStoryCard2 image={data[3].image} title={data[3].title} desc={data[3].desc} />
-                        </Parallax>
-                        <Parallax speed={10}>
-                            <OurStoryCard image={data[4].image} title={data[4].title} desc={data[4].desc} />
-                        </Parallax> 
-                
-
-                    </div>
-                    </ParallaxProvider>
-                    </div>
-                    </div> */}
-
-            {/* <HorizontalScroll> */}
-
             <div id="main" className="scroll-wrapper">
                 <div id="main-content" className="main-content">
                     <div id='begining' className='story-container-hld story_begining' >
-                        <div className="storyCard-container">
+                        <div className="storyCard-container " >
                             <div className="title_and_content_hld" >
                                 <h1>The Beginning  of  it  All</h1>
                                 <p>
@@ -173,10 +165,10 @@ const OurStory = () => {
                                 <img className="imgPan" src={begining_image} alt="img" />
                             </div>
                         </div>
-                        <div className="white_layer"></div>
+                        {/* <div className="white_layer"></div> */}
                     </div>
                     <div id="pandemic" className='story-container-hld story_pandemic_phase'>
-                        <div className="storyCard-container">
+                        <div className="storyCard-container" >
                             <div className="story_image_hld" >
                                 <img className="imgPan" src={pandemic_phase} alt="img" />
                             </div>
@@ -186,13 +178,13 @@ const OurStory = () => {
                             </div>
 
                         </div>
-                        <div className="white_layer odd_layer"></div>
+                        {/* <div className="white_layer odd_layer"></div> */}
                     </div>
 
-                </div>
-                <div id="main-content" className="main-content" >
+
+                    {/* <div id="main-content" className="main-content" > */}
                     <div id='first_client' className='story-container-hld story_first_client' >
-                        <div className="storyCard-container">
+                        <div className="storyCard-container" >
                             <div className="title_and_content_hld" >
                                 <h1>Our First International Client</h1>
                                 <p>They started reaching out to international and verified businesses shortly after and gave them tremendous results in growth marketing and sales.
@@ -201,18 +193,18 @@ const OurStory = () => {
                             </div>
                             <div className=" story_image_hld" >
                                 {/* <img className="imgPan" src={story} alt="img" /> */}
-                                <video class="video ">
-                                    <source src={client_video} type="video/webm"/>
+                                <video className="video ">
+                                    <source src={client_video} type="video/webm" />
                                 </video>
-                                <div class="content">
+                                <div className="content">
                                     <div class="play">►</div>
                                 </div>
                             </div>
                         </div>
-                        <div className="white_layer"></div>
+                        {/* <div className="white_layer"></div> */}
                     </div>
                     <div id='newOffice' className='story-container-hld story_newOffice'>
-                        <div className="storyCard-container">
+                        <div className="storyCard-container" >
                             <div className="story_image_hld" >
                                 <img className="imgPan" src={new_office} alt="img" />
                             </div>
@@ -222,14 +214,14 @@ const OurStory = () => {
                             </div>
 
                         </div>
-                        <div className="white_layer odd_layer"></div>
+                        {/* <div className="white_layer odd_layer"></div> */}
                     </div>
 
-                </div>
-                <div id="main-content" className="main-content" >
+                    {/* </div> */}
+                    {/* <div id="main-content" className="main-content" > */}
                     <div id='awards' className='story-container-hld story_award'>
 
-                        <div className="storyCard-container">
+                        <div className="storyCard-container" >
                             <div className="title_and_content_hld" >
                                 <h1>Awards and Achievements</h1>
                                 <p>In the Feb of 2022, they received the acclaimed Indore Super Startups Award from the Central Minister and Indore Sansad for their outstanding work with multiple international, series A, series B firms, and media personalities. But they didn't rest on this laurel.
@@ -240,12 +232,28 @@ const OurStory = () => {
                                 <img className="imgPan" src={awards} alt="img" />
                             </div>
                         </div>
-                        <div className="white_layer"></div>
+                        {/* <div className="white_layer"></div> */}
+                    </div>
+                </div>
+
+
+                {/* next and previous buttons */}
+                <div className="story_next_pre_buttons_hld">
+                    <div className="story_next_pre_buttons">
+                       <div  className="story_prev_button" onClick={handlePrevPage}>
+                            {page_no>1 && <HiArrowLongLeft size={35} className="prev_arrow" />}
+                        </div>
+                        <div className="story_page_no">
+                            {page_no}/5
+                        </div>
+                        <div  className="story_prev_button" onClick={handleNextpage}>
+                            {page_no<5 && <HiArrowLongRight size={35} className="next_arrow" />}
+                        </div>
                     </div>
                 </div>
             </div>
 
-
+            
 
 
 

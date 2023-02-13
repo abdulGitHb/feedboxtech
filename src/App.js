@@ -1,95 +1,18 @@
 import './App.css';
 import { useEffect, useRef, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-// import HomeComp from './HomeComp';
-// import PortfolioAll from './components/Portfolio/PortfolioAll'
 import loader from '../src/image/loader.mp4'
-// import Cursor from './Cursor';
-// import { motion, useMotionValue } from "framer-motion"
-import Rocket from '../src/image/rocket.gif'
-// import AboutUs from './components/AboutUsFullPage/AboutUs';
-// import Contact from './components/Contact/ContactFullPage';
 import { IoIosArrowUp } from 'react-icons/io'
 import $ from 'jquery';
 import { Link } from 'react-scroll'
-// import ServiceAppDev from './components/ServiceFullPage/ServiceAppDev';
-// import ServicesWebDev from './components/ServiceFullPage/ServicesWebDev';
-// import ServicesWordpressDev from './components/ServiceFullPage/ServicesWordpressDev'
-
 import ScrollToTop from './ScrollToTop';
-
 import AnimatedRoutes from './components/AnimatedRoutes';
 
 
-
-
 function App() {
-  // const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 })
-  // const [showDesc, setshowDesc] = useState(true)
   const [offset, setOffset] = useState(0);
   const [isLoaded, setisLoaded] = useState(true)
 
-  // custom rocket cursor
-  // useEffect(() => {
-  //   var CursorChange = (
-  //     function () {
-  //       /* Local Variables */
-  //       const INTERVAL_POSITION = 10;
-  //       const INTERVAL_ROTATION = 10;
-  //       let lastCursorPos = { x: -999, y: -999 };
-  //       let currentCursorPos = { x: 0, y: 0 };
-  //       let lastCursorAngle = 0, cursorAngle = 0;
-  //       let cursorEl, cursorImageEl;
-
-  //       function setCurrentCursorProps() {
-
-  //         cursorEl.style.transform = `translate(${currentCursorPos.x}px, ${currentCursorPos.y}px)`;
-
-  //         while (Math.abs(lastCursorAngle - cursorAngle) > 180) {
-  //           if (cursorAngle > lastCursorAngle) {
-  //             cursorAngle -= 360;
-  //           } else if (cursorAngle < lastCursorAngle) {
-  //             cursorAngle += 360;
-  //           }
-  //         }
-
-  //         cursorImageEl.style.transform = `rotate(${cursorAngle - 90}deg)`;
-  //       }
-
-  //       function updateCursor() {
-  //         window.addEventListener('mousemove', event => {
-  //           currentCursorPos = { x: event.clientX, y: event.clientY };
-  //           // console.log(currentCursorPos)
-  //         });
-
-  //         setInterval(setCurrentCursorProps, INTERVAL_POSITION);
-
-  //         setInterval(() => {
-  //           const delt = {
-  //             x: lastCursorPos.x - currentCursorPos.x,
-  //             y: lastCursorPos.y - currentCursorPos.y
-  //           }
-  //           if (Math.abs(delt.x) < 3 && Math.abs(delt.y) < 3) return;
-  //           cursorAngle = (Math.atan2(delt.y, delt.x) * 180 / Math.PI);
-
-  //           setCurrentCursorProps();
-
-  //           lastCursorPos = currentCursorPos;
-  //           lastCursorAngle = cursorAngle;
-  //         }, INTERVAL_ROTATION);
-  //       }
-
-  //       return {
-  //         'initialize': () => {
-  //           cursorEl = document.querySelector('#cursor');
-  //           cursorImageEl = document.querySelector('#cursor > img');
-  //           updateCursor();
-  //         }
-  //       };
-
-  //     })();
-  //   document.addEventListener('mousemove', CursorChange.initialize);
-  // }, [])
 
   //  when hover on scroll button
   // $(document).ready(function () {
@@ -196,7 +119,7 @@ function App() {
         <img alt="Cursor rocket" id="pointer" src={Rocket} />
       </div> */}
 
-      <Router>
+      <Router basename='/'>
         <ScrollToTop />
         <AnimatedRoutes/>
       </Router>
