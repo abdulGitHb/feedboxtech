@@ -274,17 +274,17 @@
   .inBubble:nth-child(5){
     width: 600px;
     height: 600px;
-    animation-delay: -5.5s;
+    animation-delay: -6s;
   }
   .inBubble:nth-child(6){
     width: 700px;
     height: 700px;
-    animation-delay: -7.5s;
+    animation-delay: -5.6s;
   }
   .inBubble:nth-child(7){
     width: 800px;
     height: 800px;
-    animation-delay: -6.5s;
+    animation-delay: -7s;
   }
   .inBubble:nth-child(8){
     width: 900px;
