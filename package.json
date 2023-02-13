@@ -1,6 +1,7 @@
 {
   "name": "feedboxtech",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@react-email/render": "^0.0.6",
