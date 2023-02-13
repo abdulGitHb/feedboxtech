@@ -23,9 +23,7 @@ export default function About() {
     }, [])
 
     return (
-        <div className="a-container" id="about"
-
-        >
+        <div className="a-container" id="about" >
             <h2 className="section_heading" data-aos="fade-up"
             >About Us</h2>
             <div data-aos="fade-up" className="a_content"
