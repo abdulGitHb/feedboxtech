@@ -30,7 +30,7 @@ const OurStory = () => {
             //web view
             if (winheight >= 200 && winheight < 1000 && page_no==1) {
                 $("#pandemic").addClass("showPandemic")
-                setpage_no(1)
+                setpage_no(2)
                 page = 2
                 console.log(page_no)
             }
@@ -39,6 +39,7 @@ const OurStory = () => {
                 page = 1;
                 console.log(page)
                 console.log(page_no)
+                setpage_no(1)
             }
             if (winheight >= 1000 && winheight < 1800 && page_no == 1) {
                 $("#first_client").addClass("showClient");
