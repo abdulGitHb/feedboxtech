@@ -62,10 +62,10 @@ function App() {
       setTimeout(()=>{
         setisLoaded(false)
   
-      },)
+      },2000)
       setTimeout(()=>{
         // fadeInPage();
-      },2001)
+      },2000)
      
     };
 

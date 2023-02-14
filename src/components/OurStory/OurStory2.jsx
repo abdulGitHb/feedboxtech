@@ -10,57 +10,74 @@ import $ from 'jquery'
 import { HiArrowLongLeft } from 'react-icons/hi2'
 import { HiArrowLongRight } from 'react-icons/hi2'
 
+var page = 1;
+
 const OurStory = () => {
     // const ref = useRef()
     const [page_no, setpage_no] = useState(1)
     const [winheight, setwinheight] = useState(0)
-    const lastScroll = 0;
+    // const lastScroll = 0;
+  
 
     //for parallax effect
     const onScroll = () => {
 
-            const winheight = window.pageYOffset
-            console.log(winheight)
-    
-            $(document).ready(function () {
-    
-                //web view
-                if (winheight >= 200 && winheight<1000) {
-                    $("#pandemic").addClass("showPandemic")
-                    setpage_no(2)
-                    console.log(page_no)
-                }
-                if (winheight < 200) {
-                    $("#pandemic").removeClass("showPandemic");
-                    setpage_no(1)
-                }
-                if (winheight >= 1000 && winheight<1800) {
-                    $("#first_client").addClass("showClient");
-                    setpage_no(3)
-                }
-                if (winheight < 1000 && winheight>200) {
-                    $("#first_client").removeClass("showClient");
-                    setpage_no(2)
-                }
-                if (winheight >= 1800 && winheight<2400) {
-                    $("#newOffice").addClass("showOffices");
-                    setpage_no(4)
-                }
-                if (winheight < 1800 && winheight>1000) {
-                    $("#newOffice").removeClass("showOffices");
-                    setpage_no(3)
-                }
-                if (winheight >= 2400) {
-                    $("#awards").addClass("showAwards");
-                    setpage_no(5)
-                }
-                if (winheight < 2400) {
-                    $("#awards").removeClass("showAwards");
-                    // setpage_no(4)
-                }
+        const winheight = window.pageYOffset
+        console.log(winheight)
 
-    })
-}
+        $(document).ready(function () {
+
+            //web view
+            if (winheight >= 200 && winheight < 1000 && page_no==1) {
+                $("#pandemic").addClass("showPandemic")
+                setpage_no(1)
+                page = 2
+                console.log(page_no)
+            }
+            if (winheight < 200 && page_no==1 ) {
+                $("#pandemic").removeClass("showPandemic");
+                page = 1;
+                console.log(page)
+                console.log(page_no)
+            }
+            if (winheight >= 1000 && winheight < 1800 && page_no == 1) {
+                $("#first_client").addClass("showClient");
+                page = 3
+                setpage_no(page)
+                console.log(page_no)
+            }
+            if (winheight < 1000 && winheight > 200 && page_no==1) {
+                $("#first_client").removeClass("showClient");
+                page = 2
+                setpage_no(2)
+                console.log(page_no)
+            }
+            if (winheight >= 1800 && winheight < 2400 && page_no == 1) {
+                $("#newOffice").addClass("showOffices");
+                page = 4
+                setpage_no(page)
+                console.log(page_no)
+            }
+            if (winheight < 1800 && winheight > 1000 && page_no==1) {
+                $("#newOffice").removeClass("showOffices");
+                page = 3
+                setpage_no(page)
+                console.log(page_no)
+            }
+            if (winheight >= 2400 && page_no == 1) {
+                $("#awards").addClass("showAwards");
+                page = 5
+                setpage_no(page)
+                console.log(page_no)
+            }
+            if (winheight < 2400 && page_no==1) {
+                $("#awards").removeClass("showAwards");
+                page = 4;
+                // setpage_no(page)
+                console.log(page_no)
+            }
+        })
+    }
 
     useEffect(() => {
         // clean up code
@@ -76,6 +93,7 @@ const OurStory = () => {
     const handlePrevPage = () => {
         if (page_no > 1) {
             setpage_no(page_no - 1)
+            page -= 1;
             // setwinheight(winheight - 601);
 
             if (page_no === 2) {
@@ -101,14 +119,16 @@ const OurStory = () => {
         if (page_no < 5) {
             setpage_no(page_no + 1);
             // setwinheight(winheight + 600);
+            page += 1;
 
-            console.log(page_no)
+            console.log(page)
 
-            if (page_no === 1) {
+            if (page_no == 1) {
                 $("#pandemic").addClass("showPandemic");
                 // setpage_no(2)
+                // lastScroll = 200;
             }
-            if (page_no === 2) {
+            if (page_no == 2) {
                 $("#first_client").addClass("showClient");
                 // setpage_no(3)
             }
@@ -124,7 +144,7 @@ const OurStory = () => {
     }
     useEffect(() => {
         // handlepage()
-    }, [page_no,winheight])
+    }, [page_no, winheight,page])
 
 
 
@@ -134,7 +154,7 @@ const OurStory = () => {
             if ($(this).parent().prev().get(0).paused) {
                 $(this).parent().prev().get(0).play();
                 // $(this).parent().prev().removeClass('blurEffect');
-                $('.content').hide();
+                // $('.content').hide();
             }
         });
 
@@ -240,20 +260,20 @@ const OurStory = () => {
                 {/* next and previous buttons */}
                 <div className="story_next_pre_buttons_hld">
                     <div className="story_next_pre_buttons">
-                       <div  className="story_prev_button" onClick={handlePrevPage}>
-                            {page_no>1 && <HiArrowLongLeft size={35} className="prev_arrow" />}
+                        <div className="story_prev_button" onClick={handlePrevPage}>
+                            {page_no > 1 && <HiArrowLongLeft size={35} className="prev_arrow" />}
                         </div>
                         <div className="story_page_no">
                             {page_no}/5
                         </div>
-                        <div  className="story_prev_button" onClick={handleNextpage}>
-                            {page_no<5 && <HiArrowLongRight size={35} className="next_arrow" />}
+                        <div className="story_prev_button" onClick={handleNextpage}>
+                            {page_no < 5 && <HiArrowLongRight size={35} className="next_arrow" />}
                         </div>
                     </div>
                 </div>
             </div>
 
-            
+
 
 
 
