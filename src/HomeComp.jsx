@@ -15,7 +15,7 @@ function HomeComp() {
     <div className='App'>
         <NavBarResp/>
         <Landing/>
-        <ClientShowCase/>
+        {/* <ClientShowCase/> */}
         <About/>
         <Services/>
         <Portfolio/>

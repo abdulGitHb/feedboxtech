@@ -15,7 +15,7 @@ var page = 1;
 const OurStory = () => {
     // const ref = useRef()
     const [page_no, setpage_no] = useState(1)
-    const [winheight, setwinheight] = useState(0)
+    // const [winheight, setwinheight] = useState(0)
     // const lastScroll = 0;
   
 
@@ -94,7 +94,7 @@ const OurStory = () => {
     const handlePrevPage = () => {
         if (page_no > 1) {
             setpage_no(page_no - 1)
-            page -= 1;
+            // page -= 1;
             // setwinheight(winheight - 601);
 
             if (page_no === 2) {
@@ -120,9 +120,9 @@ const OurStory = () => {
         if (page_no < 5) {
             setpage_no(page_no + 1);
             // setwinheight(winheight + 600);
-            page += 1;
+            // page += 1;
 
-            console.log(page)
+            // console.log(page)
 
             if (page_no == 1) {
                 $("#pandemic").addClass("showPandemic");
@@ -145,7 +145,7 @@ const OurStory = () => {
     }
     useEffect(() => {
         // handlepage()
-    }, [page_no, winheight,page])
+    }, [page_no])
 
 
 
@@ -155,14 +155,14 @@ const OurStory = () => {
             if ($(this).parent().prev().get(0).paused) {
                 $(this).parent().prev().get(0).play();
                 // $(this).parent().prev().removeClass('blurEffect');
-                // $('.content').hide();
+                $('.content').hide();
             }
         });
 
-        // $('.video').on('ended', function () {
-        //     $(this).addClass('blurEffect');
-        //     $('.content').show();
-        // });
+        $('.video').on('ended', function () {
+            // $(this).addClass('blurEffect');
+            $('.content').show();
+        });
     })
 
     return (

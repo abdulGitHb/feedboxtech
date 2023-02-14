@@ -1,4 +1,5 @@
 .services-container{
+    padding-top: 150px;
     padding-bottom: 80px;
     /* width: 100%; */
     background-color: #06283d;
@@ -39,6 +40,23 @@
     justify-content: center;
     font-size: 50px;
 }
+
+/* parallax dot effect */
+.parallax_dot{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.9);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 /* .technologies{
     margin-top: 50px;
     display: flex;
