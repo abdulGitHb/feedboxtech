@@ -9,8 +9,8 @@ import { Link } from 'react-scroll'
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 import Bubbles from './Bubbles'
-import Navbar from '../Navbar2/Navbar';
-import NewNav from '../Navbar2/NewNav';
+// import Navbar from '../Navbar2/Navbar';
+// import NewNav from '../Navbar2/NewNav';
 
 
 export default function Landing() {

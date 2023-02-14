@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import f_logo from '../../image/f_logo.png'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 import $ from 'jquery';
-import { Link } from 'react-router-dom'
 // import {AiOutlineDown, AiOutlineUp} from 'react-icons/ai';
 
 export default function NavBarResp() {

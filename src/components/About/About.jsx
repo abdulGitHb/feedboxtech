@@ -26,8 +26,7 @@ export default function About() {
         <div className="a-container" id="about" >
             <h2 className="section_heading" data-aos="fade-up"
             >About Us</h2>
-            <div data-aos="fade-up" className="a_content"
-            >
+            <div data-aos="fade-up" className="a_content">
                 <div className="a_content_img_hld">
                     <img src={AboutImg} alt="" />
                 </div>
