@@ -24,6 +24,9 @@ html {
   row-gap: 40px;
 }
 
+/* *{
+  background-color: #06283d;
+}  */
 .App {
   -webkit-user-select: none;
   -webkit-touch-callout: none;
