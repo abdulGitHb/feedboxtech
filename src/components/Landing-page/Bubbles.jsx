@@ -3,7 +3,7 @@ import './landing.css'
 
 function Bubbles() {
   return (
-    <div>
+    <div className='bubble-body-outer'>
         <div className='inBubble'>
             <span ></span>
             <span ></span>
@@ -25,22 +25,22 @@ function Bubbles() {
             <span ></span>
         </div>
 
-        <div className='inBubble2'>
+        <div className='inBubble'>
             <span ></span>
             <span ></span>
             <span ></span>
         </div>
-        <div className='inBubble2'>
+        <div className='inBubble'>
             <span ></span>
             <span ></span>
             <span ></span>
         </div>
-        <div className='inBubble2'>
+        <div className='inBubble'>
             <span ></span>
             <span ></span>
             <span ></span>
         </div>
-        <div className='inBubble2'>
+        <div className='inBubble'>
             <span ></span>
             <span ></span>
             <span ></span>

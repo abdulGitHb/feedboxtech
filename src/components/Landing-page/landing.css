@@ -192,26 +192,19 @@
 
 
   /* ----------in bubble 1st -------------------------------------------- */
-  
+  .bubble-body-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
   .inBubble{
     position: absolute;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
-    animation: animate 14s ease-in-out infinite;
-  }
-  .inBubble:nth-child(2){
-    zoom: 1.25;
-    animation-delay: -2s;
-  }
-  .inBubble:nth-child(3){
-    zoom: 0.95;
-    animation-delay: -8s;
-  }
-  .inBubble:nth-child(4){
-    zoom: 0.75;
-    animation-delay: -4s;
+    animation: animate 4s ease-in-out infinite;
   }
   
   .inBubble span{
@@ -222,25 +215,41 @@
   .inBubble span:nth-child(1){
     inset: 10px;
     border-left: 15px solid #0fb4ff;
-    filter: blur(8px);
+    filter: blur(18px);
   }
 
   .inBubble span:nth-child(2){
     inset: 10px;
     border-right: 15px solid #ffffff;
-    filter: blur(8px);
+    filter: blur(18px);
     transform: rotate(330deg);
+  }
+
+  .inBubble:nth-child(2){
+    width: 300px;
+    height: 300px;
+    animation-delay: -3s;
+  }
+  .inBubble:nth-child(3){
+    width: 400px;
+    height: 400px;
+    animation-delay: -2s;
+  }
+  .inBubble:nth-child(4){
+    width: 500px;
+    height: 500px;
+    animation-delay: -3s;
   }
   
   /* ----------In bubble 2nd -------------------------------------------- */
-  .inBubble2{
+  /* .inBubble2{
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
     box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
-    animation: animate2 15s ease-in-out infinite;
-    /* zoom: 0.8; */
+    animation: animate2 5s ease-in-out infinite;
+   
   }
 
   .inBubble2 span{
@@ -257,45 +266,54 @@
   .inBubble2 span:nth-child(2){
     inset: 10px;
     border-right: 5px solid #2693c6;
-    filter: blur(8px);
+    filter: blur(10px);
     transform: rotate(350deg);
-  }
+  } */
 
 
-  .inBubble2:nth-child(5){
-    zoom: 1.25;
-    animation-delay: -2s;
+  .inBubble:nth-child(5){
+    width: 600px;
+    height: 600px;
+    animation-delay: -6s;
   }
-  .inBubble2:nth-child(6){
-    zoom: 0.95;
+  .inBubble:nth-child(6){
+    width: 700px;
+    height: 700px;
+    animation-delay: -5.6s;
+  }
+  .inBubble:nth-child(7){
+    width: 800px;
+    height: 800px;
     animation-delay: -7s;
   }
-  .inBubble2:nth-child(7){
-    zoom: 0.80;
-    animation-delay: -5s;
+  .inBubble:nth-child(8){
+    width: 900px;
+    height: 900px;
+    animation-delay: -9s;
   }
+  
 
   
   /* ----------In bubble 1st animation -------------------------------------------- */
 
   @keyframes animate {
     0%{
-      transform: translate(30px, -350px);
+      transform:scale(1)
       
     }
-    25%{
+    /* 25%{
       transform: translate(-650px, 40px); 
-    }
-    50%{
-      
-      transform: translate(30px, 350px);
     }
     75%{
       transform: translate(650px, 50px);
       
+    } */
+    50%{
+      
+      transform:scale(1.25)
     }
     100%{
-      transform: translate(30px, -350px);
+      transform:scale(1)
 
     }
    
@@ -303,23 +321,23 @@
   
   @keyframes animate2 {
     100%{
-      transform: translate(30px, -350px);
+      transform:scale(1)
       
     }
-    75%{
+    /* 75%{
       transform: translate(-700px, 10px);
       
-    }
-    50%{
-      
-      transform: translate(10px, 350px);
     }
     25%{
       transform: translate(700px, 10px);
       
+    } */
+    50%{
+      
+      transform:scale(1.25)
     }
     0%{
-      transform: translate(30px, -350px);
+      transform:scale(1)
 
     }
    
