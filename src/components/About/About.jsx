@@ -9,6 +9,7 @@ import AboutImg from '../../image/about2.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 export default function About() {
 
@@ -17,15 +18,22 @@ export default function About() {
             duration: 600,
             offset: 0,
             easing: 'ease-in-out-back',
-            delay: 50,
+            // delay: 50,
             anchorPlacement: 'top-top'
         })
     }, [])
 
     return (
+        <div className="about-container-hld" style={{ paddingTop: '850px' }}>
         <div className="a-container" id="about" >
-            <h2 className="section_heading" data-aos="fade-up"
+            <ParallaxProvider>
+             <Parallax 
+             scale={[0.5,1.3]}
+             >
+            <h2 className="section_heading"
             >About Us</h2>
+             </Parallax>
+            </ParallaxProvider>
             <div data-aos="fade-up" className="a_content"
             >
                 <div className="a_content_img_hld">
@@ -42,6 +50,7 @@ export default function About() {
                     </Link>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
