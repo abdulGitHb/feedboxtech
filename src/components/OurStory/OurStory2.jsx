@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import NavBarResp from '../Navbar2/NavBarResp'
 import client_video from '../../image/client_video.mp4'
 import begining_image from '../../image/begining_image.jpeg'
 import new_office from '../../image/new_office.jpeg'
@@ -146,8 +145,6 @@ const OurStory = () => {
 
     return (
         <>
-            <NavBarResp />
-
             <div id="main" className="scroll-wrapper">
                 <div id="main-content" className="main-content">
                     <div id='begining' className='story-container-hld story_begining' >

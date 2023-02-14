@@ -13,12 +13,14 @@ import ServicesWebDev from './ServiceFullPage/ServicesWebDev';
 import ServicesWordpressDev from './ServiceFullPage/ServicesWordpressDev';
 import {AnimatePresence} from 'framer-motion';
 import OurStory from '../../src/components/OurStory/OurStory2';
+import NewNav from './Navbar2/NewNav';
 
 function AnimatedRoutes() {
 
     const location = useLocation();
   return (
     <AnimatePresence>
+      <NewNav/>
         <Routes>
           <Route path='/' element={<HomeComp />} />
           {/* <Route path='/about' element={<AboutUs />} /> */}

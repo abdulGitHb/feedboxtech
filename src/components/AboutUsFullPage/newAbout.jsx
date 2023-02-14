@@ -1,6 +1,5 @@
 import React from 'react';
 import "./newAbout.css";
-import NavBarResp from '../Navbar2/NavBarResp';
 import Footer from '../Footer/Footer';
 import a1 from  "../../image/achie1.png"
 import a2 from "../../image/achie2.png";
@@ -8,7 +7,6 @@ import a3 from "../../image/achie3.png";
 function NewAbout() {
   return (
     <>
-    <NavBarResp/>
     <div className='aditya-about-container'>  
     <h1 className='aditya-about-head'>About Us</h1>
 
