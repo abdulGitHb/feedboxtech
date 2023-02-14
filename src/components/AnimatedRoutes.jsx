@@ -4,7 +4,7 @@ import HomeComp from '../HomeComp';
 
 
 // import NewAbout from './AboutUsFullPage/newAbout';
-import NewAbout from './AboutUsFullPage/aboutUsPage1';
+import AboutUsPage1 from './AboutUsFullPage/aboutUsPage1';
 import Contact from './Contact/Contact';
 
 
@@ -21,8 +21,8 @@ function AnimatedRoutes() {
     <AnimatePresence>
         <Routes>
           <Route path='/' element={<HomeComp />} />
-          {/* <Route path='/about' element={<AboutUs />} /> */}
-          <Route path='/about' element={<NewAbout />} />
+          {/* <Route path='/about' element={<NewAbout />} /> */}
+          <Route path='/about' element={<AboutUsPage1/>} />
           <Route path='/services/appdev' element={<ServiceAppDev />} />
           <Route path='/services/webdev' element={<ServicesWebDev />} />
           <Route path='/services/wordpressdev' element={<ServicesWordpressDev />} />

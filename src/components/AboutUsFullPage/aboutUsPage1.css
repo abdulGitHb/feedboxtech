@@ -1,3 +1,159 @@
-.aditya.a{
-    color:red;
+.aditya-parall{
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.aditya-about{
+  width: 90%;
+  margin: 0 auto;
+}
+.aditya-parallax1{
+  height: 60vh;
+   width: 90vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   
+ }
+.aditya-parallax{
+ height: 60vh;
+  width: 90vw; 
+  display: flex;
+  flex-direction: row;
+}
+
+.aditya-text-content0{
+  width:fit-content;
+  color: white;
+  border-radius: 20px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.aditya-text-content{
+  background-color: rgb(0, 0, 0);
+  height:100%;
+  width: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 35px;
+}
+.aditya-p-text{
+  padding: 16px 55px;
+  
+}
+.aditya-b{
+  font-size: 40px;
+}
+
+.aditya-text-content1{
+  margin-left: 50%;
+  
+}
+
+.aditya-div-img{
+  height: 50%;
+  width: 50%;
+}
+
+.aditya-text-img{
+  height: 50%;
+  width: 50%; 
+}
+
+.a{
+  background-color: aqua;
+  height: 500px;
+  width: 50%;
+}
+
+
+@media only screen and (max-width: 470px) {
+  .aditya-parallax1{
+      height: 30vh;
+   }
+   .aditya-text-content0{
+    font-size: 27px;
+    margin-top: 50px;
+    }
+
+   .aditya-parallax{
+    height: 40vh;
+     width: 90vw; 
+   }
+
+   .aditya-text-content{
+    height:40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 10px 16px 3px;
+    word-spacing: 3px;
+    line-height: 15px;
+  
+  }
+  .aditya-p-text{
+    padding: 16px 16px;
+    font-size: 10px;
+  }
+
+  .aditya-b{
+    font-size: 20px;
+  }
+  .aditya-text-content1{
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (min-width: 471px) and (max-width: 820px) 
+{
+
+  .aditya-parallax1
+  {
+    height: 40vh;
+   }
+  .aditya-parallax{
+    height: 45vh;
+  }
+  
+  .aditya-text-content0{
+    font-size: 47px;
+  }
+  
+  .aditya-text-content{
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .aditya-p-text{
+    padding: 16px 55px;
+    
+  }
+  .aditya-b{
+    font-size: 35px;
+  }
+  
+  .aditya-text-content1{
+    margin-left: 50%;
+    
+  }
+  
+  .aditya-div-img{
+    height: 50%;
+    width: 50%;
+  }
+  
+  .aditya-text-img{
+    height: 50%;
+    width: 50%; 
+  }
+  
+  .a{
+    background-color: aqua;
+    height: 500px;
+    width: 50%;
+  }
 }
