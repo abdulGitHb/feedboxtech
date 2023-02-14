@@ -352,13 +352,13 @@
     }
 
     .story_first_client .title_and_content_hld {
-        margin-top: 150px;
+        margin-top: 50px;
     }
 
     .story_first_client .story_image_hld {
         /* transform: translateY(-350px); */
         width: 400px;
-        /* margin-left: 15px; */
+        margin-left: -8px;
         margin-top: -50px;
     }
 
@@ -388,7 +388,7 @@
     }
 
     .story_award .title_and_content_hld {
-        padding-top: 250px;
+        padding-top: 120px;
     }
 
     #awards .story_image_hld {
