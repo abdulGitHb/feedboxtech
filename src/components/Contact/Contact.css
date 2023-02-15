@@ -152,8 +152,9 @@
   @media screen and (max-width: 600px) {
     .adarsh-contactContainer {
       width: 100vw;
-      height: 60vh;
+      height: 22vh;
       margin-top: -11.8rem;
+      margin-bottom: 47rem;
     }
   
     .adarsh-main {
@@ -174,7 +175,7 @@
       font-size: 3.4rem;
       margin-left: 3rem;
       margin-top: 12rem;
-      padding-top: 8rem;
+      padding-top: 7.6rem;
     }
   
     .adarsh-submitBtn {

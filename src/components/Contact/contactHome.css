@@ -148,13 +148,14 @@
     .adarsh-form {
       width: 90vw;
       height: 90vh;
-  
+      
       flex-direction: column;
     }
   
     .adarsh-left {
       display: flex;
       flex-direction: row;
+      margin-left: 1rem;
     }
   
     .adarsh-right {
