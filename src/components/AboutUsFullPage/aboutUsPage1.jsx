@@ -42,10 +42,7 @@ function AboutUsPage1() {
           <Parallax bgImage={img15} strength={500} className="aditya-parallax">
           <div className="aditya-text-content">
           <p className='aditya-p-text'>
-             <b className="aditya-b">W</b>e strongly believe that design unlocks opportunities for
-              understanding, collaboration, and buy-in from customers and
-              stakeholders. Since 2015, we've been on a mission to increase the
-              impact of design on people's lives.
+             <b className="aditya-b">F</b>eedbox was awarded the MP Young Achievers Award by the CM of Madhya Pradesh Shri Shivraj Singh Chouhan. We were among the top 10 businesses to receive a banner shoutout at the CM house in Bhopal.
               </p>
           </div>
          
@@ -54,24 +51,18 @@ function AboutUsPage1() {
           <Parallax bgImage={img14} strength={500} className="aditya-parallax">
           <div className="aditya-text-content aditya-text-content1">
           <p className='aditya-p-text'>
-          <b className="aditya-b">W</b>e strongly believe that design unlocks opportunities for
-              understanding, collaboration, and buy-in from customers and
-              stakeholders. Since 2015, we've been on a mission to increase the
-              impact of design on people's lives.
+          <b className="aditya-b">F</b>eedbox became the first startup in Indore to receive this accolade. 3 years in this industry, our consistency and hard work were met by the prestigious certificate which is still a dream for many budding businesses.
               </p>
           </div>
           </Parallax>
           <Parallax bgImage={img13} strength={500} className="aditya-parallax">
           <div className="aditya-text-content">
           <p className='aditya-p-text'>
-          <b className="aditya-b">W</b>e strongly believe that design unlocks opportunities for
-              understanding, collaboration, and buy-in from customers and
-              stakeholders. Since 2015, we've been on a mission to increase the
-              impact of design on people's lives.
+          <b className="aditya-b">F</b>eedbox was founded by 2 engineers,Yash & Ayushi, who had a shared vision of starting a digital marketing company. The company's focus on revenue growth has helped many startups to scale their businesses and achieve their financial goals in the past 3 years.
               </p>
           </div>
           </Parallax>
-          <Parallax bgImage={img12} strength={500} className="aditya-parallax">
+          {/* <Parallax bgImage={img12} strength={500} className="aditya-parallax">
           
           <div className="aditya-text-content aditya-text-content1">
           <p className='aditya-p-text'>
@@ -82,7 +73,7 @@ function AboutUsPage1() {
               </p>
           </div>
           </Parallax>
-          
+           */}
      
         </div>
         </Parallax>
