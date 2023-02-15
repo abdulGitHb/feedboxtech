@@ -2,6 +2,13 @@
     counter-reset: my-counter;
 }
 
+.link {
+    /* border: 2px solid red; */
+    width: 12%;
+    margin-left: 50px;
+}
+
+
 .nav-container{
     width: 100%;
     position: fixed;
@@ -16,7 +23,7 @@
 .navbar-logo{
     width: 10px;
     height: 75px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     /* position: sticky; */
     /* object-fit: cover; */
     /* margin-top: 10px; */
@@ -35,6 +42,7 @@
     border-radius: 50px; */
     transition: opacity 0.25s ease;
     /* color: white; */
+    margin-right: 20px;
 }
 .button_container:hover {
     opacity: 0.7;
@@ -226,6 +234,8 @@ a:is(:link, :active, :visited).active{
     /* border: 2px solid red; */
     height: 25px;
     transition: all 0.2s ease-in;
+    text-decoration: none;
+    color: white;
 }
 
 .navbar-icons a:hover {

@@ -71,7 +71,9 @@ function NewNav() {
                 to="/services/webdev"
                 onClick={() => setToggle(!toggle)}
                 className={
-                  selectedPage === "/services/webdev"
+                  selectedPage === "/services/webdev" ||
+                  selectedPage === "/services/appdev" ||
+                  selectedPage === "/services/wordpressdev"
                     ? "overlay-menu-a active"
                     : "overlay-menu-a"
                 }
@@ -119,7 +121,7 @@ function NewNav() {
                 to="/contactus"
                 onClick={() => setToggle(!toggle)}
                 className={
-                  selectedPage === "/contact"
+                  selectedPage === "/contactus"
                     ? "overlay-menu-a active"
                     : "overlay-menu-a"
                 }
@@ -133,10 +135,10 @@ function NewNav() {
         </nav>
 
         <div className="navbar-icons">
-          <a><FaLinkedin size={25}/></a>
-          <a><FaFacebookF size={25}/></a>
-          <a> <FaInstagram size={25}/> </a>
-          <a> <FaTwitter size={25}/> </a>
+          <a href="https://www.linkedin.com/company/feedbox-smm/mycompany/" ><FaLinkedin size={25}/></a>
+          <a href="https://www.facebook.com/feedbox.online"><FaFacebookF size={25}/></a>
+          <a href="https://www.instagram.com/teamfeedbox/"> <FaInstagram size={25}/> </a>
+          <a href="https://twitter.com/teamfeedBox" > <FaTwitter size={25}/> </a>
 
           
         </div>
