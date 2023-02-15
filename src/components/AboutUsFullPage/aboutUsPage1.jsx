@@ -1,6 +1,5 @@
 import React from 'react'
 
-import NavBarResp from '../Navbar2/NavBarResp';
 import Footer from '../Footer/Footer';
 
 import img1 from "../../image/a1.jpg"
@@ -31,7 +30,10 @@ import {Parallax} from "react-parallax";
 function AboutUsPage1() {
     return (
       <>
+<<<<<<< HEAD
       {/* <NavBarResp/> */}
+=======
+>>>>>>> b889432081b327e5e64ef97bfc888c52951ef78d
       <Parallax bgImage={img18} strength={200} className="aditya-parall">
         <div className="aditya-about">
           
