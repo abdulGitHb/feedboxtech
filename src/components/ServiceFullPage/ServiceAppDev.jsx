@@ -11,7 +11,6 @@ import {BsArrowLeft, BsArrowRight} from 'react-icons/bs'
 
 // import './ServicesFullPage.css'
 import { Link, useLocation } from 'react-router-dom';
-import NavBarResp from '../Navbar2/NavBarResp';
 import Footer from '../Footer/Footer';
 import {motion} from 'framer-motion';
 
@@ -23,7 +22,6 @@ function ServiceAppDev() {
 
   return (
     <>
-    <NavBarResp/>
     <div className='main-container-outer' style={{"backgroundColor":'black'}}
     
     >

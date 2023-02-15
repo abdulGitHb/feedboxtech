@@ -6,16 +6,12 @@ import Services from './components/Services/Services';
 import ClientShowCase from './components/ClientShowCase/ClientShowCase';
 import Portfolio from './components/Portfolio/Portfolio'
 import Footer from './components/Footer/Footer'
-// import Navbar from './components/Navbar2/Navbar';
-// import Navbar from './components/Navbar/Navbar';
-import NavBarResp from './components/Navbar2/NavBarResp';
 
 function HomeComp() {
   return (
     <div className='App'>
-        <NavBarResp/>
         <Landing/>
-        <ClientShowCase/>
+        {/* <ClientShowCase/> */}
         <About/>
         <Services/>
         <Portfolio/>

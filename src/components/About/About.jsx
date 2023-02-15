@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./About.css";
 import $ from "jquery";
 
@@ -9,6 +9,8 @@ import AboutImg from "../../image/about2.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 export default function About() {
   useEffect(() => {
