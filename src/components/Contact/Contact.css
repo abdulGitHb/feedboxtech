@@ -6,6 +6,7 @@
     background-color: #06283d;
     margin-top: -8.4rem;
     z-index: 0;
+    padding-bottom: 25rem;
   }
   
   .adarsh-main {
@@ -15,11 +16,12 @@
     margin: auto;
     display: flex;
     margin-top: 8rem;
-    z-index: 1;
+  
   
     box-shadow: 10px 0px 8px rgba(128, 128, 128, 0.432),
       -10px 0px 8px rgba(128, 128, 128, 0.432),
       0px 10px 8px rgba(128, 128, 128, 0.432);
+   
   }
   
   .adarsh-main-head {
@@ -110,12 +112,14 @@
   
   .adarsh-info {
     color: white;
+    margin-top: 1rem;
   
     margin-left: 1rem;
   }
   
   .adarsh-head {
     margin-left: 4rem;
+    margin-top: 1rem;
   }
   
   .adarsh-number {
