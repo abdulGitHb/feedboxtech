@@ -1,0 +1,270 @@
+.adarsh-form {
+    /* border-radius: 2rem; */
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    margin: auto;
+    background-color: #06283d;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .adarsh-left {
+    width: 50vw;
+  
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+    margin-left: 8rem;
+  }
+  
+  .adarsh-bottom-main {
+    margin-top: -10rem;
+  
+    background-color: #06283d;
+    z-index: 0;
+  
+    position: relative;
+  
+    border: none;
+  }
+  
+  .adarsh-bottom1 {
+    background: transparent;
+    border: none;
+  }
+  
+  .adarsh-bottom2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  
+
+    box-shadow: 3rem 0rem 3rem 7.5rem #06283d inset;
+    box-shadow: 0rem 2rem 3rem 7.5rem #06283d inset;
+    box-shadow: -3rem 0rem 3rem 7.5rem #06283d inset;
+   
+  
+    z-index: 0;
+    transform: translateY(-100%);
+    border: none;
+  }
+  
+  .adarsh-checkSpan {
+    color: white;
+  }
+  .adarsh-map {
+    width: 35vw;
+    height: 63vh;
+  
+    /* border-radius: 8rem; */
+    opacity: 0.9;
+  }
+  
+  .adarsh-top {
+    z-index: 1;
+    height: 50vh;
+  
+    margin-left: 2rem;
+  }
+  
+  .adarsh-right {
+    width: 50vw;
+    margin-top: 9rem;
+
+  }
+  
+  .adarsh-heading {
+    font-size: 5rem;
+    color: white;
+    padding: 0.8rem;
+    margin-top: 3rem;
+  }
+  
+  .adarsh-text {
+    margin-left: 6rem;
+  
+    color: black;
+    padding-top: 2rem;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 1.2rem;
+  
+    margin-right: 1.2rem;
+  
+    border-bottom-color: blue;
+  }
+  
+  .adarsh-btnn {
+    margin-left: 6rem;
+  
+    background-color: #0090ee;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    width: 50vw;
+    font-size: 1rem;
+    border: none;
+  }
+  .adarsh-btnn:hover {
+    background-color: #0070bd;
+  }
+  
+  .adarsh-check {
+    margin-top: 1.2rem;
+  }
+  
+  .adarsh-image {
+    width: 6vw;
+    height: 10vh;
+  
+    background-color: black;
+    color: white;
+  }
+  .adarsh-imageDiv {
+    margin-top: -3rem;
+  
+    width: 20vw;
+    height: 8vh;
+  
+    display: flex;
+    margin-top: 1.8rem;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    color: white;
+  }
+  
+  .adarsh-text::placeholder {
+    color: white;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .adarsh-form {
+      width: 90vw;
+      height: 90vh;
+  
+      flex-direction: column;
+    }
+  
+    .adarsh-left {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .adarsh-right {
+      margin-top: -7rem;
+      margin-left: -3rem;
+    }
+  
+    .adarsh-top {
+      z-index: 1;
+      height: 50vh;
+  
+      margin-left: 1rem;
+    }
+  
+    .adarsh-heading {
+      font-size: 3rem;
+  
+      padding: 0.2rem;
+      margin-top: 3rem;
+    }
+  
+    .adarsh-bottom-main {
+      display: none;
+    }
+  
+    .adarsh-imageDiv {
+      width: 75vw;
+    }
+  
+    .adarsh-btnn {
+      margin-left: 4.8rem;
+  
+      padding: 0.2rem;
+  
+      font-size: 1.2rem;
+    }
+  
+    .adarsh-checkSpan {
+      margin-top: 1rem;
+  
+      width: 4vw;
+      padding-left: 0.2rem;
+      font-size: 1.2rem;
+      color: white;
+    }
+  
+    .adarsh-text {
+      margin-left: 4.5rem;
+  
+      color: black;
+      padding-top: 2rem;
+      background-color: transparent;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      font-size: 1.4rem;
+  
+      margin-right: 1.2rem;
+  
+      border-bottom-color: blue;
+    }
+  }
+  
+  @media screen and (min-width: 780px) and (max-width: 1000px) {
+    .adarsh-form {
+      width: 70vw;
+      height: 90vh;
+    }
+    .adarsh-left {
+      width: 40vw;
+    }
+    .adarsh-right {
+      width: 30vw;
+      margin-top: 18rem;
+    }
+  
+    .adarsh-top {
+      font-size: 1rem;
+    }
+  
+    .adarsh-map {
+      height: 50vh;
+    }
+  
+    .adarsh-heading {
+      font-size: 4rem;
+      margin-top: 10rem;
+    }
+  
+    .adarsh-text {
+      margin-left: 1rem;
+      margin-right: 1.2rem;
+      font-size: 1rem;
+    }
+  
+    .adarsh-btnn {
+      margin-left: 0.8rem;
+      width: 20vw;
+  
+      font-size: 1.4rem;
+      height: 5vh;
+    }
+  
+    .adarsh-checkSpan {
+      margin-top: 1rem;
+  
+      width: 4vw;
+      padding-left: 0.2rem;
+      font-size: 1.2rem;
+      color: white;
+    }
+  }
+  

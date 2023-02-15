@@ -13,64 +13,66 @@ import { Link } from "react-router-dom";
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 export default function About() {
-  useEffect(() => {
-    AOS.init({
-      duration: 600,
-      offset: 0,
-      easing: "ease-in-out-back",
-      delay: 50,
-      anchorPlacement: "top-top",
-    });
-  }, []);
-
     useEffect(() => {
         AOS.init({
             duration: 600,
             offset: 0,
-            easing: 'ease-in-out-back',
-            // delay: 50,
-            anchorPlacement: 'top-top'
-        })
-    }, [])
+            easing: "ease-in-out-back",
+            delay: 50,
+            anchorPlacement: "top-top",
+        });
+    }, []);
+
+
+  window.onscroll = function (event) {
+    var offset = window.pageYOffset;
+    console.log(offset);
+    $(document).ready(function () {
+      if (offset < 800 || offset>1300) {
+        $(".a-layer").removeClass("a-layer_open");
+      }
+      if (offset > 800 && offset<1300) {
+        $("#layer").addClass("a-layer_open");
+      }
+    });
+  };
 
     return (
         <div className="about-container-hld" style={{ paddingTop: '850px' }}>
-        <div className="a-container" id="about" >
-            <ParallaxProvider>
-             <Parallax 
-             scale={[0.5,1.3]}
-             >
-            <h2 className="section_heading"
-               >About Us</h2>
-             </Parallax>
-            </ParallaxProvider>
-            <div data-aos="fade-up" className="a_content"
-            >
-                <div className="a_content_img_hld">
-                    <img src={AboutImg} alt="" />
+            <div className="a-container" id="about" >
+                <ParallaxProvider>
+                    <Parallax
+                        scale={[0.5, 1.3]}
+                    >
+                        <h2 className="section_heading"
+                        >About Us</h2>
+                    </Parallax>
+                </ParallaxProvider>
+                <div data-aos="fade-up" className="a_content"
+                >
+                    <div className="a_content_img_hld">
+                        <img src={AboutImg} alt="" />
+                    </div>
+
+                    <div
+                        className="about_content_desc"
+                    >
+                        <p>
+                            Feedbox tech is a team of passionate tech professionals that are
+                            dedicated to providing unparalleled services in areas of website
+                            creation and optimisation. We help you get the exposure you need
+                            through our expertise in SEO, website building, internet
+                            marketing, and web design. We aim to make you the front runners in
+                            your domain while helping you reap the benefits of the internet to
+                            its fullest with our cut throat technological innovations.
+                        </p>
+                        <Link to="/about" className="about_content_desc_btn">
+                            <div>Know More</div>
+                        </Link>
+                    </div>
                 </div>
-
-
-  
-
-          <div
-            className="about_content_desc"
-          >
-            <p>
-              Feedbox tech is a team of passionate tech professionals that are
-              dedicated to providing unparalleled services in areas of website
-              creation and optimisation. We help you get the exposure you need
-              through our expertise in SEO, website building, internet
-              marketing, and web design. We aim to make you the front runners in
-              your domain while helping you reap the benefits of the internet to
-              its fullest with our cut throat technological innovations.
-            </p>
-            <Link to="/about" className="about_content_desc_btn">
-              <div>Know More</div>
-            </Link>
-          </div>
+            </div>
         </div>
-        </div>
-        </div>
+
     )
 }
