@@ -30,20 +30,17 @@ import {Parallax} from "react-parallax";
 function AboutUsPage1() {
     return (
       <>
+      {/* <NavBarResp/> */}
       <Parallax bgImage={img18} strength={200} className="aditya-parall">
         <div className="aditya-about">
-          
           <Parallax  strength={500} className="aditya-parallax1">
-          <div className="aditya-text-content0">About US</div>
+          <div className="aditya-text-content0">About Us</div>
           </Parallax>
 
           <Parallax bgImage={img15} strength={500} className="aditya-parallax">
           <div className="aditya-text-content">
           <p className='aditya-p-text'>
-             <b className="aditya-b">W</b>e strongly believe that design unlocks opportunities for
-              understanding, collaboration, and buy-in from customers and
-              stakeholders. Since 2015, we've been on a mission to increase the
-              impact of design on people's lives.
+             <b className="aditya-b">F</b>eedbox was awarded the MP Young Achievers Award by the CM of Madhya Pradesh Shri Shivraj Singh Chouhan. We were among the top 10 businesses to receive a banner shoutout at the CM house in Bhopal.
               </p>
           </div>
          
@@ -52,38 +49,47 @@ function AboutUsPage1() {
           <Parallax bgImage={img14} strength={500} className="aditya-parallax">
           <div className="aditya-text-content aditya-text-content1">
           <p className='aditya-p-text'>
-          <b className="aditya-b">W</b>e strongly believe that design unlocks opportunities for
-              understanding, collaboration, and buy-in from customers and
-              stakeholders. Since 2015, we've been on a mission to increase the
-              impact of design on people's lives.
+          <b className="aditya-b">F</b>eedbox became the first startup in Indore to receive this accolade. 3 years in this industry, our consistency and hard work were met by the prestigious certificate which is still a dream for many budding businesses.
               </p>
           </div>
           </Parallax>
           <Parallax bgImage={img13} strength={500} className="aditya-parallax">
           <div className="aditya-text-content">
           <p className='aditya-p-text'>
-          <b className="aditya-b">W</b>e strongly believe that design unlocks opportunities for
-              understanding, collaboration, and buy-in from customers and
-              stakeholders. Since 2015, we've been on a mission to increase the
-              impact of design on people's lives.
+          <b className="aditya-b">F</b>eedbox was founded by 2 engineers,Yash & Ayushi, who had a shared vision of starting a digital marketing company. The company's focus on revenue growth has helped many startups to scale their businesses and achieve their financial goals in the past 3 years.
               </p>
           </div>
           </Parallax>
-          <Parallax bgImage={img12} strength={500} className="aditya-parallax">
-          
-          <div className="aditya-text-content aditya-text-content1">
-          <p className='aditya-p-text'>
-          <b className="aditya-b">W</b>e strongly believe that design unlocks opportunities for
-              understanding, collaboration, and buy-in from customers and
-              stakeholders. Since 2015, we've been on a mission to increase the
-              impact of design on people's lives.
-              </p>
-          </div>
-          </Parallax>
-          
-     
+          <div className='aditya-about-story'>
+               {/* about us story */}
+                 <div className="aditya-story-head">Our Story</div>
+                 <div className='aditya-story-text'> 
+                     <div>
+                     Every success story has a humble beginning. Ours was driven
+                     by an aim to disrupt the status quo in the future of marketing! 
+                     Our founder's journey goes back to 20XX, while he was still in 
+                     college, promoting and marketing events and concerts in Indore.
+                     He was training his juniors and working with them all the same 
+                     to attain experience. <br/>
+                     </div>
+                     <div>
+                     In his final year, Yash had IIM calls as well as placement offers
+                     in several top notch companies across the country but he'd rather 
+                     hustle to make his dream work than punch clock for someone else's.
+                     The paucity of funds resulted him in taking up a temporary job in 
+                     Indore to provide for his startup. Our now COO joined him around 
+                     that time as an intern.
+                     </div>
+                 </div>
+                 {/* about us story button */}
+                 <a href='/ourstory'><button className='story-btn'  type="button">Read Full Story</button></a>
+               </div>
         </div>
+        
+  
+     
         </Parallax>
+        
         <Footer/>
         </>
       );

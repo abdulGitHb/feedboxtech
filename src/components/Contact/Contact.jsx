@@ -1,7 +1,84 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import './Contact.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { IoCallOutline } from "react-icons/io5"
+import { HiOutlineLocationMarker } from "react-icons/hi"
+import { MdOutlineMail } from "react-icons/md"
+import emailjs from '@emailjs/browser'
+// import React, { useEffect, useState } from "react";
 import './contactHome.css'
 
 
+
+// export default function Contact() {
+//     const [name, setname] = useState('')
+//     const [email, setemail] = useState('')
+//     const [contact, setcontact] = useState('')
+//     const [message, setmessage] = useState('')
+//     const form = useRef();
+
+//     // useEffect(() => {
+//     //     AOS.init({
+//     //         duration: 100,
+//     //         // offset: -250
+//     //     })
+//     // },[])
+
+
+
+//     const [formData1, setFormData1] = useState({
+//         name:"",
+//         email:"",
+//         contact:"",
+//         message:""
+//     });
+
+//     const getFormData= (event)=>{
+//         event.preventDefault();
+//         console.log(formData1);
+//         //  fetch("http://localhost:5000/contactdata",{
+          
+//         //     method:'POST',
+//         //     headers:{
+//         //         "content-type":"application/json",
+//         //     },
+//         //     body: JSON.stringify(formData1)
+//         // })
+//         // .then((response)=>{response.json()})
+//         // .catch(error=>{
+//         //     console.log(`error is : ${error}`)
+//         //     // console.log(formData1);
+//         // })
+
+//         emailjs.send('service_io91ds2','template_eu8fazo',formData1,'6qGUvnhs40iNBMVST').then((result)=>{
+//             console.log(result.text);
+//         },(error)=>{
+//             console.log(error.text);
+//         })
+//     }
+
+
+//     const handleChange=(e)=>{
+//         e.preventDefault();
+//         setFormData1({...formData1, [e.target.name]:e.target.value});
+//         // console.log(e.target.value)
+//         // console.log(formData1);
+//     }
+
+
+
+//     // eslint-disable-next-line turbo/no-undeclared-env-vars
+// sendgrid.setApiKey(process.env.SENDGRID_API_KEY || '');
+
+// const emailHtml = render(<Email url="https://example.com" />);
+
+// const options = {
+//   from: 'you@example.com',
+//   to: 'user@gmail.com',
+//   subject: 'hello world',
+//   html: emailHtml,
+// };
 
 
 
