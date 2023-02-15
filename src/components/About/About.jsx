@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import './About.css'
-
+import $ from 'jquery'
 import AboutImg from '../../image/about2.png'
 
 

@@ -345,9 +345,9 @@
    .hero_home_content{
      margin-top: -100px;
    }
-   .hero_container{
-     /* height: 90vh; */
-    }
+   /* .hero_container{
+     height: 90vh;
+    } */
     .hero_home_social{
      right: 20px;
      bottom: 150px;
@@ -372,9 +372,9 @@
    right: 20px;
    bottom: 220px;
   }
-  .hero_container{
-   /* height: 70vh; */
-  }
+  /* .hero_container{
+   height: 70vh;
+  } */
   .hero_home_contact_btn{
    margin-top: 150px;
   }
@@ -416,9 +416,9 @@
      border-radius: 1.5rem;
      font-size: 18px;
     }
-    .hero_container{
-     /* height: 600px; */
-    }
+    /* .hero_container{
+     height: 600px;
+    } */
  }
 
  @media (max-width: 480px){
