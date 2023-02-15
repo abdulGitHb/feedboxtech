@@ -37,21 +37,22 @@ export default function Contact() {
             
           </div>
           <div className="adarsh-right">
-              <input className="adarsh-text" type="text" placeholder="Your Name" />
-              <input className="adarsh-text" type="email" placeholder="Your e-Mail" />
-              <input type='tel' placeholder="Phone" className="adarsh-text" />
+              <input className="adarsh-text" type="text" placeholder="Your Name" autocomplete="off" />
+              <input className="adarsh-text" type="email" placeholder="Your e-Mail" autocomplete="off" />
+              <input type='tel' placeholder="Phone" className="adarsh-text"  autocomplete="off" />
             <input
               className="adarsh-text"
               type="text"
               placeholder="Your message to us"
+              autocomplete="off"
             />
             <br/>
 
-            <span className="adarsh-checkSpan">
+            {/* <span className="adarsh-checkSpan">
            
               <input type="checkbox" className="adarsh-text adarsh-check" />Message
               
-            </span>
+            </span> */}
             <div className="adarsh-imageDiv">
               <button type="submit" className="adarsh-btnn">
                 Send Message <spam></spam>

@@ -23,20 +23,21 @@ export default function Contact() {
           <div className="adarsh-leftCont">
             <h2 className="adarsh-head">Message</h2>
             <div className="adarsh-first">
-              <input type="text" placeholder="Your Name" className="adarsh-name" />
+              <input type="text" placeholder="Your Name" className="adarsh-name" autocomplete="off"/>
             </div>
             <div className="adarsh-first">
-              <input type="email" placeholder="Your Email" className="adarsh-name" />
+              <input type="email" placeholder="Your Email" className="adarsh-name" autocomplete="off" />
             </div>
 
             <div className="adarsh-first">
-              <input type="tel" placeholder=" Your Phone no" className="adarsh-name" />
+              <input type="tel" placeholder=" Your Phone no" className="adarsh-name" autocomplete="off"/>
             </div>
             <div className="adarsh-first">
               <input
                 type="text"
                 placeholder="Your message to us"
                 className="adarsh-name"
+                autocomplete="off"
               />
             </div>
 
@@ -86,7 +87,8 @@ export default function Contact() {
                       width: "4vw",
                       height: "4vh",
                       marginTop: "2rem",
-                      paddingRight: ".4rem",
+                      paddingRight: ".6rem",
+                      
                     }}
                   />{" "}
                 </a>
@@ -100,7 +102,7 @@ export default function Contact() {
                       width: "4vw",
                       height: "4vh",
                       marginTop: "2rem",
-                      paddingRight: ".4rem",
+                      paddingRight: ".6rem",
                     }}
                   />{" "}
                 </a>
@@ -114,7 +116,7 @@ export default function Contact() {
                       width: "4vw",
                       height: "4vh",
                       marginTop: "2rem",
-                      paddingRight: ".4rem",
+                      paddingRight: ".6rem",
                     }}
                   />
                 </a>{" "}
