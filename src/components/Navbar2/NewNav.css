@@ -103,6 +103,7 @@ ul {
     width: 100%;
     margin: 50px;
     /* background-color:aqua; */
+    text-decoration: none;
 }
 
  li {
@@ -114,10 +115,6 @@ ul {
     overflow: hidden;
     font-weight: 400;
     text-transform: uppercase;
-}
-
-.no-style-link{
-    text-decoration: none;
 }
 
 .overlay-menu {

@@ -25,34 +25,34 @@ export default function About() {
 
     return (
         <div className="about-container-hld" style={{ paddingTop: '850px' }}>
-        <div className="a-container" id="about" >
-            <ParallaxProvider>
-             <Parallax 
-             scale={[0.5,1.3]}
-             >
-            <h2 className="section_heading"
-            >About Us</h2>
-            {/* <div data-aos="fade-up" className="a_content"> */}
+            <div className="a-container" id="about" >
+                <ParallaxProvider>
+                <Parallax 
+                scale={[0.5,1.3]}
+                >
+                <h2 className="section_heading"
+                >About Us</h2>
+                {/* <div data-aos="fade-up" className="a_content"> */}
 
-             </Parallax>
-            </ParallaxProvider>
-            <div data-aos="fade-up" className="a_content"
-            >
-                <div className="a_content_img_hld">
-                    <img src={AboutImg} alt="" />
-                </div>
+                </Parallax>
+                </ParallaxProvider>
+                <div data-aos="fade-up" className="a_content"
+                >
+                    <div className="a_content_img_hld">
+                        <img src={AboutImg} alt="" />
+                    </div>
 
-                <div className="about_content_desc">
+                    <div className="about_content_desc">
 
-                    <p>Feedbox tech is a team of passionate tech professionals that are dedicated to providing unparalleled services in areas of website creation and optimisation. We help you get the exposure you need through our expertise in SEO, website building, internet marketing, and web design. We aim to make you the front runners in your domain while helping you reap the benefits of the internet to its fullest with our cut throat technological innovations. We leverage our expertise in creating websites using Wordpress, React, and other trending technologies. </p>
-                    <Link to='/about' className="about_content_desc_btn">
-                        <div>
-                            Know More
-                        </div>
-                    </Link>
+                        <p>Feedbox tech is a team of passionate tech professionals that are dedicated to providing unparalleled services in areas of website creation and optimisation. We help you get the exposure you need through our expertise in SEO, website building, internet marketing, and web design. We aim to make you the front runners in your domain while helping you reap the benefits of the internet to its fullest with our cut throat technological innovations. We leverage our expertise in creating websites using Wordpress, React, and other trending technologies. </p>
+                        <Link to='/about' className="about_content_desc_btn">
+                            <div>
+                                Know More
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     )
 }
