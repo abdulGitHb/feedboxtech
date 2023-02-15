@@ -1,14 +1,30 @@
 .container {
     counter-reset: my-counter;
 }
+
+.nav-container{
+    width: 100%;
+    position: fixed;
+    background-color: #000000;
+    height: 70px;
+    z-index: 20010;
+}
+.navbar-logo{
+    width: 100px;
+    height: 50px;
+    position: sticky;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
 .button_container {
     position: fixed;
-    top: 5%;
+    top: 3%;
     right: 2%;
     height: 27px;
     width: 35px;
     cursor: pointer;
-    z-index: 20001;
+    z-index: 20010;
     /* border: 1px solid white;
     padding: 10px;
     border-radius: 50px; */
@@ -49,7 +65,8 @@
 }
 .overlay {
     position: fixed;
-    background: #000;
+    background: #000000;
+    height: 100%;
     top: 0;
     left: 0;
     width: 100%;
@@ -65,11 +82,11 @@
     visibility: visible;
     height: 100%;
 }
-.overlay.open li {
+/* .overlay.open li {
     animation: fadeInRight 0.5s ease forwards;
     animation-delay: 0.35s;
-}
-.overlay.open li:nth-of-type(2) {
+} */
+/* .overlay.open li:nth-of-type(2) {
     animation-delay: 0.4s;
 }
 .overlay.open li:nth-of-type(3) {
@@ -80,7 +97,7 @@
 }
 .overlay.open li:nth-of-type(5) {
     animation-delay: 0.55s;
-}
+} */
 ul {
     /* border: 2px solid yellow; */
     width: 100%;
@@ -125,25 +142,6 @@ ul {
     transition: all 0.5s ease-in-out;
     top: 0;
     font-weight: 400;
-}
-
-.servivesSub {
-    /* display: inline-block; */
-    position:absolute;
-    color: #fff;
-    font-size: 3vh;
-    opacity: 1;
-    margin: 30px;
-    transition: all 0.2s ease;
-}
-
-.submenu {
-    display: inline;
-    position: absolute;
-}
-
-.overlay-menu-a:hover .servivesSub{
-    transform: rotate(45deg);
 }
 
 
@@ -194,24 +192,30 @@ a:is(:link, :active, :visited).active{
 }
 
 @media (max-width:480px){
-    ul{
-        width: 80%;
-    }
-    li{
-        height: 10vh;
-        width: 80%;
-    }
     .overlay-menu{
         height: 80%;
         width: 80%;
     }
-    .overlay-menu-a{
-        width: 80%;
+    li {
+        margin: 10px;
+        height: 7vh;
+    }
+    ul {
+        padding-top: 100px;
+        margin: 10px;
+    }
+    .overlay-menu-a:hover .real {
+        top: 0px;
+        transition: none;
     }
     .real{
+        transition: none;
         font-size: 4vh;
     }
     .real::before{
+        display: none;
+    }
+    .cloned {
         display: none;
     }
 }

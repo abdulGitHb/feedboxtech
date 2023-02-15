@@ -1,10 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./newAbout.css";
 import Footer from '../Footer/Footer';
 import a1 from  "../../image/achie1.png"
 import a2 from "../../image/achie2.png";
 import a3 from "../../image/achie3.png";
 function NewAbout() {
+  const images=[
+    "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg",
+    "https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg",
+    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+  ]
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handlePrev = () => {
+    setActiveIndex((activeIndex - 1 + images.length) % images.length);
+  };
+
+  const handleNext = () => {
+    setActiveIndex((activeIndex + 1) % images.length);
+  };
+
   return (
     <>
     <div className='aditya-about-container'>  
@@ -90,6 +106,15 @@ function NewAbout() {
               </div>
       
     </div>
+    </div>
+    <div>
+      <button onClick={handlePrev}>Prev</button>
+        <img style={{
+          width:'200px',
+          height:'200px',
+          objectFit:'cover',
+        }} src={images[activeIndex]} alt="carousel image" />
+      <button onClick={handleNext}>Next</button>
     </div>
     <Footer/>
     </>

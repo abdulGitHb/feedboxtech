@@ -32,6 +32,8 @@ export default function About() {
              >
             <h2 className="section_heading"
             >About Us</h2>
+            <div data-aos="fade-up" className="a_content">
+
              </Parallax>
             </ParallaxProvider>
             <div data-aos="fade-up" className="a_content"
