@@ -116,6 +116,10 @@ ul {
     text-transform: uppercase;
 }
 
+.no-style-link{
+    text-decoration: none;
+}
+
 .overlay-menu {
     height: 100%;
     width: 100%;

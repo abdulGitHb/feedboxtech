@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import './Contact.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { IoCallOutline } from "react-icons/io5"
 import { HiOutlineLocationMarker } from "react-icons/hi"
 import { MdOutlineMail } from "react-icons/md"
+import emailjs from '@emailjs/browser'
 
 // const sgMail = require('@sendgrid/mail')
 // sgMail.setSpiKey(process.env.SENDGRID_API_KEY);
@@ -15,6 +16,7 @@ export default function Contact() {
     const [email, setemail] = useState('')
     const [contact, setcontact] = useState('')
     const [message, setmessage] = useState('')
+    const form = useRef();
 
     // useEffect(() => {
     //     AOS.init({
@@ -33,8 +35,8 @@ export default function Contact() {
     });
 
     const getFormData= (event)=>{
-        // event.preventDefault();
-        // // console.log(formData1);
+        event.preventDefault();
+        console.log(formData1);
         //  fetch("http://localhost:5000/contactdata",{
           
         //     method:'POST',
@@ -48,6 +50,12 @@ export default function Contact() {
         //     console.log(`error is : ${error}`)
         //     // console.log(formData1);
         // })
+
+        emailjs.send('service_io91ds2','template_eu8fazo',formData1,'6qGUvnhs40iNBMVST').then((result)=>{
+            console.log(result.text);
+        },(error)=>{
+            console.log(error.text);
+        })
     }
 
 

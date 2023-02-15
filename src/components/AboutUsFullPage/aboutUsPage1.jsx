@@ -31,7 +31,7 @@ import {Parallax} from "react-parallax";
 function AboutUsPage1() {
     return (
       <>
-      <NavBarResp/>
+      {/* <NavBarResp/> */}
       <Parallax bgImage={img18} strength={200} className="aditya-parall">
         <div className="aditya-about">
           

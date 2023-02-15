@@ -28,78 +28,90 @@ function NewNav() {
         <nav className="overlay-menu">
           <ul>
             <li>
-              <a
-                id="nav_home"
-                href="/"
-                className={
-                  selectedPage === "/"
-                    ? "overlay-menu-a active"
-                    : "overlay-menu-a"
-                }
-              >
-                <div className="real">Home</div>
-                <div className="cloned">Home</div>
-              </a>
+              <Link to='/'>
+                <a
+                  id="nav_home"
+                  href="/"
+                  className={
+                    selectedPage === "/"
+                      ? "overlay-menu-a active"
+                      : "overlay-menu-a"
+                  }
+                >
+                  <div className="real">Home</div>
+                  <div className="cloned">Home</div>
+                </a>
+              </Link>
             </li>
 
             <li>
-              <a
-                id="nav_about"
-                href="/about"
-                className={
-                  selectedPage === "/about"
-                    ? "overlay-menu-a active"
-                    : "overlay-menu-a"
-                }
-              >
-                <span className="real">About Us</span>
-                <span className="cloned">About Us</span>
-              </a>
+              <Link to='/about'>
+                <a
+                  id="nav_about"
+                  href="/about"
+                  className={
+                    selectedPage === "/about"
+                      ? "overlay-menu-a active"
+                      : "overlay-menu-a"
+                  }
+                >
+                  <span className="real">About Us</span>
+                  <span className="cloned">About Us</span>
+                </a>
+              </Link>
             </li>
 
             <li>
-              <a
-                id="nav_services"
-                href="/services/webdev"
-                className={
-                  selectedPage === "/services/webdev"
-                    ? "overlay-menu-a active"
-                    : "overlay-menu-a"
-                }
-              >
-                <span className="real">Services</span>
-                <span className="cloned">Services</span>
-              </a>
+              <Link to='/services/webdev'>
+                <a
+                  id="nav_services"
+                  href="/services/webdev"
+                  className={
+                    selectedPage === "/services/webdev"
+                    || "/services/appdev"
+                    || "/services/wordpressdev"
+                      ? "overlay-menu-a active"
+                      : "overlay-menu-a"
+                  }
+                >
+                  <span className="real">Services</span>
+                  <span className="cloned">Services</span>
+                </a>
+              </Link>
             </li>
 
             <li>
-              <a
-                id="nav_portfolio"
-                href="/Portfolio"
-                className={
-                  selectedPage === "/Portfolio"
-                    ? "overlay-menu-a active"
-                    : "overlay-menu-a"
-                }
-              >
-                <span className="real">Portfolio</span>
-                <span className="cloned">Portfolio</span>
-              </a>
+              <Link to='/Portfolio'>
+                <a
+                  id="nav_portfolio"
+                  href="/Portfolio"
+                  className={
+                    selectedPage === "/Portfolio"
+                      ? "overlay-menu-a active"
+                      : "overlay-menu-a"
+                  }
+                >
+                  <span className="real">Portfolio</span>
+                  <span className="cloned">Portfolio</span>
+                </a>
+              </Link>
             </li>
 
             <li>
-              <a
-                id="nav_ourstory"
-                href="/ourstory"
-                className={
-                  selectedPage === "/ourstory"
-                    ? "overlay-menu-a active"
-                    : "overlay-menu-a"
-                }
-              >
-                <span className="real">Our Story</span>
-                <span className="cloned">Our Story</span>
-              </a>
+              <Link to='/ourstory'>
+                <a
+                  id="nav_ourstory"
+                  href="/ourstory"
+                  className={
+                    selectedPage === "/ourstory"
+                      ? "overlay-menu-a active"
+                      : "overlay-menu-a"
+                  }
+                >
+                  <span className="real">Our Story</span>
+                  <span className="cloned">Our Story</span>
+                </a>
+              </Link>
             </li>
           </ul>
         </nav>
