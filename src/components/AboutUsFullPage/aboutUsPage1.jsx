@@ -62,21 +62,35 @@ function AboutUsPage1() {
               </p>
           </div>
           </Parallax>
-          {/* <Parallax bgImage={img12} strength={500} className="aditya-parallax">
-          
-          <div className="aditya-text-content aditya-text-content1">
-          <p className='aditya-p-text'>
-          <b className="aditya-b">W</b>e strongly believe that design unlocks opportunities for
-              understanding, collaboration, and buy-in from customers and
-              stakeholders. Since 2015, we've been on a mission to increase the
-              impact of design on people's lives.
-              </p>
-          </div>
-          </Parallax>
-           */}
-     
         </div>
+        <div className='aditya-about-story'>
+               {/* about us story */}
+                 <div className="aditya-story-head">Our Story</div>
+                 <div className='aditya-story-text'> 
+                     <div>
+                     Every success story has a humble beginning. Ours was driven
+                     by an aim to disrupt the status quo in the future of marketing! 
+                     Our founder's journey goes back to 20XX, while he was still in 
+                     college, promoting and marketing events and concerts in Indore.
+                     He was training his juniors and working with them all the same 
+                     to attain experience. <br/>
+                     </div>
+                     <div>
+                     In his final year, Yash had IIM calls as well as placement offers
+                     in several top notch companies across the country but he'd rather 
+                     hustle to make his dream work than punch clock for someone else's.
+                     The paucity of funds resulted him in taking up a temporary job in 
+                     Indore to provide for his startup. Our now COO joined him around 
+                     that time as an intern.
+                     </div>
+                 </div>
+                 {/* about us story button */}
+                 <a href='/ourstory'><button className='story-btn'  type="button">Read Full Story</button></a>
+               </div>
+  
+     
         </Parallax>
+        
         <Footer/>
         </>
       );
