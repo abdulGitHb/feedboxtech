@@ -358,7 +358,8 @@
 
 .a-container {
     margin-top: 500px;
-    padding-top: 50px;
+    padding-top: 20px;
+    /* padding-bottom: 300px; */
     /* width: 100%; */
     background-color: #06283d;
     color: white;
@@ -377,6 +378,7 @@
 
 
 .section_heading {
+    margin-top: 50px;
     font-size: 50px;
     color: white;
     position: relative;

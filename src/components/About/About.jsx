@@ -11,11 +11,12 @@ import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import Services from "../Services/Services";
 
 export default function About() {
     useEffect(() => {
         AOS.init({
-            duration: 600,
+            duration: 1000,
             offset: 0,
             easing: "ease-in-out-back",
             delay: 50,
@@ -28,17 +29,17 @@ export default function About() {
         var offset = window.pageYOffset;
         console.log(offset);
         $(document).ready(function () {
-            if (offset < 800 || offset > 1300) {
+            if (offset < 1000 || offset > 1700) {
                 $(".a-layer").removeClass("a-layer_open");
             }
-            if (offset > 800 && offset < 1300) {
+            if (offset > 1000 && offset < 1700) {
                 $("#layer").addClass("a-layer_open");
             }
         });
     };
 
     return (
-        <div className="about-container-hld" style={{ paddingTop: '850px' }}>
+        <div className="about-container-hld" style={{ paddingTop: '750px' }}>
             <div className="a-container" id="about" >
                 <ParallaxProvider>
                     <Parallax
@@ -75,6 +76,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
+            {/* <Services/> */}
         </div>
 
     )

@@ -12,7 +12,7 @@ import { HiArrowDown } from "react-icons/hi"
 
 export default function Services() {
     const [offset, setoffset] = useState()
-    const [s, sets] = useState([0, 100])
+    const [showDot, setshowDot] = useState(true)
     // const s = [0,100]
 
     // useEffect(()=>{
@@ -24,13 +24,17 @@ export default function Services() {
     //     );
     // },[])
 
-    // for disabling parallax
-    useEffect(() => {
 
-    }, [s])
+    // for disabling parallax dot
     const onScroll = () => {
         const winheight = window.pageYOffset
-        setoffset(winheight);
+        // console.log(winheight)
+        if(winheight>1600){
+            setshowDot(false);
+        }
+        if(winheight<1600){
+            setshowDot(true);
+        }
     }
     useEffect(() => {
         // clean up code
@@ -48,17 +52,16 @@ export default function Services() {
             <ParallaxProvider>
 
                 <Parallax
-                    speed={-10}
-                    scale={[1, 60]}
-                    translateY={ [-100, 100]}
+                    speed={-23}
+                    scale={[0, -60]}
+                    // translateY={ [0, -200]}
                     easing="easeInQuad"
                 >
-                    <div className="parallax_dot">
-                        {/* <HiArrowDown size={25}/> */}
-                    </div>
+                    <div className="parallax_dot"></div>
                 </Parallax>
+                   {showDot && <div className="parallax_dot2"><HiArrowDown size={25}/></div>}
 
-                <h1 className="section_heading"
+                <h1 className="section_heading services_heading"
                     data-aos="fade-up"
                 >Services</h1>
 
