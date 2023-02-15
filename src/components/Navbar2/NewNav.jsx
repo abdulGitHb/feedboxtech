@@ -29,24 +29,24 @@ function NewNav() {
         <nav className="overlay-menu">
           <ul>
             <li>
-              <a
-                id="nav_home"
-                href="/"
+              <Link id="nav_home"
+                to ="/"
                 className={
                   selectedPage === "/"
                     ? "overlay-menu-a active"
                     : "overlay-menu-a"
-                }
-              >
+                }>
+              
+              
                 <div className="real">Home</div>
                 <div className="cloned">Home</div>
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a
+              <Link
                 id="nav_about"
-                href="/about"
+                to="/about"
                 className={
                   selectedPage === "/about"
                     ? "overlay-menu-a active"
@@ -55,28 +55,30 @@ function NewNav() {
               >
                 <span className="real">About Us</span>
                 <span className="cloned">About Us</span>
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a
+              <Link
                 id="nav_services"
-                href="/services/webdev"
+                to="/services/webdev"
                 className={
-                  selectedPage === "/services/webdev"
+                  selectedPage === ("/services/webdev"
+                  || "/services/appdev"
+                  || "/services/wordpressdev")
                     ? "overlay-menu-a active"
                     : "overlay-menu-a"
                 }
               >
                 <span className="real">Services</span>
                 <span className="cloned">Services</span>
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a
+              <Link
                 id="nav_portfolio"
-                href="/Portfolio"
+                to="/Portfolio"
                 className={
                   selectedPage === "/Portfolio"
                     ? "overlay-menu-a active"
@@ -85,13 +87,13 @@ function NewNav() {
               >
                 <span className="real">Portfolio</span>
                 <span className="cloned">Portfolio</span>
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a
+              <Link
                 id="nav_ourstory"
-                href="/ourstory"
+                to="/ourstory"
                 className={
                   selectedPage === "/ourstory"
                     ? "overlay-menu-a active"
@@ -100,13 +102,13 @@ function NewNav() {
               >
                 <span className="real">Our Story</span>
                 <span className="cloned">Our Story</span>
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a
+              <Link
                 id="nav_contact"
-                href="/contact"
+                to="/contactus"
                 className={
                   selectedPage === "/contact"
                     ? "overlay-menu-a active"
@@ -115,7 +117,7 @@ function NewNav() {
               >
                 <span className="real">Contact Us</span>
                 <span className="cloned">Contact Us</span>
-              </a>
+              </Link>
             </li>
 
           </ul>
