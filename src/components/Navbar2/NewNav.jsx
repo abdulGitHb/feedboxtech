@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import f_logo from '../../image/f_logo.png'
 import { Link } from 'react-router-dom'
 import "./NewNav.css";
+import { FaBeer, FaFacebook, FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 function NewNav() {
   const [toggle, setToggle] = useState(false);
@@ -101,8 +102,34 @@ function NewNav() {
                 <span className="cloned">Our Story</span>
               </a>
             </li>
+
+            <li>
+              <a
+                id="nav_contact"
+                href="/contact"
+                className={
+                  selectedPage === "/contact"
+                    ? "overlay-menu-a active"
+                    : "overlay-menu-a"
+                }
+              >
+                <span className="real">Contact Us</span>
+                <span className="cloned">Contact Us</span>
+              </a>
+            </li>
+
           </ul>
         </nav>
+
+        <div className="navbar-icons">
+          <a><FaLinkedin size={25}/></a>
+          <a><FaFacebookF size={25}/></a>
+          <a> <FaInstagram size={25}/> </a>
+          <a> <FaTwitter size={25}/> </a>
+
+          
+        </div>
+
       </div>
     </div>
   );
