@@ -3,7 +3,7 @@ import './landing.css'
 
 function Bubbles() {
   return (
-    <div>
+    <div className='bubble-body-outer'>
         <div className='inBubble'>
             <span ></span>
             <span ></span>

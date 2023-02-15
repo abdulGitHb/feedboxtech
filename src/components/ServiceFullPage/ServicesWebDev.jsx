@@ -9,7 +9,6 @@ import wpDev2 from '../../image/wordPressDev2.png';
 import {BsArrowLeft, BsArrowRight} from 'react-icons/bs'
 
 import { Link, useLocation } from 'react-router-dom';
-import NavBarResp from '../Navbar2/NavBarResp';
 import Footer from '../Footer/Footer';
 import {motion} from 'framer-motion';
 
@@ -22,7 +21,6 @@ function ServicesWebDev() {
 
   return (
     <>
-    <NavBarResp/>
     <div style={{"backgroundColor":'black'}} className='top-main-container'
     
     // initial={{x:lrSwipe=='Swipeleft'?-300:300}}

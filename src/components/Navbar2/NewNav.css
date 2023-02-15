@@ -1,0 +1,233 @@
+.container {
+    counter-reset: my-counter;
+}
+
+.nav-container{
+    width: 100%;
+    position: fixed;
+    background-color: #000000;
+    height: 70px;
+    z-index: 20010;
+}
+.navbar-logo{
+    width: 100px;
+    height: 50px;
+    position: sticky;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.button_container {
+    position: fixed;
+    top: 3%;
+    right: 2%;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 20010;
+    /* border: 1px solid white;
+    padding: 10px;
+    border-radius: 50px; */
+    transition: opacity 0.25s ease;
+    /* color: white; */
+}
+.button_container:hover {
+    opacity: 0.7;
+}
+.button_container.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #fff;
+}
+.button_container.active .middle {
+    opacity: 0;
+    background: #fff;
+}
+.button_container.active .bottom {
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #fff;
+}
+.button_container span {
+    background: #ffffff;
+    border: none;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+    top: 11px;
+}
+.button_container span:nth-of-type(3) {
+    top: 22px;
+}
+.overlay {
+    position: fixed;
+    background: #000000;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 2000;
+    visibility: hidden;
+    transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+    overflow: hidden;
+    text-align: left;
+}
+.overlay.open {
+    opacity: 0.9;
+    visibility: visible;
+    height: 100%;
+}
+/* .overlay.open li {
+    animation: fadeInRight 0.5s ease forwards;
+    animation-delay: 0.35s;
+} */
+/* .overlay.open li:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+.overlay.open li:nth-of-type(3) {
+    animation-delay: 0.45s;
+}
+.overlay.open li:nth-of-type(4) {
+    animation-delay: 0.5s;
+}
+.overlay.open li:nth-of-type(5) {
+    animation-delay: 0.55s;
+} */
+ul {
+    /* border: 2px solid yellow; */
+    width: 100%;
+    margin: 50px;
+    /* background-color:aqua; */
+}
+
+ li {
+    /* border: 2px solid red; */
+    height: 13vh;
+    /* background-color: aqua; */
+    width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.overlay-menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay-menu-a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 10px; */
+    overflow: hidden;
+    /* font-family: 'Varela Round', serif; */
+    color: #fff;
+}
+
+.real {
+    font-size: 10vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    top: 0;
+    font-weight: 400;
+}
+
+
+.cloned {
+    /* visibility: hidden; */
+    font-size: 10vh;
+    position: relative;
+    -webkit-text-stroke: 1px currentColor;
+    -webkit-text-fill-color: transparent;
+    top: 10px;
+    left: 55px;
+    transition: all 0.5s ease-in-out;
+    font-weight: 400;
+}
+
+.overlay-menu-a:hover .real {
+    top: -100px;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay-menu-a:hover .cloned{
+    /* visibility: visible; */
+    top: -110px;
+    transition: all 0.5s ease-in-out;
+}
+
+.real::before{
+    position: absolute;
+    display: inline-block;
+    opacity: 1;
+    font-weight: bold;
+    width: auto;
+    vertical-align: top;
+    line-height: 20px;
+    font-size: 20px;
+    position: relative;
+    height: auto;
+    background: transparent;
+    margin: 20px;
+    align-self: flex-start;
+    color: #9690a2;
+    counter-increment: my-counter;
+    content: "0" counter(my-counter);
+    left : 0;
+}
+a:is(:link, :active, :visited).active{
+    color: #0990ee;
+}
+
+@media (max-width:480px){
+    .overlay-menu{
+        height: 80%;
+        width: 80%;
+    }
+    li {
+        margin: 10px;
+        height: 7vh;
+    }
+    ul {
+        padding-top: 100px;
+        margin: 10px;
+    }
+    .overlay-menu-a:hover .real {
+        top: 0px;
+        transition: none;
+    }
+    .real{
+        transition: none;
+        font-size: 4vh;
+    }
+    .real::before{
+        display: none;
+    }
+    .cloned {
+        display: none;
+    }
+}
+
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+   }
+    100% {
+        opacity: 1;
+        left: 0;
+   }
+}
