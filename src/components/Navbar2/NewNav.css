@@ -141,7 +141,7 @@ ul {
     height: 100%;
     transition: all 0.5s ease-in-out;
     top: 0;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 
@@ -154,7 +154,7 @@ ul {
     top: 10px;
     left: 55px;
     transition: all 0.5s ease-in-out;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .overlay-menu-a:hover .real {
