@@ -6,6 +6,7 @@ import HomeComp from '../HomeComp';
 // import NewAbout from './AboutUsFullPage/newAbout';
 import AboutUsPage1 from './AboutUsFullPage/aboutUsPage1';
 import Contact from './Contact/Contact';
+import ContactFullPage from './Contact/ContactFullPage';
 
 
 import PortfolioAll from './Portfolio/PortfolioAll';
@@ -32,6 +33,7 @@ function AnimatedRoutes() {
           <Route path='/Portfolio' element={<PortfolioAll />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/ourstory' element={<OurStory />} />
+          <Route path='/contactus' element={<ContactFullPage/>}/>
         </Routes>
     </AnimatePresence>
   )
