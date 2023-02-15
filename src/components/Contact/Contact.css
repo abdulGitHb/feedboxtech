@@ -6,42 +6,42 @@
     background-color: #06283d;
     margin-top: -8.4rem;
     z-index: 0;
-    padding-bottom: 25rem;
+    padding-bottom: 30rem;
   }
   
   .adarsh-main {
     width: 65vw;
-    height: 90vh;
+    height: 100vh;
   
     margin: auto;
     display: flex;
-    margin-top: 8rem;
+    margin-top: 6rem;
   
   
-    box-shadow: 10px 0px 8px rgba(128, 128, 128, 0.432),
+    box-shadow: 10px 0px 18px rgba(128, 128, 128, 0.432),
       -10px 0px 8px rgba(128, 128, 128, 0.432),
       0px 10px 8px rgba(128, 128, 128, 0.432);
    
   }
   
   .adarsh-main-head {
-    font-size: 5rem;
+    font-size: 6rem;
     color: white;
-    margin-left: 14rem;
+    margin-left: 17rem;
     margin-top: 8rem;
     padding-top: 6rem;
   }
   
   .adarsh-leftCont {
-    width: 70vw;
-    height: 90vh;
-  
+    width: 60vw;
+    height: 100vh;
+  /* margin-right: 3rem; */
     background-color: white;
   }
   .adarsh-rightCont {
     width: 30vw;
-    height: 90vh;
-  
+    height: 100vh;
+  /* margin-left: 1rem; */
     background-color: rgb(36, 35, 35);
   }
   
@@ -71,7 +71,7 @@
     border-top: none;
     border-right: none;
     border-left: none;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
   .adarsh-name1 {
     width: 47vw;
@@ -101,9 +101,10 @@
     height: 6vh;
     border: none;
     border-radius: 4rem;
-    margin-left: 12rem;
-    font-size: 1rem;
+    margin-left: 16rem;
+    font-size: 1.6rem;
     margin-top: 4rem;
+    cursor: pointer;
   }
   
   .adarsh-submitBtn:hover {
@@ -112,13 +113,14 @@
   
   .adarsh-info {
     color: white;
-    margin-top: 1rem;
-  
-    margin-left: 1rem;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    margin-left: 5rem;
   }
   
   .adarsh-head {
-    margin-left: 4rem;
+    margin-left: 16rem;
+    font-size: 2.5rem;
     margin-top: 1rem;
   }
   
@@ -126,7 +128,7 @@
     color: white;
   
     margin-bottom: 2rem;
-  
+  font-size: 1rem;
     width: 14vw;
     margin-top: 1.3rem;
     padding: 1rem;
@@ -135,13 +137,16 @@
   .adarsh-telephone {
     display: flex;
     flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: -2rem;
   }
   
   .adarsh-mapped {
     width: 18vw;
-    margin-left: 1rem;
-    margin-top: 2rem;
+    margin-left: 1.8rem;
+    margin-top: 6rem;
     border: none;
+    height: 26vh;
   }
   
   /* #06283d */
@@ -152,8 +157,9 @@
   @media screen and (max-width: 600px) {
     .adarsh-contactContainer {
       width: 100vw;
-      height: 60vh;
+      height: 22vh;
       margin-top: -11.8rem;
+      margin-bottom: 47rem;
     }
   
     .adarsh-main {
@@ -171,10 +177,10 @@
     }
   
     .adarsh-main-head {
-      font-size: 3.4rem;
+      font-size: 3rem;
       margin-left: 3rem;
       margin-top: 12rem;
-      padding-top: 8rem;
+      padding-top: 7.6rem;
     }
   
     .adarsh-submitBtn {
@@ -185,7 +191,7 @@
   
     .adarsh-rightCont {
       width: 70vw;
-      height: 90vh;
+      height: 100vh;
       margin: auto;
       margin-left: -1rem;
     }
@@ -204,18 +210,19 @@
     }
     .adarsh-number {
       width: 6vw;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   
     .adarsh-telephone {
       margin-left: 2rem;
+      margin-top: 0rem;
     }
     .adarsh-info {
-      margin-left: 5rem;
+      margin-left: 3rem;
     }
   
     .adarsh-name {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   
     .adarsh-first {
@@ -224,7 +231,7 @@
     }
   
     .adarsh-head {
-      margin-left: 6rem;
+      margin-left: 3rem;
     }
   
     .adarsh-leftCont {
