@@ -9,6 +9,10 @@ function NewNav() {
 
   const selectedPage = window.location.pathname;
 
+  const clickHandle = (e) => {
+    // e.preventDefault();
+  }
+
   return (
     <div className="container">
         <div className="nav-container">
@@ -31,6 +35,8 @@ function NewNav() {
             <li>
               <Link id="nav_home"
                 to ="/"
+                // onClick={clickHandle}
+                onClick={() => setToggle(!toggle)}
                 className={
                   selectedPage === "/"
                     ? "overlay-menu-a active"
@@ -47,6 +53,7 @@ function NewNav() {
               <Link
                 id="nav_about"
                 to="/about"
+                onClick={() => setToggle(!toggle)}
                 className={
                   selectedPage === "/about"
                     ? "overlay-menu-a active"
@@ -62,10 +69,11 @@ function NewNav() {
               <Link
                 id="nav_services"
                 to="/services/webdev"
+                onClick={() => setToggle(!toggle)}
                 className={
-                  selectedPage === ("/services/webdev"
-                  || "/services/appdev"
-                  || "/services/wordpressdev")
+                  selectedPage === "/services/webdev" ||
+                  selectedPage === "/services/appdev" ||
+                  selectedPage === "/services/wordpressdev"
                     ? "overlay-menu-a active"
                     : "overlay-menu-a"
                 }
@@ -79,6 +87,7 @@ function NewNav() {
               <Link
                 id="nav_portfolio"
                 to="/Portfolio"
+                onClick={() => setToggle(!toggle)}
                 className={
                   selectedPage === "/Portfolio"
                     ? "overlay-menu-a active"
@@ -94,6 +103,7 @@ function NewNav() {
               <Link
                 id="nav_ourstory"
                 to="/ourstory"
+                onClick={() => setToggle(!toggle)}
                 className={
                   selectedPage === "/ourstory"
                     ? "overlay-menu-a active"
@@ -109,8 +119,9 @@ function NewNav() {
               <Link
                 id="nav_contact"
                 to="/contactus"
+                onClick={() => setToggle(!toggle)}
                 className={
-                  selectedPage === "/contact"
+                  selectedPage === "/contactus"
                     ? "overlay-menu-a active"
                     : "overlay-menu-a"
                 }
@@ -124,10 +135,10 @@ function NewNav() {
         </nav>
 
         <div className="navbar-icons">
-          <a><FaLinkedin size={25}/></a>
-          <a><FaFacebookF size={25}/></a>
-          <a> <FaInstagram size={25}/> </a>
-          <a> <FaTwitter size={25}/> </a>
+          <a href="https://www.linkedin.com/company/feedbox-smm/mycompany/" ><FaLinkedin size={25}/></a>
+          <a href="https://www.facebook.com/feedbox.online"><FaFacebookF size={25}/></a>
+          <a href="https://www.instagram.com/teamfeedbox/"> <FaInstagram size={25}/> </a>
+          <a href="https://twitter.com/teamfeedBox" > <FaTwitter size={25}/> </a>
 
           
         </div>
