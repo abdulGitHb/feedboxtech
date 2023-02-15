@@ -26,10 +26,10 @@ export default function Landing() {
                 <video src="https://gravityteam.co/wp-content/uploads/2022/07/hero-animation.mp4" className='hero_home_video' muted={true} loop={true} autoPlay={true}></video>
             </div>
             <div className="hero_home_content">
+                    <Bubbles/>
                
                     <span className='typewriter' style={{ color: '#fff' }}>Handling</span>
                     <span className='typewriter' style={{ color: '#0090ee', fontWeight: 'bold' }}>
-                    <Bubbles/>
                         <Typewriter
                             words={['Web Development', 'App Development']}
                             loop={Infinity}
