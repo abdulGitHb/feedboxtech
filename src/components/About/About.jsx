@@ -24,18 +24,18 @@ export default function About() {
     }, []);
 
 
-//   window.onscroll = function (event) {
-//     var offset = window.pageYOffset;
-//     console.log(offset);
-//     $(document).ready(function () {
-//       if (offset < 800 || offset>1300) {
-//         $(".a-layer").removeClass("a-layer_open");
-//       }
-//       if (offset > 800 && offset<1300) {
-//         $("#layer").addClass("a-layer_open");
-//       }
-//     });
-//   };
+  window.onscroll = function (event) {
+    var offset = window.pageYOffset;
+    console.log(offset);
+    $(document).ready(function () {
+      if (offset < 800 || offset>1300) {
+        $(".a-layer").removeClass("a-layer_open");
+      }
+      if (offset > 800 && offset<1300) {
+        $("#layer").addClass("a-layer_open");
+      }
+    });
+  };
 
     return (
         <div className="about-container-hld" style={{ paddingTop: '850px' }}>

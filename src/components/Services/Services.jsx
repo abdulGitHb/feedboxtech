@@ -46,7 +46,8 @@ useEffect(() => {
         <div className="services-container" id="services">
 
            <ParallaxProvider>
-            <Parallax 
+            <Parallax
+            speed={-10} 
              scale={[1,100]}
              easing="easeInQuad"
             >
