@@ -28,7 +28,7 @@ export default function services() {
     return (
         <div className='p-container' id='portfolio'>
 
-            <h1 className="section_heading" data-aos="fade-up"
+            <h1  className="section_heading" data-aos="fade-up"
             >Portfolio</h1>
 
             <span data-aos="fade-up"

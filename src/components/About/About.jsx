@@ -10,12 +10,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import Services from "../Services/Services";
 
 export default function About() {
 
     useEffect(() => {
         AOS.init({
-            duration: 600,
+            duration: 1000,
             offset: 0,
             easing: "ease-in-out-back",
             delay: 50,
@@ -24,21 +25,21 @@ export default function About() {
     }, []);
 
 
-//   window.onscroll = function (event) {
-//     var offset = window.pageYOffset;
-//     console.log(offset);
-//     $(document).ready(function () {
-//       if (offset < 800 || offset>1300) {
-//         $(".a-layer").removeClass("a-layer_open");
-//       }
-//       if (offset > 800 && offset<1300) {
-//         $("#layer").addClass("a-layer_open");
-//       }
-//     });
-//   };
+    window.onscroll = function (event) {
+        var offset = window.pageYOffset;
+        console.log(offset);
+        $(document).ready(function () {
+            if (offset < 1000 || offset > 1700) {
+                $(".a-layer").removeClass("a-layer_open");
+            }
+            if (offset > 1000 && offset < 1700) {
+                $("#layer").addClass("a-layer_open");
+            }
+        });
+    };
 
     return (
-        <div className="about-container-hld" style={{ paddingTop: '850px' }}>
+        <div className="about-container-hld" style={{ paddingTop: '750px' }}>
             <div className="a-container" id="about" >
                 <ParallaxProvider>
                 <Parallax 
@@ -50,8 +51,11 @@ export default function About() {
 
                 </Parallax>
                 </ParallaxProvider>
-                <div data-aos="fade-up" className="a_content"
-                >
+
+                <div data-aos="fade-up" className="a_content">
+
+                    <div id="layer" className="a-layer"></div>
+
                     <div className="a_content_img_hld">
                         <img src={AboutImg} alt="" />
                     </div>
@@ -67,6 +71,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
+            {/* <Services/> */}
         </div>
     )
 }

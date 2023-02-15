@@ -6,7 +6,7 @@
 
   .body{
     position: relative;
-    background-color: #141619;
+    background-color: #0628;
     color: #fff;
   }
    
@@ -346,7 +346,7 @@
      margin-top: -100px;
    }
    .hero_container{
-     height: 90vh;
+     /* height: 90vh; */
     }
     .hero_home_social{
      right: 20px;
@@ -373,7 +373,7 @@
    bottom: 220px;
   }
   .hero_container{
-   height: 70vh;
+   /* height: 70vh; */
   }
   .hero_home_contact_btn{
    margin-top: 150px;
@@ -417,7 +417,7 @@
      font-size: 18px;
     }
     .hero_container{
-     height: 600px;
+     /* height: 600px; */
     }
  }
 

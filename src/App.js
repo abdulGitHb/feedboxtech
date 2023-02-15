@@ -43,7 +43,7 @@ function App() {
   }, [offset]);
 
   useEffect(() => {
-    if (offset > 800) {
+    if (offset > 1000) {
       // console.log(offset)
       $(document).ready(function () {
         // console.log('hello')
