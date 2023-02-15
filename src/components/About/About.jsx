@@ -9,7 +9,8 @@ import AboutImg from "../../image/about2.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
-import { LayoutGroupContext } from "framer-motion";
+
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 export default function About() {
   useEffect(() => {
@@ -22,49 +23,35 @@ export default function About() {
     });
   }, []);
 
-  const [classes, setClasses] = useState(0);
-  //   console.log(window);
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            offset: 0,
+            easing: 'ease-in-out-back',
+            // delay: 50,
+            anchorPlacement: 'top-top'
+        })
+    }, [])
 
-  window.onscroll = function (event) {
-    var offset = window.pageYOffset;
-    console.log(offset);
-    $(document).ready(function () {
-      if (offset < 1600) {
-        $(".a-layer").removeClass("a-layer_open");
-      }
-      if (offset > 1600) {
-        $("#layer").addClass("a-layer_open");
-      }
+    return (
+        <div className="about-container-hld" style={{ paddingTop: '850px' }}>
+        <div className="a-container" id="about" >
+            <ParallaxProvider>
+             <Parallax 
+             scale={[0.5,1.3]}
+             >
+            <h2 className="section_heading"
+               >About Us</h2>
+             </Parallax>
+            </ParallaxProvider>
+            <div data-aos="fade-up" className="a_content"
+            >
+                <div className="a_content_img_hld">
+                    <img src={AboutImg} alt="" />
+                </div>
 
-      // setClasses(classes);
-      // if (classes>100 && classes<1000) {
-      //     // green
-      //     body.style.backgroundColor = 'green';
-      // } else{
 
-      // }
-    });
-  };
-
-  //   window.addEventListener("scroll", function(event) {
-
-  //     var top = this.scrollY
-  //     console.log(top);
-  //     setClasses(top);
-
-  // }, false);
-
-  return (
-    <>
-      <div id="layer" className="a-layer"></div>
-      <div className="a-container" id="about">
-        <h2 className="section_heading" data-aos="fade-up">
-          About Us
-        </h2>
-        <div data-aos="fade-up" className="a_content">
-          <div className="a_content_img_hld">
-            <img src={AboutImg} className="" alt="" />
-          </div>
+  
 
           <div
             className="about_content_desc"
@@ -84,6 +71,6 @@ export default function About() {
           </div>
         </div>
         </div>
-    </>
-  );
+        </div>
+    )
 }
