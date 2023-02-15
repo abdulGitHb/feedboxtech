@@ -11,7 +11,7 @@ function HomeComp() {
   return (
     <div className='App'>
         <Landing/>
-        <ClientShowCase/>
+        {/* <ClientShowCase/> */}
         <About/>
         <Services/>
         <Portfolio/>
