@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './Services.css'
 // import mernGif from '../../image/mernGif.gif'
 import ServiceCard from "../ServiceCard/ServiceCard";
@@ -7,9 +7,13 @@ import 'aos/dist/aos.css';
 import app_dev from '../../image/appdev.png'
 import web_dev from '../../image/webdev.png'
 import wordpress_dev from '../../image/wordpressdev.png'
-
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+import { HiArrowDown } from "react-icons/hi"
 
 export default function Services(){
+    const [offset, setoffset] = useState()
+    const [s, sets] = useState([0,100])
+    // const s = [0,100]
 
 // useEffect(()=>{
 //     AOS.init(
@@ -20,8 +24,39 @@ export default function Services(){
 //     );
 // },[])
 
+// for disabling parallax
+useEffect(()=>{
+
+},[s])
+const onScroll = () => {
+    const winheight = window.pageYOffset
+    setoffset(winheight); 
+}
+useEffect(() => {
+        // clean up code
+
+        window.removeEventListener('scroll', onScroll);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        // window.addEventListener('scroll', CursorChange, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
+
     return (
         <div className="services-container" id="services">
+
+           <ParallaxProvider>
+            <Parallax 
+             scale={[1,100]}
+             easing="easeInQuad"
+            >
+                <div className="parallax_dot">
+                    {/* <HiArrowDown size={25}/> */}
+                </div>
+            </Parallax>
+           
+          
+
            <h1 className="section_heading"
            data-aos="fade-up" 
             >Services</h1>
@@ -63,6 +98,7 @@ export default function Services(){
               desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
              />
        </div>
+            </ParallaxProvider>
         </div>
     )
 }

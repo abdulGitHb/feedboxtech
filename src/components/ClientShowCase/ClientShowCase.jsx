@@ -33,7 +33,7 @@ export default function Slider() {
             duration: 600,
             offset: 0,
             easing: 'ease-in-out-back',
-            delay: 50,
+            // delay: 50,
             anchorPlacement: 'top-top'
         })
     }, [])
