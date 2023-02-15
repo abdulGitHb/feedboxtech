@@ -4,13 +4,10 @@
   "homepage": "http://.",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "@emailjs/browser": "^3.10.0",
-=======
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
->>>>>>> b889432081b327e5e64ef97bfc888c52951ef78d
     "@react-email/render": "^0.0.6",
     "@sendgrid/mail": "^7.7.0",
     "@testing-library/jest-dom": "^5.16.5",
