@@ -34,9 +34,8 @@ function AboutUsPage1() {
       <NavBarResp/>
       <Parallax bgImage={img18} strength={200} className="aditya-parall">
         <div className="aditya-about">
-          
           <Parallax  strength={500} className="aditya-parallax1">
-          <div className="aditya-text-content0">About US</div>
+          <div className="aditya-text-content0">About Us</div>
           </Parallax>
 
           <Parallax bgImage={img15} strength={500} className="aditya-parallax">
@@ -62,8 +61,7 @@ function AboutUsPage1() {
               </p>
           </div>
           </Parallax>
-        </div>
-        <div className='aditya-about-story'>
+          <div className='aditya-about-story'>
                {/* about us story */}
                  <div className="aditya-story-head">Our Story</div>
                  <div className='aditya-story-text'> 
@@ -87,6 +85,8 @@ function AboutUsPage1() {
                  {/* about us story button */}
                  <a href='/ourstory'><button className='story-btn'  type="button">Read Full Story</button></a>
                </div>
+        </div>
+        
   
      
         </Parallax>
