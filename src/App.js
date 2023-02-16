@@ -12,7 +12,8 @@ import AnimatedRoutes from './components/AnimatedRoutes';
 function App() {
   const [offset, setOffset] = useState(0);
   const [isLoaded, setisLoaded] = useState(true)
-
+  const selectedPage= window.location.pathname;
+  // console.log(selectedPage)
 
   //  when hover on scroll button
   // $(document).ready(function () {
@@ -42,7 +43,7 @@ function App() {
   }, [offset]);
 
   useEffect(() => {
-    if (offset > 800) {
+    if (offset > 1000) {
       // console.log(offset)
       $(document).ready(function () {
         // console.log('hello')
@@ -62,10 +63,10 @@ function App() {
       setTimeout(()=>{
         setisLoaded(false)
   
-      },)
+      },2000)
       setTimeout(()=>{
         // fadeInPage();
-      },2001)
+      },2000)
      
     };
 
@@ -107,12 +108,11 @@ function App() {
       <div id="dummy"></div>
 
       {/* scroll top button */}
-      <div className="scrollBottomToTop">
+      {selectedPage!="/ourstory" && <div className="scrollBottomToTop">
         <Link to="dummy" spy={true} smooth={true}>
           <IoIosArrowUp size={25} />
         </Link>
-
-      </div>
+      </div>}
 
       {/* custom cursor */}
       {/* <div id="cursor"  >

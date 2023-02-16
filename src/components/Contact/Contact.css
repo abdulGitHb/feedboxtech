@@ -1,11 +1,7 @@
-.co-container {
-    padding: 40px 0;
-    /* width: 10%; */
-    /* background-image: url("../../image/Rectangle\ 4392.svg"); */
-    /* background: rgb(11, 11, 56);
-    background: linear-gradient(175deg, rgba(11, 11, 56, 1) 4%, rgba(20, 4, 246, 0.9921218487394958) 100%); */
-    /* background: no-repeat; */
-    background-color: black;
+
+  .contact_home_container{
+    padding-bottom: 10px;
+    background-color: #06283d;
     color: white;
     display: flex;
     justify-content: center;
@@ -14,230 +10,454 @@
     align-items: center;
     /* gap: 5rem; */
     flex-wrap: wrap;
+    /* overflow-x: hidden; */
     overflow: hidden;
     position: relative;
     z-index: 100;
-}
-.contact_heading::after{
-    content:"";
-    display:block;
-    width: 4em;
-    /* max-width:50%; */
-    border-bottom: 2px solid #0090ee;
-    margin: 0px 40px;
-}
-.contact_data{
-    display: flex;
-    margin-top: 60px;
-    gap:15vw;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.co-form {
-    padding: 40px 50px;
-    line-height: 1rem;
-    width: 28vw;
-    /* max-width: 500px; */
-    min-width: 150px;
-    /* height: 400px; */
-    /* background: linear-gradient(175deg, rgba(11, 11, 56, 1) 4%, rgba(20, 4, 246, 0.9921218487394958) 100%); */
-    /* background-image: url("../../image/Rectangle\ 4392.svg"); */
-    background-color: #011842;
-    border-radius: 1.5rem;
-    border:none;
-    /* display: flex; */
-    flex-direction: column;
-    /* box-shadow: 5px 2px 5px #888888; */
-    position: relative;
-    /* left: 20px; */
-}
-.title_in_form{
-    font-size:28px;
-    line-height:2.5rem; 
-    font-weight:600;
-    padding-bottom: 30px;
-}
-input {
-    background: none;
-    border-radius: 0.6rem;
-    border: 1.5px solid rgba(255,255,255,0.7);
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding: 10px;
-    color: rgba(255,255,255,0.6);
-    font-size: 15px;
-   
-    box-shadow: none !important; 
-    outline: none;
-}
-
-input[type=text]:focus {
-    /* background: none; */
-    background-color: #011842;
-    border: 1px solid #0090ee;
+    width: 100vw;
+    height: 90vh;
+    /* background-color: #06283d; */
   }
-  input:-webkit-autofill {
-    background: black !important;
-}
-.co-form label{
-    background-color: #011842;
-    width: fit-content;
-    padding: 0px 10px;
-    height: 10px;
-    font-size: 20px;
-    display: flex;
+  .adarsh-contactContainer {
+   
+    /* background-color: #06283d; */
+    background-color: white;
+    margin-top: -8.4rem;
+    /* margin-bottom: 10rem; */
+
+    z-index: 0;
+    padding-bottom: 45rem;
+    height: 60vh;
+  
+  }
+
+  .adarsh-layer{
+    width: 100%;
+    height: 700px;
+    /* background-color: white; */
+    background-color: #06283d;
+    /* margin-top: 60rem; */
+    /* border:2px solid black; */
+    margin-top: -6rem;
+
+  }
+
+  .adarsh-BigCont{
+    /* border: 2px solid red; */
+    margin-top: -47rem;
+  }
+  
+  .adarsh-main {
+    width: 55vw;
+    height: 80vh;
+    background-color: white;
     position: relative;
-    top: 13px;
-    left: 20px;
-}
-#message_label{
-    background: #011842;
-    width: fit-content;
-    padding: 0px 10px;
-    height: 20px;
-    font-size: 20px;
+    /* z-index: 1000; */
+    margin: auto;
     display: flex;
-    position: relative;
-    top: 10px;
-    left: 20px;
-}
-textarea {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background:none;
-    border-radius: 0.6rem;
-    border: 1.5px solid rgba(255,255,255,0.6);
-    width: 105%;
-    color: rgba(255,255,255,0.6);
-    padding: 10px;
-    font-size: 15px;
-}
-.submit_btn{
-    background-color: #0090ee;
-    border-radius: 2rem;
-    border: none;
-    font-size: 25px;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+    /* padding-bottom: 25rem; */
+  
+  
+    box-shadow: 10px 0px 18px rgba(128, 128, 128, 0.432),
+      -10px 0px 8px rgba(128, 128, 128, 0.432),
+      0px 10px 8px rgba(128, 128, 128, 0.432);
+   
+  }
+  
+  .adarsh-main-head {
+    font-size: 6rem;
     color: white;
-    margin-top: 20px;
-    padding: 5px 50px;
-}
-.submit_btn:hover {
-    cursor: pointer;
-    background-color: #0070bd;;
-}
-
-/* .vertical_line{
-  width: 1px;
-  height: 500px;
-  background-color: #0090ee;
-} */
-
-.contact_details{
+    margin-left: 23rem;
+    margin-top: 8rem;
+    padding-top: 6rem;
+  }
+  
+  .adarsh-leftCont {
+    width: 60vw;
+    height: 80vh;
+  /* margin-right: 3rem; */
+    background-color: white;
+    justify-content: center;
+    margin: auto;
+  }
+  .adarsh-rightCont {
+    width: 30vw;
+    height: 80vh;
+  /* margin-left: 1rem; */
+    background-color: rgb(36, 35, 35);
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .adarsh-first {
     display: flex;
     flex-direction: column;
-    gap: 4.5rem;
-    color: white;
-    position: relative;
-    /* right: 10px; */
-}
-.contact_details_row{
+    margin-left: 4rem;
+  
+    margin-top: 4rem;
+  
+    margin-right: 6rem;
+  }
+  
+  .adarsh-second {
+    margin-top: 2rem;
     display: flex;
-    /* align-items: center; */
-    color: white;
-    font-size: 22px;
-    gap: 2rem;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  
+    padding: 1rem;
+  }
+  
+  .adarsh-name {
+    color: black;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 1.2rem;
+    margin-top: -2rem;
+  }
+  .adarsh-name1 {
+    width: 47vw;
+    margin-left: -3rem;
+    color: black;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 1.2rem;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    color: black;
+  }
+  
+  .adarsh-name[type="text"], textarea {
+
+    color : black; 
+   
+   
+   }
+   
+   .adarsh-name[type="tel"], textarea {
+   
+     color : black; 
+   
     
-}
-.data_row{
+    }
+   
+    .adarsh-name[type="email"], textarea {
+   
+     color : black; 
+    
+    
+    }
+  
+  input::placeholder {
+    padding-bottom: 2rem;
+  }
+  
+  .adarsh-submitBtn {
+    background-color: #0090ee;
+    color: white;
+    width: 10vw;
+    height: 6vh;
+    border: none;
+    border-radius: 4rem;
+    margin-left: 13rem;
+    font-size: 1.6rem;
+    margin-top: 4rem;
+    cursor: pointer;
+  }
+  
+  .adarsh-submitBtn:hover {
+    background-color: #0070bd;
+  }
+  
+  .adarsh-info {
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    margin-left: 5rem;
+  }
+  
+  .adarsh-head {
+    margin-left: 10rem;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+  
+  .adarsh-number {
+    color: white;
+  
+    margin-bottom: 2rem;
+  font-size: 1rem;
+    width: 14vw;
+    margin-top: 1.3rem;
+    padding: 1rem;
+  }
+  
+  .adarsh-telephone {
     display: flex;
-    flex-direction:column;
-    text-align:justify;
-    line-height:3rem;
-}
-.data_row p{
-    opacity: 0.7;
-    font-size: 16px;
-    width: 320px;
-    line-height: 1.5rem;
-}
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: -2rem;
+  }
 
-@media screen and (max-width:1600px) {
-    .contact_data{
-        gap: 10rem;
-    }
-}
+  /* .adarsh-iconn{
+border: 2px solid red;
+  } */
 
-@media screen and (max-width:1000px) {
-    .co-container{
-        padding: 50px 10px;
-    }
-    .contact_data{
-        gap: 1rem;
-    }
- 
-    .title_in_form{
-        font-size: 25px;
-        padding-bottom: 10px;
-        line-height: 2rem;
-    }
-    input{
-        margin-bottom: 15px;
-    }
-    .submit_btn{
-        margin-top: 20px;
-        font-size: 15px;
-        padding: 5px 30px;
-    }
-    label{
-        font-size: 15px;
-    }
-    .message_label{
-        font-size: 15px;
-    }
-    .data_row h3{
-font-size: 20px;
-    }
-    .data_row p{
-        font-size: 14px;
-        width: 200px;
-    }
-    .contact_details_row{
-        gap: 0.5rem;
-    }
-    .co-form{
-        width: 40vw;
-    }
+  .insta-icon{
+    /* width: 5vw; */
+    size: 1rem;
+    color: white;
+    margin-top: -2rem;
 
-}
-
-@media screen and (max-width:550px) {
-.contact_data{
-    gap: 0rem;
-    display: bl;
-}
-.co-container{
-    padding: 50px 0;
-}
-.contact_details{
-    margin-top: 40px;
-    /* transform: translateY(1000px); */
-    margin-top: 620px;
-}
-.contact_heading{
-    font-size: 30px;
-}
-.co-form{
-    width: 100%;
-    /* transform: translateY(-1000px); */
-    margin-top: -1620px;
-}
-.submit_btn{
-    padding: 6px 40px;
-    font-size: 20px;
-}
-}
+  }
 
 
+
+  .adarsh-insta{
+    width: 3vw;
+    height: 4vh;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    /* margin-top: -1rem; */
+    /* padding-top: -2.5rem; */
+  }
+
+  .insta-icon:hover{
+    
+    /* box-shadow: .1rem 0rem .1rem .2rem  #3b5998; */
+    /* background-color: #3b5998; */
+    /* border-radius: 70%; */
+
+    cursor: pointer;
+  }
+
+
+  .adarsh-logo{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3.2rem;
+    margin-left: -1.5rem;
+    
+  }
+  
+  .adarsh-mapped {
+    width: 18vw;
+    margin-left: 1rem;
+    margin-top: 4rem;
+    border: none;
+    height: 26vh;
+  }
+  
+  /* #06283d */
+  /* 0090ee  btn */
+  
+  /* 0070bd  hover */
+  
+  @media screen and (max-width: 600px) {
+    .adarsh-contactContainer {
+      width: 100vw;
+      height: 22vh;
+      margin-top: -11.8rem;
+      margin-bottom: 47rem;
+    }
+  
+    .adarsh-main {
+      width: 65vw;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      margin-left: 4rem;
+      box-shadow: 10px 0px 8px rgba(128, 128, 128, 0.432),
+        -10px 0px 8px rgba(128, 128, 128, 0.432),
+        0px 10px 8px rgba(128, 128, 128, 0.432);
+      margin-top: 7.5rem;
+      /* margin-bottom: -15rem; */
+      
+    }
+  
+    .adarsh-main-head {
+      font-size: 3rem;
+      margin-left: 3rem;
+      margin-top: 12rem;
+      padding-top: 7.6rem;
+    }
+  
+    .adarsh-submitBtn {
+      width: 32vw;
+      height: 7vh;
+      margin-left: 4rem;
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+    }
+   
+    .adarsh-rightCont {
+      width: 70vw;
+      height: 100vh;
+      margin: auto;
+      margin-left: -1rem;
+      /* margin-bottom: -5rem; */
+      padding-bottom: 5rem;
+    }
+  
+    .adarsh-iconn {
+      border: 2px solid red;
+      width: 16vw;
+      height: 16vh;
+      padding-right: 1rem;
+      color: white;
+      /* display: flex; */
+      /* justify-content: space-evenly; */
+      
+    
+    
+    }
+    
+
+    .adarsh-name{
+      font-size: .8rem;
+    }
+
+   .insta-icon{
+    /* border: 2px solid red; */
+    padding-left: 1rem;
+   
+    width: 8vw;
+   }
+
+    .adarsh-mapped {
+      display: none;
+    }
+  
+    .adarsh-icon1 {
+      size: 2rem;
+    }
+
+    .icon1{
+      size: 2rem;
+    }
+    .adarsh-number {
+      width: 6vw;
+      font-size: 1rem;
+    }
+  
+    .adarsh-telephone {
+      margin-left: 2rem;
+      margin-top: 0rem;
+    }
+    .adarsh-info {
+      margin-left: 3rem;
+    }
+  
+    .adarsh-name {
+      font-size: 1rem;
+    }
+  
+    .adarsh-first {
+      margin-left: 1rem;
+      margin-right: 2rem;
+    }
+  
+    .adarsh-head {
+      margin-left: 3rem;
+    }
+  
+    .adarsh-leftCont {
+      width: 75vw;
+      height: 90vh;
+      margin-left: -1rem;
+    }
+    
+
+
+
+     .adarsh-telephone {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: -2rem;
+  }
+
+
+
+
+  .adarsh-insta{
+    width: 12vw;
+    height: 5vh;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  
+  }
+
+  .insta-icon:hover{
+
+
+    cursor: pointer;
+  }
+
+
+  .adarsh-logo{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3.2rem;
+    margin-left: -1.5rem;
+    
+  }
+  }
+  
+  @media screen and (min-width: 780px) and (max-width: 1000px) {
+    .adarsh-main {
+      width: 70vw;
+    }
+  
+    .adarsh-leftCont {
+      width: 40vw;
+    }
+    .adarsh-rightCont {
+      width: 330vw;
+      padding-left: 1rem;
+    }
+    .adarsh-mapped {
+      width: 23vw;
+      height: 23vh;
+      margin-left: 2rem;
+      margin-top: 2rem;
+    }
+  
+    .adarsh-submitBtn {
+      width: 20vw;
+      margin-left: 6rem;
+      margin-bottom: 2rem;
+    }
+    .adarsh-head {
+      margin-left: 8rem;
+    }
+  
+    .adarsh-iconn {
+      width: 8vw;
+      height: 16vh;
+    }
+    .adarsh-number {
+      width: 6vw;
+      font-size: 1.3rem;
+    }
+  }
+  

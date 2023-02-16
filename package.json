@@ -1,9 +1,13 @@
 {
   "name": "feedboxtech",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "http://.",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-email/render": "^0.0.6",
     "@sendgrid/mail": "^7.7.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -14,18 +18,22 @@
     "classnames": "^2.3.2",
     "framer-motion": "^8.5.5",
     "google-map-react": "^2.2.0",
+    "infinite-react-carousel": "^1.2.11",
     "jquery": "^3.6.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-elastic-carousel": "^0.11.5",
     "react-helmet": "^6.1.0",
     "react-horizontal-scrolling": "^0.1.13",
     "react-icons": "^4.7.1",
     "react-onclickoutside": "^6.12.2",
+    "react-parallax": "^3.5.1",
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
     "react-scroll-parallax": "^3.3.2",
     "react-simple-typewriter": "^5.0.1",
+    "react-spring-3d-carousel": "^1.3.4",
     "swiper": "^8.4.5",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
@@ -53,5 +61,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Addy1908/feedboxtech.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Addy1908/feedboxtech/issues"
   }
 }

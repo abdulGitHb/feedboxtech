@@ -13,6 +13,7 @@ import { Link, useLocation } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import {motion} from 'framer-motion';
 
+
 function ServicesWordpressDev() {
 
   const location = useLocation();
@@ -32,6 +33,7 @@ function ServicesWordpressDev() {
     //   default: { ease: "linear" }
     // }}
     >
+     
      
       <div className="about-top-main">
           <div className="heading-about-us">

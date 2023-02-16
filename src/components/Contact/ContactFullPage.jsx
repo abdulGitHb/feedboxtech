@@ -1,81 +1,159 @@
 import React, { useEffect } from "react";
-import './Contact.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { IoCallOutline } from "react-icons/io5"
-import { HiOutlineLocationMarker } from "react-icons/hi"
-import { MdOutlineMail } from "react-icons/md"
+import "./Contact.css";
+// import { Link } from "react-router-dom";
+
+import { BsTelephoneOutbound } from "react-icons/bs";
+import { GrMail } from "react-icons/gr";
+import { FiInstagram } from "react-icons/fi";
+import { BsFacebook } from "react-icons/bs";
+import { ImWhatsapp } from "react-icons/im";
+import { BsLinkedin } from "react-icons/bs";
 import Footer from "../Footer/Footer";
 
-
 export default function Contact() {
+  return (
+    <>
+      <div className="adarsh-contactContainer">
+        <div className="adarsh-layer"></div>
+        <div className="adarsh-BigCont">
+          <h2 className="adarsh-main-head">Get in Touch</h2>
+          <div className="adarsh-main">
+            <div className="adarsh-leftCont">
+              <h2 className="adarsh-head">Message</h2>
+              <div className="adarsh-first">
+                <input 
+                  type="text"
+                  placeholder="Your Name"
+                  className="adarsh-name"
+                  autocomplete="new-password"
+                  
+                />
+              </div>
+              <div className="adarsh-first">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="adarsh-name"
+                  autocomplete="new-password"
+                />
+              </div>
 
-    // useEffect(() => {
-    //     AOS.init({
-    //         duration: 100,
-    //         // offset: -250
-    //     })
-    // },[])
+              <div className="adarsh-first">
+                <input
+                  type="tel"
+                  placeholder=" Your Phone no"
+                  className="adarsh-name"
+                  autocomplete="new-password"
+                />
+              </div>
+              <div className="adarsh-first">
+                <input
+                  type="text"
+                  placeholder="Your message"
+                  className="adarsh-name"
+                  autocomplete="new-password"
+                />
+              </div>
 
-    return (
-       <>
-        <div className="co-container" id="contact" style={{paddingTop:'150px'}}>
-
-            <h1 data-aos="fade-up" className="contact_heading"
-            >Contact Us</h1>
-            <div className="contact_data">
-                
-                <div data-aos="fade-up" className="contact_details">
-                    <div className="contact_details_row">
-                        <IoCallOutline size={45} style={{opacity:'0.5'}} />
-                        <div className="data_row" >
-                            <h3 style={{ fontWeight: '600' }}> Contact Number </h3>
-                            <p>+91-7869909760</p>
-                        </div>
-
-                    </div>
-                    <div className="contact_details_row">
-                        <HiOutlineLocationMarker size={45} style={{opacity:'0.5'}}  />
-                        <div className="data_row" >
-                            <h3 style={{ fontWeight: '600' }}> Address </h3>
-                            <p> Feedbox <br />Ground Floor, Saakaar Villa, 204, Shri nagar Main Rd, Near Anand bazaar, Old Palasia, Indore, madhya Pradesh 452001</p>
-                        </div>
-                    </div>
-                    <div className="contact_details_row">
-                        <MdOutlineMail size={45}  style={{opacity:'0.5'}} />
-                        <div className="data_row">
-                            <h3 style={{ fontWeight: '600' }}> Email </h3>
-                            <p>admin@feedbox.co.in</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up" className="co-form">
-                    <h2 className="title_in_form">Got Ideas? We Got The Skills. Let's team up</h2>
-                    <form>
-                        <label>
-                            Name
-                        </label>
-                        <input autoComplete="off" type="text" name="name" required={true} />
-                        <label>
-                            Email
-                        </label>
-                        <input autoComplete="off" type="email" name="email" required={true} />
-                        <label>
-                            Contact No
-                        </label>
-                        <input autoComplete="off" type="phone" name="contact_no" required={true} />
-                        <label id="message_label">
-                            Message
-                        </label>
-                        <textarea autoComplete="off" name="message" id="message" rows="2"></textarea>
-                        <button className="submit_btn">Submit</button>
-                    </form>
-                </div>
-
+              <button className="adarsh-submitBtn">Submit</button>
             </div>
+            <div className="adarsh-rightCont">
+              <h2 className="adarsh-info">Contact info</h2>
+              <div className="adarsh-telephone">
+                <div className="adarsh-icon">
+                  <BsTelephoneOutbound 
+                    className="icon1"
+                    style={{
+                      color: "white",
+                      width: "4vw",
+                      height: "4vh",
+                      marginTop: "2rem",
+                    }}
+                  />{" "}
+                </div>
+                <div className="adarsh-number">
+                  <span>7869614790</span>
+                </div>
+              </div>
+
+              <div className="adarsh-telephone">
+                <div className="adarsh-icon">
+                  <GrMail 
+                    className="adarsh-icon1" 
+                    style={{
+                      color: "white",
+                      width: "4vw",
+                      height: "4vh",
+                      marginTop: "2rem",
+                    }}
+                  />{" "}
+                </div>
+                <div className="adarsh-number">
+                  <span>contact@feedbox.tech</span>
+                </div>
+              </div>
+              <div className="adarsh-icon-cont">
+                <div className="adarsh-telephone adarsh-logo">
+
+                <a 
+                      href="https://www.instagram.com/teamfeedbox/?hl=en"
+                      target="_blank"
+                    >
+                  <div className="adarsh-insta">
+                  
+                      <FiInstagram className="insta-icon insta" size={39} />
+                    
+                  </div>
+                  </a>
+
+
+                  <a
+                      href="https://www.facebook.com/feedbox.online/"
+                      target="_blank"
+                    >
+                  <div className="adarsh-insta">
+                   
+                      <BsFacebook className="insta-icon face"  size={39} />
+                  </div>
+                  </a>
+
+
+
+
+                  <a href="https://wa.me/7869909760" target="_blank">
+                  <div className="adarsh-insta">
+                   
+                      {" "}
+                      <ImWhatsapp className="insta-icon Wapp" size={39} />
+                   
+                  </div>
+                  </a>
+
+                  
+                  <a
+                      href="https://www.linkedin.com/company/feedbox-smm/?originalSubdomain=in"
+                      target="_blank"
+                    >
+                  <div className="adarsh-insta">
+                   
+                      <BsLinkedin className="insta-icon linked" size={39} />
+                    {" "}
+                  </div>
+                  </a>
+                </div>
+              </div>
+
+              <iframe
+                className="adarsh-mapped"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.013616003008!2d75.8903461146817!3d22.727735285103147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd301f220449%3A0xb2c1e3746c297023!2sFeedBox!5e0!3m2!1sen!2sin!4v1676278750894!5m2!1sen!2sin"
+                // loading="lazy"
+                allowtransparency="true"
+              ></iframe>
+            </div>
+          </div>
         </div>
-        <Footer/>
-        </>
-    )
+      </div>
+      <Footer />
+    </>
+  );
 }
