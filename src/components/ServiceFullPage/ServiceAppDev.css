@@ -1,6 +1,6 @@
 .about-top-main{
     padding-top: 80px;
-    background-color: #06283d;
+    background-color: black;
     /* background-image: url(../../image/service3.png); */
 }
 
@@ -436,6 +436,5 @@
     .text-div-full{
         width: 100%;
 
-    }
-    
+    } 
 }
