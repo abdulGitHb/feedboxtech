@@ -3,7 +3,7 @@ import './PortfolioCard.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-export default function Card({ image, url, title, aos }) {
+export default function Card({image, url, title, aos }) {
 
     // useEffect(() => {
     //     AOS.init({
@@ -13,7 +13,7 @@ export default function Card({ image, url, title, aos }) {
     // },[])
 
     return (
-        <div data-aos={aos} className="boxes">
+        <div data-aos={aos} className="boxes" >
             <a href={url} target="_blank">
                 <div className="b-shadow"></div>
                 <img src={image} alt="" />
