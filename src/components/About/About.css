@@ -429,6 +429,7 @@
     padding: 10px 20px;
     position: relative;
     overflow: hidden;
+    cursor: none;
 }
 .about_content_desc_btn::before{
     content: "";

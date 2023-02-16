@@ -17,7 +17,7 @@ function NewNav() {
     <div className="container">
         <div className="nav-container">
             <Link to="/" spy={true} smooth={true} className="link">
-                <img className="navbar-logo" id="logo" src={f_logo} alt="" />
+                <img className="navbar-logo"  src={f_logo} alt="" />
              </Link>
             <div
                 className={toggle ? "button_container active" : "button_container"}

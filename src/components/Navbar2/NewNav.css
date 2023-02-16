@@ -1,14 +1,10 @@
 .container {
     counter-reset: my-counter;
 }
-
 .link {
-    /* border: 2px solid red; */
-    width: 12%;
-    margin-left: 50px;
+    width: 140px;
+    margin-left: 70px;
 }
-
-
 .nav-container{
     width: 100%;
     position: fixed;
@@ -17,16 +13,10 @@
     z-index: 20010;
 }
 .nav-container img {
-    width: 80px;
-    /* height: 50px; */
+    width: 100%;
 }
 .navbar-logo{
     width: 10px;
-    height: 75px;
-    /* margin-left: 50px; */
-    /* position: sticky; */
-    /* object-fit: cover; */
-    /* margin-top: 10px; */
 }
 
 .button_container {
@@ -37,11 +27,7 @@
     width: 28px;
     cursor: pointer;
     z-index: 20010;
-    /* border: 1px solid white; */
-    /* padding: 10px;
-    border-radius: 50px; */
     transition: opacity 0.25s ease;
-    /* color: white; */
     margin-right: 20px;
 }
 .button_container:hover {
@@ -69,7 +55,6 @@
     left: 0;
     transition: all 0.35s ease;
     cursor: pointer;
-    /* margin: ; */
 }
 .button_container span:nth-of-type(2) {
     top: 8px;
@@ -92,10 +77,10 @@
     transition: opacity 0.35s, visibility 0.35s, height 0.35s;
     overflow: hidden;
     text-align: left;
-    /* border: 2px solid red; */
+    padding: 50px;
 }
 .overlay.open {
-    opacity: 0.9;
+    opacity: 1.1;
     visibility: visible;
     height: 100%;
 }
@@ -128,20 +113,16 @@
 }
 
 ul {
-    /* border: 2px solid yellow; */
     width: 100%;
-    margin: 50px;
-    /* background-color:aqua; */
+    margin: 30px;
+    font-weight: 700;
 }
 
  li {
-    /* border: 2px solid red; */
-    height: 11vh;
-    /* background-color: aqua; */
+    height: 13vh;
     width: 100%;
-    margin: 20px;
     overflow: hidden;
-    font-weight: 400;
+    /* font-weight: 900; */
     text-transform: uppercase;
 }
 
@@ -150,41 +131,39 @@ ul {
     width: 67%;
     display: flex;
     justify-content: center;
-    /* border: 2px solid yellow; */
+    /* font-weight: 700; */
 }
 
 .overlay-menu-a {
+    /* font-weight: 900; */
     text-decoration: none;
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* height: 10px; */
     overflow: hidden;
-    /* font-family: 'Varela Round', serif; */
     color: #fff;
 }
 
 .real {
-    font-size: 8vh;
+    font-size: 10vh;
     position: relative;
     width: 100%;
     height: 100%;
     transition: all 0.5s ease-in-out;
     top: 0;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 
 .cloned {
-    /* visibility: hidden; */
-    font-size: 8vh;
+    font-size: 10vh;
     position: relative;
     -webkit-text-stroke: 1px currentColor;
     -webkit-text-fill-color: transparent;
     top: 10px;
     left: 55px;
     transition: all 0.5s ease-in-out;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .overlay-menu-a:hover .real {
@@ -193,8 +172,7 @@ ul {
 }
 
 .overlay-menu-a:hover .cloned{
-    /* visibility: visible; */
-    top: -90px;
+    top: -110px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -202,7 +180,7 @@ ul {
     position: absolute;
     display: inline-block;
     opacity: 1;
-    font-weight: bold;
+    font-weight: 400;
     width: auto;
     vertical-align: top;
     line-height: 20px;
@@ -221,17 +199,15 @@ a:is(:link, :active, :visited).active{
     color: #0990ee;
 }
 .navbar-icons {
-    width: 85%;
-    /* border: 2px solid red; */
     margin: auto;
     color: white;
     position: relative;
     display: flex;
     justify-content: end;
+    padding-right: 120px;
 }
 .navbar-icons a {
     margin: 15px;
-    /* border: 2px solid red; */
     height: 25px;
     transition: all 0.2s ease-in;
     text-decoration: none;
@@ -242,20 +218,26 @@ a:is(:link, :active, :visited).active{
     color: #0990ee;
 }
 
-@media screen and (max-width:920px){
+@media screen and (max-width:920px){ 
+    
     .overlay-menu{
         width: 100%;
+        height: 100vh;
     }
     .navbar-icons {
-        margin-right: 30px;
-        width: 100%;
+        margin-top: 270px;
+        padding-right: 220px;
     }
     .navbar-icons a {
         margin: 10px;
     }
+    li{
+        height: 8vh;
+    }
     .real{
         transition: none;
         font-size: 5vh;
+        font-weight: 400;
     }
     .real::before{
         display: none;
@@ -266,16 +248,21 @@ a:is(:link, :active, :visited).active{
 }
 
 @media (max-width:480px){
+    .link {
+        margin-left: 20px;
+    }
+    .overlay {
+        margin-top: 40px;
+        padding: 20px;
+    }
     .overlay-menu{
         height: 80%;
         width: 80%;
     }
     li {
-        margin: 10px;
-        height: 7vh;
+        height: 5vh;
     }
     ul {
-        padding-top: 100px;
         margin: 10px;
     }
     .overlay-menu-a:hover .real {
@@ -285,6 +272,7 @@ a:is(:link, :active, :visited).active{
     .real{
         transition: none;
         font-size: 4vh;
+        font-size: 400;
     }
     .real::before{
         display: none;
@@ -296,15 +284,3 @@ a:is(:link, :active, :visited).active{
         display: none;
     }
 }
-
-
-/* @keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        left: 20%;
-   }
-    100% {
-        opacity: 1;
-        left: 0;
-   }
-} */

@@ -170,6 +170,7 @@
     border: none;
     transition: all .1s;
     text-decoration: none;
+    cursor: none;
 }
 
 /* sc_btn::after {
