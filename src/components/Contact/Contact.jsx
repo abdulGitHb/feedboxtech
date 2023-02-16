@@ -107,32 +107,36 @@ export default function Contact() {
 
               ></iframe>
             </div>
+            <a href="https://www.google.com/maps/place/FeedBox/@22.727735,75.892535,15z/data=!4m6!3m5!1s0x3962fd301f220449:0xb2c1e3746c297023!8m2!3d22.7277353!4d75.8925348!16s%2Fg%2F11dxb45jt2?hl=en"
+            target="_blank">
             <div className="adarsh-bottom2">
 
             </div>
+            </a>
 
           </div>
 
         </div>
         <div className="adarsh-right">
-          <input className="adarsh-text" type="text" placeholder="Your Name" />
-          <input className="adarsh-text" type="email" placeholder="Your e-Mail" />
-          <input type='tel' placeholder="Phone" className="adarsh-text" />
+          <input className="adarsh-text" type="text" placeholder="Your Name" autoComplete="new-password" />
+          <input className="adarsh-text" type="email" placeholder="Your e-Mail" autoComplete="new-password"/>
+          <input type='tel' placeholder="Phone" className="adarsh-text" autoComplete="new-password" />
           <input
             className="adarsh-text"
             type="text"
             placeholder="Your message to us"
+            autoComplete="new-password"
           />
           <br />
 
           <span className="adarsh-checkSpan">
 
-            <input type="checkbox" className="adarsh-text adarsh-check" />Message
+            {/* <input type="checkbox" className="adarsh-text adarsh-check" />Message */}
 
           </span>
           <div className="adarsh-imageDiv">
             <button type="submit" className="adarsh-btnn">
-              Send Message <spam></spam>
+              Send <spam></spam>
             </button>
 
 
