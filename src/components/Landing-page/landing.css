@@ -107,7 +107,7 @@
     border: 1px solid #fff;
     border-radius: 35px;
     transition: all .2s;
-    cursor: pointer;
+    cursor: none;
     overflow: hidden;
     transition: all .2s ease-in-out;
   }
@@ -163,7 +163,7 @@
   align-items: center;
 }
 .hero_home_social_icon{
-  cursor: pointer;
+  cursor: none;
   width: 45px;
   height: 45px;
   border-radius: 50%;
