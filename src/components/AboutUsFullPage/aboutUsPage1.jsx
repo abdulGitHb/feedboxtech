@@ -26,6 +26,7 @@ import img18 from "../../image/a18.png";
 import "./aboutUsPage1.css";
 // importing parallax
 import {Parallax} from "react-parallax";
+import { Link } from 'react-router-dom';
 
 function AboutUsPage1() {
     return (
@@ -82,7 +83,7 @@ function AboutUsPage1() {
                      </div>
                  </div>
                  {/* about us story button */}
-                 <a href='/ourstory'><button className='story-btn'  type="button">Read Full Story</button></a>
+                 <Link to='/ourstory'><button className='story-btn'  type="button">Read Full Story</button></Link>
                </div>
         </div>
         
