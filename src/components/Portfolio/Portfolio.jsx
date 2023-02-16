@@ -13,7 +13,7 @@ import Runo from '../../image/runo.png'
 import Card from '../PortfolioCard/PortfolioCard'
 import { Outlet, Link } from "react-router-dom";
 import { FaGreaterThan, FaLessThan } from 'react-icons/fa'
-import Cursor from '../Cursor/Cursor'
+// import Cursor from '../Cursor/Cursor'
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 

@@ -6,7 +6,7 @@ import Services from './components/Services/Services';
 import ClientShowCase from './components/ClientShowCase/ClientShowCase';
 import Portfolio from './components/Portfolio/Portfolio'
 import Footer from './components/Footer/Footer'
-import Cursor from './components/Cursor/Cursor';
+// import Cursor from './components/Cursor/Cursor';
 
 function HomeComp() {
   return (
