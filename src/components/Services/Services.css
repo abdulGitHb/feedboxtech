@@ -1,5 +1,5 @@
 .services-container{
-    padding-top: 700px;
+    padding-top: 500px;
     padding-bottom: 80px;
     /* margin-top: 500px; */
     /* width: 100%; */
@@ -17,12 +17,12 @@
     z-index: 100;
 }
 .services_heading{
-  margin-top: 100px;
+  margin-top: -700px;
   color: black;
 }
 
 .s-cards{
-    /* margin-top: 50px; */
+    margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -36,21 +36,23 @@
 /* parallax dot effect */
 .parallax_dot,
 .parallax_dot2{
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    /* background-color: rgba(255,255,255,0.9); */
-    background-color: rgb(240,240,215);
+    width: 600px;
+    height: 600px;
     margin-top: -100px;
+    /* transform: scale(0.2); */
+    border-radius: 50%;
+    /*background-color: rgba(255,255,255,0.9);
+    */background-color: rgb(240,240,215);
+    /* margin-top: -100px; */
     /*background-color: #0668a5;
     *//*background-color: rgb#FEFBE9;
     */color: black;
     display: flex;
     position: relative;
-    /* z-index: 1; */
-    justify-content: center;
+    /*z-index: 1;
+    */justify-content: center;
     align-items: center;
-    border: 11px solid rgba(255,255,255,0.07);
+    border: 20px solid rgba(255,255,255,0.07);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;

@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 import app_dev from '../../image/appdev.png'
 import web_dev from '../../image/webdev.png'
 import wordpress_dev from '../../image/wordpressdev.png'
+import circle from '../../image/circle.png'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import { HiArrowDown } from "react-icons/hi"
 
@@ -14,15 +15,6 @@ export default function Services() {
     const [offset, setoffset] = useState()
     const [showDot, setshowDot] = useState(true)
     // const s = [0,100]
-
-    // useEffect(()=>{
-    //     AOS.init(
-    //       {
-    //         duration:800,
-    //         // offset:250
-    //       }
-    //     );
-    // },[])
 
 
     // for disabling parallax dot
@@ -59,7 +51,7 @@ export default function Services() {
                 >
                     <div className="parallax_dot"></div>
                 </Parallax>
-                   {showDot && <div className="parallax_dot2"><HiArrowDown size={25}/></div>}
+                   {/* {showDot && <div className="parallax_dot2"><HiArrowDown size={25}/></div>} */}
 
                 <h1 className="section_heading services_heading"
                     data-aos="fade-up"
@@ -79,7 +71,9 @@ export default function Services() {
             </div>
             </div> */}
                 <div className="s-cards">
+ 
 
+                
                     <ServiceCard
                         aos="fade-right"
                         icon={app_dev}

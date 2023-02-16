@@ -46,7 +46,7 @@ export default function About() {
     };
 
     return (
-        <div className="about-container-hld" style={{ paddingTop: '750px' }}>
+        <div className="about-container-hld" style={{ paddingTop: '600px' }}>
             <div className="a-container" id="about" >
                 <ParallaxProvider>
                 <Parallax 
