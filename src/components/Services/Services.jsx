@@ -10,29 +10,33 @@ import wordpress_dev from '../../image/wordpressdev.png'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import { HiArrowDown } from "react-icons/hi"
 
-export default function Services(){
+export default function Services() {
     const [offset, setoffset] = useState()
-    const [s, sets] = useState([0,100])
+    const [showDot, setshowDot] = useState(true)
     // const s = [0,100]
 
-// useEffect(()=>{
-//     AOS.init(
-//       {
-//         duration:800,
-//         // offset:250
-//       }
-//     );
-// },[])
+    // useEffect(()=>{
+    //     AOS.init(
+    //       {
+    //         duration:800,
+    //         // offset:250
+    //       }
+    //     );
+    // },[])
 
-// for disabling parallax
-useEffect(()=>{
 
-},[s])
-const onScroll = () => {
-    const winheight = window.pageYOffset
-    setoffset(winheight); 
-}
-useEffect(() => {
+    // for disabling parallax dot
+    const onScroll = () => {
+        const winheight = window.pageYOffset
+        // console.log(winheight)
+        if(winheight>1600){
+            setshowDot(false);
+        }
+        if(winheight<1600){
+            setshowDot(true);
+        }
+    }
+    useEffect(() => {
         // clean up code
 
         window.removeEventListener('scroll', onScroll);
@@ -45,23 +49,23 @@ useEffect(() => {
     return (
         <div className="services-container" id="services">
 
-           <ParallaxProvider>
-            <Parallax 
-             scale={[1,100]}
-             easing="easeInQuad"
-            >
-                <div className="parallax_dot">
-                    {/* <HiArrowDown size={25}/> */}
-                </div>
-            </Parallax>
-           
-          
+            <ParallaxProvider>
 
-           <h1 className="section_heading"
-           data-aos="fade-up" 
-            >Services</h1>
+                <Parallax
+                    speed={-23}
+                    scale={[0, -60]}
+                    // translateY={ [0, -200]}
+                    easing="easeInQuad"
+                >
+                    <div className="parallax_dot"></div>
+                </Parallax>
+                   {showDot && <div className="parallax_dot2"><HiArrowDown size={25}/></div>}
 
-            {/* <div className="technologies">
+                <h1 className="section_heading services_heading"
+                    data-aos="fade-up"
+                >Services</h1>
+
+                {/* <div className="technologies">
                 <div className="ts_left">
                     <span>Web Development</span>
                     <p>Dolore, dolores dignissimos optio minima velit officiis eos cumque alias! Unde illum consectetur alias laboriosam?</p>
@@ -74,30 +78,30 @@ useEffect(() => {
                 <img src={mernGif} alt="" />
             </div>
             </div> */}
-       <div  className="s-cards">
+                <div className="s-cards">
 
-            <ServiceCard 
-            aos="fade-right"
-            icon={app_dev}
-            title="APP DEVELOPMENT"
-            linkTo='/services/appdev'
-            desc="Our team of developers, designers, and project managers develop software applications for mobile devices, such as smartphones and tablets."
-            />
-            <ServiceCard
-              aos="fade-up"
-              icon={web_dev}
-              title="WEB DEVELOPMENT"
-              linkTo='/services/webdev'
-              desc="Our team of tech geeks create and maintain both front-end development and back-end development."
-             />
-            <ServiceCard
-              aos="fade-left"
-              icon={wordpress_dev}
-              title="WORDPRESS DEVELOPMENT"
-              linkTo='/services/wordpressdev'
-              desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
-             />
-       </div>
+                    <ServiceCard
+                        aos="fade-right"
+                        icon={app_dev}
+                        title="APP DEVELOPMENT"
+                        linkTo='/services/appdev'
+                        desc="Our team of developers, designers, and project managers develop software applications for mobile devices, such as smartphones and tablets."
+                    />
+                    <ServiceCard
+                        aos="fade-up"
+                        icon={web_dev}
+                        title="WEB DEVELOPMENT"
+                        linkTo='/services/webdev'
+                        desc="Our team of tech geeks create and maintain both front-end development and back-end development."
+                    />
+                    <ServiceCard
+                        aos="fade-left"
+                        icon={wordpress_dev}
+                        title="WORDPRESS DEVELOPMENT"
+                        linkTo='/services/wordpressdev'
+                        desc="Our team uses this popular open-source platform for building websites and blogs, for its ease of use and flexibility."
+                    />
+                </div>
             </ParallaxProvider>
         </div>
     )

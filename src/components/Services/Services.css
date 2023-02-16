@@ -1,5 +1,5 @@
 .services-container{
-    padding-top: 150px;
+    padding-top: 700px;
     padding-bottom: 80px;
     /* width: 100%; */
     background-color: #06283d;
@@ -16,21 +16,12 @@
     z-index: 100;
 }
 .services_heading{
-    font-size: 60px;
-    color: white;
-    position: relative;
-    z-index: 10;
+  margin-top: 100px;
+  color: black;
 }
-.services_heading::after{
-    content:"";
-    display:block;
-    width: 3.5em;
-    /* max-width:50%; */
-    border-bottom: 2px solid #0090ee;
-    margin: 2px 30px;
-}
+
 .s-cards{
-    margin-top: 10px;
+    /* margin-top: 50px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -42,68 +33,41 @@
 }
 
 /* parallax dot effect */
-.parallax_dot{
-    width: 100px;
-    height: 100px;
+.parallax_dot,
+.parallax_dot2{
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     background-color: rgba(255,255,255,0.9);
-    color: black;
+    margin-top: -100px;
+    /*background-color: #0668a5;
+    *//*background-color: rgb#FEFBE9;
+    */color: black;
     display: flex;
+    position: relative;
+    /* z-index: 1; */
     justify-content: center;
     align-items: center;
+    border: 10px solid rgba(255,255,255,0.07);
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+.parallax_dot2{
+    margin-top: -560px;
+    background-color: rgba(255,255,255,1);
+    width: 70px;
+    height: 70px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
 
-/* .technologies{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-}
-.ts_left{
-    width: 40%;
-    display: block;
-    flex-direction: column;
-    justify-content:flex-start;
-    margin-top: 100px;
-}
-.ts_left span{
-    font-size: 40px;
-    color: rgb(246, 133, 21);
-}
-.ts_left p{
-    width: 80%;
-    margin-top: 20px;
-    display: block;
-    justify-content: flex-start;
-}
-.ts_right{
-    width: 40%;
-}
-.ts_right img{
-    width: 100%;
-} */
 
 @media screen and (max-width:480px){
-    /* .ts_left{
-        margin-top: 0;
-        margin-left: 10px;
-    }
-    .ts_left span{
-        font-size: 25px;
-    }
-    .ts_left p{
-        width: 100%;
-    }
-    .ts_right{
-        width: 50%;
-        margin-left: 25px;
-    }
-    .ts_right img{
-        margin-top: 50px;
-    } */
     .services-container{
         padding: 60px 0;
     }
