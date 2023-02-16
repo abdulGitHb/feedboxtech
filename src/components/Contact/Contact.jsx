@@ -37,14 +37,14 @@ export default function Contact() {
             
           </div>
           <div className="adarsh-right">
-              <input className="adarsh-text" type="text" placeholder="Your Name" autocomplete="off" />
-              <input className="adarsh-text" type="email" placeholder="Your e-Mail" autocomplete="off" />
-              <input type='tel' placeholder="Phone" className="adarsh-text"  autocomplete="off" />
+              <input className="adarsh-text" type="text" placeholder="Your Name" autoComplete="new-password" />
+              <input className="adarsh-text" type="email" placeholder="Your e-Mail" autoComplete="new-password" />
+              <input type='tel' placeholder="Phone" className="adarsh-text"  autoComplete="new-password" />
             <input
               className="adarsh-text"
               type="text"
               placeholder="Your message to us"
-              autocomplete="off"
+              autoComplete="new-password"
             />
             <br/>
 
