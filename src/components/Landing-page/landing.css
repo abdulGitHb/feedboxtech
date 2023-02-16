@@ -22,7 +22,8 @@
    position: fixed;
    z-index: 1;
    min-height: 668px;
-   background-color: #141619;
+   /* background-color: #141619; */
+   background-image: linear-gradient(to top, #000000, #151015, #191c26, #132a36, #06383d);
    padding: 0;
    overflow: hidden;
 
