@@ -1,18 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './About.css'
 import $ from 'jquery'
 import AboutImg from '../../image/about2.png'
-
-
 // import aboutPage from '../AboutUsFullPage/AboutUs';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from "react-router-dom";
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
-import Services from "../Services/Services";
+// import Services from "../Services/Services";
 
 export default function About() {
+
+    // const [width, setwidth] = useState()
 
     useEffect(() => {
         AOS.init({
@@ -24,15 +23,23 @@ export default function About() {
         });
     }, []);
 
+    // useEffect(()=>{
+    //     const onResize = (e)=> {
+    //             setwidth(window.innerWidth)
+    //             console.log(window.innerWidth)
+    //     }
+    //     window.addEventListener("resize",onResize)
+    //     return () => window.removeEventListener('resize',onResize);
+    // },[])
 
     window.onscroll = function (event) {
         var offset = window.pageYOffset;
-        console.log(offset);
+        // setwidth(window.pageXOffset)
         $(document).ready(function () {
-            if (offset < 1000 || offset > 1700) {
+            if (offset < 1000 || offset > 1650) {
                 $(".a-layer").removeClass("a-layer_open");
             }
-            if (offset > 1000 && offset < 1700) {
+            if (offset > 1000 && offset < 1650) {
                 $("#layer").addClass("a-layer_open");
             }
         });
@@ -54,7 +61,7 @@ export default function About() {
 
                 <div data-aos="fade-up" className="a_content">
 
-                    <div id="layer" className="a-layer"></div>
+                <div id="layer" className="a-layer"></div>
 
                     <div className="a_content_img_hld">
                         <img src={AboutImg} alt="" />

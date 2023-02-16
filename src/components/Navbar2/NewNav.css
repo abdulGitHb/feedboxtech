@@ -92,10 +92,12 @@
     transition: opacity 0.35s, visibility 0.35s, height 0.35s;
     overflow: hidden;
     text-align: left;
-    /* border: 2px solid red; */
+    /*border: 2px solid red; */
+
+   
 }
 .overlay.open {
-    opacity: 0.9;
+    opacity: 0.97;
     visibility: visible;
     height: 100%;
 }
