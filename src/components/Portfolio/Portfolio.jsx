@@ -1,260 +1,184 @@
-import React, { useEffect, useRef } from 'react'
-import './Portfolio.css'
-import Centaurus from '../../image/centaurus.png'
-import FuteServices from '../../image/futeServices.png'
-import SketchMyPlot from '../../image/sketchMyPlot.png'
-import TintedTales from '../../image/tintedTales.png'
-import IndependenceRock from '../../image/independenceRock.png'
-import Gallant_jwellery from '../../image/gallent_jwellery.png'
-import Tenet from '../../image/tenet.png'
-import Aryan from '../../image/aryan.png'
-import Runo from '../../image/runo.png'
-import Card from '../PortfolioCard/PortfolioCard'
+import React, { useEffect, useRef } from "react";
+import "./Portfolio.css";
+import Centaurus from "../../image/centaurus.png";
+import FuteServices from "../../image/futeServices.png";
+import SketchMyPlot from "../../image/sketchMyPlot.png";
+import TintedTales from "../../image/tintedTales.png";
+import IndependenceRock from "../../image/independenceRock.png";
+import Gallant_jwellery from "../../image/gallent_jwellery.png";
+import Tenet from "../../image/tenet.png";
+import Aryan from "../../image/aryan.png";
+import Runo from "../../image/runo.png";
+import Card from "../PortfolioCard/PortfolioCard";
 import { Outlet, Link } from "react-router-dom";
-import { FaGreaterThan, FaLessThan } from 'react-icons/fa'
+import { FaGreaterThan, FaLessThan } from "react-icons/fa";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+// import 'swiper/css/navigation';
+// import "./styles.css";
+
+// import required modules
+import { Navigation, Pagination } from "swiper";
 
 // import Cursor from '../Cursor/Cursor'
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
-
 export default function Portfolio(props) {
-    const cursorDotOutline = React.useRef();
-  const cursorDot = React.useRef();
-  const requestRef = React.useRef();
-  const previousTimeRef = React.useRef();
-  let [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
-  const [width, setWidth] = React.useState(window.innerWidth);
-  const [height, setHeight] = React.useState(window.innerHeight);
-  let cursorVisible = React.useState(false);
-  let cursorEnlarged = React.useState(false);
+  return (
+    <div id="cursorDiv" className="cursorDiv">
+      <div id="cursor-dot" />
 
-  // console.log(window.innerHeight);
+      <div className="p-container" id="portfolio">
+        <h1 className="section_heading" data-aos="fade-up">
+          Portfolio
+        </h1>
 
-  /**
-   * Mouse Moves
-   */
-  const onMouseMove = event => {
-    const { pageX: x, pageY: y } = event;
-    setMousePosition({ x, y });
-    positionDot(event);
-  };
-  const onMouseEnter = () => {
-    cursorVisible.current = true;
-    toggleCursorVisibility();
-  };
-  const onMouseLeave = () => {
-    cursorVisible.current = false;
-    toggleCursorVisibility();
-  };
-  const onMouseDown = () => {
-    cursorEnlarged.current = true;
-    toggleCursorSize();
-  };
-  const onMouseUp = () => {
-    cursorEnlarged.current = false;
-    toggleCursorSize();
-  };
-  const onResize = event => {
-    setWidth(window.innerWidth);
-    setHeight(window.innerHeight);
-  };
+        <span data-aos="fade-up" className="portfolio_subHeading">
+          Projects that speak of our success ...
+        </span>
 
-  /**
-   * Hooks
-   */
-  React.useEffect(() => {
-    document.addEventListener("mousemove", onMouseMove);
-    document.addEventListener("mouseenter", onMouseEnter);
-    document.addEventListener("mouseleave", onMouseLeave);
-    document.addEventListener("mousedown", onMouseDown);
-    document.addEventListener("mouseup", onMouseUp);
-    window.addEventListener("resize", onResize);
-    requestRef.current = requestAnimationFrame(animateDotOutline);
-    
-    // Handle Link Hovers
-    handleLinkHovers();
+        <div className="portfolio_cards portfolio_web_view">
+          <Card
+            aos="fade-up-right"
+            image={Centaurus}
+            url="https://webcode.codezesk.com/centaurus/"
+            title="Centaurus"
+            id="portfolioCard"
+          />
 
-    return () => {
-      document.removeEventListener("mousemove", onMouseMove);
-      document.removeEventListener("mouseenter", onMouseEnter);
-      document.removeEventListener("mouseleave", onMouseLeave);
-      document.removeEventListener("mousedown", onMouseDown);
-      document.removeEventListener("mouseup", onMouseUp);
-      window.removeEventListener("resize", onResize);
-      cancelAnimationFrame(requestRef.current);
-    };
-  }, []);
+          <Card
+            aos="fade-up-right"
+            image={Aryan}
+            url="https://www.aryantiles.com/"
+            title="Aryan"
+          />
+          <Card
+            aos="fade-up-left"
+            image={IndependenceRock}
+            url="https://independencerock.in/"
+            title="Independence Rock"
+          />
+          <Card
+            aos="fade-up-right"
+            image={TintedTales}
+            url="https://tintedtales.in/"
+            title="Tintes Tales"
+          />
+          <Card
+            aos="fade-up"
+            image={FuteServices}
+            url="https://www.futeservices.com/"
+            title="FuteServices"
+          />
+          <Card
+            aos="fade-up-left"
+            image={SketchMyPlot}
+            url="https://sketchmyplot.com/"
+            title="Sketch MY Plot"
+          />
+          <Card
+            aos="fade-up-right"
+            image={Tenet}
+            url="https://tenetapp.in/"
+            title="Tenet"
+          />
+          <Card
+            aos="fade-up"
+            image={Runo}
+            url="https://runo.in/"
+            title="Runo"
+          />
+          <Card
+            aos="fade-up-left"
+            image={Gallant_jwellery}
+            url="https://www.gallantjewelry.com/"
+            title="Gallant Jewelry"
+          />
 
-  let { x, y } = mousePosition;
-  const winDimensions = { width, height };
-  let endX = winDimensions.width / 2;
-  let endY = winDimensions.height / 2;
-
-  /**
-   * Position Dot (cursor)
-   * @param {event}
-   */
-  function positionDot(e) {
-    cursorVisible.current = true;
-    toggleCursorVisibility();
-    // Position the dot
-    endX = e.pageX;
-    endY = e.pageY;
-    cursorDot.current.style.top = endY + "px";
-    cursorDot.current.style.left = endX + "px";
-  }
-
-  /**
-   * Toggle Cursor Visiblity
-   */
-  function toggleCursorVisibility() {
-    if (cursorVisible.current) {
-      cursorDot.current.style.opacity = 1;
-      cursorDotOutline.current.style.opacity = 1;
-    } else {
-      cursorDot.current.style.opacity = 0;
-      cursorDotOutline.current.style.opacity = 0;
-    }
-  }
-
-  /**
-   * Toggle Cursor Size
-   */
-  function toggleCursorSize() {
-    if (cursorEnlarged.current) {
-      cursorDot.current.style.transform = "translate(-50%, -50%) scale(0.7)";
-      cursorDotOutline.current.style.transform =
-        "translate(-50%, -50%) scale(5)";
-    } else {
-      cursorDot.current.style.transform = "translate(-50%, -50%) scale(1)";
-      cursorDotOutline.current.style.transform =
-        "translate(-50%, -50%) scale(1)";
-    }
-  }
-
-  /**
-   * Handle LInks
-   * Applies mouseover/out hooks on all links
-   * to trigger cursor animation
-   */
-  function handleLinkHovers() {
-    document.querySelectorAll('a').forEach(el => {
-      el.addEventListener("mouseover", () => {
-        cursorEnlarged.current = true;
-        toggleCursorSize();
-      });
-      el.addEventListener("mouseout", () => {
-        cursorEnlarged.current = false;
-        toggleCursorSize();
-      });
-    });
-  }
-
-  /**
-   * Animate Dot Outline
-   * Aniamtes cursor outline with trailing effect.
-   * @param {number} time
-   */
-  const animateDotOutline = time => {
-    if (previousTimeRef.current !== undefined) {
-      x += (endX - x) / 8;
-      y += (endY - y) / 8;
-      cursorDotOutline.current.style.top = y + "px";
-      cursorDotOutline.current.style.left = x + "px";
-    }
-    previousTimeRef.current = time;
-    requestRef.current = requestAnimationFrame(animateDotOutline);
-  };
-    
-
-
-    return (
-        <div id='cursorDiv' className='cursorDiv'>
-
-            <div ref={cursorDotOutline} id="cursor-dot-outline" > 
-            {/* <div  id="cursor-dot-outline" >  */}
-                    <FaLessThan size={3.2}  /> 
-                    <FaGreaterThan size={3}  /> 
-            </div>
-
-            <div ref={cursorDot} id="cursor-dot" />
-            {/* <div  id="cursor-dot" /> */}
-
-                  
-              <div className='p-container' id='portfolio'>
-
-                  <h1 className="section_heading" data-aos="fade-up"
-                  >Portfolio</h1>
-
-                  <span data-aos="fade-up"
-                      className='portfolio_subHeading'>Projects that speak of our success ...</span>
-
-                  <div className="portfolio_cards">
-                          <Card
-                        aos="fade-up-right"
-                        image={Centaurus}
-                        url="https://webcode.codezesk.com/centaurus/"
-                        title="Centaurus"
-                        id='portfolioCard'
-                   />
-
-                    <Card
-                        aos="fade-up-right"
-                        image={Aryan}
-                        url="https://www.aryantiles.com/"
-                        title="Aryan"
-                    />
-                    <Card
-                        aos="fade-up-left"
-                        image={IndependenceRock}
-                        url="https://independencerock.in/"
-                        title="Independence Rock"
-                    />
-                    <Card
-                        aos="fade-up-right"
-                        image={TintedTales}
-                        url="https://tintedtales.in/"
-                        title="Tintes Tales"
-                    />
-                    <Card
-                        aos="fade-up"
-                        image={FuteServices}
-                        url="https://www.futeservices.com/"
-                        title="FuteServices"
-                    />
-                    <Card
-                        aos="fade-up-left"
-                        image={SketchMyPlot}
-                        url="https://sketchmyplot.com/"
-                        title="Sketch MY Plot"
-                    />
-                    <Card
-                        aos="fade-up-right"
-                        image={Tenet}
-                        url="https://tenetapp.in/"
-                        title="Tenet"
-                    />
-                    <Card
-                        aos="fade-up"
-                        image={Runo}
-                        url="https://runo.in/"
-                        title="Runo"
-                    />
-                    <Card
-                        aos="fade-up-left"
-                        image={Gallant_jwellery}
-                        url="https://www.gallantjewelry.com/"
-                        title="Gallant Jewelry"
-                    />
-
-
-            </div>
-            <Link to='/Portfolio' className='portfolio_btn' data-aos="fade-up">
-                View More
-            </Link>
-
-          </div>
+          {/* <Link to="/Portfolio" className="portfolio_btn" data-aos="fade-up">
+            View More
+          </Link> */}
         </div>
-    )
+
+        <div className="portfolio_mobile_view">
+          <Swiper navigation
+          
+          className="mySwiper">
+            <SwiperSlide>
+              <div className="one-slide-img">
+                <div className="slide-gap">
+                  <a
+                    href="https://webcode.codezesk.com/centaurus/"
+                    target="_blank"
+                  >
+                    <img src={Centaurus} alt="" />
+                  </a>
+                </div>
+
+                <div className="slide-gap">
+                  <a href="https://www.aryantiles.com/" target="_blank">
+                    <img src={Aryan} alt="" />
+                  </a>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="one-slide-img">
+                <div className="slide-gap">
+                  <a href="https://independencerock.in/" target="_blank">
+                    <img src={IndependenceRock} alt="" />
+                  </a>
+                </div>
+
+                <div className="slide-gap">
+                  <a href="https://tintedtales.in/" target="_blank">
+                    <img src={TintedTales} alt="" />
+                  </a>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="one-slide-img">
+                <div className="slide-gap">
+                  <a href="https://www.futeservices.com/" target="_blank">
+                    <img src={FuteServices} alt="" />
+                  </a>
+                </div>
+
+                <div className="slide-gap">
+                  <a href="https://sketchmyplot.com/" target="_blank">
+                    <img src={SketchMyPlot} alt="" />
+                  </a>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="one-slide-img">
+                <div className="slide-gap">
+                  <a href="https://tenetapp.in/" target="_blank">
+                    <img src={Tenet} alt="" />
+                  </a>
+                </div>
+
+                <div className="slide-gap">
+                  <a href="https://runo.in/" target="_blank">
+                    <img src={Runo} alt="" />
+                  </a>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <Link to="/Portfolio" className="portfolio_btn" data-aos="fade-up">
+            View More
+          </Link>
+      </div>
+    </div>
+  );
 }

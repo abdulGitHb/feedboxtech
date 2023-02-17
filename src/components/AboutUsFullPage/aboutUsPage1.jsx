@@ -30,6 +30,7 @@ import {Parallax} from "react-parallax";
 import { ParallaxProvider ,ParallaxBanner } from 'react-scroll-parallax';
 import ParallaxDemo from './parallaxDemo';
 import { Link } from 'react-router-dom';
+import Whatsapp from '../Whatsapp/Whatsapp';
 
 function AboutUsPage1() {
     return (
@@ -165,6 +166,7 @@ function AboutUsPage1() {
 
         </div>
         </ParallaxProvider>
+        <Whatsapp />
         
         {/* <ParallaxDemo/> */}
         <Footer/>
