@@ -27,6 +27,7 @@ import "./aboutUsPage1.css";
 // importing parallax
 import {Parallax} from "react-parallax";
 import { Link } from 'react-router-dom';
+import Whatsapp from '../Whatsapp/Whatsapp';
 
 function AboutUsPage1() {
     return (
@@ -90,6 +91,7 @@ function AboutUsPage1() {
   
      
         </Parallax>
+        <Whatsapp />
         
         <Footer/>
         </>
