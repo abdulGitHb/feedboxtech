@@ -55,7 +55,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from '../Footer/Footer'
 import Whatsapp from '../Whatsapp/Whatsapp'
-
+import Panorma from './Panorma'
 
 export default function PortfolioAll() {
 return (
@@ -63,7 +63,7 @@ return (
 
 <Panorma/>
 
-            </div>
+            {/* </div> */}
             <Whatsapp />
             <Footer />
         </>
