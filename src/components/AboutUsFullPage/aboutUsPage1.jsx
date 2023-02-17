@@ -16,6 +16,7 @@ import img9 from "../../image/a9.jpg";
 import img10 from "../../image/a10.jpg";
 import img11 from "../../image/a11.jpg";
 import img12 from "../../image/a12.jpg";
+import img121 from "../../image/a12.1.jpg";
 import img13 from "../../image/a13.jpg";
 import img14 from "../../image/a14.jpg";
 import img15 from "../../image/a15.jpg";
@@ -27,37 +28,41 @@ import img18 from "../../image/a18.png";
 import "./aboutUsPage1.css";
 // importing parallax
 import {Parallax} from "react-parallax";
+import { ParallaxProvider ,ParallaxBanner } from 'react-scroll-parallax';
+import ParallaxDemo from './parallaxDemo';
 
 function AboutUsPage1() {
     return (
       <>
       <NavBarResp/>
-      <Parallax bgImage={img18} strength={200} className="aditya-parall">
+
+      <ParallaxProvider>
+        <Parallax   className="aditya-parall">
         <div className="aditya-about">
-          <Parallax  strength={500} className="aditya-parallax1">
+          <Parallax   className="aditya-parallax1">
           <div className="aditya-text-content0">About Us</div>
           </Parallax>
 
-          <Parallax bgImage={img15} strength={500} className="aditya-parallax">
+          <Parallax  bgImage={img121} className="aditya-parallax" strength={-300} style={{backgroundPositon:"center"}}>
           <div className="aditya-text-content">
           <p className='aditya-p-text'>
-             <b className="aditya-b">F</b>eedbox was awarded the MP Young Achievers Award by the CM of Madhya Pradesh Shri Shivraj Singh Chouhan. We were among the top 10 businesses to receive a banner shoutout at the CM house in Bhopal.
+             <span className="aditya-b">F</span>eedbox was awarded the MP Young Achievers Award by the CM of Madhya Pradesh Shri Shivraj Singh Chouhan. We were among the top 10 businesses to receive a banner shoutout at the CM house in Bhopal.
               </p>
           </div>
          
           
           </Parallax>
-          <Parallax bgImage={img14} strength={500} className="aditya-parallax">
+          <Parallax   bgImage={img14} className="aditya-parallax" >
           <div className="aditya-text-content aditya-text-content1">
           <p className='aditya-p-text'>
-          <b className="aditya-b">F</b>eedbox became the first startup in Indore to receive this accolade. 3 years in this industry, our consistency and hard work were met by the prestigious certificate which is still a dream for many budding businesses.
+          <span className="aditya-b">F</span>eedbox became the first startup in Indore to receive this accolade. 3 years in this industry, our consistency and hard work were met by the prestigious certificate which is still a dream for many budding businesses.
               </p>
           </div>
           </Parallax>
-          <Parallax bgImage={img13} strength={500} className="aditya-parallax">
+          <Parallax bgImage={img13} className="aditya-parallax" strength={-300}>
           <div className="aditya-text-content">
           <p className='aditya-p-text'>
-          <b className="aditya-b">F</b>eedbox was founded by 2 engineers,Yash & Ayushi, who had a shared vision of starting a digital marketing company. The company's focus on revenue growth has helped many startups to scale their businesses and achieve their financial goals in the past 3 years.
+          <span className="aditya-b">F</span>eedbox was founded by 2 engineers,Yash & Ayushi, who had a shared vision of starting a digital marketing company. The company's focus on revenue growth has helped many startups to scale their businesses and achieve their financial goals in the past 3 years.
               </p>
           </div>
           </Parallax>
@@ -87,10 +92,10 @@ function AboutUsPage1() {
                </div>
         </div>
         
-  
-     
         </Parallax>
-        
+     
+        </ParallaxProvider>
+        {/* <ParallaxDemo/> */}
         <Footer/>
         </>
       );
