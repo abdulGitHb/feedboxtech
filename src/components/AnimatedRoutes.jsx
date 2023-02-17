@@ -23,7 +23,7 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence>
       <NewNav/>
-        <Routes>
+        <Routes location={location} key={location.pathname}>
           <Route path='/' element={<HomeComp />} />
           {/* <Route path='/about' element={<NewAbout />} /> */}
           <Route path='/about' element={<AboutUsPage1/>} />
