@@ -13,23 +13,6 @@ export default function Landing() {
   return (
     <>
       <section className="hero_container" id="hero-home">
-        <div className="hero_home_video_hld">
-          <Link to="contact" spy={true} smooth={true}>
-            <div className="hero_home_contact_btn">Contact Us</div>
-          </Link>
-          <video
-            src="https://gravityteam.co/wp-content/uploads/2022/07/hero-animation.mp4"
-            className="hero_home_video"
-            muted={true}
-            loop={true}
-            autoPlay={true}
-          ></video>
-        </div>
-        <div className="hero_home_content">
-          <Bubbles />
-
-
-
         {/* <section className='hero_container' id="hero-home"> */}
             
             <div className="hero_home_video_hld">
@@ -67,7 +50,7 @@ export default function Landing() {
                             <div className="btn-mobile-new">Contact Us</div>
                         </Link>
                     </div>
-                </div>
+            </div>
  
             <div className="hero_home_social mobile_view_hero">
                <a href="https://www.linkedin.com/company/feedbox-smm/mycompany/" target="_blank"> <span className='linkedin hero_home_social_icon'><ImLinkedin2 size={25} /></span></a>
@@ -77,36 +60,7 @@ export default function Landing() {
             </div>
         
 
-        <div className="hero_home_social mobile_view_hero">
-          <a
-            href="https://www.linkedin.com/company/feedbox-smm/mycompany/"
-            target="_blank"
-          >
-            {" "}
-            <span className="linkedin hero_home_social_icon">
-              <ImLinkedin2 size={25} />
-            </span>
-          </a>
-          <a href="https://twitter.com/teamfeedBox" target="_blank">
-            {" "}
-            <span className="twitter hero_home_social_icon">
-              <IoLogoTwitter size={25} />
-            </span>
-          </a>
-          <a href="https://www.instagram.com/teamfeedbox/" target="_blank">
-            {" "}
-            <span className="instagram hero_home_social_icon">
-              <FaInstagramSquare size={25} />
-            </span>
-          </a>
-          <a href="https://www.facebook.com/feedbox.online" target="_blank">
-            <span className="facebook hero_home_social_icon">
-              <ImFacebook size={25} />
-            </span>
-          </a>
-        </div>
       {/* </section> */}
-      </div>
       </section>
     </>
   );
