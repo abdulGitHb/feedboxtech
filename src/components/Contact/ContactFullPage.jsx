@@ -9,6 +9,7 @@ import { BsFacebook } from "react-icons/bs";
 import { ImWhatsapp } from "react-icons/im";
 import { BsLinkedin } from "react-icons/bs";
 import Footer from "../Footer/Footer";
+import Whatsapp from "../Whatsapp/Whatsapp";
 
 export default function Contact() {
   return (
@@ -153,7 +154,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
-  );
+      <Whatsapp />
+        <Footer/>
+        </>
+    )
 }

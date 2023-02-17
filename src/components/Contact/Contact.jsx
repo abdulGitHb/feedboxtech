@@ -118,8 +118,8 @@ export default function Contact() {
 
         </div>
         <div className="adarsh-right">
-          <input className="adarsh-text" type="text" placeholder="Your Name" autoComplete="new-password" />
-          <input className="adarsh-text" type="email" placeholder="Your e-Mail" autoComplete="new-password"/>
+          <input className="adarsh-text" type="text" placeholder="Name" autoComplete="new-password" />
+          <input className="adarsh-text" type="email" placeholder="E-Mail" autoComplete="new-password"/>
           <input type='tel' placeholder="Phone" className="adarsh-text" autoComplete="new-password" />
           <input
             className="adarsh-text"
@@ -136,7 +136,7 @@ export default function Contact() {
           </span>
           <div className="adarsh-imageDiv">
             <button type="submit" className="adarsh-btnn">
-              Send <spam></spam>
+              Send
             </button>
 
 
