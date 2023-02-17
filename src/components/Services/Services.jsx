@@ -18,24 +18,24 @@ export default function Services() {
 
 
     // for disabling parallax dot
-    const onScroll = () => {
-        const winheight = window.pageYOffset
-        // console.log(winheight)
-        if(winheight>1600){
-            setshowDot(false);
-        }
-        if(winheight<1600){
-            setshowDot(true);
-        }
-    }
-    useEffect(() => {
-        // clean up code
+    // const onScroll = () => {
+    //     const winheight = window.pageYOffset
+    //     // console.log(winheight)
+    //     if(winheight>1600){
+    //         setshowDot(false);
+    //     }
+    //     if(winheight<1600){
+    //         setshowDot(true);
+    //     }
+    // }
+    // useEffect(() => {
+    //     // clean up code
 
-        window.removeEventListener('scroll', onScroll);
-        window.addEventListener('scroll', onScroll, { passive: true });
-        // window.addEventListener('scroll', CursorChange, { passive: true });
-        return () => window.removeEventListener('scroll', onScroll);
-    }, []);
+    //     window.removeEventListener('scroll', onScroll);
+    //     window.addEventListener('scroll', onScroll, { passive: true });
+    //     // window.addEventListener('scroll', CursorChange, { passive: true });
+    //     return () => window.removeEventListener('scroll', onScroll);
+    // }, []);
 
 
     return (

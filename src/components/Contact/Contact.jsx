@@ -88,7 +88,7 @@ export default function Contact() {
 
 
   return (
-    <div className="contact_home_container">
+    <div id="contact" className="contact_home_container">
     <div className="adarsh-container">
       <div className="adarsh-form">
         <div className="adarsh-left">
