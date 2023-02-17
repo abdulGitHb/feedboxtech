@@ -1,4 +1,4 @@
-nav {
+/* nav {
   display: flex;
   align-items: center;
   height: fit-content;
@@ -29,16 +29,12 @@ nav input {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  /* width: fit-content;
-    margin: 15px auto;
-    align-self: flex-start; */
 }
 
 .glass {
   background: rgb(20, 22, 25, 0.5);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(50px);
-  /* border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 
 #logo {
@@ -49,7 +45,6 @@ nav input {
 #logo-holder {
   align-self: center;
   display: flex;
-  /* justify-content: space-between; */
 }
 
 #nav-items-holder {
@@ -72,7 +67,6 @@ nav input {
   font-size: 20px;
   text-decoration: none;
   color: #ffffff;
-  /* background-color: #fff; */
 }
 
 #contacto {
@@ -146,9 +140,6 @@ color: #fff;
   }
 
   #logo-holder {
-    /* align-self: flex-start;
-    flex-direction: column;
-    align-items: flex-start; */
     width: 100%;
     padding: 0;
   }
@@ -208,9 +199,6 @@ color: #fff;
   }
 
 
-  /**
-    Hamburger
-  **/
   nav label {
     display: block;
   }
@@ -225,10 +213,7 @@ color: #fff;
 
   .hamburger {
     position: absolute;
-    /* top: em; */
     right: 40px;
-    /* margin-left: -2em; */
-    /* margin-top: -45px; */
     width: 1em;
     height: 25px;
     z-index: 9000;
@@ -245,9 +230,6 @@ color: #fff;
     transition: all 0.3s ease-in-out;
   }
 
-  /**
-  Animations
-  **/
   #toggle:checked+.hamburger .top-bun {
     transform: rotate(-45deg);
     margin-top: 21px;
@@ -291,8 +273,8 @@ color: #fff;
   color: white;
   padding: 10px 12px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit; 
+  margin: 0; 
 }
 
 .dropdown-content {
@@ -317,10 +299,7 @@ color: #fff;
   background-color: #ddd;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-/* -------------------------------------------------------------------- */
-
+ */
