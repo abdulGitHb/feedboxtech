@@ -222,7 +222,7 @@ export default function Panorma() {
           onSlideChange={() => console.log('slide change')}
           loop={true}
           autoplay={{
-            delay: 1000,
+            delay: 2000,
             reverseDirection: false,
             pauseOnMouseEnter: true,
             disableOnInteraction: false,
@@ -334,7 +334,7 @@ export default function Panorma() {
          onSlideChange={() => console.log('slide change')}
          loop={true}
          autoplay={{
-           delay: 1000,
+           delay: 2000,
            disableOnInteraction: false,
            reverseDirection: true
          }}

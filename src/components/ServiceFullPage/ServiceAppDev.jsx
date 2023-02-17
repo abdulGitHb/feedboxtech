@@ -112,15 +112,15 @@ function ServiceAppDev() {
           </div>
         </div> */}
 
-        <div className='cardComp'
+        {/* <div className='cardComp'
         style={{"marginTop":'80px',
         "marginBottom":'20px'}}>
             <ServicesContactComp/>
-        </div>
+        </div> */}
         
     </div>
-      <Footer/>
     </div>
+      <Footer/>
     </>
   )
 }

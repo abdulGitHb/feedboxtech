@@ -7,6 +7,7 @@ import $ from 'jquery';
 import { Link } from 'react-scroll'
 import ScrollToTop from './ScrollToTop';
 import AnimatedRoutes from './components/AnimatedRoutes';
+import Whatsapp from './components/Whatsapp/Whatsapp';
 
 
 function App() {
@@ -108,11 +109,11 @@ function App() {
       <div id="dummy"></div>
 
       {/* scroll top button */}
-      {selectedPage!="/ourstory" && <div className="scrollBottomToTop">
+      {/* {selectedPage!="/ourstory" && <div className="scrollBottomToTop">
         <Link to="dummy" spy={true} smooth={true}>
           <IoIosArrowUp size={25} />
         </Link>
-      </div>}
+      </div>} */}
 
       {/* custom cursor */}
       {/* <div id="cursor"  >
@@ -122,6 +123,7 @@ function App() {
       <Router basename='/'>
         <ScrollToTop />
         <AnimatedRoutes/>
+        <Whatsapp />
       </Router>
     </div>
 

@@ -24,7 +24,7 @@ function ServicesWordpressDev() {
 
   return (
     <>
-    <motion.div style={{"backgroundColor":'black'}}
+    <div style={{"backgroundColor":'black'}}
     // initial={{x:lrSwipe=='Swipeleft'?-300:300}}
     // animate={{ x: 0 }}
     // exit={{
@@ -121,15 +121,11 @@ function ServicesWordpressDev() {
             </div>
         </div> */}
 
-        <div className='cardComp'
-        style={{"marginTop":'80px',
-        "marginBottom":'20px'}}>
-            <ServicesContactComp/>
-        </div>
+  
         
     </div>
+    </div>
     <Footer/>
-    </motion.div>
     </>
   )
 }

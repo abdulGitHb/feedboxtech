@@ -1,6 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    /* cursor: none; */
+    /* cursor: none; */
+    /* background-color: #333; */
+}
+.cursorDiv {
+    /* cursor: none; */
 }
 .p-container{
     /* padding-top: 50px; */
@@ -19,6 +25,7 @@
     overflow: hidden;
     position: relative;
     z-index: 100;
+    cursor: pointer;
 }
 .portfolio_heading{
     font-size: 50px;
@@ -41,7 +48,14 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 4rem;
+    /* cursor: none; */
+    /* cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AQVEBgE0YdPfwAAAWRJREFUSMe1lj1Ow0AQhb/dEFf81DQRFBFFIiFEyRmgpEFQ0HIFukhwgfRcBG6QIgfIIWiRkzyKjNFmWSdObI802l17Zt7M7tuxHQkROMDbcgGrBwm7Qjo2Lt3a45X40EFmbIYDoO+CIEoEt/d9YFAACDoqyd4LzgRTgSIdBYmEYKOE7dTieKIKvODOjPKEYy6YRUnNNtjK4vmwtF7CONYfwZf5fNp6m0+vOAIEk5KsUvpe0S4XTP5IowQjmhIHzguGtCiCoQ843pZ4JzgBvlsEOQzPRCUXu8ZOMXeQeWshYyBvuII5KyZ2nMA5o13DVTgHTta7JOgC980yl0uL+w9+XPGibdOHtd6VAPqoCfC8cROD+dueALeVTiuYP1UMvLTxSrtebGvTN1GgWBc2ngqyfXnYFVyUABUAx4JMNQmfCc5LtuioNkAEdB0BnTcGEJ3RiwE8Cg7a/D68thk8/CfbqdH9ApMWkjfHYjo+AAAAAElFTkSuQmCC'), auto; */
+
     
+}
+
+#portfolioCard {
+    cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AQVEBgE0YdPfwAAAWRJREFUSMe1lj1Ow0AQhb/dEFf81DQRFBFFIiFEyRmgpEFQ0HIFukhwgfRcBG6QIgfIIWiRkzyKjNFmWSdObI802l17Zt7M7tuxHQkROMDbcgGrBwm7Qjo2Lt3a45X40EFmbIYDoO+CIEoEt/d9YFAACDoqyd4LzgRTgSIdBYmEYKOE7dTieKIKvODOjPKEYy6YRUnNNtjK4vmwtF7CONYfwZf5fNp6m0+vOAIEk5KsUvpe0S4XTP5IowQjmhIHzguGtCiCoQ843pZ4JzgBvlsEOQzPRCUXu8ZOMXeQeWshYyBvuII5KyZ2nMA5o13DVTgHTta7JOgC980yl0uL+w9+XPGibdOHtd6VAPqoCfC8cROD+dueALeVTiuYP1UMvLTxSrtebGvTN1GgWBc2ngqyfXnYFVyUABUAx4JMNQmfCc5LtuioNkAEdB0BnTcGEJ3RiwE8Cg7a/D68thk8/CfbqdH9ApMWkjfHYjo+AAAAAElFTkSuQmCC'), auto;
 }
 .portfolio_btn{
     color: #fff;
@@ -50,6 +64,7 @@
     border-radius: 8px;
     font-size: 20px;
     text-decoration: none;
+    cursor: none;
     /* box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 48px, rgba(255, 255, 255, 0.1) 0px 10px 12px; */
 }
 .portfolio_btn:hover{
@@ -61,6 +76,56 @@
     font-size: 25px;
     color: rgb(255,255,255, 0.7);
 }
+
+
+
+/* custom cursor */
+
+/* play with vars for different effets */
+:root {
+    --color-cursor: 220, 90, 90;
+    --cursor-outline-shade: 0.3;
+    --cursor-size: 10px;
+    --cursor-outline-size: 14px;
+  }
+  #cursor-dot,
+  #cursor-dot-outline {
+    z-index: 999;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+    /* margin: 10px; */
+  }
+  
+  /* #cursor-dot {
+    width: var(--cursor-size);
+    height: var(--cursor-size);
+    background-color: white;
+  } */
+  
+  #cursor-dot-outline {
+    width: var(--cursor-outline-size);
+    height: var(--cursor-outline-size);
+    background-color: white;
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    
+    /* height: 15px; */
+    /* width: 15px; */
+  }
+
+  
+  
+
+
+
 @media screen and (max-width:1200px) {
     .portfolio_cards{
         padding: 50px 20px;
