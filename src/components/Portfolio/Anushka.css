@@ -14,13 +14,13 @@
   .bottom-layer{
     height:500px;
     position: relative;
-    top:-25px;
+    top:-40px;
   }
   
   .cars-disp{
     position: relative;
     height:500px;
-    top:-30px;
+    top:-90px;
     background-position: center;
   }
 
@@ -29,9 +29,10 @@
   .anu-head{
     color:white;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     position: relative;
-    top:60px;
+    font-weight: 700;
+    top:70px;
   }
 
   @keyframes scroll {
