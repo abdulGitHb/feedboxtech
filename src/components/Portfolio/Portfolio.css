@@ -1,13 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    /* cursor: none; */
-    /* cursor: none; */
-    /* background-color: #333; */
 }
-.cursorDiv {
-    /* cursor: none; */
-}
+
 .p-container{
     /* padding-top: 50px; */
     /* width: 100%; */
@@ -218,11 +213,7 @@
         height: 500px;
     }
     
-    .section_heading{
-        text-align: center;
-        position: relative;
-        left:-10px;
-    }
+ 
 
     .portfolio_subHeading{
         justify-content: center;

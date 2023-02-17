@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Contact.css";
+import "./ContactFullPage.css";
 // import { Link } from "react-router-dom";
 
 import { BsTelephoneOutbound } from "react-icons/bs";

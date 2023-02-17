@@ -1,6 +1,6 @@
 import React from 'react'
 import About from './components/About/About';
-import Contact from './components/Contact/Contact';
+import Contact from './components/Contact/ContactHome';
 import Landing from './components/Landing-page/landing';
 import Services from './components/Services/Services';
 import ClientShowCase from './components/ClientShowCase/ClientShowCase';

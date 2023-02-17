@@ -1,14 +1,10 @@
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom';
 import HomeComp from '../HomeComp';
-
-
 // import NewAbout from './AboutUsFullPage/newAbout';
 import AboutUsPage1 from './AboutUsFullPage/aboutUsPage1';
-import Contact from './Contact/Contact';
+// import Contact from './Contact/Contact';
 import ContactFullPage from './Contact/ContactFullPage';
-
-
 import PortfolioAll from './Portfolio/PortfolioAll';
 import ServiceAppDev from './ServiceFullPage/ServiceAppDev';
 import ServicesWebDev from './ServiceFullPage/ServicesWebDev';
@@ -31,9 +27,9 @@ function AnimatedRoutes() {
           <Route path='/services/webdev' element={<ServicesWebDev />} />
           <Route path='/services/wordpressdev' element={<ServicesWordpressDev />} />
           <Route path='/Portfolio' element={<PortfolioAll />} />
-          <Route path='/contact' element={<Contact />} />
+          {/* <Route path='/contact' element={<Contact />} /> */}
           <Route path='/ourstory' element={<OurStory />} />
-          <Route path='/contactus' element={<ContactFullPage/>}/>
+          <Route path='/contact' element={<ContactFullPage/>}/>
         </Routes>
     </AnimatePresence>
   )

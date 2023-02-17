@@ -1,5 +1,5 @@
 
-  .contact_home_container{
+  /* .contact_home_container{
     padding-bottom: 10px;
     background-color: #06283d;
     color: white;
@@ -8,24 +8,17 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    /* gap: 5rem; */
     flex-wrap: wrap;
-    /* overflow-x: hidden; */
     overflow: hidden;
     position: relative;
     z-index: 100;
     width: 100vw;
     height: 90vh;
-    /* background-color: #06283d; */
-    /* padding-bottom: 100px; */
-  }
+  } */
   .adarsh-contactContainer {
-   
-    /* background-color: #06283d; */
+  
     background-color: white;
     margin-top: -8.4rem;
-    /* margin-bottom: 10rem; */
-
     z-index: 0;
     padding-bottom: 45rem;
     height: 60vh;
