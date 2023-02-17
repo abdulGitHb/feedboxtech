@@ -1,5 +1,3 @@
-import React from "react";
-
 
 import Centaurus from '../../image/centaurus.png'
 import FuteServices from '../../image/futeServices.png'
@@ -240,32 +238,7 @@ export default function Panorma() {
 
         <div className="Appss pano_mobile_view">
 
-        <Swiper
-         class="swiper-wrapper"
-         // install Swiper modules
-         modules={[Navigation, Pagination, Scrollbar, Autoplay, EffectCoverflow]}
-         spaceBetween={130}
-         centeredSlides={true}
-         slidesPerView={4}
-         effect="coverflow"
-         coverflowEffect={{
-           rotate: 20,
-           stretch: 0,
-           depth: 300,
-           modifier: 1,
-           slideShadows: false,
-         }}
-
-         onSwiper={(swiper) => console.log(swiper)}
-         onSlideChange={() => console.log('slide change')}
-         loop={true}
-         autoplay={{
-           delay: 2000,
-           disableOnInteraction: false,
-           reverseDirection: true
-         }}
-         className="bottom-layer slide-track anu-carosel-hld1 part1"
-
+     
         <h2 className="anu-head">Portfolio</h2>
           <Swiper
           style={{height:'300px',position:'relative',top:'10px'}}

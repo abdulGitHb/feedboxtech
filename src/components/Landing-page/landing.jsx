@@ -28,10 +28,9 @@ export default function Landing() {
         <div className="hero_home_content">
           <Bubbles />
 
-    return (
-        <>
 
-        <section className='hero_container' id="hero-home">
+
+        {/* <section className='hero_container' id="hero-home"> */}
             
             <div className="hero_home_video_hld">
                 <Link to="contact" spy={true} smooth={true}>
@@ -76,7 +75,7 @@ export default function Landing() {
                <a href="https://www.instagram.com/teamfeedbox/" target="_blank"> <span className='instagram hero_home_social_icon'><FaInstagramSquare  size={25} /></span></a>
                <a href="https://www.facebook.com/feedbox.online" target="_blank"><span className='facebook hero_home_social_icon'><ImFacebook size={25} /></span></a> 
             </div>
-        </section>
+        
 
         <div className="hero_home_social mobile_view_hero">
           <a
@@ -106,6 +105,8 @@ export default function Landing() {
             </span>
           </a>
         </div>
+      {/* </section> */}
+      </div>
       </section>
     </>
   );
