@@ -21,59 +21,58 @@ function ServicesWebDev() {
 
   return (
     <>
-    <div style={{"backgroundColor":'black'}} className='top-main-container'
-    
-    // initial={{x:lrSwipe=='Swipeleft'?-300:300}}
-    // animate={{ x: 0 }}
-    // exit={{
-    //   delay: 0.5,
-    //   x: { duration: 1 },
-    //   default: { ease: "linear" }
-    // }}
-    >
+    <div className='outer-div-main-cont'>
      
       <div className="about-top-main">
           <div className="heading-about-us">
             <h1>Services</h1>
           </div>
+          <div className="img-div">
 
-          <motion.div className="img-div"
-          initial={{x:lrSwipe=='Swipeleft'?-300:300}}
-          animate={{ x: 0 }}
-          exit={{
-          delay: 0.5,
-          x: { duration: 1 },
-          default: { ease: "linear" }
-          }}>
-            <img src={img1} alt="" className="img-top-2 side-img" />
-            <img src={img2} alt="" className="img-web-selected" />
-            <img src={wpDev2} alt="" className="img-non-selected side-img" />
-          </motion.div>
+            <div className="linked-images id-scale-up img-dev-wp">
+              <Link to='/services/appdev' state={{swipe:"Swipeleft"}}>
+                <img src={img1} alt=""  className='img-wpdev-new'/>
+              </Link>
+            </div>
+
+            <div className="linked-images img-dev-selected">
+              <Link to='/services/webdev'>
+                <img src={img2} alt="" className="img-web-selected" />
+              </Link>
+            </div>
+
+            <div className="linked-images id-scale-up img-dev-wp">
+              <Link to='/services/wordpressdev'>
+                <img src={wpDev2} alt="" className="img-web-dev" />
+              </Link>
+            </div>
+          </div>
       </div>
       <div className="lower-nav">
       
-        <div className='sub-service '><Link className='link' to='/services/appdev' state={{swipe:"Swipeleft"}}><h4>App</h4><h4> Development</h4></Link></div>
+        <div className='sub-service mobile-hidden'><Link className='link-not' to='/services/appdev' state={{swipe:"Swipeleft"}}><h4>App</h4><h4> Development</h4></Link></div>
         <div className='sub-service div-selected'><Link className='link-select' to='/services/webdev' state={{swipe:"Swipeleft"}}><h4>Web</h4><h4> Development</h4></Link></div>
-        <div className='sub-service'><Link className='link' to='/services/wordpressdev' state={{swipe:"Swiperight"}}><h4>Wordpress</h4><h4> Development</h4></Link></div> 
+        <div className='sub-service mobile-hidden'><Link className='link-not' to='/services/wordpressdev' state={{swipe:"Swiperight"}}><h4>Wordpress</h4><h4> Development</h4></Link></div> 
       </div>
 
       {/* <div className='service-container-main'>
         <ServiceAppDev/>
       </div> */}
       <div className='horizontalLine'>
-        {/* <Link className='link' to='/services/appdev' state={{swipe:"Swipeleft"}}>
+        <Link className='link-not btn-web' to='/services/appdev' state={{swipe:"Swipeleft"}}>
           <div className="arrow-btn">
             <BsArrowLeft size={28}/>
           </div>
-        </Link> */}
-        <div className="line-inner">
-          <hr />
-        </div>
-        {/* <Link className='link' to='/services/wordpressdev' state={{swipe:"Swiperight"}}>
-          <div className="arrow-btn">
-            <BsArrowRight size={28}/>
+        </Link>
+          <div className="line-inner">
+            <hr />
           </div>
-        </Link> */}
+
+        <Link className='link-not btn-web' to='/services/wordpressdev' state={{swipe:"Swiperight"}}>
+        <div className="arrow-btn">
+        <BsArrowRight size={28}/>
+        </div>
+        </Link>
       </div>
       
     <div className='main-container'>
@@ -128,8 +127,8 @@ function ServicesWebDev() {
         </div> */}
         
     </div>
-    </div>
         <Footer/>
+    </div>
     
     </>
   )
