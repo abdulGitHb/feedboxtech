@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import './PortfolioCard.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Atropos from 'atropos/react';
 
 export default function Card({image, url, title, aos }) {
 
@@ -13,6 +14,8 @@ export default function Card({image, url, title, aos }) {
     // },[])
 
     return (
+        <>
+        <Atropos>
         <div data-aos={aos} className="boxes" >
             <a href={url} target="_blank">
                 <div className="b-shadow"></div>
@@ -22,5 +25,7 @@ export default function Card({image, url, title, aos }) {
                 </div>
             </a>
         </div>
+        </Atropos>
+        </>
     )
 }
