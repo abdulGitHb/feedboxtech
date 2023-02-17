@@ -11,6 +11,7 @@ import {BsArrowLeft, BsArrowRight} from 'react-icons/bs'
 import { Link, useLocation } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 import {motion} from 'framer-motion';
+import Whatsapp from '../Whatsapp/Whatsapp';
 
 function ServicesWebDev() {
   
@@ -128,6 +129,7 @@ function ServicesWebDev() {
         </div>
         
     </div>
+    <Whatsapp />
         <Footer/>
     </div>
     

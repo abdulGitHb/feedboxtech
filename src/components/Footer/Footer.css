@@ -112,6 +112,10 @@
     cursor: pointer;
     color: #0090ee;
 }
+.footer-icon-link:hover {
+    cursor: pointer;
+    color: #0090ee;
+}
 
 @media screen and (max-width: 1300px){
     .footerUp{
