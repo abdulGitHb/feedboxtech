@@ -89,11 +89,12 @@ export default function Contact() {
 
   return (
     <div className="contact_home_container">
-    <div className="adarsh-container">
+    {/* <div className="adarsh-container"> */}
       <div className="adarsh-form">
         <div className="adarsh-left">
           <div className="adarsh-top">
-            <h1 className="adarsh-heading">Let's Work Together </h1>
+            <h1 className="adarsh-heading">Let's Work<br></br></h1> 
+            <h1  className="adarsh-heading-next">Together </h1>
           </div>
 
 
@@ -104,11 +105,11 @@ export default function Contact() {
 
                 allowtransparency="true"
 
-
+          title="map"
               ></iframe>
             </div>
             <a href="https://www.google.com/maps/place/FeedBox/@22.727735,75.892535,15z/data=!4m6!3m5!1s0x3962fd301f220449:0xb2c1e3746c297023!8m2!3d22.7277353!4d75.8925348!16s%2Fg%2F11dxb45jt2?hl=en"
-            target="_blank">
+            target="_blank" rel="noreferrer">
             <div className="adarsh-bottom2">
 
             </div>
@@ -118,13 +119,14 @@ export default function Contact() {
 
         </div>
         <div className="adarsh-right">
-          <input className="adarsh-text" type="text" placeholder="Your Name" autoComplete="new-password" />
-          <input className="adarsh-text" type="email" placeholder="Your e-Mail" autoComplete="new-password"/>
-          <input type='tel' placeholder="Phone" className="adarsh-text" autoComplete="new-password" />
+          <div className="adarsh-form-border">
+          <input className="adarsh-text" type="text" placeholder="Name" autoComplete="new-password" />
+          <input className="adarsh-text" type="email" placeholder=" E-Mail" autoComplete="new-password"/>
+          <input type='tel' placeholder="Phone" className="adarsh-text" autoComplete="new-password"  maxlength="10" pattern="\d{10}" />
           <input
             className="adarsh-text"
             type="text"
-            placeholder="Your message to us"
+            placeholder="Message"
             autoComplete="new-password"
           />
           <br />
@@ -134,16 +136,14 @@ export default function Contact() {
             {/* <input type="checkbox" className="adarsh-text adarsh-check" />Message */}
 
           </span>
-          <div className="adarsh-imageDiv">
             <button type="submit" className="adarsh-btnn">
-              Send <spam></spam>
+              Submit 
             </button>
-
 
           </div>
         </div>
       </div>
-    </div>
+    {/* </div> */}
     </div>
   )
 }
