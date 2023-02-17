@@ -24,15 +24,7 @@ function ServicesWordpressDev() {
 
   return (
     <>
-    <div style={{"backgroundColor":'black'}}
-    // initial={{x:lrSwipe=='Swipeleft'?-300:300}}
-    // animate={{ x: 0 }}
-    // exit={{
-    //   delay: 0.5,
-    //   x: { duration: 1 },
-    //   default: { ease: "linear" }
-    // }}
-    >
+    <div style={{"backgroundColor":'black'}}>
      
      
       <div className="about-top-main">
@@ -40,18 +32,11 @@ function ServicesWordpressDev() {
             <h1>Services</h1>
           </div>
 
-          <motion.div className="img-div"
-          initial={{x:lrSwipe=='Swipeleft'?-300:300}}
-          animate={{ x: 0 }}
-          exit={{
-          delay: 0.5,
-          x: { duration: 1 },
-          default: { ease: "linear" }
-          }}>
-            <img src={img2} alt="" className="img-top-3" />
+          <div className="img-div">
+            <img src={img2} alt="" className="img-top-3 side-img" />
             <img src={wpDev2} alt="" className="img-wp-selected" />
-            <img src={img1} alt="" className="img-top-2" />
-          </motion.div>
+            <img src={img1} alt="" className="img-top-2 side-img" />
+          </div>
       </div>
       <div className="lower-nav">
       
@@ -64,19 +49,19 @@ function ServicesWordpressDev() {
         <ServiceAppDev/>
       </div> */}
       <div className='horizontalLine'>
-        <Link className='link' to='/services/webdev' state={{swipe:"Swipeleft"}}>
+        {/* <Link className='link' to='/services/webdev' state={{swipe:"Swipeleft"}}>
           <div className="arrow-btn">
             <BsArrowLeft size={28}/>
           </div>
         </Link>
-        <div className="line-inner">
-          <hr />
-        </div>
         <Link className='link' to='/services/appdev' state={{swipe:"Swiperight"}}>
-          <div className="arrow-btn">
-            <BsArrowRight size={28}/>
-          </div>
-        </Link>
+        <div className="arrow-btn">
+        <BsArrowRight size={28}/>
+        </div>
+      </Link> */}
+      <div className="line-inner">
+        <hr />
+      </div>
       </div>
       
     <div className='main-container'>

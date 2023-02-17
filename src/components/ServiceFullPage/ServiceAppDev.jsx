@@ -31,44 +31,40 @@ function ServiceAppDev() {
             <h1>Services</h1>
           </div>
 
-          <motion.div className="img-div"
-          initial={{x:lrSwipe=='Swipeleft'?-300:300}}
-          animate={{ x: 0 }}
-          exit={{
-          delay: 0.5,
-          x: { duration: 1 },
-          default: { ease: "linear" }
-          }}
-          >
+          <div className="img-div">
           
-            <img src={wpDev2} alt="" className="img-top-1" />
+          {/* <a href='/services/wordpressdev' state={{swipe:"Swipeleft"}}>
+          
+          </a> */}
+            <img src={wpDev2} alt="" className="img-top-1 side-img" />
             <img src={img1} alt="" className="img-app-selected" />
-            <img src={img2} alt="" className="img-top-3" />
-          </motion.div>
+            <img src={img2} alt="" className="img-top-3 side-img" />
+          </div>
       </div>
 
       <div className="lower-nav">
-        <div className='sub-service'><Link className='link' to='/services/wordpressdev' state={{swipe:"Swipeleft"}}><h4>Wordpress</h4><h4> Development</h4></Link></div> 
+        {/* <div className='sub-service'><Link className='link-not' to='/services/wordpressdev' state={{swipe:"Swipeleft"}}>WordPress Development</Link></div>  */}
         <div className='sub-service div-selected'><Link className='link-select' to='/services/appdev' state={{swipe:"Swipeleft"}}><h4>App</h4><h4> Development</h4></Link></div>
-        <div className='sub-service'><Link className='link' to='/services/webdev' state={{swipe:"Swiperight"}}><h4>Web</h4><h4> Development</h4></Link></div>
+        {/* <div className='sub-service'><Link className='link-not' to='/services/webdev' state={{swipe:"Swiperight"}}><h4>Web</h4><h4> Development</h4></Link></div> */}
       </div>
 
       {/* <div className='service-container-main'>
         <ServiceAppDev/>
       </div> */}
       <div className='horizontalLine'>
-        <Link className='link' to='/services/wordpressdev' state={{swipe:"Swipeleft"}}>
+        <Link className='link-not' to='/services/wordpressdev' state={{swipe:"Swipeleft"}}>
           <div className="arrow-btn">
             <BsArrowLeft size={28}/>
           </div>
         </Link>
-        <div className="line-inner">
-          <hr />
-        </div>
-        <Link className='link' to='/services/webdev' state={{swipe:"Swiperight"}}>
-          <div className="arrow-btn">
-            <BsArrowRight size={28}/>
+          <div className="line-inner">
+            <hr />
           </div>
+
+        <Link className='link-not' to='/services/webdev' state={{swipe:"Swiperight"}}>
+        <div className="arrow-btn">
+        <BsArrowRight size={28}/>
+        </div>
         </Link>
       </div>
       

@@ -15,6 +15,13 @@
     justify-content: space-between;
     /* background-color: aqua; */
 }
+.side-img:hover{
+    scale: 1.25;
+    opacity: 1;
+    animation: ease-in-out;
+    animation-delay: 1000ms;
+    cursor: pointer;
+}
 .horizontalLine{
     width: 80%;
     margin-top: -20px;
@@ -135,7 +142,9 @@
     opacity: 0.6;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .link:hover{
@@ -151,7 +160,7 @@
     text-align: center;
     /* background-color: #0090ee; */
     color: white;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     width: 35%;
 }
 
@@ -196,7 +205,8 @@
 .page-content{
     width: 80%;
     /* height: 40vh; */
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     /* background-color: bisque; */
@@ -302,9 +312,6 @@
     }
     .sub-service{
         width: 25%;
-        padding: 5px;
-        padding-top: 10px;
-        padding-bottom: 10px;
     }
     .sub-service h4{
         font-size: 0.6rem;
@@ -335,6 +342,22 @@
         margin-left: auto;
         margin-right: auto;
         /* background-color: aqua; */
+    }
+    .link{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .link-not{
+        text-decoration: none;
+        color: white;
+        background-color: #0990ee;
+        border-radius: 50px;
+        padding: 2px;
+        font-size: 16px;
+
     }
     .text-div{
         width: 95%;
@@ -372,11 +395,18 @@
         width: 90%;
         border-radius: 40px;
     }
-    .sub-service{
+    /* .sub-service{
         width: 25%;
         padding: 5px;
         padding-top: 10px;
         padding-bottom: 10px;
+    } */
+
+    .sub-service{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .sub-service h4{
         font-size: 0.8rem;
@@ -389,6 +419,13 @@
     .div-selected h4{
         font-size: 1.4rem;
         text-align: center;
+    }
+    .link{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
     }
     .horizontalLine{
         width: 90%;

@@ -45,9 +45,9 @@ function ServicesWebDev() {
           x: { duration: 1 },
           default: { ease: "linear" }
           }}>
-            <img src={img1} alt="" className="img-top-2" />
+            <img src={img1} alt="" className="img-top-2 side-img" />
             <img src={img2} alt="" className="img-web-selected" />
-            <img src={wpDev2} alt="" className="img-non-selected" />
+            <img src={wpDev2} alt="" className="img-non-selected side-img" />
           </motion.div>
       </div>
       <div className="lower-nav">
@@ -61,19 +61,19 @@ function ServicesWebDev() {
         <ServiceAppDev/>
       </div> */}
       <div className='horizontalLine'>
-        <Link className='link' to='/services/appdev' state={{swipe:"Swipeleft"}}>
+        {/* <Link className='link' to='/services/appdev' state={{swipe:"Swipeleft"}}>
           <div className="arrow-btn">
             <BsArrowLeft size={28}/>
           </div>
-        </Link>
+        </Link> */}
         <div className="line-inner">
           <hr />
         </div>
-        <Link className='link' to='/services/wordpressdev' state={{swipe:"Swiperight"}}>
+        {/* <Link className='link' to='/services/wordpressdev' state={{swipe:"Swiperight"}}>
           <div className="arrow-btn">
             <BsArrowRight size={28}/>
           </div>
-        </Link>
+        </Link> */}
       </div>
       
     <div className='main-container'>

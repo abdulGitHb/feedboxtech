@@ -136,7 +136,7 @@ export default function Contact() {
           </span>
           <div className="adarsh-imageDiv">
             <button type="submit" className="adarsh-btnn">
-              Send <spam></spam>
+              Send
             </button>
 
 
