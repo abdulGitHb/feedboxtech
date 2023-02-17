@@ -263,7 +263,11 @@
     width: 50%;
    }
 }
-
+@media screen and (max-width: 480px){
+    .ourstoryWhatsapp{
+        display: none;
+    }
+}
 @media screen and (max-width:700px) {
     .story-container-hld {
         /* display: flex; */

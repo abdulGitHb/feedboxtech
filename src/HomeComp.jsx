@@ -7,6 +7,7 @@ import ClientShowCase from './components/ClientShowCase/ClientShowCase';
 import Portfolio from './components/Portfolio/Portfolio'
 import Footer from './components/Footer/Footer'
 // import Cursor from './components/Cursor/Cursor';
+import Whatsapp from './components/Whatsapp/Whatsapp';
 
 function HomeComp() {
   return (
@@ -19,6 +20,7 @@ function HomeComp() {
         {/* <Cursor /> */}
         <Contact />
         <Footer/>
+        <Whatsapp />
     </div>
   )
 }

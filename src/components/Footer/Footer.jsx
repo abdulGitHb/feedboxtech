@@ -47,13 +47,13 @@ export default function Footer() {
                                 <RxTriangleRight className="mobile_view" size={30} /><Link to="/services/appdev" >Services</Link>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/services/appdev" >Portfolio</Link>
+                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/Portfolio" >Portfolio</Link>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/services/appdev" >Our Story</Link>
+                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/ourstory" >Our Story</Link>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/services/appdev" >Contact Us</Link>
+                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/contactus" >Contact Us</Link>
                             </div>
                         </div>
                         {/* <div className="index_col footer_services">
@@ -76,13 +76,13 @@ export default function Footer() {
                         <div className="index_col">
                        
                              <div className="index">
-                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/Portfolio">App Development</Link>
+                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/services/appdev">App Development</Link>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/Portfolio">Web Development</Link>
+                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/services/webdev">Web Development</Link>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/contact">Wordpress Development</Link>
+                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/services/wordpressdev">Wordpress Development</Link>
                             </div>
                         </div>
                    </div>
@@ -90,10 +90,10 @@ export default function Footer() {
                 <div className="footer_social_media" data-aos="fade-left">
                     <h3>Social Media</h3>
                     <div className="social_icons">
-                        <Link to="https://www.linkedin.com/company/feedbox-smm/mycompany/" target="_blank"><FiLinkedin size={25} /></Link>
-                        <Link to="https://twitter.com/teamfeedBox" target="_blank"> <RxTwitterLogo size={25} /></Link>
-                        <Link to="https://www.instagram.com/teamfeedbox/" target="_blank">   <IoLogoInstagram size={25} /></Link>
-                        <Link to="https://www.facebook.com/feedbox.online" target="_blank"><FiFacebook size={25} /></Link>
+                        <Link  className="footer-icon-link" to="https://www.linkedin.com/company/feedbox-smm/mycompany/" target="_blank"><FiLinkedin size={25} /></Link>
+                        <Link  className="footer-icon-link" to="https://twitter.com/teamfeedBox" target="_blank"> <RxTwitterLogo size={25} /></Link>
+                        <Link  className="footer-icon-link" to="https://www.instagram.com/teamfeedbox/" target="_blank">   <IoLogoInstagram size={25} /></Link>
+                        <Link  className="footer-icon-link" to="https://www.facebook.com/feedbox.online" target="_blank"><FiFacebook size={25} /></Link>
                     </div>
                 </div>
             </div>

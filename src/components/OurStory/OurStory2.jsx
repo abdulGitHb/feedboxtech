@@ -9,6 +9,7 @@ import './OurStory2.css'
 import $ from 'jquery'
 import { IoIosArrowForward } from 'react-icons/io'
 import { IoIosArrowBack } from 'react-icons/io'
+import Whatsapp from '../Whatsapp/Whatsapp'
 
 var page = 1;
 
@@ -272,6 +273,9 @@ const OurStory = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='ourstoryWhatsapp'>
+                <Whatsapp />
             </div>
 
             {/* <Footer /> */}

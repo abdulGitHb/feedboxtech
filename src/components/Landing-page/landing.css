@@ -110,7 +110,7 @@
     border: 1px solid #fff;
     border-radius: 35px;
     transition: all .2s;
-    cursor: none;
+    cursor: pointer;
     overflow: hidden;
     transition: all .2s ease-in-out;
   }
@@ -166,7 +166,7 @@
   align-items: center;
 }
 .hero_home_social_icon{
-  cursor: none;
+  cursor: pointer;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -436,10 +436,29 @@
    }
    .hero_home_contact_btn{
     display: none;
+  .hero_container{
+   /* height: 600px; */
+   /* border: 2px solid red; */
+  }
+   .typewriter{
+    font-size: 35px;
+   }
+   .hero_home_content_desc{
+     /* border: 2px solid white; */
+     max-width:298px;
+     font-size: 15px;
+   }
+   .hero_home_contact_btn{
+     margin-top: 10px;
+     padding: 2px 20px;
+     border-radius: 1.5rem;
+     font-size: 18px;
+     /* gap: ; */
     }
-    /* .hero_container{
-     height: 600px;
-    } */
+    .contactus-homepage {
+      /* height: 60px; */
+
+    }
  }
 
  /* -----------------bubble media query------------------ */
