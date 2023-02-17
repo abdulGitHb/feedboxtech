@@ -9,6 +9,9 @@
     background-color: #0628;
     color: #fff;
   }
+  .btn-mobile-new{
+    display: none;
+  }
    
   .hero_container {
    display: flex;
@@ -22,8 +25,8 @@
    position: fixed;
    z-index: 1;
    min-height: 668px;
-   /* background-color: #141619; */
-   background-image: linear-gradient(to top, #000000, #151015, #191c26, #132a36, #06383d);
+   background-color: #141619;
+   background-image: linear-gradient(to top, #141414, #141414, #141414, #132A36, #06283D);
    padding: 0;
    overflow: hidden;
 
@@ -91,7 +94,7 @@
   }
 
   .hero_home_contact_btn{
-    margin-top: 50px;
+    margin-top: 60px;
     /* width: 10vw; */
     max-width: 200px;
     display: flex;
@@ -404,6 +407,35 @@
   }
  }
  @media screen and (max-width:480px) {
+  .tw-top{
+    margin-top: -20px;
+  }
+   .typewriter{
+    font-size: 35px;
+   }
+   .btn-social-icon{
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+   }
+   .btn-mobile-new{
+    display: block;
+    border: 1px solid white;
+    width: 150px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 40px;
+   }
+   .hero_home_content_desc{
+     max-width:265px;
+     margin-top: 15px;
+     font-size: 14px;
+   }
+   .hero_home_contact_btn{
+    display: none;
   .hero_container{
    /* height: 600px; */
    /* border: 2px solid red; */
@@ -429,8 +461,8 @@
     }
  }
 
+ /* -----------------bubble media query------------------ */
  @media (max-width: 480px){
-
   .inBubble{
     position: absolute;
     width: 200px;
