@@ -7,6 +7,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import service from '../ServiceFullPage/ServicesFullPage'
 import { Link } from "react-router-dom";
+import Atropos from 'atropos/react';
+import 'atropos/css'
 
 export default function ({ aos,icon, desc, title, linkTo }) {
     // useEffect(() => {
@@ -22,6 +24,7 @@ export default function ({ aos,icon, desc, title, linkTo }) {
             </div>
             {/* <div className="shadow"><img src={g_shadow} alt="" /></div> */}
 
+           <Atropos>
             <div className="card_content">
 
                 <h1>
@@ -37,6 +40,7 @@ export default function ({ aos,icon, desc, title, linkTo }) {
                 
                 </Link>
             </div>
+            </Atropos>
             {/* <div className="sc-btn">
                 <a href="#"><AiOutlineArrowRight color={"white"} size={20}/></a>
                 </div> */}

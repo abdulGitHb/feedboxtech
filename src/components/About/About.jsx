@@ -15,7 +15,7 @@ export default function About() {
 
     useEffect(() => {
         AOS.init({
-            duration: 1000,
+            duration: 800,
             offset: 0,
             easing: "ease-in-out-back",
             delay: 50,
@@ -46,13 +46,13 @@ export default function About() {
     };
 
     return (
-        <div className="about-container-hld" style={{ paddingTop: '750px' }}>
+        <div className="about-container-hld" style={{ paddingTop: '600px' }}>
             <div className="a-container" id="about" >
                 <ParallaxProvider>
                 <Parallax 
                 scale={[0.5,1.3]}
                 >
-                <h2 className="section_heading"
+                <h2 className="section_heading about_heading"
                 >About Us</h2>
                 {/* <div data-aos="fade-up" className="a_content"> */}
 
