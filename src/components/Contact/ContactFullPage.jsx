@@ -10,6 +10,7 @@ import { BsFacebook } from "react-icons/bs";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import Footer from "../Footer/Footer";
+import Whatsapp from "../Whatsapp/Whatsapp";
 
 
 export default function Contact() {
@@ -144,6 +145,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Whatsapp />
         <Footer/>
         </>
     )

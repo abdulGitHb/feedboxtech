@@ -120,10 +120,12 @@ function App() {
         <img alt="Cursor rocket" id="pointer" src={Rocket} />
       </div> */}
 
+
+
       <Router basename='/'>
         <ScrollToTop />
         <AnimatedRoutes/>
-        <Whatsapp />
+        {/* <Whatsapp /> */}
       </Router>
     </div>
 

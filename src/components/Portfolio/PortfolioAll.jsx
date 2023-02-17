@@ -54,6 +54,7 @@ import Card from '../PortfolioCard/PortfolioCard'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from '../Footer/Footer'
+import Whatsapp from '../Whatsapp/Whatsapp'
 
 
 export default function PortfolioAll() {
@@ -157,6 +158,7 @@ export default function PortfolioAll() {
                 </div>
 
             </div>
+            <Whatsapp />
             <Footer />
         </>
 
