@@ -1,16 +1,22 @@
 
 import Centaurus from '../../image/centaurus.png'
 import FuteServices from '../../image/futeServices.png'
-import SketchMyPlot from '../../image/sketchMyPlot.png'
-import TintedTales from '../../image/tintedTales.png'
-import IndependenceRock from '../../image/independenceRock.png'
 import Qodeleaf from '../../image/qodeleaf.png'
-import Tenet from '../../image/tenet.png'
-import Runo from '../../image/runo.png'
-import OnFinance from '../../image/onFinance.png'
-import MakeBelieve from '../../image/makeBelieve.png'
-import Gallant_jwellery from '../../image/gallent_jwellery.png'
-import Aryan from '../../image/aryan.png'
+import GenericSalon from '../../image/Generic Salon.png'
+import RachuStore from '../../image/Rachu Store.png'
+import Tedco from '../../image/Tedco.png'
+import Masterbrain from '../../image/Masterbrain.png'
+import Rolzone from '../../image/Rolzone.png'
+import GrowingRoots from '../../image/GrowingRoots.png'
+// import SketchMyPlot from '../../image/sketchMyPlot.png'
+// import TintedTales from '../../image/tintedTales.png'
+// import IndependenceRock from '../../image/independenceRock.png'
+// import Tenet from '../../image/tenet.png'
+// import Runo from '../../image/runo.png'
+// import OnFinance from '../../image/onFinance.png'
+// import MakeBelieve from '../../image/makeBelieve.png'
+// import Gallant_jwellery from '../../image/gallent_jwellery.png'
+// import Aryan from '../../image/aryan.png'
 
 import NavBarResp from '../Navbar2/NavBarResp';
 import Footer from '../Footer/Footer';
@@ -36,7 +42,7 @@ export default function Panorma() {
       <div className="Appss pano_web_view">
         <h2 className="anu-head">Portfolio</h2>
           <Swiper
-          style={{height:'300px',position:'relative',top:'10px'}}
+          style={{height:'300px',position:'relative',top:'-10px'}}
           class="swiper-wrapper"
           modules={[Navigation, Pagination, Scrollbar, Autoplay, EffectCoverflow, EffectCreative]}
           // spaceBetween={130}
@@ -63,14 +69,14 @@ export default function Panorma() {
         
           className="cars-disp slide-track anu-carosel-hld1 part1"
         >
-          <SwiperSlide id="anuSlide" >
+          <SwiperSlide  id="anuSlide" >
             <div className='item1'>
               <div className='bgdiv'>
                 <div className='hidden-content'>
                   <div className='heading-hide'>Centauraus</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={Centaurus} alt="" /></a>
+                  <a href="https://webcode.codezesk.com/centaurus/" target="_blank" ><img src={Centaurus} alt="" /></a>
                 </div>
               </div>
             </div>
@@ -83,7 +89,7 @@ export default function Panorma() {
                   <div className='heading-hide'>FuteServices</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={FuteServices} alt="" /></a>
+                  <a href="https://www.futeservices.com/" target="_blank" ><img src={FuteServices} alt="" /></a>
                 </div>
               </div>
             </div>
@@ -94,10 +100,10 @@ export default function Panorma() {
 
               <div className='bgdiv'>
                 <div className='hidden-content'>
-                  <div className='heading-hide'>SketchMyPlot</div>
+                  <div className='heading-hide'>Qodeleaf</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={SketchMyPlot} alt="" /></a>
+                  <a href="https://qodeleaf.com/" target="_blank" ><img src={Qodeleaf} alt="" /></a>
                 </div>
 
               </div>
@@ -107,10 +113,10 @@ export default function Panorma() {
             <div className='item1'>
               <div className='bgdiv'>
                 <div className='hidden-content'>
-                  <div className='heading-hide'>TintedTales</div>
+                  <div className='heading-hide'>Generic Salon</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={TintedTales} alt="" /></a>
+                  <a href="https://salonfurniturehub.com/" target="_blank" ><img src={GenericSalon} alt="" /></a>
                 </div>
 
               </div>
@@ -122,10 +128,10 @@ export default function Panorma() {
               <div className='item1'>
                 <div className='bgdiv'>
                   <div className='hidden-content'>
-                    <div className='heading-hide'>IndependenceRock</div>
+                    <div className='heading-hide'>Rachu Store</div>
                   </div>
                   <div className='immage'>
-                    <a href="https://sketchmyplot.com/" target="_blank" ><img src={IndependenceRock} alt="" /></a>
+                    <a href="https://therachustore.com/" target="_blank" ><img src={RachuStore} alt="" /></a>
                   </div>
 
                 </div>
@@ -137,10 +143,10 @@ export default function Panorma() {
             <div className='item1'>
               <div className='bgdiv'>
                 <div className='hidden-content'>
-                  <div className='heading-hide'>Qodeleaf</div>
+                  <div className='heading-hide'>Tedco</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={Qodeleaf} alt="" /></a>
+                  <a href="https://tedcoedu.com/" target="_blank" ><img src={Tedco} alt="" /></a>
                 </div>
               </div>
             </div>
@@ -150,10 +156,10 @@ export default function Panorma() {
             <div className='item1'>
               <div className='bgdiv'>
                 <div className='hidden-content'>
-                  <div className='heading-hide'>OnFinance</div>
+                  <div className='heading-hide'>Masterbrains</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={OnFinance} alt="" />
+                  <a href="https://masterbrains.co.in/" target="_blank" ><img src={Masterbrain} alt="" />
                   </a>          </div>
 
               </div>
@@ -166,10 +172,10 @@ export default function Panorma() {
 
               <div className='bgdiv'>
                 <div className='hidden-content'>
-                  <div className='heading-hide'>Runo</div>
+                  <div className='heading-hide'>Rolzone</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={Runo} alt="" />
+                  <a href="https://rolzone.com/" target="_blank" ><img src={Rolzone} alt="" />
                   </a>         </div>
 
               </div>
@@ -181,10 +187,10 @@ export default function Panorma() {
 
               <div className='bgdiv'>
                 <div className='hidden-content'>
-                  <div className='heading-hide'>Aryan</div>
+                  <div className='heading-hide'>Growing Roots</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={Aryan} alt="" />
+                  <a href="https://thegrowingrootsenjoyparenting.com/" target="_blank" ><img src={GrowingRoots} alt="" />
                   </a>        </div>
 
               </div>
@@ -192,7 +198,7 @@ export default function Panorma() {
           </SwiperSlide>
 
 
-          <SwiperSlide  id="anuSlide">
+          {/* <SwiperSlide  id="anuSlide">
             <div className='item1'>
               <div className='bgdiv'>
                 <div className='hidden-content'>
@@ -204,9 +210,9 @@ export default function Panorma() {
 
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
-          <SwiperSlide  id="anuSlide">
+          {/* <SwiperSlide  id="anuSlide">
             <div className='item1'>
               <div className='bgdiv'>
                 <div className='hidden-content'>
@@ -232,7 +238,7 @@ export default function Panorma() {
 
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
         </div>
 
@@ -274,7 +280,7 @@ export default function Panorma() {
                   <div className='heading-hide'>Centauraus</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={Centaurus} alt="" /></a>
+                  <a href="https://webcode.codezesk.com/centaurus/" target="_blank" ><img src={Centaurus} alt="" /></a>
                 </div>
               </div>
             </div>
@@ -287,7 +293,7 @@ export default function Panorma() {
                   <div className='heading-hide'>FuteServices</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={FuteServices} alt="" /></a>
+                  <a href="https://www.futeservices.com/" target="_blank" ><img src={FuteServices} alt="" /></a>
                 </div>
               </div>
             </div>
@@ -298,23 +304,23 @@ export default function Panorma() {
 
               <div className='bgdiv'>
                 <div className='hidden-content'>
-                  <div className='heading-hide'>SketchMyPlot</div>
+                  <div className='heading-hide'>QodeLeaf</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={SketchMyPlot} alt="" /></a>
+                  <a href="https://qodeleaf.com/" target="_blank" ><img src={Qodeleaf} alt="" /></a>
                 </div>
 
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide   id="anuSlide" style={{ width: '100px' }}>
+          <SwiperSlide  id="anuSlide" style={{ width: '100px' }}>
             <div className='item1'>
               <div className='bgdiv'>
                 <div className='hidden-content'>
-                  <div className='heading-hide'>TintedTales</div>
+                  <div className='heading-hide'>GenericSalon</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={TintedTales} alt="" /></a>
+                  <a href="https://salonfurniturehub.com/" target="_blank" ><img src={GenericSalon} alt="" /></a>
                 </div>
 
               </div>
@@ -326,10 +332,10 @@ export default function Panorma() {
               <div className='item1'>
                 <div className='bgdiv'>
                   <div className='hidden-content'>
-                    <div className='heading-hide'>IndependenceRock</div>
+                    <div className='heading-hide'>RachuStore</div>
                   </div>
                   <div className='immage'>
-                    <a href="https://sketchmyplot.com/" target="_blank" ><img src={IndependenceRock} alt="" /></a>
+                    <a href="https://therachustore.com/" target="_blank" ><img src={RachuStore} alt="" /></a>
                   </div>
 
                 </div>
@@ -341,10 +347,10 @@ export default function Panorma() {
             <div className='item1'>
               <div className='bgdiv'>
                 <div className='hidden-content'>
-                  <div className='heading-hide'>Qodeleaf</div>
+                  <div className='heading-hide'>Tedco</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={Qodeleaf} alt="" /></a>
+                  <a href="https://tedcoedu.com/" target="_blank" ><img src={Tedco} alt="" /></a>
                 </div>
               </div>
             </div>
@@ -354,10 +360,10 @@ export default function Panorma() {
             <div className='item1'>
               <div className='bgdiv'>
                 <div className='hidden-content'>
-                  <div className='heading-hide'>OnFinance</div>
+                  <div className='heading-hide'>Masterbrain</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={OnFinance} alt="" />
+                  <a href="https://masterbrains.co.in/" target="_blank" ><img src={Masterbrain} alt="" />
                   </a>          </div>
 
               </div>
@@ -370,10 +376,10 @@ export default function Panorma() {
 
               <div className='bgdiv'>
                 <div className='hidden-content'>
-                  <div className='heading-hide'>Runo</div>
+                  <div className='heading-hide'>Rolzone</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={Runo} alt="" />
+                  <a href="https://rolzone.com/" target="_blank" ><img src={Rolzone} alt="" />
                   </a>         </div>
 
               </div>
@@ -385,54 +391,11 @@ export default function Panorma() {
 
               <div className='bgdiv'>
                 <div className='hidden-content'>
-                  <div className='heading-hide'>Aryan</div>
+                  <div className='heading-hide'>GrowingRoots</div>
                 </div>
                 <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={Aryan} alt="" />
+                  <a href="https://thegrowingrootsenjoyparenting.com/" target="_blank" ><img src={GrowingRoots} alt="" />
                   </a>        </div>
-
-              </div>
-            </div>
-          </SwiperSlide>
-
-
-          <SwiperSlide  id="anuSlide">
-            <div className='item1'>
-              <div className='bgdiv'>
-                <div className='hidden-content'>
-                  <div className='heading-hide'>Tenet</div>
-                </div>
-                <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={Tenet} alt="" />
-                  </a>              </div>
-
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide  id="anuSlide">
-            <div className='item1'>
-              <div className='bgdiv'>
-                <div className='hidden-content'>
-                  <div className='heading-hide'>MakeBelieve</div>
-                </div>
-                <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={MakeBelieve} alt="" />
-                  </a>                </div>
-
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide  id="anuSlide">
-            <div className='item1'>
-              <div className='bgdiv'>
-                <div className='hidden-content'>
-                  <div className='heading-hide'>Gallant_jwellery</div>
-                </div>
-                <div className='immage'>
-                  <a href="https://sketchmyplot.com/" target="_blank" ><img src={Gallant_jwellery} alt="" /></a>
-                </div>
 
               </div>
             </div>
