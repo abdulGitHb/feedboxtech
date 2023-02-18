@@ -233,10 +233,18 @@ textarea {
   .adarsh-text::placeholder {
     font-size: 16px;
   }
-  .adarsh-btnn{
-    padding: 4px 25px;
-  }
-  .contact_home_heading::after{
-    width: 3.8em;
-  }
+}
+
+.adarsh-imageDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.adarsh-imageDiv .thank{
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 140px;
+  margin-top: 10px;
+  transition: all 0.2s linear;
 }
