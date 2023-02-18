@@ -1,13 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    /* cursor: none; */
-    /* cursor: none; */
-    /* background-color: #333; */
 }
-.cursorDiv {
-    /* cursor: none; */
-}
+
 .p-container{
     /* padding-top: 50px; */
     /* width: 100%; */
@@ -122,7 +117,9 @@
   }
 
   
-  
+  .portfolio_mobile_view{
+    display: none;
+  } 
 
 
 
@@ -131,21 +128,100 @@
         padding: 50px 20px;
         gap: 1rem;
     }
+
+    
+  .portfolio_mobile_view{
+    display: none;
+  } 
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:540px){
     .c-row1{
         margin: 100px 0px 100px 0px;
         gap: 1.2rem;
     }
     .portfolio_btn{
         font-size: 14px;
-        padding: 2px 10px;
+        padding: 5px 12px;
+        margin-top: 25px;
         border-radius: 5px;
+        /* display: flex; */
     }
     .portfolio_subHeading{
         font-size: 20px;
         padding: 0 10px;
+    }
+
+    .portfolio_web_view{
+        display: none;
+    }
+
+    .portfolio_mobile_view{
+        display: flex;
+        width:375px;
+        /* padding:auto; */
+        padding-left:3px;       
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portfolio_mobile_view img{
+        object-fit: cover;
+        width:100%;
+        height:200px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .mySwiper{
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left:-10px;
+        /* height:500px; */
+
+    }
+  
+    .slide-gap{
+        width:90%;
+        /* height:100px; */
+        margin-left: 20px;
+    }
+
+    .portfolio_subHeading{
+        text-align: center;
+    }
+    
+    .one-slide-img{
+        display:flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .swiper-button-next{
+        color:white;
+        /* background-color: aliceblue; */
+        /* border: 1px solid gray; */
+        /* border-radius: 50%; */
+        position: relative;
+        top:550px;
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        color: white;
+        height: 500px;
+    }
+    
+ 
+
+    .portfolio_subHeading{
+        justify-content: center;
+        width:90%;
+        align-items: center;
+        position: relative;
+        left:-15px;
+        top:-10px;
     }
 }
 

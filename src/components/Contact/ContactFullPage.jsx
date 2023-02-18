@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Contact.css";
+import "./ContactFullPage.css";
 // import { Link } from "react-router-dom";
 
 import { BsTelephoneOutbound } from "react-icons/bs";
@@ -9,6 +9,7 @@ import { BsFacebook } from "react-icons/bs";
 import { ImWhatsapp } from "react-icons/im";
 import { BsLinkedin } from "react-icons/bs";
 import Footer from "../Footer/Footer";
+import Whatsapp from "../Whatsapp/Whatsapp";
 
 export default function Contact() {
   return (
@@ -23,7 +24,7 @@ export default function Contact() {
               <div className="adarsh-first">
                 <input 
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Name"
                   className="adarsh-name"
                   autocomplete="new-password"
                   
@@ -32,7 +33,7 @@ export default function Contact() {
               <div className="adarsh-first">
                 <input
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="Email"
                   className="adarsh-name"
                   autocomplete="new-password"
                 />
@@ -41,15 +42,16 @@ export default function Contact() {
               <div className="adarsh-first">
                 <input
                   type="tel"
-                  placeholder=" Your Phone no"
+                  placeholder="Phone no"
                   className="adarsh-name"
                   autocomplete="new-password"
+                  min="10" max="10"
                 />
               </div>
               <div className="adarsh-first">
                 <input
                   type="text"
-                  placeholder="Your message"
+                  placeholder="Message"
                   className="adarsh-name"
                   autocomplete="new-password"
                 />
@@ -61,35 +63,36 @@ export default function Contact() {
               <h2 className="adarsh-info">Contact info</h2>
               <div className="adarsh-telephone">
                 <div className="adarsh-icon">
-                  <BsTelephoneOutbound 
+                  <BsTelephoneOutbound size={30}
                     className="icon1"
-                    style={{
-                      color: "white",
-                      width: "4vw",
-                      height: "4vh",
-                      marginTop: "2rem",
-                    }}
+                    // style={{
+                    //   color: "white",
+                    //   width: "4vw",
+                    //   height: "4vh",
+                    //   marginTop: "2rem",
+                    // }}
                   />{" "}
                 </div>
                 <div className="adarsh-number">
-                  <span>7869614790</span>
+                  <span>7869909760</span>
                 </div>
               </div>
 
               <div className="adarsh-telephone">
-                <div className="adarsh-icon">
-                  <GrMail 
-                    className="adarsh-icon1" 
-                    style={{
-                      color: "white",
-                      width: "4vw",
-                      height: "4vh",
-                      marginTop: "2rem",
-                    }}
+                <div className="adarsh-icon ">
+                  <GrMail  size={30}
+                    className="adarsh-icon icon1" 
+                    // style={{
+                    //   color: "white",
+                    //   width: "4vw",
+                    //   height: "4vh",
+                    //   marginTop: "2rem",
+                    // }}
                   />{" "}
                 </div>
                 <div className="adarsh-number">
-                  <span>contact@feedbox.tech</span>
+                <a className="adarsh-email" href = "mailto:contact@feedbox.tech">
+                  <span>contact@feedbox.tech</span></a>
                 </div>
               </div>
               <div className="adarsh-icon-cont">
@@ -153,7 +156,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
-  );
+      <Whatsapp />
+        <Footer/>
+        </>
+    )
 }

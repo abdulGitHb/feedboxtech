@@ -118,10 +118,10 @@ function NewNav() {
             <li>
               <Link
                 id="nav_contact"
-                to="/contactus"
+                to="/contact"
                 onClick={() => setToggle(!toggle)}
                 className={
-                  selectedPage === "/contactus"
+                  selectedPage === "/contact"
                     ? "overlay-menu-a active"
                     : "overlay-menu-a"
                 }

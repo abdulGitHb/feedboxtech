@@ -1,3 +1,10 @@
+
+.aditya-about-mobile{
+display: none;
+}
+.aditya-about-desktop{
+  display: block;
+}
 .aditya-parall{
   justify-content: center;
   background-color: #06283d;
@@ -7,13 +14,6 @@
   margin: 0 auto;
 }
 
-/* .section_heading { */
-  /* font-size: 50px; */
-  /* color: white; */
-  /* position: relative; */
-  /* z-index: 10; */
-  /* font-weight: 600; */
-/* } */
 
 .aditya-text-content0::after {
   content: "";
@@ -21,10 +21,10 @@
   width: 5em;
   max-width:50%;
   border-bottom: 2px solid #0090ee;
-  margin: 2px 30px;
+  margin: 2px 30px 2px 30px;
 }
 .aditya-parallax1{
-  height: 45vh;
+  height: 40vh;
    width: 90vw;
    display: flex;
    justify-content: center;
@@ -39,19 +39,23 @@
 .aditya-text-content0{
   width:fit-content;
   color: white;
+  font-weight: 600;
   border-radius: 20px;
   font-size: 50px;
   font-weight: bolder;
+  margin-top: 90px;
+  margin-left: 70px;
+  
 }
 .aditya-text-content{
-  background-color: rgb(0, 0, 0);
+  background-color: #06283de9;
   height:100%;
   width: 50%;
-  color: #fff;
+  color: rgba(255,255, 255,0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 35px;
 }
 .aditya-p-text{
@@ -59,6 +63,9 @@
 }
 .aditya-b{
   font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  font-weight: bold;
 }
 .aditya-text-content1{
   margin-left: 50%; 
@@ -80,9 +87,9 @@
 
 .aditya-about-story{
   text-align: justify;    
-  background-color: black;
-  color:white;
-  padding:0 20px 0 50px;
+  background-color: #06283d;
+  color: rgba(255,255, 255,0.7);
+  /* padding:0 20px 0 50px; */
   padding-bottom: 50px;
   font-size: 18px;
   
@@ -94,6 +101,16 @@
   font-weight: bold;
   margin-bottom: 25px;
   color: white;
+  font-weight: 600;
+  width: fit-content;
+}
+.aditya-story-head::after {
+  content: "";
+  display: block;
+  width: 5em;
+  max-width:50%;
+  border-bottom: 2px solid #0090ee;
+  margin: 2px 30px 2px 23px;
 }
 
 .story-btn{
@@ -103,13 +120,25 @@
   border: none;
   margin-top: 30px;
   color: #fff;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 18px;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 470px) {
+  .aditya-about-desktop{
+    display: none;
+  }
+  .aditya-about-mobile{
+    display: block;
+    }
   .aditya-parallax1{
       height: 30vh;
+      width: 90vw;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      
    }
    .aditya-text-content0::after {
     content: "";
@@ -119,14 +148,17 @@
     border-bottom: 2px solid #0090ee;
     margin: 2px 30px 2px 15px;
   }
+
+
+
    .aditya-text-content0{
-    font-size: 26px;
+    font-size: 30px;
     margin-top: 50px;
     margin-left: 11%;
     }
 
    .aditya-parallax{
-    height: 40vh;
+    height: 55vh;
     width: 90vw; 
    }
 
@@ -137,11 +169,13 @@
     flex-direction: column;
     padding: 16px 10px 16px 3px;
     word-spacing: 3px;
-    line-height: 15px;
+    line-height: 20px;
+    background-color: #06283dae;
   }
   .aditya-p-text{
     padding: 16px 16px;
-    font-size: 10px;
+    font-size: 14px;
+    text-align: justify;
   }
 
   .aditya-b{
@@ -153,9 +187,9 @@
 
   
 .aditya-about-story{
-  padding:0 20px 0 20px;
+  /* padding:0 20px 0 20px; */
   padding-bottom: 40px;
-  font-size: 10px;
+  font-size: 16px;
   
 }
 
@@ -164,18 +198,24 @@
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 25px;
-  color: white;
 }
 
 .story-btn{
-  padding: 15px 15px;
+  padding: 12px 15px;
   border-radius: 8px;
   background-color: #0090ee;
   border: none;
   margin-top: 30px;
-  color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
+}
+.aditya-story-head::after {
+  content: "";
+  display: block;
+  width: 5em;
+  max-width:50%;
+  border-bottom: 2px solid #0090ee;
+  margin: 2px 30px 2px 15px;
 }
 }
 
