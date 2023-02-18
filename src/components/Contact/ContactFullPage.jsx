@@ -9,9 +9,39 @@ import { ImWhatsapp } from "react-icons/im";
 import { BsLinkedin } from "react-icons/bs";
 import Footer from "../Footer/Footer";
 import Whatsapp from "../Whatsapp/Whatsapp";
-import NewNav from './../Navbar2/NewNav';
+import { useState } from "react";
 
 export default function Contact() {
+  const [name,setName] = useState('');
+  const [email,setEmail] = useState('');
+  const [phone,setPhone] = useState('');
+  const [message,setMessage] = useState('');
+  const [thank,setThank] = useState(false);
+
+  const submitForm=()=>{
+    const formData1={
+      name:name,
+      email:email,
+      phone:phone,
+      message:message
+    }
+    console.log(formData1);
+    // emailjs.send('service_9rw0836','template_rsny29o',formData1,'yJ4YylTCoECK4zBUn').then((result)=>{
+    //     console.log(result.text);
+    // },(error)=>{
+    //     console.log(error.text);
+    // })
+    setName('');
+    setPhone('');
+    setEmail('');
+    setMessage('');
+    setThank(true);
+
+    setTimeout(() => {
+      setThank(false);
+    }, 2000);
+  }
+
   return (
     <>
       <div className="adarsh-contactContainer">
@@ -27,7 +57,10 @@ export default function Contact() {
                   type="text"
                   placeholder="Name"
                   className="adarsh-name"
-                  autocomplete="new-password" 
+                  autocomplete="new-password"
+                  name="name"
+                  value={name}
+                  onChange={(e)=>setName(e.target.value)}
                 />
               </div>
               <div className="adarsh-first">
@@ -36,6 +69,9 @@ export default function Contact() {
                   placeholder="Email"
                   className="adarsh-name"
                   autocomplete="new-password"
+                  name="email"
+                  value={email}
+                  onChange={(e)=>setEmail(e.target.value)}
                 />
               </div>
 
@@ -46,6 +82,9 @@ export default function Contact() {
                   className="adarsh-name"
                   autocomplete="new-password"
                   min="10" max="10"
+                  name="phone"
+                  value={phone}
+                  onChange={(e)=>setPhone(e.target.value)}
                 />
               </div>
               <div className="adarsh-first">
@@ -54,10 +93,25 @@ export default function Contact() {
                   placeholder="Message"
                   className="adarsh-name"
                   autocomplete="new-password"
+                  name="message"
+                  value={message}
+                  onChange={(e)=>setMessage(e.target.value)}
                 />
               </div>
 
-              <button className="adarsh-submitBtn">Submit</button>
+              {/* <button className="adarsh-submitBtn" onClick={submitForm}>Submit</button>
+              {
+                thank && <span className="thank">Thank you!</span>
+              } */}
+              <div className="adarsh-imageDiv">
+                <button type="submit" className="adarsh-submitBtn" onClick={submitForm}>
+                  Send <spam></spam>
+                </button>
+                {
+                  thank && <span className="thank">Thank you!</span>
+                }
+                {/* <span className="thank">Thank you!</span> */}
+              </div>
             </div>
             <div className="adarsh-rightCont">
               <h2 className="adarsh-info">Contact info</h2>

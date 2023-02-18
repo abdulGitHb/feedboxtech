@@ -146,12 +146,9 @@
         margin-top: 25px;
         border-radius: 5px;
         /* display: flex; */
+        margin-bottom: 40px;
     }
-    .portfolio_subHeading{
-        font-size: 20px;
-        padding: 0 10px;
-    }
-
+   
     .portfolio_web_view{
         display: none;
     }
@@ -159,16 +156,19 @@
     .portfolio_mobile_view{
         display: flex;
         width:375px;
+        /* height:200px; */
         /* padding:auto; */
+        object-fit: cover;
         padding-left:3px;       
         align-items: center;
         justify-content: center;
     }
 
     .portfolio_mobile_view img{
-        object-fit: cover;
+        object-fit: inherit;
+        /* transform: scale(1); */
         width:100%;
-        height:200px;
+        height:100%;
         border-radius: 10px;
         overflow: hidden;
     }
@@ -183,45 +183,45 @@
     }
   
     .slide-gap{
-        width:90%;
-        /* height:100px; */
-        margin-left: 20px;
+        width:80%;
+        margin:auto;
+        object-fit: cover;
+        /* height:200px; */
+        height:200px;
+        margin-left: 45px;
     }
 
-    .portfolio_subHeading{
-        text-align: center;
-    }
-    
+   
     .one-slide-img{
         display:flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 80px;
     }
 
-    .swiper-button-next{
+    .swiper-button-prev::after{
         color:white;
-        /* background-color: aliceblue; */
-        /* border: 1px solid gray; */
-        /* border-radius: 50%; */
         position: relative;
-        top:550px;
-    }
-
-    .swiper-button-prev {
-        position: absolute;
-        color: white;
-        height: 500px;
-    }
+        top:-15px;
+        left:15px;
+      }
+   
     
+      
+    .swiper-button-next::after{
+        color:white;
+        position: relative;
+        top:-15px;
+      }
  
 
     .portfolio_subHeading{
         justify-content: center;
-        width:90%;
+        width:80%;
         align-items: center;
         position: relative;
-        left:-15px;
+        /* left:-15px; */
         top:-10px;
+        font-size: 20px;
     }
 }
 

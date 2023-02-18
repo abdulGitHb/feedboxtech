@@ -85,7 +85,7 @@ export default function Contact() {
                 Send <spam></spam>
               </button>
               {
-                thank && <span className="submit_thank">Thank you!</span>
+                thank && <span className="thank">Thank you!</span>
               }
               {/* <span className="thank">Thank you!</span> */}
             </div>

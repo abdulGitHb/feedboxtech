@@ -525,4 +525,36 @@ border: 2px solid red;
       font-size: 1.3rem;
     }
   }
+
+
+  .adarsh-imageDiv{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adarsh-imageDiv .thank{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 140px;
+    margin-top: 10px;
+    transition: all 0.2s linear;
+  }
+
+  .adarsh-imageDiv{
+    display: flex;
+    flex-direction: column;
+  }
   
+  .adarsh-imageDiv .thank{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 140px;
+    margin-top: 10px;
+    transition: all 0.2s linear;
+  }
+
+
+  
+
