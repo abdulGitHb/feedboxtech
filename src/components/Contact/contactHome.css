@@ -16,7 +16,7 @@
   padding-bottom: 80px;
 }
 .contact_home_heading::after{
-  width: 4.2em;
+  width: 4.4em;
   margin: 2px 30px;
 }
 .adarsh-form {
@@ -232,5 +232,11 @@ textarea {
   textarea,
   .adarsh-text::placeholder {
     font-size: 16px;
+  }
+  .adarsh-btnn{
+    padding: 4px 25px;
+  }
+  .contact_home_heading::after{
+    width: 3.8em;
   }
 }
