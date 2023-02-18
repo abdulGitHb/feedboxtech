@@ -18,7 +18,7 @@ const OurStory = () => {
     const [page_no, setpage_no] = useState(1)
     // const [winheight, setwinheight] = useState(0)
     // const lastScroll = 0;
-  
+
 
     //for parallax effect
     // const onScroll = () => {
@@ -170,6 +170,8 @@ const OurStory = () => {
         <>
             <div id="main" className="scroll-wrapper">
                 <div id="main-content" className="main-content">
+                <h2 className="section_heading ourStory_heading"
+                >Our Story</h2>
                     <div id='begining' className='story-container-hld story_begining' >
                         <div className="storyCard-container " >
                             <div className="title_and_content_hld" >
@@ -261,15 +263,15 @@ const OurStory = () => {
                 <div className="story_next_pre_buttons_hld">
                     <div className="story_next_pre_buttons">
                         <div className="story_prev_button" onClick={handlePrevPage}>
-                            {page_no > 1 && 
-                            <div className="prev_arrow"><IoIosArrowBack size={25}  /> </div> }
+                            {page_no > 1 &&
+                                <div className="prev_arrow"><IoIosArrowBack size={25} /> </div>}
                         </div>
                         <div className="story_page_no">
                             {page_no}/5
                         </div>
                         <div className="story_prev_button" onClick={handleNextpage}>
-                            {page_no < 5 && 
-                            <div className="next_arrow"><IoIosArrowForward size={25}  /></div> }
+                            {page_no < 5 &&
+                                <div className="next_arrow"><IoIosArrowForward size={25} /></div>}
                         </div>
                     </div>
                 </div>

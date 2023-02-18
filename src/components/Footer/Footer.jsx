@@ -53,7 +53,7 @@ export default function Footer() {
                                 <RxTriangleRight className="mobile_view" size={30} /><Link to="/ourstory" >Our Story</Link>
                             </div>
                             <div className="index">
-                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/contactus" >Contact Us</Link>
+                                <RxTriangleRight className="mobile_view" size={30} /><Link to="/contact" >Contact Us</Link>
                             </div>
                         </div>
                         {/* <div className="index_col footer_services">

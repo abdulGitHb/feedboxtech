@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./ContactFullPage.css";
 // import { Link } from "react-router-dom";
-
 import { BsTelephoneOutbound } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 import { FiInstagram } from "react-icons/fi";
@@ -10,11 +9,13 @@ import { ImWhatsapp } from "react-icons/im";
 import { BsLinkedin } from "react-icons/bs";
 import Footer from "../Footer/Footer";
 import Whatsapp from "../Whatsapp/Whatsapp";
+import NewNav from './../Navbar2/NewNav';
 
 export default function Contact() {
   return (
     <>
       <div className="adarsh-contactContainer">
+    <NewNav/>
         <div className="adarsh-layer"></div>
         <div className="adarsh-BigCont">
           <h2 className="adarsh-main-head">Get in Touch</h2>
@@ -26,8 +27,7 @@ export default function Contact() {
                   type="text"
                   placeholder="Name"
                   className="adarsh-name"
-                  autocomplete="new-password"
-                  
+                  autocomplete="new-password" 
                 />
               </div>
               <div className="adarsh-first">

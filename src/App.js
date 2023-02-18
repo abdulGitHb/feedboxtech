@@ -8,6 +8,7 @@ import { Link } from 'react-scroll'
 import ScrollToTop from './ScrollToTop';
 import AnimatedRoutes from './components/AnimatedRoutes';
 import Whatsapp from './components/Whatsapp/Whatsapp';
+// import NewNav from './components/Navbar2/NewNav';
 
 
 function App() {
@@ -123,6 +124,7 @@ function App() {
 
 
       <Router basename='/'>
+        {/* <NewNav/> */}
         <ScrollToTop />
         <AnimatedRoutes/>
         {/* <Whatsapp /> */}

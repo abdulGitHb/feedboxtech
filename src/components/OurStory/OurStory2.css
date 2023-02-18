@@ -11,6 +11,12 @@
 #main-content {
     display: flex;
     vertical-align: baseline;
+    justify-content: center;
+}
+
+.ourStory_heading{
+     position: relative;
+     top: -60px;
 }
 
 /* card container css */
@@ -18,11 +24,15 @@
 .story-container-hld {
     display: inline-block;
     align-items: center;
-    transition: all 1s;
+    transition: all .5s;
     height: 100%;
     position: fixed;
     overflow-x: hidden;
     width: 100%;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
 }
 
 .storyCard-container {
@@ -58,7 +68,13 @@
     color: rgba(255, 255, 255, 0.7);
     display: inline-block;
 }
-
+#begining,
+#pandemic,
+#first_client,
+#newOffice,
+#awards{
+    margin-top: 40px;
+}
 .story_image_hld {
     width: 30%;
     object-fit: cover;
@@ -263,11 +279,7 @@
     width: 50%;
    }
 }
-@media screen and (max-width: 480px){
-    .ourstoryWhatsapp{
-        display: none;
-    }
-}
+
 @media screen and (max-width:700px) {
     .story-container-hld {
         /* display: flex; */
@@ -297,7 +309,7 @@
         padding: 0;
     }
     .title_and_content_hld h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .title_and_content_hld p {
         font-size: 16px;
@@ -359,7 +371,7 @@
 
     #newOffice .story_image_hld {
         transform: scale(1);
-        margin-top: 80px;
+        margin-top: 100px;
     }
 
     .story_newOffice .storyCard-container {
@@ -374,7 +386,7 @@
     }
 
     .story_award .title_and_content_hld {
-        padding-top: 50px;
+        padding-top: 70px;
     }
 
     #awards .story_image_hld {
@@ -385,5 +397,14 @@
         -ms-transform: scale(.8);
         -o-transform: scale(.8);
     }
+}
 
+@media screen and (max-width: 480px){
+    .ourstoryWhatsapp{
+        display: none;
+    }
+    .ourStory_heading::after{
+        width: 3.4em;
+        margin-left: 20px;
+    }
 }

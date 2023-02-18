@@ -165,12 +165,10 @@
 }
 
 @media screen and (max-width:480px) {
-    /* .serviceCard{
-        width: 350px;
-    }
-    .v-content{
-        width: 350px;
-    } */
+    .serviceCard{
+    padding-bottom: -40px;
+    margin-bottom: -40px;
+ }
     .card_content h1{
         font-size: 20px;
     }
