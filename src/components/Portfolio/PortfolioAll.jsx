@@ -1,13 +1,18 @@
-import React from "react";
-import Panorma from "./Panorma";
-import Swiper from "./Swiperr";
-import './Anushka.css'
+import React, { useEffect } from 'react'
+import './Portfolio.css'
+
+import 'aos/dist/aos.css';
+import Whatsapp from '../Whatsapp/Whatsapp'
+import Panorma from './Panorma'
+
 export default function PortfolioAll() {
 return (
-<>
+        <>
 
-<Panorma/>
+            <Panorma/>
 
-</>
+            <Whatsapp />
+        </>
+
     )
 }
