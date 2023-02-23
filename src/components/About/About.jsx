@@ -11,7 +11,7 @@ import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 
 export default function About() {
 
-    // const [width, setwidth] = useState()
+    const [width, setwidth] = useState()
 
     useEffect(() => {
         AOS.init({
