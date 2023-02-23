@@ -45,7 +45,7 @@ export default function Contact() {
   return (
     <>
       <div className="adarsh-contactContainer">
-    <NewNav/>
+    {/* <NewNav/> */}
         <div className="adarsh-layer"></div>
         <div className="adarsh-BigCont">
           <h2 className="adarsh-main-head">Get in Touch</h2>
